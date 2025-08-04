@@ -1,0 +1,86 @@
+---
+id: ai_best_practices
+title: Best Practices
+description: Praktische Tipps für effektive Prompts und optimale Nutzung des AI-Assistenten
+sidebar_position: 2
+---
+
+<br></br>
+
+<div style={{background: 'linear-gradient(135deg, rgba(149, 165, 50, 0.08) 0%, rgba(149, 165, 50, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>💡</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#95A532', fontWeight: '600'}}>Empfehlungen</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Best Practices für die AI-Nutzung</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    Tipps für die optimale Arbeit mit der Hausbaulogik und dem AI-Chatbot Estelle – von der Vorbereitung bis zur Dokumentensicherung.
+  </p>
+</div>
+
+---
+
+## Vorbereitung
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginTop: '1rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px'}}>
+    <span>📋</span>
+    <span style={{fontSize: '0.9rem'}}>Unternehmensdaten bereithalten</span>
+  </div>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px'}}>
+    <span>📎</span>
+    <span style={{fontSize: '0.9rem'}}>Dokumente uploaden</span>
+  </div>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px'}}>
+    <span>✅</span>
+    <span style={{fontSize: '0.9rem'}}>Upload-Funktion prüfen</span>
+  </div>
+</div>
+
+---
+
+## Vorgehen mit der Hausbaulogik
+
+| Schritt | Beschreibung |
+|:-------:|--------------|
+| **1** | **Starte mit dem Eingangsbereich** – Ausgangslage und Idee klären |
+| **2** | **Räume durchlaufen nach der Reihenfolge:** 🔵 Kunde → 🔴 Wertversprechen → 🟢 Werterzeugung → 🟡 Monetarisierung |
+| **3** | **Ausgangsbereich nutzen** – Chancen/Risiken und nächste Schritte erhalten |
+
+---
+
+## Kontextfenster & Dokumentensicherung
+
+Jeder AI-Chatbot hat ein **begrenztes Kontextfenster**. Nach einer gewissen Anzahl an Nachrichten kann die Kapazität erschöpft sein.
+
+<div style={{background: 'var(--ifm-color-emphasis-100)', borderRadius: '8px', padding: '1rem 1.25rem', marginTop: '1rem'}}>
+
+**Was du beachten solltest:**
+
+- **Nach jedem Raum:** Ergebnisse als Output-Dokument speichern
+- **Kapazität prüfen:** Bei Bedarf neuen Chat öffnen
+- **Outputs hochladen:** Gespeicherte Dokumente im neuen Chat bereitstellen
+
+</div>
+
+---
+
+## Empfohlene LLM-Modelle (Stand Februar 2026)
+
+| Modell | Stärken |
+|--------|---------|
+| [**GPT-5**](https://chat.openai.com/) | Umfassende Analysen, Management-taugliche Ausgaben |
+| [**Claude Sonnet 4.6**](https://claude.ai/) | Präzise Antworten, schnell, ideal für professionelle Arbeit |
+| [**Claude Opus 4.6**](https://claude.ai/) | Höchste Qualität, komplexe Aufgaben, Agentic AI |
+| [**LLaMA 4**](https://www.meta.ai/) | Open-Source, unternehmensinterne Deployments |
+| [**Mistral Large**](https://chat.mistral.ai/) | Europäische Alternative, multilingual, DSGVO-konform |
+
+:::tip Modell-Einstellung
+Nutze den **„Auto"-Modus**, nicht ausschließlich den „Thinking"-Modus. Verwende neutrale Chateinstellungen ohne spezifischen System-Prompt.
+:::
+
+:::warning Datenschutz
+Vermeide die Nutzung von öffentlichen Chatbots mit sensiblen Unternehmensdaten. Bevorzuge unternehmensinterne LLMs oder sichere Plattformen, die Daten vertraulich behandeln.
+:::
+
+

@@ -1,0 +1,307 @@
+---
+id: workshop_gruener_raum
+title: Tag 3 - Grüner Raum
+description: 🟢 Ökosystem-Rollen definieren und operative Wertschöpfung gestalten
+sidebar_position: 5
+---
+
+<div style={{background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.08) 0%, rgba(107, 142, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🟢</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B8E50', fontWeight: '600'}}>Value Creation</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Wie erzeugen wir den Wert?</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    Verstehen, wer im Ökosystem was beiträgt und wie der Wert operativ erzeugt wird
+  </p>
+  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.12) 0%, rgba(107, 142, 80, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 142, 80, 0.2)'}}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+      <span style={{fontSize: '1.1rem'}}>🎯</span>
+      <strong style={{color: '#6B8E50', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
+    </div>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Rollen-Akteure-Matrix, ein Wertschöpfungsnetzwerk und einen dokumentierten End-to-End-Prozess</strong> – das „Wie" hinter dem Wertversprechen.</p>
+  </div>
+</div>
+
+---
+
+## Tagesübersicht
+
+| Zeit | Thema | Beschreibung |
+|------|-------|--------------|
+| 09:00 - 09:30 | Begrüßung & Rückblick | Zusammenfassung Tag 2, Ziele Tag 3 |
+| 09:30 - 10:45 | Deep-Dive 1: Rollen & Akteure | Matrix erarbeiten, eigene Rolle klären |
+| 10:45 - 11:00 | Pause | |
+| 11:00 - 12:30 | Deep-Dive 2: Wertschöpfungsnetzwerk | Value Network Diagramm erstellen |
+| 12:30 - 13:30 | Mittagspause | |
+| 13:30 - 15:00 | Deep-Dive 3: Wertschöpfungsprozess | Prozessbeschreibung mit Verantwortlichkeiten |
+| 15:00 - 15:15 | Pause | |
+| 15:15 - 16:00 | Skalierbarkeit & Engpässe | Wachstumspotenzial prüfen |
+| 16:00 - 17:00 | Gate-Review & Daily-Log | Quality Check, Artefakte sichern |
+
+---
+
+## Deep-Dive 1: Rollen & Akteure (09:30 - 10:45)
+
+### Ziel
+
+Verstehen, **wer beteiligt ist** und welchen Wertbeitrag jeder leistet. Wichtig: Die Unterscheidung zwischen **Rolle** (Funktion) und **Akteur** (konkrete Einheit).
+
+:::info Wichtige Unterscheidung
+**Rolle** = Erwartete Aufgaben/Funktionen (z.B. Data Provider)
+**Akteur** = Konkrete Einheit, die die Rolle einnimmt (z.B. Maschinenbetreiber)
+Ein Unternehmen kann mehrere Rollen spielen!
+:::
+
+### Typische Rollen im Datenökosystem
+
+| Rolle | Beschreibung | Wertbeitrag |
+|-------|--------------|-------------|
+| **Data Provider** | Stellt Daten bereit | Maschinendaten, Sensordaten, Betriebsdaten |
+| **Data Consumer** | Nutzt Daten | Analysen, Entscheidungen, Services |
+| **Service Provider** | Bietet Services auf Datenbasis | Analytics, Alerts, Empfehlungen |
+| **Platform Operator** | Betreibt technische Infrastruktur | Hosting, Skalierung, Verfügbarkeit |
+| **Orchestrator** | Koordiniert das Ökosystem | Governance, Onboarding, Standards |
+
+### Akteurslandschaft erstellen
+
+| Akteur | Rolle(n) | Wertbeitrag | Intern/Extern |
+|--------|----------|-------------|---------------|
+| Betreiber (Kunde) | Data Provider, Consumer | Maschinendaten, Nutzung | Extern |
+| Wir (Anbieter) | Service Provider | Analytics, Alerting | Intern |
+| Cloud-Provider | Infrastructure | Hosting, Skalierung | Extern |
+| Datenraum-Operator | Orchestrator | Governance, IAM | Extern |
+
+### Eigene Rolle klären
+
+Kläre explizit: **Welche Rolle(n) übernehmen wir?**
+
+- [ ] Data Provider – Wir stellen Daten bereit
+- [ ] Data Consumer – Wir nutzen Daten anderer
+- [ ] Service Provider – Wir bieten Services an
+- [ ] Platform Operator – Wir betreiben die Plattform
+- [ ] Orchestrator – Wir koordinieren das Ökosystem
+
+### Moderationsfragen
+
+- „Wer spielt welche Rolle im Ökosystem?"
+- „Gibt es Akteure mit mehreren Rollen?"
+- „Welchen Beitrag leistet jeder Akteur?"
+- „Welche Rolle(n) übernehmen wir selbst?"
+
+---
+
+## Deep-Dive 2: Wertschöpfungsnetzwerk (11:00 - 12:30)
+
+### Ziel
+
+Beschreiben, **wie zwischen den Akteuren Güter, Services, Daten und Geld fließen**.
+
+### Die vier Stromarten
+
+| Flussart | Farbe | Beschreibung | Beispiele |
+|----------|-------|--------------|-----------|
+| **Goods** | Schwarz | Physische Produkte | Maschinenwartung, Ersatzteile |
+| **Services** | Blau | Digitale Leistungen | Software-Updates, Reports |
+| **Data** | Grün | Rohdaten, Insights | Sensordaten, Analytics |
+| **Financial** | Orange | Zahlungsströme | Subscription, Pay-per-Use |
+
+### Vorgehen (90 Min)
+
+1. **Akteure positionieren** (15 Min): Alle Akteure auf Whiteboard/Miro
+2. **Güterströme einzeichnen** (15 Min): Schwarze Pfeile
+3. **Serviceströme einzeichnen** (15 Min): Blaue Pfeile
+4. **Datenströme einzeichnen** (20 Min): Grüne Pfeile mit Bedingungen
+5. **Finanzströme einzeichnen** (15 Min): Orange Pfeile
+6. **Review & Lücken** (10 Min): Fehlen Ströme? Abhängigkeiten?
+
+### Moderationsfragen
+
+- „Wo fließen welche Daten?"
+- „Wer zahlt wem wofür?"
+- „Welche Abhängigkeiten bestehen?"
+- „Wo sind kritische Übergaben?"
+
+---
+
+## Deep-Dive 3: Wertschöpfungsprozess (13:30 - 15:00)
+
+### Ziel
+
+Das Ganze in eine **zeitliche Reihenfolge** bringen: Was passiert, wenn ein Kunde unser Angebot nutzt?
+
+### End-to-End-Prozess
+
+| Phase | Aktivitäten | Verantwortlich |
+|-------|-------------|----------------|
+| **1. Onboarding** | Vertrag, Setup, Integration | Vertrieb, IT |
+| **2. Datenanbindung** | Sensorik, Schnittstellen, Konnektoren | IT, OT |
+| **3. Monitoring** | Laufende Datenerfassung | Automatisiert |
+| **4. Analyse** | Anomalie-Erkennung, Analytics | Service Provider |
+| **5. Alerting** | Warnungen, Benachrichtigungen | Automatisiert |
+| **6. Service-Ausführung** | Wartung, Reparatur, Support | Instandhaltung |
+| **7. Reporting** | KPI-Berichte, Nutzennachweise | Controlling |
+| **8. Optimierung** | Modelle verbessern | Data Science |
+
+### Prozessverantwortung klären (RACI)
+
+| Schritt | Bei uns | Beim Kunden | Bei Partnern |
+|---------|---------|-------------|--------------|
+| Setup | Konfiguration | Hardware-Zugang | Cloud-Setup |
+| Datenfluss | API-Integration | Datenfreigabe | Connector |
+| Analytics | Modelle, Algorithmen | – | Infrastruktur |
+| Support | L2/L3 Support | L1 Support | – |
+
+### Moderationsfragen
+
+- „Welche Schritte sind zwingend für die VP?"
+- „Wo sind kritische Übergaben?"
+- „Was passiert bei Fehlern in Schritt X?"
+
+---
+
+## Skalierbarkeit & Engpässe (15:15 - 16:00)
+
+### Skalierungsfragen
+
+| Dimension | Fragen |
+|-----------|--------|
+| **Technisch** | Skaliert die Infrastruktur mit? Cloud-native? |
+| **Organisatorisch** | Können Prozesse standardisiert werden? |
+| **Partner** | Können Partner repliziert werden? |
+| **Kosten** | Wie entwickeln sich Kosten bei Wachstum? |
+
+### Typische Engpässe
+
+| Engpass | Beschreibung | Mitigation |
+|---------|--------------|------------|
+| Support | Kundenanzahl übersteigt Kapazität | Self-Service, Automation |
+| Integration | Jeder Kunde ist Sonderfall | Standardisierung |
+| Datenqualität | Heterogene Datenquellen | Validation, Normalisierung |
+| Partner | Abhängigkeit von Einzelnen | Redundanz, Standards |
+
+---
+
+## AI-Unterstützung (Hybrides Format)
+
+<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.25rem'}}>🤖</span>
+    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-gestützter Workshop</strong>
+  </div>
+
+Im hybriden Format kann AI bei der Wertschöpfungsgestaltung unterstützen:
+
+| Session | AI-Einsatz | Wie |
+|---------|------------|-----|
+| **Rollen & Akteure** | Ökosystem-Mapping | AI identifiziert typische Rollen und Akteure für den Use Case |
+| **Wertschöpfungsnetzwerk** | Fluss-Analyse | AI schlägt Daten-, Güter- und Finanzströme vor |
+| **Wertschöpfungsprozess** | Prozessbeschreibung | AI generiert End-to-End-Prozesse als Diskussionsgrundlage |
+| **Skalierbarkeit** | Engpass-Identifikation | AI analysiert potenzielle Skalierungsprobleme |
+
+### Konkrete AI-Prompts
+
+**Rollen & Akteure:**
+> „Welche typischen Rollen und Akteure gibt es in einem [Datenraum/Plattform]-Ökosystem für [Use Case]? Unterscheide Data Provider, Consumer, Service Provider, Platform Operator, Orchestrator."
+
+**Wertschöpfungsnetzwerk:**
+> „Beschreibe die Wertflüsse zwischen [Akteur 1], [Akteur 2] und [Akteur 3] für [Use Case]. Welche Daten, Services, Güter und Zahlungen fließen zwischen den Akteuren?"
+
+**Prozessbeschreibung:**
+> „Erstelle einen End-to-End-Prozess für [Service] von der Kundenanfrage bis zum laufenden Betrieb. Welche Phasen gibt es? Wer ist jeweils verantwortlich?"
+
+**Skalierungsanalyse:**
+> „Welche typischen Engpässe treten auf, wenn ein [Angebot] von 5 auf 50 Kunden skaliert wird? Wie können diese adressiert werden?"
+
+:::tip Best Practice
+AI kann komplexe **Prozessdiagramme als Text** beschreiben und später in BPMN oder Miro übertragen werden. Nutze AI für den ersten Entwurf, das Team verfeinert.
+:::
+
+</div>
+
+---
+
+## Gate-Review
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
+
+<h4 style={{fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', fontWeight: '500'}}>Quality Check</h4>
+
+##### Rollen & Akteure
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind alle relevanten Akteure im Ökosystem identifiziert?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind die Rollen klar definiert und voneinander abgegrenzt?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Ist klar, welchen Beitrag jeder Akteur leistet?</span>
+</label>
+
+##### Wertschöpfungsnetzwerk
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind alle vier Ströme (Goods, Services, Data, Financial) dokumentiert?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind die Datenflüsse mit Bedingungen versehen (wann, wie)?</span>
+</label>
+
+##### Wertschöpfungsprozess
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Deckt der Prozess den gesamten Weg von Datenentstehung bis Kundennutzen ab?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind kritische Übergaben/Schnittstellen identifiziert?</span>
+</label>
+
+</div>
+
+---
+
+## Ergebnisse
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 142, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>👥</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Rollen & Akteure Matrix</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Vollständige Übersicht aller Akteure und Rollen</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 142, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>🔀</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Wertschöpfungsnetzwerk</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Visualisierung aller Ströme zwischen Akteuren</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 142, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>📐</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Wertschöpfungsprozess</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>BPMN-basierte Prozessbeschreibung</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 142, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>⚠️</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Schnittstellen-Dokumentation</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Kritische Übergaben und Risiken</p>
+</div>
+
+</div>

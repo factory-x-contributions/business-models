@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Factory-X Business Models",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Factory-X Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Methodik": {
+    "message": "Methodology",
+    "description": "Navbar item with label Methodik"
+  },
+  "item.label.AI-Chatbot": {
+    "message": "AI Chatbot",
+    "description": "Navbar item with label AI-Chatbot"
+  },
+  "item.label.Workshop": {
+    "message": "Workshop",
+    "description": "Navbar item with label Workshop"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

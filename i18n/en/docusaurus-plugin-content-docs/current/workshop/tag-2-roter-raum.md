@@ -1,0 +1,294 @@
+---
+id: workshop_roter_raum
+title: Day 2 - Red Room
+description: Develop focused solution and consistent value proposition from Pains & Gains
+sidebar_position: 4
+---
+
+<div style={{background: 'linear-gradient(135deg, rgba(184, 84, 80, 0.08) 0%, rgba(184, 84, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🔴</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#B85450', fontWeight: '600'}}>Value Proposition</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>What value do we offer?</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    Build a focused solution and consistent value proposition from Pains & Gains
+  </p>
+  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(184, 84, 80, 0.12) 0%, rgba(184, 84, 80, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(184, 84, 80, 0.2)'}}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+      <span style={{fontSize: '1.1rem'}}>🎯</span>
+      <strong style={{color: '#B85450', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Daily Goal</strong>
+    </div>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>By the end of the day we have a <strong>match matrix, a formulated Value Proposition statement and a structured service description</strong> - the bridge between customer problem and solution.</p>
+  </div>
+</div>
+
+---
+
+## Daily Overview
+
+| Time | Topic | Description |
+|------|-------|-------------|
+| 09:00 - 09:30 | Welcome & Recap | Summary Day 1, Goals Day 2 |
+| 09:30 - 11:15 | Deep-Dive 1: Match Matrix | Pain-Gain Match, prioritize features |
+| 11:15 - 11:30 | Break | |
+| 11:30 - 12:30 | Deep-Dive 2: Value Proposition | Formulate VP statement |
+| 12:30 - 13:30 | Lunch Break | |
+| 13:30 - 15:00 | Deep-Dive 3: Service Description | Document offering in structured way |
+| 15:00 - 15:15 | Break | |
+| 15:15 - 16:15 | Deep-Dive 4: Differentiation | Distinction from alternatives |
+| 16:15 - 17:00 | Gate Review & Daily Log | Quality check, save artifacts |
+
+---
+
+## Deep-Dive 1: Match Matrix (09:30 - 11:15)
+
+### Goal
+
+The Match Matrix connects the **insights from the Blue Room** with concrete solution approaches. Every feature needs a clear reference to a validated customer problem.
+
+### Match Matrix Structure
+
+| Customer Problem (Pain) | Pain Reliever | Customer Gain (Gain) | Gain Creator |
+|-------------------------|---------------|----------------------|--------------|
+| What frustrates? | How do we relieve the pain? | What does the customer want? | How do we create the gain? |
+
+### Approach (90 Min)
+
+1. **Transfer Pains & Gains** (10 Min): Transfer results from Day 1
+2. **Assign Levers** (30 Min): Collect possible solution approaches for each pain/gain
+3. **Derive Value** (20 Min): What benefit does each lever bring?
+4. **Assess Relevance** (15 Min): Prioritize by customer relevance
+5. **Essentials vs. Nice-to-Haves** (15 Min): Define MVP scope
+
+### Facilitation Questions
+
+- "Which feature addresses this pain?"
+- "What would be the smallest possible feature set (MVP)?"
+- "Are there features without customer reference? -> Remove!"
+- "Which pain remains unsolved?"
+
+:::warning Consistent Omission
+**Features without clear customer reference are candidates for removal** - they create effort without added value. If a feature cannot be assigned to any pain, it is ballast.
+:::
+
+---
+
+## Deep-Dive 2: Value Proposition (11:30 - 12:30)
+
+### Goal
+
+The Value Proposition Statement is **the concise essence** of the offering - the one sentence that summarizes everything.
+
+### VP Formula
+
+> For **[target customer/persona]**, who has **[job/problem]**,
+> we offer **[solution/offering]**,
+> which enables **[core benefit]** -
+> unlike **[current alternative]**,
+> because **[differentiation]**.
+
+### Quality Criteria
+
+| Criterion | Description |
+|-----------|-------------|
+| **Specific** | Clear target group, not "everyone" |
+| **Relevant** | Addresses real problem |
+| **Differentiated** | Distinguishes from alternatives |
+| **Credible** | Comprehensible and realistic |
+| **Simple** | Understandable in one sentence |
+
+### Approach (60 Min)
+
+1. **Individual Work** (15 Min): Everyone formulates a VP draft
+2. **Present** (20 Min): Present drafts
+3. **Consolidate** (15 Min): Combine best elements
+4. **Finalize** (10 Min): One shared statement
+
+### Facilitation Questions
+
+- "Is this understandable from the customer's perspective?"
+- "Does it sound like buzzwords or real benefit?"
+- "Would a customer say: Yes, that's exactly what I need?"
+
+---
+
+## Deep-Dive 3: Service Description (13:30 - 15:00)
+
+### Goal
+
+Structured documentation of the offering so a third party understands it.
+
+### Description Structure
+
+| Element | Description | Example |
+|---------|-------------|---------|
+| **Offering Type** | What is it? | Digital service, software, hardware-software combination |
+| **Core Functions** | What can it do? | Data capture, analysis, alerting, reporting |
+| **User Groups** | Who uses it? | Maintenance staff, production managers, management |
+| **Data Sources** | Which data? | Machine sensors, process data, ERP data |
+| **Integration** | How integrated? | OPC UA, REST API, data space connector |
+| **Delivery Model** | How provided? | SaaS, on-premise, hybrid |
+
+### Facilitation Questions
+
+- "What differentiates us from competition?"
+- "What concrete benefit does the customer get?"
+- "Can we explain this in 2 minutes?"
+
+---
+
+## Deep-Dive 4: Differentiation (15:15 - 16:15)
+
+### Goal
+
+Clear distinction from alternatives - why should the customer come to us?
+
+### Competitive Landscape
+
+| Alternative | Strengths | Weaknesses | Our Differentiation |
+|-------------|-----------|------------|---------------------|
+| Own Solution (DIY) | Full control | High effort, know-how | Turnkey, faster ROI |
+| Traditional Maintenance | Known, established | Reactive, expensive | Proactive, data-driven |
+| Competitor A | Market leader | Complex, expensive | Simpler, focused |
+| Do Nothing | No effort | Risk, costs | Measurable improvement |
+
+### Differentiation Dimensions
+
+| Dimension | Questions |
+|-----------|-----------|
+| **Functional** | What can we do better? |
+| **Emotional** | How does the customer feel better? |
+| **Economic** | Why is it more economical? |
+| **Technical** | What is technically superior? |
+| **Service** | How is support better? |
+
+---
+
+## AI Support (Hybrid Format)
+
+<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.25rem'}}>🤖</span>
+    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-Assisted Workshop</strong>
+  </div>
+
+In the hybrid format, AI can accelerate Value Proposition development:
+
+| Session | AI Use | How |
+|---------|--------|-----|
+| **Match Matrix** | Pain-Feature Mapping | AI suggests matching pain relievers and gain creators |
+| **Value Proposition** | Statement Iteration | AI generates VP variants, team selects and refines |
+| **Service Description** | Structuring | AI creates initial structure based on features |
+| **Differentiation** | Competitive Analysis | AI researches alternatives and their strengths/weaknesses |
+
+### Specific AI Prompts
+
+**Match Matrix:**
+> "For the pain [pain] in the context of [use case]: Which concrete features or measures could relieve this pain? What would be the resulting customer benefit?"
+
+**Value Proposition Statement:**
+> "Formulate 3 variants of a Value Proposition for: Target customer=[Persona], Problem=[Top Pain], Solution=[Offering]. Use the structure: For X, who has Y, we offer Z, which enables W."
+
+**Competitive Analysis:**
+> "What alternatives does a [persona role] currently have for [problem]? Analyze DIY solutions, traditional approaches and digital competitors. What are strengths and weaknesses?"
+
+**Service Description:**
+> "Structure a service description for [offering]: Offering type, core functions, user groups, data sources, integration, delivery model."
+
+:::tip Best Practice
+AI is particularly strong at **iterating formulations**. The team provides the content, AI helps with the concise formulation of the VP statement.
+:::
+
+</div>
+
+---
+
+## Gate Review
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
+
+<h4 style={{fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', fontWeight: '500'}}>Quality Check</h4>
+
+##### Value Proposition
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is the Value Proposition understandable from the customer's perspective?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Does it address the most important pains of the persona?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Are the promised gains realistically achievable?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is the differentiation from alternatives clear?</span>
+</label>
+
+##### Match Matrix
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is every important pain addressed by a lever?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Are essentials clearly separated from nice-to-haves?</span>
+</label>
+
+##### Service Description
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Are all components fully documented?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is the customer benefit clearly formulated?</span>
+</label>
+
+</div>
+
+---
+
+## Results
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>🔗</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Pain-Feature-Value Matrix</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Complete assignment with prioritization</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>💬</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Value Proposition Statement</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>1-2 formulated value proposition sentences</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>📋</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Service Description</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Structured documentation of the offering</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>⭐</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Feature Prioritization</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Essentials vs. nice-to-haves</p>
+</div>
+
+</div>

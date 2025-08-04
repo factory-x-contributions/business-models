@@ -1,0 +1,19 @@
+business_models:
+  label: Business Models
+  permalink: business-models
+  description: This is the work on business models in Factory-X.
+
+factory-x:
+  label: Factory-X
+  permalink: factory-x
+  description: Welcome to Factory-X, the digital ecosystem.
+
+house_building_logic:
+  label: House Building Logic
+  permalink: house-building-logic
+  description: The House Building Logic methodology for business model development.
+
+docusaurus:
+  label: Docusaurus
+  permalink: docusaurus
+  description: Docusaurus is a project for building, deploying, and maintaining open source project websites easily.

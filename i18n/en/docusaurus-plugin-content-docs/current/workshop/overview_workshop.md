@@ -1,0 +1,131 @@
+---
+id: overview_workshop
+title: Workshop Overview
+description: 5-day workshop for developing data-driven business models using the House Building Logic
+sidebar_position: 1
+---
+
+
+## What is this about?
+
+This **5-day workshop** guides you step by step through the development of a viable, data-driven business model. In moderated work sessions, you and your team work through all relevant dimensions - from customer analysis to monetization.
+
+<div className="workshop-benefits" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>For whom?</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Product managers, business developers and teams who want to build new data-driven services in the Factory-X context</p>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary-dark)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>What will you achieve?</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>A well-thought-out business model with clear customer value, defined value proposition and validated economic viability</p>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary-darkest)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>How does it work?</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Interactive group work with structured templates, quality gates and concrete results per day</p>
+  </div>
+</div>
+
+---
+
+## Workshop Schedule & Templates
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0'}}>
+
+  {/* Preparation */}
+  <a href="./workshop_preparation" style={{display: 'grid', gridTemplateColumns: '150px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'var(--ifm-color-emphasis-100)', borderRight: '3px solid #6b7280', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Beforehand</div>
+      <div style={{fontWeight: 'bold', color: '#6b7280'}}>Preparation</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.25rem'}}>Entrance Area - Strategic Positioning</div>
+      <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Define business idea & scope</div>
+    </div>
+  </a>
+
+  {/* Day 1 - Blue */}
+  <a href="./workshop_blauer_raum" style={{display: 'grid', gridTemplateColumns: '150px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'rgba(59, 130, 246, 0.08)', borderRight: '3px solid #3b82f6', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Day 1</div>
+      <div style={{fontWeight: 'bold', color: '#1e40af'}}>Blue Room</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.5rem'}}>Customer View - Who are our customers?</div>
+      <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '100px', color: '#1e40af'}}>Market Segmentation</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '100px', color: '#1e40af'}}>Stakeholder Matrix</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '100px', color: '#1e40af'}}>Persona Profiles</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(59, 130, 246, 0.1)', borderRadius: '100px', color: '#1e40af'}}>Pains & Gains</span>
+      </div>
+    </div>
+  </a>
+
+  {/* Day 2 - Red */}
+  <a href="./workshop_roter_raum" style={{display: 'grid', gridTemplateColumns: '150px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'rgba(239, 68, 68, 0.08)', borderRight: '3px solid #ef4444', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Day 2</div>
+      <div style={{fontWeight: 'bold', color: '#991b1b'}}>Red Room</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.5rem'}}>Value Proposition - What value do we offer?</div>
+      <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(239, 68, 68, 0.1)', borderRadius: '100px', color: '#991b1b'}}>Match Matrix</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(239, 68, 68, 0.1)', borderRadius: '100px', color: '#991b1b'}}>Value Proposition Finder</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(239, 68, 68, 0.1)', borderRadius: '100px', color: '#991b1b'}}>Service Description</span>
+      </div>
+    </div>
+  </a>
+
+  {/* Day 3 - Green */}
+  <a href="./workshop_gruener_raum" style={{display: 'grid', gridTemplateColumns: '150px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'rgba(132, 204, 22, 0.08)', borderRight: '3px solid #84cc16', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Day 3</div>
+      <div style={{fontWeight: 'bold', color: '#3f6212'}}>Green Room</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.5rem'}}>Value Creation - How do we create the value?</div>
+      <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(132, 204, 22, 0.1)', borderRadius: '100px', color: '#3f6212'}}>Roles & Actors</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(132, 204, 22, 0.1)', borderRadius: '100px', color: '#3f6212'}}>Value Creation Network</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(132, 204, 22, 0.1)', borderRadius: '100px', color: '#3f6212'}}>Process Description</span>
+      </div>
+    </div>
+  </a>
+
+  {/* Day 4 - Yellow */}
+  <a href="./workshop_gelber_raum" style={{display: 'grid', gridTemplateColumns: '150px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'rgba(234, 179, 8, 0.08)', borderRight: '3px solid #eab308', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Day 4</div>
+      <div style={{fontWeight: 'bold', color: '#854d0e'}}>Yellow Room</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.5rem'}}>Viability - How do we make money?</div>
+      <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(234, 179, 8, 0.1)', borderRadius: '100px', color: '#854d0e'}}>Willingness to Pay</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(234, 179, 8, 0.1)', borderRadius: '100px', color: '#854d0e'}}>Revenue Mechanics</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(234, 179, 8, 0.1)', borderRadius: '100px', color: '#854d0e'}}>Cost Structure</span>
+        <span style={{fontSize: '0.75rem', padding: '0.25rem 0.75rem', background: 'rgba(234, 179, 8, 0.1)', borderRadius: '100px', color: '#854d0e'}}>Cost-Benefit</span>
+      </div>
+    </div>
+  </a>
+
+  {/* Day 5 - Conclusion */}
+  <a href="./workshop_abschluss" style={{display: 'grid', gridTemplateColumns: '150px 1fr', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s'}}>
+    <div style={{padding: '1.25rem 1rem', background: 'var(--ifm-color-emphasis-100)', borderRight: '3px solid #374151', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontSize: '0.7rem', textTransform: 'uppercase', color: 'var(--ifm-color-emphasis-600)', letterSpacing: '0.05em'}}>Day 5</div>
+      <div style={{fontWeight: 'bold', color: '#374151'}}>Conclusion</div>
+    </div>
+    <div style={{padding: '1.25rem 1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+      <div style={{fontWeight: '600', marginBottom: '0.25rem'}}>Synthesis & Handover - What's next?</div>
+      <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Consolidation, documentation & next steps</div>
+    </div>
+  </a>
+
+<br>
+</br>
+
+  :::info Flexible Order
+In this workshop we follow the presented order (Blue -> Red -> Green -> Yellow). However, the methodology is **fundamentally flexible**: Depending on the starting situation, the rooms can also be completed in a different order or repeated iteratively.
+:::
+
+</div>

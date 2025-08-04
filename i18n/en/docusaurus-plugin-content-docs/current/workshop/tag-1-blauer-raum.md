@@ -1,0 +1,307 @@
+---
+id: workshop_blauer_raum
+title: Day 1 - Blue Room
+description: Analyze customer segments, develop personas and capture Pains & Gains
+sidebar_position: 3
+---
+
+<div style={{background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.08) 0%, rgba(56, 111, 179, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🔵</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#386FB3', fontWeight: '600'}}>Customer View</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Who are our customers?</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    Understand relevant customer segments and stakeholders,
+    develop persona(s) and properly capture Pains & Gains
+  </p>
+  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.12) 0%, rgba(56, 111, 179, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(56, 111, 179, 0.2)'}}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+      <span style={{fontSize: '1.1rem'}}>🎯</span>
+      <strong style={{color: '#386FB3', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Daily Goal</strong>
+    </div>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>By the end of the day we have <strong>validated customer segments, elaborated personas and a prioritized list of jobs, pains and gains</strong> - solution-neutral and customer-oriented.</p>
+  </div>
+</div>
+
+---
+
+## Daily Overview
+
+| Time | Topic | Description |
+|------|-------|-------------|
+| 09:00 - 10:15 | Welcome & Workshop Introduction | Arrival, getting to know each other, goal & role picture, expectations |
+| 10:15 - 10:30 | Break | |
+| 10:30 - 11:15 | Innovation Idea | Presentation of the idea, questions, initial classification |
+| 11:15 - 12:30 | Deep-Dive 1: Market Segmentation | Define segments, establish criteria, prioritize |
+| 12:30 - 13:30 | Lunch Break | |
+| 13:30 - 14:45 | Deep-Dive 2: Stakeholder Matrix | Identify and classify stakeholders |
+| 14:45 - 15:00 | Break | |
+| 15:00 - 16:00 | Deep-Dive 3: Persona Profiles | Develop 1-2 core personas |
+| 16:00 - 17:00 | Deep-Dive 4: Pains & Gains | Capture jobs, pains, gains (solution-neutral!) |
+| 17:00 - 17:30 | Gate Review & Daily Log | Quality check, save artifacts, day wrap-up |
+
+---
+
+## Deep-Dive 1: Market Segmentation (11:15 - 12:30)
+
+### Goal
+Identify clear, non-overlapping customer segments and prioritize them.
+
+### Segmentation Criteria
+
+| Criterion | Description | Examples |
+|-----------|-------------|----------|
+| **Industry** | Customer's industry sector | Automotive, Pharma, Mechanical Engineering |
+| **Company Size** | SME vs. Enterprise | < 250 employees, 250-1000 employees, > 1000 employees |
+| **Digital Maturity** | Digitalization status | Beginner, Advanced, Digital Native |
+| **Problem Pressure** | Urgency of the need | Acute, Medium-term, Strategic |
+
+### Approach (45 Min)
+1. **Brainstorming** (10 Min): Collect all potential segments
+2. **Define Criteria** (10 Min): Which dimensions are relevant?
+3. **Build Matrix** (15 Min): Classify segments in criteria matrix
+4. **Prioritization** (10 Min): Select top 1-2 segments
+
+### Facilitation Questions
+- "Which market segments do you want to consider?"
+- "Which criteria differentiate the segments most strongly?"
+- "Which segment has the highest problem pressure?"
+- "Where do we already have contacts or access?"
+
+:::info Focus
+Better to **understand one segment properly** than five superficially. At the end, 1-2 core segments should be clearly prioritized.
+:::
+
+---
+
+## Deep-Dive 2: Stakeholder Matrix (13:30 - 14:45)
+
+### Goal
+Identify all relevant stakeholders and classify them by influence/proximity.
+
+### Typical Stakeholders in B2B Context
+
+| Stakeholder | Role | Typical Interests |
+|-------------|------|-------------------|
+| **Executive Management** | Decision Maker | ROI, strategic alignment |
+| **Production Manager** | User/Influencer | Efficiency, availability |
+| **Maintenance** | User | Fewer failures, simple processes |
+| **Procurement** | Decision Maker | Price, terms |
+| **IT Department** | Gatekeeper | Security, integration |
+| **Works Council** | Influencer | Jobs, data protection |
+
+### Stakeholder Matrix
+
+| | Far from Problem | Close to Problem |
+|---|:---:|:---:|
+| **High Influence** | Inform & convince | **Core Stakeholder** |
+| **Low Influence** | Monitor | Involve as user |
+
+### Facilitation Questions
+- "Who is directly affected by the solution?"
+- "Who really decides on budget?"
+- "Who could block the project?"
+- "Who suffers most from the problem?"
+
+---
+
+## Deep-Dive 3: Persona Profiles (15:00 - 16:00)
+
+### Goal
+Develop 1-2 detailed personas for the prioritized segment.
+
+### Persona Template
+
+| Element | Description |
+|---------|-------------|
+| **Name & Role** | Fictional name, job title, age |
+| **Company** | Size, industry, context |
+| **Responsibility** | What are they measured on? KPIs? |
+| **Daily Routine** | Typical tasks and challenges |
+| **Goals** | What do they want to achieve? |
+| **Frustrations** | What annoys them, what blocks them? |
+| **Emotional Triggers** | Stress, fear, pride |
+
+### Approach (60 Min)
+1. **Collect** (15 Min): All persona ideas on sticky notes
+2. **Cluster** (10 Min): Group similar personas
+3. **Selection** (5 Min): Choose 1-2 core personas
+4. **Elaborate** (30 Min): Fill out template in detail
+
+---
+
+## Deep-Dive 4: Pains & Gains (16:00 - 17:00)
+
+### Goal
+Capture jobs-to-be-done, pains and gains of the persona - **solution-neutral!**
+
+### Jobs-to-Be-Done
+
+| Job Type | Description | Example |
+|----------|-------------|---------|
+| **Functional** | What task should be completed? | Ensure machine availability |
+| **Emotional** | How does the customer want to feel? | Safe, in control, not stressed |
+| **Social** | How does the customer want to be perceived? | As competent, innovative |
+
+### Collecting Pains
+
+| Pain Category | Questions |
+|---------------|-----------|
+| **Time Waste** | What costs unnecessary time? |
+| **Cost Drivers** | What causes high costs? |
+| **Risks** | What do customers fear? |
+| **Frustrations** | What annoys them daily? |
+| **Blockers** | What prevents success? |
+
+### Collecting Gains
+
+| Gain Category | Description |
+|---------------|-------------|
+| **Required** | Must be fulfilled at minimum |
+| **Expected** | Assumed as standard |
+| **Desired** | Real added value |
+| **Unexpected** | Would delight |
+
+:::caution Typical Pitfall
+Participants often jump immediately to solutions.
+**Response:** "That's a good idea - I'll park it on the idea parking lot. For now we stay with the problems."
+:::
+
+### Prioritization
+
+Rate each pain/gain by:
+
+- **Frequency**: How often does the problem occur?
+- **Intensity**: How strong is the pain (time, money, nerves)?
+- **Solvability**: Can we address the problem?
+
+---
+
+## AI Support (Hybrid Format)
+
+<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.25rem'}}>🤖</span>
+    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-Assisted Workshop</strong>
+  </div>
+
+In the hybrid format, AI can accelerate the workshop and increase result quality:
+
+| Session | AI Use | How |
+|---------|--------|-----|
+| **Market Segmentation** | Research & Validation | AI researches market data, industry trends and validates segment assumptions |
+| **Stakeholder Matrix** | Stakeholder Identification | AI suggests typical stakeholders for the industry, including often overlooked roles |
+| **Persona Profiles** | Persona Generation | AI creates initial persona drafts based on segment, which the team refines |
+| **Pains & Gains** | Brainstorming Extension | AI supplements pain/gain collection with industry-specific insights |
+
+### Specific AI Prompts
+
+**Market Segmentation:**
+> "Analyze the most important customer segments for [industry/use case]. Which segmentation criteria are relevant? Which segments have the highest problem pressure for [problem]?"
+
+**Persona Creation:**
+> "Create a detailed persona for a [role] in a [company size] [industry] company. Describe responsibility, KPIs, daily routine, frustrations and goals."
+
+**Pain/Gain Extension:**
+> "What typical pains does a [persona role] have in the context of [problem]? Distinguish functional, emotional and social aspects. Which gains would delight?"
+
+:::tip Best Practice
+AI as a **sparring partner**, not as a replacement for team discussion. AI provides impulses and structure - validation and prioritization remains with the team.
+:::
+
+</div>
+
+---
+
+## Gate Review
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
+
+<h4 style={{fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', fontWeight: '500'}}>Quality Check</h4>
+
+**Market and Customer Segmentation**
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Were all relevant market segments identified and documented using clear criteria?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is the attractiveness of the selected segment comprehensibly justified?</span>
+</label>
+
+**Stakeholder Definition and Assessment**
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is the assessment of stakeholder roles consistent and based on valid information?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Is there a clear prioritization (max. 3 stakeholders)?</span>
+</label>
+
+**Target Group & Personas**
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Are the personas realistic and based on valid data?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Were business motivations supplemented with emotional triggers (solution-neutral)?</span>
+</label>
+
+**Pains & Gains**
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Are the Pains & Gains relevant and significant for the persona?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}>Were no solutions interpreted into the Pains & Gains?</span>
+</label>
+
+</div>
+
+---
+
+## Results
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 111, 179, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>📊</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Market Segment Description</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Prioritized segments with assessment criteria</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 111, 179, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>🎯</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Stakeholder Matrix</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Classified stakeholders with engagement strategy</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 111, 179, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>👤</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Persona Description</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>1-2 detailed personas (CORE + ENVIRONMENT)</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 111, 179, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>💡</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Pains & Gains List</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Structured overview of customer jobs</p>
+</div>
+
+</div>

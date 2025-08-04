@@ -1,0 +1,189 @@
+---
+id: workshop_preparation
+title: Preparation
+description: Checklist and materials that must be prepared before the workshop
+sidebar_position: 2
+---
+
+## What needs to happen beforehand?
+
+The **Entrance Area** is not covered in the workshop - the content must be prepared beforehand. The workshop builds on a concrete business idea that will be presented on the first day.
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>Define Business Idea</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Select innovation/business idea, fill out business idea canvas, clarify strategic goal</p>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary-dark)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>Define Scope</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Conduct as-is analysis, complete readiness check, clarify strategic positioning</p>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary-darkest)'}}>
+    <h4 style={{margin: '0 0 0.5rem 0'}}>Optional: Ideation Workshop</h4>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>If no concrete idea exists yet - conduct brainstorming sessions beforehand</p>
+  </div>
+</div>
+
+---
+
+## Participants & Roles
+
+Not all people need to participate on all 5 days. The composition should be adjusted according to the focus topic.
+
+<div style={{overflowX: 'auto', marginTop: '1rem'}}>
+
+<table style={{width: '100%', borderCollapse: 'collapse'}}>
+  <thead>
+    <tr>
+      <th style={{textAlign: 'left', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '20%'}}>Role</th>
+      <th style={{textAlign: 'left', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '40%'}}>Description</th>
+      <th style={{textAlign: 'center', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '10%', color: '#3b82f6'}}>Blue</th>
+      <th style={{textAlign: 'center', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '10%', color: '#ef4444'}}>Red</th>
+      <th style={{textAlign: 'center', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '10%', color: '#84cc16'}}>Green</th>
+      <th style={{textAlign: 'center', padding: '0.75rem', borderBottom: '2px solid var(--ifm-color-emphasis-300)', width: '10%', color: '#eab308'}}>Yellow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', verticalAlign: 'top'}}><strong>Innovation</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Business Owner</span></td>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Overall responsible for use case & business model. Understands strategy, thinks customer-centric, has basic understanding of digitalization & data.</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', verticalAlign: 'top'}}><strong>Domain Expert</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Use Case Owner</span></td>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Brings domain expertise. Detailed insight into processes & products, knows typical problems, can tell practical examples.</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', verticalAlign: 'top'}}><strong>Sales</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Customer Interface</span></td>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Voice of the market. Direct customer contact, knows competition & price sensitivity, brings in real customer language.</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R/C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C/I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', verticalAlign: 'top'}}><strong>IT</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Data & Architecture</span></td>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Assesses technical feasibility. Overview of systems & interfaces, estimates effort & risks realistically.</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', verticalAlign: 'top'}}><strong>Finance</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Controlling</span></td>
+      <td style={{padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Economic perspective. Familiar with cost structures, supports with pricing models, asks the critical-constructive question "Is it worth it?"</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C/I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>C</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', borderBottom: '1px solid var(--ifm-color-emphasis-200)', fontWeight: '500'}}>R</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.75rem', verticalAlign: 'top'}}><strong>Management</strong><br/><span style={{fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>Sponsor</span></td>
+      <td style={{padding: '0.75rem', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Strategic decision maker. Provides direction & backing, monitors resources, open to iterative approach.</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', fontWeight: '500'}}>A/I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', fontWeight: '500'}}>A/I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', fontWeight: '500'}}>A/I</td>
+      <td style={{textAlign: 'center', padding: '0.75rem', fontWeight: '500'}}>A/I</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<details style={{marginTop: '0.75rem'}}>
+<summary style={{cursor: 'pointer', fontWeight: '500', color: 'var(--ifm-font-color-base)'}}>RACI Legend</summary>
+<div style={{padding: '0.75rem 0', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-700)'}}>
+**R** = Responsible (does the content work) · **A** = Accountable (makes decisions) · **C** = Consulted (is involved) · **I** = Informed (is informed)
+</div>
+</details>
+
+---
+
+## Materials & Setup
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem'}}>
+    <h4 style={{margin: '0 0 0.75rem 0'}}>On-site Workshop</h4>
+    <ul style={{margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem', lineHeight: '1.7', color: 'var(--ifm-font-color-base)'}}>
+      <li>Print PowerPoint slides on A2 paper</li>
+      <li>Provide sticky notes & markers</li>
+      <li>Prepare flipcharts for idea parking lot</li>
+    </ul>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem'}}>
+    <h4 style={{margin: '0 0 0.75rem 0'}}>Online / Hybrid</h4>
+    <ul style={{margin: 0, paddingLeft: '1.25rem', fontSize: '0.9rem', lineHeight: '1.7', color: 'var(--ifm-font-color-base)'}}>
+      <li>Transfer templates to Miro/Conceptboard</li>
+      <li>Prepare breakout rooms</li>
+      <li>Set up digital parking lot board</li>
+    </ul>
+  </div>
+</div>
+
+<br>
+</br>
+
+:::tip AI Support
+The workshop can be combined with the **[Business Model AI Assistant](../ai/ai_overview)**. Sticky notes can be digitized and transferred to templates - this can reduce the time frame.
+:::
+
+---
+
+## Facilitation Principles
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>⏱</span>
+    <div>
+      <h4 style={{margin: '0 0 0.25rem 0'}}>Delegate Time</h4>
+      <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Hand over time-keeping to a separate person so the facilitator can focus on content</p>
+    </div>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🎯</span>
+    <div>
+      <h4 style={{margin: '0 0 0.25rem 0'}}>Be Concrete</h4>
+      <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Short and concise answers, but formulated so they are understandable to third parties</p>
+    </div>
+  </div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🅿️</span>
+    <div>
+      <h4 style={{margin: '0 0 0.25rem 0'}}>Use Parking Lot</h4>
+      <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Collect open items and questions, review at the end of each day</p>
+    </div>
+  </div>
+</div>
+
+---
+
+## Daily Structure
+
+Each workshop day follows this schedule:
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0', marginTop: '1rem', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', overflow: 'hidden'}}>
+  <div style={{display: 'grid', gridTemplateColumns: '120px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+    <div style={{padding: '0.75rem 1rem', background: 'var(--ifm-color-emphasis-100)', fontWeight: '500', fontSize: '0.85rem'}}>Morning</div>
+    <div style={{padding: '0.75rem 1rem', fontSize: '0.9rem'}}>Welcome & goals of the day (from Day 2: retrospective)</div>
+  </div>
+  <div style={{display: 'grid', gridTemplateColumns: '120px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+    <div style={{padding: '0.75rem 1rem', background: 'var(--ifm-color-emphasis-100)', fontWeight: '500', fontSize: '0.85rem'}}>Main Part</div>
+    <div style={{padding: '0.75rem 1rem', fontSize: '0.9rem'}}>Content work on the room's methods</div>
+  </div>
+  <div style={{display: 'grid', gridTemplateColumns: '120px 1fr', borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+    <div style={{padding: '0.75rem 1rem', background: 'var(--ifm-color-emphasis-100)', fontWeight: '500', fontSize: '0.85rem'}}>End</div>
+    <div style={{padding: '0.75rem 1rem', fontSize: '0.9rem'}}>Summary & quality check questions</div>
+  </div>
+  <div style={{display: 'grid', gridTemplateColumns: '120px 1fr'}}>
+    <div style={{padding: '0.75rem 1rem', background: 'var(--ifm-color-emphasis-100)', fontWeight: '500', fontSize: '0.85rem'}}>Wrap-up</div>
+    <div style={{padding: '0.75rem 1rem', fontSize: '0.9rem'}}>Artifact upload & daily log</div>
+  </div>
+</div>
+

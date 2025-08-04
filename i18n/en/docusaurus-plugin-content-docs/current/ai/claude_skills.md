@@ -1,0 +1,345 @@
+---
+id: ai_skills
+title: AI Skills
+description: Interactive AI skills for structured business model development using the House Building Logic
+sidebar_position: 3
+---
+
+import SkillCard from '@site/src/components/SkillCard';
+import ProcessFlow from '@site/src/components/ProcessFlow';
+
+<br></br>
+
+<div style={{background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.08) 0%, rgba(56, 111, 179, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>⚡</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#386FB3', fontWeight: '600'}}>AI Skills</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>AI-Powered Business Model Development</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    This project provides <strong>23 specialized AI skills</strong> — structured methods that an AI assistant works through with you step by step. Each skill can be used <strong>individually</strong> or as part of the <strong>complete process</strong>.
+  </p>
+</div>
+
+## What is an AI Skill?
+
+An AI skill is a **structured guide for an AI assistant**. It contains a clear method description, an interview-style questionnaire, quality criteria, and defined output formats. The AI guides you through the process like an experienced consultant — asking targeted questions, challenging assumptions, and producing structured result documents.
+
+Skills follow the open [Agent Skills](https://agentskills.io) standard and work with compatible AI coding tools.
+
+---
+
+## Process Overview
+
+The complete process comprises 21 methods in 6 phases. Hover over individual steps to see the skill name:
+
+<ProcessFlow phases={[
+  { label: 'Baseline', color: '#607D8B', skills: ['company-assessment', 'business-idea-canvas'], shortLabels: ['Company Assessment', 'Business Idea Canvas'] },
+  { label: 'Customer', color: '#1565C0', skills: ['market-segmentation', 'stakeholder-matrix', 'persona-development', 'vpc-customer-side'], shortLabels: ['Market Segmentation', 'Stakeholder Matrix', 'Persona Development', 'VPC Customer Side'] },
+  { label: 'Value Prop.', color: '#C62828', skills: ['match-matrix', 'value-proposition-formula', 'product-service-idea'], shortLabels: ['Match Matrix', 'VP Formula', 'Product/Service Idea'] },
+  { label: 'Value Creation', color: '#2E7D32', skills: ['roles-actors-mapping', 'value-network-analysis', 'value-creation-process', 'ecosystem-synthesis'], shortLabels: ['Roles & Actors', 'Value Network', 'Creation Process', 'Ecosystem Synthesis'] },
+  { label: 'Viability', color: '#F9A825', skills: ['value-source-wtp', 'revenue-mechanics-pricing', 'cost-structure-analysis', 'pricing-strategy-targets'], shortLabels: ['Value Source & WTP', 'Revenue & Pricing', 'Cost Structure', 'Pricing Strategy'] },
+  { label: 'Consolidation', color: '#6A1B9A', skills: ['risk-heatmap', 'action-plan-raci', '30-60-90-day-roadmap', 'executive-summary'], shortLabels: ['Risk Heatmap', 'Action Plan & RACI', '30/60/90-Day Plan', 'Executive Summary'] },
+]} />
+
+---
+
+## All Skills in Detail
+
+Click on a skill to see the example prompt, expected output, and estimated duration.
+
+### Establish Baseline
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="company-assessment"
+  title="Company Assessment"
+  description="Captures company profile, role, offering, customers, market, competencies, and digital maturity."
+  prompt="We are a mid-sized machine builder with 500 employees looking to digitize our service business. Help me with a structured company assessment."
+  output="Company Assessment Summary with current state, digital maturity, and ecosystem touchpoints."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="business-idea-canvas"
+  title="Business Idea Canvas"
+  description="Structures the first business idea in a 6-field canvas: origin, data space role, target audience, offering, value creation, revenue sources."
+  prompt="I have an idea for a predictive maintenance service based on machine data. Help me structure this idea."
+  output="Business Idea Canvas (6 fields) and Elevator Pitch (max. 150 words)."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+### Understand Customers
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="market-segmentation"
+  title="Market Segmentation"
+  description="Identifies customer segments, evaluates them against 6 criteria, sizes the market (TAM/SAM/SOM), and prioritizes 2-3 focus combinations."
+  prompt="Help me with a market segmentation for our IoT-based condition monitoring service for the manufacturing industry."
+  output="Segment x Use Case Matrix with evaluation, prioritized shortlist (2-3 focus combinations)."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="stakeholder-matrix"
+  title="Stakeholder Matrix"
+  description="Maps all stakeholders in a 2x2 matrix (influence vs. interest) and defines engagement strategies per quadrant."
+  prompt="I need a stakeholder analysis for our predictive maintenance offering targeting automotive suppliers."
+  output="2x2 Stakeholder Matrix with engagement strategy per quadrant and key stakeholder shortlist."
+  duration="20 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="persona-development"
+  title="Persona Development"
+  description="Creates detailed customer profiles with CORE (role, problems, goals) and ENVIRONMENT (daily tasks, barriers, triggers, emotions)."
+  prompt="Create a persona for the maintenance manager of a mid-sized automotive supplier."
+  output="1-2 Persona profiles with CORE and ENVIRONMENT sections."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="vpc-customer-side"
+  title="Value Proposition Canvas (Customer Side)"
+  description="Develops the customer side of the VPC: Jobs-to-be-Done (functional, emotional, social), Pains and Gains — categorized and prioritized."
+  prompt="Help me develop the customer side of the Value Proposition Canvas for our predictive maintenance service."
+  output="VPC profile with prioritized Jobs, Pains and Gains including evaluation tables."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+### Formulate Value Proposition
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="match-matrix"
+  title="Match Matrix"
+  description="Links Pains and Gains to solution levers, evaluates measurable benefit, and clusters into Essentials vs. Nice-to-Haves."
+  prompt="I have prioritized customer pains and gains. Help me systematically link them to solution approaches."
+  output="Match Matrix table (Pain/Gain -> Solution Lever -> Value -> Priority -> Cluster) and Top 5 Essentials."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="value-proposition-formula"
+  title="Value Proposition Formula"
+  description="Formulates the value proposition using a 6-component formula and the Promise-Deliver-Proof framework."
+  prompt="Help me craft a compelling value proposition for our data-driven service."
+  output="Value Proposition Statement, Pitch Statement (1-2 sentences), Evidence Checklist, Competitor Comparison."
+  duration="20 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="product-service-idea"
+  title="Product/Service Idea"
+  description="Defines the offering in a 4-part matrix: core components, differentiating features, customer benefits, strategic fit."
+  prompt="I want to define my predictive maintenance idea as a concrete product. Help me with the product definition."
+  output="Product description (name, type, 4-part matrix), competitor comparison, evidence checklist."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+### Design Value Creation
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="roles-actors-mapping"
+  title="Roles & Actors"
+  description="Identifies all ecosystem actors, maps their roles (Data Provider, Service Provider, Orchestrator...) and clarifies own positioning."
+  prompt="Help me identify all actors for our predictive maintenance service in the Factory-X ecosystem."
+  output="Roles-Actors Matrix (actor, role, value contribution, internal/external, make/buy/partner)."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="value-network-analysis"
+  title="Value Network Analysis"
+  description="Maps all exchange flows between actors: data, goods/services, finances, infrastructure, and governance."
+  prompt="I want to map the data, goods, and financial flows between all actors in our ecosystem."
+  output="Value Network Diagram (color-coded: Blue=Data, Green=Goods, Orange=Finance), flow detail tables."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="value-creation-process"
+  title="Value Creation Process"
+  description="Designs the end-to-end process with phases, actor interactions, RACI matrix, and KPI measurement points."
+  prompt="Help me define the operational process of our service from onboarding to ongoing operations."
+  output="Process diagram (BPMN style), RACI matrix per step, KPI dashboard, scalability analysis."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="ecosystem-synthesis"
+  title="Ecosystem Synthesis"
+  description="Evaluates feasibility: monetizable contributions, costs, governance maturity, risks, and Go/Review/Stop recommendation."
+  prompt="Summarize the results of our value creation analysis and evaluate feasibility."
+  output="Synthesis document with monetization, costs, governance scorecard, risks, and Go/Review/Stop."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+### Validate Viability
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="value-source-wtp"
+  title="Value Sources & Willingness to Pay"
+  description="Quantifies customer value in EUR/year, derives value formulas, and tests willingness to pay with evidence."
+  prompt="Help me quantify the monetary value of our predictive maintenance service for different customer segments."
+  output="Value formulas (EUR/year), evidence status (A/B/C), WTP ranges, Go/Check/Stop per segment."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="revenue-mechanics-pricing"
+  title="Revenue Model & Pricing"
+  description="Designs pricing basis, model type (Subscription/Pay-per-Use/Outcome/Hybrid), price components, and unit economics."
+  prompt="I need a pricing model for our data-driven service. Which revenue model fits best?"
+  output="2-3 model variants with price basis, components, unit economics, and sample calculations."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="cost-structure-analysis"
+  title="Cost Structure Analysis"
+  description="Maps cost structure: fixed/variable, one-time/recurring, partner costs, scalability, and controllability."
+  prompt="Help me map the cost structure of our service across its entire lifecycle."
+  output="Lifecycle cost table, fixed/variable matrix (2x2), risks, and control mechanisms."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="pricing-strategy-targets"
+  title="Pricing Strategy & Targets"
+  description="Defines pricing strategy, positioning, discount rules, KPI guardrails (ARPA, LTV/CAC), and go-to-market tests."
+  prompt="Define a pricing strategy for our service with clear KPI guardrails and a GTM test plan."
+  output="Synthesis one-pager with actor tables, break-even analysis, Go/Check/Stop per actor."
+  duration="30-45 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+### Consolidate Results
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+
+<SkillCard
+  name="risk-heatmap"
+  title="Risk Heatmap"
+  description="Identifies risks across 4 perspectives, evaluates probability and severity, visualizes in a color-coded heatmap."
+  prompt="Create a risk heatmap for our business model with assessment from all perspectives."
+  output="Risk Heatmap (2x2, color-coded), risk register with IDs, prioritization, and actions."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="action-plan-raci"
+  title="Action Plan & RACI"
+  description="Translates risks into SMART measures per workstream with RACI assignment (exactly one responsible person per measure)."
+  prompt="Create an action plan with RACI assignment based on our risk heatmap."
+  output="Measure list (SMART, linked to risk IDs), RACI matrix per measure."
+  duration="25 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="30-60-90-day-roadmap"
+  title="30/60/90-Day Roadmap"
+  description="Assigns measures to time phases, clarifies dependencies, defines outcome-based KPIs, and resource needs."
+  prompt="Create a 30/60/90-day roadmap for implementing our business model."
+  output="Roadmap with time bands, target path (PoC/MVP), KPIs, resource and decision needs."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+<SkillCard
+  name="executive-summary"
+  title="Executive Summary"
+  description="Consolidates all results into a decision-ready one-pager with traceability from idea to next steps."
+  prompt="Create an Executive Summary as a one-pager for the management decision on our business model."
+  output="One-pager: idea, target group, value proposition, value network, business case, risks, next steps."
+  duration="30 min"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+/>
+
+</div>
+
+---
+
+## How to Use the Skills
+
+### Run the Complete Process
+
+Simply describe your business idea — the AI recognizes the context and starts the orchestrator:
+
+```text
+I want to develop a business model for a data-driven
+predictive maintenance service.
+```
+
+### Use a Single Method
+
+Describe which method you need — the AI selects the appropriate skill:
+
+```text
+Help me with a market segmentation for our IoT offering.
+```
+
+---
+
+## Technical Background
+
+The skills use the open [Agent Skills](https://agentskills.io) standard. Each skill is a Markdown file (`SKILL.md`) with metadata and structured instructions, stored under `.claude/skills/` in the project directory.
+
+```yaml
+---
+name: skill-name
+description: When and what the skill is used for
+user-invocable: true
+---
+
+# Method Name
+
+## Purpose       — What this method achieves
+## Role          — The AI persona and how it works
+## Questionnaire — Complete questions and steps
+## Quality       — Quality criteria and consistency checks
+## Output        — What artifacts are produced
+```
+
+## Further Resources
+
+- [Agent Skills Open Standard](https://agentskills.io) — The open standard behind the skills
+- [House Building Logic — Methodology](/docs/methodology/overview) — Full methodology description
+- [Workshop Concept](/docs/workshop/overview_workshop) — The skills as a 5-day workshop
+- [AI Chatbot Guide](/docs/ai/ai_overview) — Using Estelle as a chatbot

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://factory-x-contributions.github.io/business-models/
+    about: Check our documentation before opening an issue
+  - name: Security Vulnerabilities
+    url: https://github.com/factory-x-contributions/business-models/security/advisories/new
+    about: Report security vulnerabilities via GitHub Security Advisories

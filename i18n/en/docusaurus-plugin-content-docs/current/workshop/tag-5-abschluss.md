@@ -1,0 +1,323 @@
+---
+id: workshop_abschluss
+title: Day 5 - Conclusion & Synthesis
+description: Consolidate results, identify risks and create decision template
+sidebar_position: 7
+---
+
+<div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.5rem'}}>🏁</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Exit - Consolidation & Decision</span>
+  </div>
+  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>What's next?</h2>
+  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
+    Compactly consolidate the results of the four rooms, identify critical risks and create a solid decision basis.
+  </p>
+  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(107, 114, 128, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 114, 128, 0.2)'}}>
+    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+      <span style={{fontSize: '1.1rem'}}>🎯</span>
+      <strong style={{color: '#6B7280', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Daily Goal</strong>
+    </div>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>By the end of the day we have an <strong>Executive Summary, a risk heatmap, a 30/60/90-day plan and a Go/Review/Stop recommendation</strong> - everything for a well-founded management decision.</p>
+  </div>
+</div>
+
+---
+
+## Daily Overview
+
+| Time | Topic | Description |
+|------|-------|-------------|
+| 09:00 - 09:30 | Warm-up & Recap | Summary of the week, Goals Day 5 |
+| 09:30 - 10:30 | Result Consolidation | Review all artifacts, consistency check |
+| 10:30 - 10:45 | Break | |
+| 10:45 - 12:00 | Deep-Dive 1: Risk Heatmap | Identify and assess risks |
+| 12:00 - 13:00 | Lunch Break | |
+| 13:00 - 14:00 | Deep-Dive 2: Action Plan & RACI | Action plan with responsibilities |
+| 14:00 - 14:45 | Deep-Dive 3: 30/60/90 Plan | Roadmap and resource requirements |
+| 14:45 - 15:00 | Break | |
+| 15:00 - 15:45 | Deep-Dive 4: Executive Summary | Create one-pager |
+| 15:45 - 16:30 | Pitch Simulation & Gate Review | Go/Review/Stop decision |
+| 16:30 - 17:00 | Wrap-up & Feedback | Wrap-up, next steps |
+
+---
+
+## Result Consolidation (09:30 - 10:30)
+
+### All Artifacts at a Glance
+
+| Day | Room | Artifacts |
+|-----|------|-----------|
+| Day 1 | Blue Room | Market segmentation, stakeholder matrix, personas, Pains & Gains |
+| Day 2 | Red Room | Match matrix, Value Proposition, product/service description |
+| Day 3 | Green Room | Roles & actors, value creation network, value creation process |
+| Day 4 | Yellow Room | Value quantification, pricing model, cost structure, business case |
+
+### Consistency Check
+
+Check the logical connections between rooms:
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}><strong>Persona -> Value Proposition:</strong> Does the VP address the most important pains of the persona?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}><strong>Value Proposition -> Process:</strong> Does the process cover all promised features?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}><strong>Process -> Costs:</strong> Are all process steps considered in the cost structure?</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span style={{color: 'var(--ifm-font-color-base)'}}><strong>Costs -> Price:</strong> Does the pricing model enable a healthy margin?</span>
+</label>
+
+</div>
+
+---
+
+## Deep-Dive 1: Risk Heatmap (10:45 - 12:00)
+
+### Identifying Risks (30 Min)
+
+Collect all potential risks that could endanger the business model:
+
+| Category | Examples |
+|----------|----------|
+| **Desirability** | Uncertain demand, unvalidated assumptions, wrong customer segment |
+| **Value Proposition** | Insufficient customer benefit, wrong feature prioritization |
+| **Value Creation** | Technical feasibility, integration capability, ecosystem dependencies |
+| **Viability** | Uncertain willingness to pay, unclear cost structures |
+
+:::info Focus
+Maximum **2-3 risks per category** -> Focus on relevance.
+:::
+
+### Assessing Risk Matrix (30 Min)
+
+Assess each risk by **probability of occurrence** (Y-axis) and **severity of damage** (X-axis):
+
+| | Negligible | Minor | Significant | Concerning | Extreme |
+|---|:-:|:-:|:-:|:-:|:-:|
+| **Almost Certain** | 🟡 | 🟠 | 🔴 | 🔴 | 🔴 |
+| **Likely** | 🟢 | 🟡 | 🟠 | 🔴 | 🔴 |
+| **Possible** | 🟢 | 🟡 | 🟡 | 🟠 | 🔴 |
+| **Unlikely** | 🟢 | 🟢 | 🟡 | 🟡 | 🟠 |
+| **Rare** | 🟢 | 🟢 | 🟢 | 🟡 | 🟡 |
+
+### Deriving Measures (15 Min)
+
+| Level | Action |
+|-------|--------|
+| 🔴 **Critical** | Immediate countermeasures, assign responsible persons, set timeframe |
+| 🟠 **High** | Plan risk reduction measures, identify backup partners |
+| 🟡 **Medium** | Monitor regularly, define early warning indicators |
+| 🟢 **Low** | Document and review as needed |
+
+---
+
+## Deep-Dive 2: Action Plan & RACI (13:00 - 14:00)
+
+### Defining Workstreams
+
+| Workstream | Example Measures |
+|------------|------------------|
+| **Tech/Data Space** | Registry integration, IAM setup, TRL check |
+| **GTM/Sales** | Finalize pitch deck, approach early adopters |
+| **Finance/Viability** | Pricing blueprint, business case updates |
+| **Ecosystem & Partners** | Role clarification, partner discussions, contracts |
+| **Governance** | Stakeholder buy-in, decision needs |
+
+### RACI Matrix
+
+| Role | Description |
+|------|-------------|
+| **R**esponsible | Who executes the measure? -> one person, not a team |
+| **A**ccountable | Who bears overall responsibility? -> one executive |
+| **C**onsulted | Who provides input? (e.g., security provider, finance) |
+| **I**nformed | Who needs to be informed? (e.g., management sponsor) |
+
+### Formulating Measures (SMART)
+
+Each measure as a SMART sentence: **What** is done? -> **By when**? -> Which **result/KPI**?
+
+*Example:* "IAM policy for PoC implemented by Jan 31, incl. audit log activated."
+
+---
+
+## Deep-Dive 3: 30/60/90-Day Plan (14:00 - 14:45)
+
+### Assigning Time Corridors
+
+| Phase | Focus | Typical Activities |
+|-------|-------|-------------------|
+| **30 Days** | Validation | Address critical risks, gather customer feedback |
+| **60 Days** | MVP Definition | Prioritize features, define scope, partner commitments |
+| **90 Days** | Pilot Preparation | Build infrastructure, identify pilot partners |
+
+### Target Paths
+
+| Path | Focus | Goal |
+|------|-------|------|
+| 🧪 **PoC** | Technical validation | "Can we do it?" |
+| 🚀 **MVP/Market** | Customer value | "Does it bring value to the customer?" |
+
+### Resources and Decision Needs
+
+| Aspect | Questions |
+|--------|-----------|
+| Roles & Capacities | What skills are needed? How many person-days? |
+| Budget Framework | Tool licenses, integration effort, partnerships? |
+| Partners/Ecosystem | What external commitments are needed? |
+| Management Decisions | Budget approval, go for customer contact, contract approval? |
+
+---
+
+## Deep-Dive 4: Executive Summary (15:00 - 15:45)
+
+### Creating One-Pager
+
+Create a **one-page management summary**:
+
+| Area | Content | Length |
+|------|---------|--------|
+| **Business Idea** | What is the product/service? In what context? | 2-3 sentences |
+| **Target Market & Customer** | Segment, persona, top-3 pains | 3-4 bullet points |
+| **Value Proposition** | The formulated value proposition | 1 paragraph |
+| **Value Creation** | Key actors, roles, important process steps | 3-4 bullet points |
+| **Business Case** | Pricing model, costs, revenue, key assumptions | Table + 2 sentences |
+| **Recommendation** | Go / Review / Stop + rationale + next steps | 2-3 sentences |
+
+### The Business Model in One Sentence
+
+> The developed business model enables **[target customer]** to address **[problem]** through **[solution]** and map this benefit economically via a **[revenue model]**.
+
+---
+
+## AI Support (Hybrid Format)
+
+<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
+    <span style={{fontSize: '1.25rem'}}>🤖</span>
+    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-Assisted Workshop</strong>
+  </div>
+
+On the final day, AI can particularly support consolidation and documentation:
+
+| Session | AI Use | How |
+|---------|--------|-----|
+| **Consistency Check** | Gap Analysis | AI checks artifacts for contradictions and gaps |
+| **Risk Heatmap** | Risk Identification | AI identifies typical risks for the use case |
+| **Action Plan** | SMART Formulation | AI helps with precise formulation of measures |
+| **Executive Summary** | Summary | AI generates initial drafts of the one-pager |
+| **Pitch Preparation** | Argumentation | AI sharpens key arguments and anticipates questions |
+
+### Specific AI Prompts
+
+**Consistency Check:**
+> "Check the consistency between: Persona=[X], Value Proposition=[Y], Process=[Z], Pricing Model=[W]. Are there contradictions or gaps?"
+
+**Risk Identification:**
+> "What typical risks exist for an [offering] in the [industry] context? Categorize by desirability, feasibility, viability. Assess probability and severity."
+
+**Action Plan:**
+> "Formulate 5 SMART measures for the next 30 days to address [top risk]. Format: What, by when, measurable result, responsible."
+
+**Executive Summary:**
+> "Create an Executive Summary for [business model] with: Business idea, target market, Value Proposition, value creation, business case, recommendation. Maximum 1 page."
+
+**Pitch Preparation:**
+> "What critical questions will management ask about [business model]? Formulate 5 likely questions and appropriate answers."
+
+:::tip Best Practice
+AI is particularly valuable on the final day for **quick documentation**. The team focuses on content and decisions, AI handles structuring and formulation.
+:::
+
+</div>
+
+---
+
+## Pitch Simulation & Go/Review/Stop (15:45 - 16:30)
+
+### Practice Pitch (20 Min)
+
+- **5-minute pitch** of the Executive Summary
+- Feedback from the group
+- Sharpen key arguments
+
+### Go/Review/Stop Decision
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(34, 197, 94, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#22c55e', fontSize: '1.25rem', fontWeight: '600'}}>✓</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>GO</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Business case is valid -> Start MVP development</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(196, 160, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#C4A000', fontSize: '1.25rem', fontWeight: '600'}}>?</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>REVIEW</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Clarify open points -> Answer specific questions</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#B85450', fontSize: '1.25rem', fontWeight: '600'}}>✕</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>STOP</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Do not pursue further -> Document learnings</p>
+</div>
+
+</div>
+
+---
+
+## Day Results
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>⚠️</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Risk Heatmap</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Assessed risks with measures</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>📋</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Action Plan</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Action plan with RACI</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>🗺️</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>30/60/90 Plan</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Roadmap with resource requirements</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>📝</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Executive Summary</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>One-page management summary</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1rem'}}>✅</span>
+  </div>
+  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Decision</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Go/Review/Stop with rationale</p>
+</div>
+
+</div>

@@ -1,0 +1,196 @@
+/* SPDX-FileCopyrightText: 2025-2026 Contributors to the Factory-X project */
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/* Print Stylesheet for PDF Export */
+@media print {
+  /* Hide navigation and UI elements */
+  .navbar,
+  .footer,
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop,
+  .theme-doc-toc-mobile,
+  .theme-doc-breadcrumbs,
+  .pagination-nav,
+  .theme-doc-footer,
+  .theme-doc-sidebar-menu,
+  .pdf-download-button,
+  .docSidebarContainer,
+  [class*="sidebar"],
+  [class*="toc"],
+  .announcementBar,
+  .navbar-sidebar,
+  button[aria-label="Scroll back to top"] {
+    display: none !important;
+  }
+
+  /* Force light mode colors for print */
+  :root {
+    --ifm-background-color: #ffffff !important;
+    --ifm-font-color-base: #1c1e21 !important;
+    --ifm-color-primary: #386FB3 !important;
+  }
+
+  /* Reset dark mode for print */
+  [data-theme='dark'] {
+    --ifm-background-color: #ffffff !important;
+    --ifm-font-color-base: #1c1e21 !important;
+  }
+
+  /* Main content area */
+  .main-wrapper,
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Article content */
+  article {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Typography optimizations */
+  body {
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  h1 {
+    font-size: 24pt !important;
+    margin-top: 0 !important;
+  }
+
+  h2 {
+    font-size: 18pt !important;
+    margin-top: 20pt !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+    margin-top: 16pt !important;
+  }
+
+  h4, h5, h6 {
+    font-size: 12pt !important;
+    margin-top: 14pt !important;
+  }
+
+  /* Page break handling */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  pre, code, table, figure, img {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Code blocks */
+  pre {
+    background: #f6f8fa !important;
+    border: 1px solid #e1e4e8 !important;
+    padding: 12pt !important;
+    font-size: 10pt !important;
+    overflow-x: visible !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+  }
+
+  code {
+    background: #f6f8fa !important;
+    color: #1c1e21 !important;
+    font-size: 10pt !important;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  th, td {
+    border: 1px solid #d0d7de !important;
+    padding: 8pt !important;
+    text-align: left !important;
+  }
+
+  th {
+    background: #f6f8fa !important;
+    font-weight: 600 !important;
+  }
+
+  /* Links - show URL in print */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Don't show URL for internal/anchor links */
+  a[href^="#"]::after,
+  a[href^="/"]::after {
+    content: none;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* SVG diagrams */
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Glass effects - simplify for print */
+  .glass-button,
+  .glass-details {
+    background: #f6f8fa !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d0d7de !important;
+  }
+
+  /* Gradient buttons - simplify for print */
+  .gradient-button {
+    background: var(--ifm-color-primary) !important;
+    color: #fff !important;
+    box-shadow: none !important;
+  }
+
+  /* Variant cards */
+  .variant-card {
+    box-shadow: none !important;
+    border: 1px solid #d0d7de !important;
+  }
+
+  /* Admonitions */
+  .alert,
+  [class*="admonition"] {
+    border-left: 4px solid var(--ifm-color-primary) !important;
+    background: #f6f8fa !important;
+    padding: 12pt !important;
+    margin: 12pt 0 !important;
+  }
+
+  /* Ensure colors print correctly */
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}

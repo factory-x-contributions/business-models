@@ -1,0 +1,70 @@
+version = 1
+SPDX-PackageName = "Factory-X Business Models"
+SPDX-PackageSupplier = "https://factory-x.org/contact/"
+SPDX-PackageDownloadLocation = "https://github.com/factory-x-contributions/business-models"
+
+[[annotations]]
+path = ["docs/**.md", "docs/**/**.md", "blog/**/**.md", "i18n/**/**.md", "files/ai/**.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["i18n/en/docusaurus-plugin-content-docs/**/**.md", "i18n/en/docusaurus-plugin-content-blog/**/**.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["README.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "NOTICE", "DCO"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ".github/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["**.json", "i18n/**/**.json", ".markdownlint.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["blog/authors.yml", "blog/tags.yml", "i18n/**/authors.yml", "i18n/**/tags.yml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "static/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "files/ai/**.pdf"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "package-lock.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ".claude/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ".gitignore"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 Contributors to the Factory-X project"
+SPDX-License-Identifier = "Apache-2.0"
