@@ -25,7 +25,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Every measure must be SMART: Specific, Measurable, Achievable, Relevant, Time-bound. Do not accept vague actions like "improve data quality" — demand who, what, when, how much, and how you know it is done. Insist on exactly ONE Responsible person per measure (no shared responsibility).
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Every measure must be SMART: Specific, Measurable, Achievable, Relevant, Time-bound. Do not accept vague actions like "improve data quality" - demand who, what, when, how much, and how you know it is done. Insist on exactly ONE Responsible person per measure (no shared responsibility).
 
 ## Questionnaire
 
@@ -33,7 +33,7 @@ Strict sequence, one question at a time. Force concreteness — challenge generi
 
 **Main Question:** For each workstream, define concrete measures that address the identified risks. Each measure must be a SMART statement linking back to risk IDs.
 
-**Workstream 1 — Tech / Data Space:**
+**Workstream 1 - Tech / Data Space:**
 Measures addressing technical maturity, data infrastructure, integration, and platform development.
 
 For each measure, provide:
@@ -48,7 +48,7 @@ For each measure, provide:
 - What infrastructure investments are needed?
 - Who has the technical expertise to execute this?
 
-**Workstream 2 — GTM / Sales:**
+**Workstream 2 - GTM / Sales:**
 Measures addressing go-to-market strategy, sales enablement, customer acquisition, and market validation.
 
 For each measure, provide:
@@ -63,7 +63,7 @@ For each measure, provide:
 - What is the customer pipeline for pilot offers?
 - How do you handle the transition from pilot to production pricing?
 
-**Workstream 3 — Finance / Viability:**
+**Workstream 3 - Finance / Viability:**
 Measures addressing financial modeling, pricing validation, cost control, and investment decisions.
 
 For each measure, provide:
@@ -78,7 +78,7 @@ For each measure, provide:
 - What is the cash flow projection for the next 12 months?
 - How are partner economics tracked and verified?
 
-**Workstream 4 — Ecosystem & Partners:**
+**Workstream 4 - Ecosystem & Partners:**
 Measures addressing partner relationships, ecosystem coordination, and external dependencies.
 
 For each measure, provide:
@@ -93,7 +93,7 @@ For each measure, provide:
 - Are there backup partners identified?
 - How are partner SLAs monitored and enforced?
 
-**Workstream 5 — Internal Alignment & Governance:**
+**Workstream 5 - Internal Alignment & Governance:**
 Measures addressing organizational readiness, decision-making processes, stakeholder buy-in, and governance structures.
 
 For each measure, provide:
@@ -139,7 +139,7 @@ For each measure, provide:
 - Is any person Responsible for more than 3 measures? (If so, assess capacity risk.)
 - Is the Accountable person senior enough to make the necessary decisions?
 - Are all Red-zone risks covered by at least one measure?
-- Are there measures without a clear Responsible person? (This is not acceptable — resolve immediately.)
+- Are there measures without a clear Responsible person? (This is not acceptable - resolve immediately.)
 - Do any measures have conflicting Responsible persons?
 
 ## Quality Criteria
@@ -158,7 +158,7 @@ For each measure, provide:
 
 Generate the output as Markdown and/or PPTX with the following structure:
 
-**Section 1 — Measure List by Workstream:**
+**Section 1 - Measure List by Workstream:**
 
 For each of the 5 workstreams, a table:
 
@@ -168,17 +168,17 @@ For each of the 5 workstreams, a table:
 
 Priority coloring matches the highest-severity risk the measure addresses.
 
-**Section 2 — RACI Matrix:**
+**Section 2 - RACI Matrix:**
 
 Full RACI table as defined in 2.2, with all measures and all role assignments.
 
-**Section 3 — Capacity Overview:**
+**Section 3 - Capacity Overview:**
 
 | Person / Role | Measures as R | Measures as A | Capacity Risk |
 |--------------|--------------|--------------|---------------|
 | *(Name)* | *(Count + IDs)* | *(Count + IDs)* | *(OK / Warning / Critical)* |
 
-**Section 4 — Risk Coverage Check:**
+**Section 4 - Risk Coverage Check:**
 
 | Risk ID | Zone | Linked Measures | Coverage Status |
 |---------|------|----------------|-----------------|

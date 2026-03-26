@@ -1,7 +1,7 @@
 ---
 id: yellow-room
 title: Gelber Raum
-description: 🟡 Wirtschaftlichkeit prüfen – Kosten, Erlöse und Preismodelle kalkulieren
+description: 🟡 Wirtschaftlichkeit prüfen - Kosten, Erlöse und Preismodelle kalkulieren
 sidebar_position: 6
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 6
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Die Wirtschaftlichkeit prüfen</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    Hier kommt die entscheidende Frage: <strong>Lohnt sich der Aufwand?</strong> – für uns und für den Kunden.
+    Hier kommt die entscheidende Frage: <strong>Lohnt sich der Aufwand?</strong> - für uns und für den Kunden.
   </p>
   <ul style={{margin: '0.75rem 0 0 0', paddingLeft: '1.25rem', fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
     <li>Ist das Modell finanziell nachhaltig?</li>
@@ -32,7 +32,7 @@ sidebar_position: 6
 
 ## Warum der Gelbe Raum entscheidend ist
 
-Der Gelbe Raum ist der **Reality-Check** für das Geschäftsmodell. Hier wird aus einer attraktiven Idee ein wirtschaftlich tragfähiges Konzept – oder es wird klar, dass Anpassungen nötig sind.
+Der Gelbe Raum ist der **Reality-Check** für das Geschäftsmodell. Hier wird aus einer attraktiven Idee ein wirtschaftlich tragfähiges Konzept - oder es wird klar, dass Anpassungen nötig sind.
 
 Vier Perspektiven werden betrachtet:
 
@@ -58,7 +58,7 @@ Vier Perspektiven werden betrachtet:
 
 ## 1. Wertquellen & Quantifizierung
 
-Bevor du Preise festlegst, musst du verstehen, **wo messbarer Wert entsteht**. Die **Wertquantifizierung** übersetzt den Kundennutzen in konkrete EUR-Beträge – denn Kunden zahlen für Ergebnisse, nicht für Features.
+Bevor du Preise festlegst, musst du verstehen, **wo messbarer Wert entsteht**. Die **Wertquantifizierung** übersetzt den Kundennutzen in konkrete EUR-Beträge - denn Kunden zahlen für Ergebnisse, nicht für Features.
 
 ### Arten von Wertquellen
 
@@ -145,7 +145,7 @@ Wähle das **passende Erlösmodell** für dein Angebot. Die Auswahl aus **Erlös
 
 ## 3. Kostenstruktur
 
-Dokumentiere alle **relevanten Kostenblöcke** – ehrlich und vollständig.
+Dokumentiere alle **relevanten Kostenblöcke** - ehrlich und vollständig.
 
 ### Kostenarten
 

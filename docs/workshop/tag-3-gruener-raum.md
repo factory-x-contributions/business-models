@@ -19,7 +19,7 @@ sidebar_position: 5
       <span style={{fontSize: '1.1rem'}}>🎯</span>
       <strong style={{color: '#6B8E50', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
     </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Rollen-Akteure-Matrix, ein Wertschöpfungsnetzwerk und einen dokumentierten End-to-End-Prozess</strong> – das „Wie" hinter dem Wertversprechen.</p>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Rollen-Akteure-Matrix, ein Wertschöpfungsnetzwerk und einen dokumentierten End-to-End-Prozess</strong> - das „Wie" hinter dem Wertversprechen.</p>
   </div>
 </div>
 
@@ -76,11 +76,11 @@ Ein Unternehmen kann mehrere Rollen spielen!
 
 Kläre explizit: **Welche Rolle(n) übernehmen wir?**
 
-- [ ] Data Provider – Wir stellen Daten bereit
-- [ ] Data Consumer – Wir nutzen Daten anderer
-- [ ] Service Provider – Wir bieten Services an
-- [ ] Platform Operator – Wir betreiben die Plattform
-- [ ] Orchestrator – Wir koordinieren das Ökosystem
+- [ ] Data Provider - Wir stellen Daten bereit
+- [ ] Data Consumer - Wir nutzen Daten anderer
+- [ ] Service Provider - Wir bieten Services an
+- [ ] Platform Operator - Wir betreiben die Plattform
+- [ ] Orchestrator - Wir koordinieren das Ökosystem
 
 ### Moderationsfragen
 
@@ -149,8 +149,8 @@ Das Ganze in eine **zeitliche Reihenfolge** bringen: Was passiert, wenn ein Kund
 |---------|---------|-------------|--------------|
 | Setup | Konfiguration | Hardware-Zugang | Cloud-Setup |
 | Datenfluss | API-Integration | Datenfreigabe | Connector |
-| Analytics | Modelle, Algorithmen | – | Infrastruktur |
-| Support | L2/L3 Support | L1 Support | – |
+| Analytics | Modelle, Algorithmen | - | Infrastruktur |
+| Support | L2/L3 Support | L1 Support | - |
 
 ### Moderationsfragen
 

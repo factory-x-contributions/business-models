@@ -7,7 +7,7 @@ user-invocable: true
 # Stakeholder Matrix
 
 ## Purpose
-The Stakeholder Matrix identifies all relevant actors in the ecosystem around the prioritized market segments and assesses their influence and involvement. By positioning stakeholders in a 2x2 matrix, it clarifies who must be actively engaged, kept satisfied, kept informed, or monitored — enabling a targeted engagement strategy that supports the business model development.
+The Stakeholder Matrix identifies all relevant actors in the ecosystem around the prioritized market segments and assesses their influence and involvement. By positioning stakeholders in a 2x2 matrix, it clarifies who must be actively engaged, kept satisfied, kept informed, or monitored - enabling a targeted engagement strategy that supports the business model development.
 
 ## Input Requirements
 - Required: Market Segmentation results (Segment x Use Case Matrix, Prioritized Shortlist)
@@ -23,7 +23,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > We now move to the Stakeholder Matrix.
-> Here we identify and map all relevant stakeholders for your prioritized segments. This takes approximately 20 minutes.
+> Here we identify and map all relevant stakeholders for your prioritized segments..
 > Would you like a detailed explanation? Write **Method**! Or start directly? Write **Start**!
 
 ## Interview Approach
@@ -145,10 +145,10 @@ Present the matrix framework:
 ```
 
 For each stakeholder, confirm placement:
-- **Monitor** (Low Influence / Low Interest): "These stakeholders need minimal attention — occasional observation is sufficient."
+- **Monitor** (Low Influence / Low Interest): "These stakeholders need minimal attention - occasional observation is sufficient."
 - **Keep Informed** (Low Influence / High Interest): "These stakeholders care about the outcome but have limited power. Keep them updated with regular communication."
 - **Keep Satisfied** (High Influence / Low Interest): "These stakeholders can make or break your success but aren't naturally engaged. Address their concerns proactively."
-- **Actively Engage** (High Influence / High Interest): "These are your key stakeholders. They have both the power and the motivation — collaborate closely."
+- **Actively Engage** (High Influence / High Interest): "These are your key stakeholders. They have both the power and the motivation - collaborate closely."
 
 Walk through each stakeholder:
 - "Based on our assessment, [Stakeholder X] has [high/low] influence and [high/low] involvement. I would place them in the [Quadrant] category. Do you agree?"
@@ -191,7 +191,7 @@ For each quadrant, define concrete actions:
 - **Explainability:** The matrix placement and rationale must be understandable to someone outside the session
 - **Consistency:** Stakeholders must come from the prioritized segments defined in the Market Segmentation. Verify alignment with the business idea's target audience
 - **Completeness:** All 5 steps completed, all stakeholders placed, strategies defined for each quadrant, 2-3 key stakeholders selected
-- **Balance:** Ensure you haven't only identified positive stakeholders — gatekeepers and potential blockers are equally important
+- **Balance:** Ensure you haven't only identified positive stakeholders - gatekeepers and potential blockers are equally important
 
 ## Output
 After completing all 5 steps, automatically generate:
@@ -200,7 +200,7 @@ After completing all 5 steps, automatically generate:
 A visual representation of the matrix:
 
 ```
-STAKEHOLDER MATRIX — [Business Idea Name]
+STAKEHOLDER MATRIX - [Business Idea Name]
 ═══════════════════════════════════════════
 
                     Influence of Stakeholder

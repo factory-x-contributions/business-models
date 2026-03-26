@@ -12,7 +12,7 @@ sidebar_position: 7
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Konsolidierung & Entscheidung</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    Zum Schluss wird alles gebündelt. Du gehst zum Management – aber nicht mit einer vagen Idee, sondern mit einer <strong>belastbaren Entscheidungsvorlage</strong>.
+    Zum Schluss wird alles gebündelt. Du gehst zum Management - aber nicht mit einer vagen Idee, sondern mit einer <strong>belastbaren Entscheidungsvorlage</strong>.
   </p>
   <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(107, 114, 128, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 114, 128, 0.2)'}}>
     <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>

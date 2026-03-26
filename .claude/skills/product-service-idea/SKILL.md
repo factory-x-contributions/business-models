@@ -20,7 +20,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 "Let's bring your value proposition to life with a concrete product or service idea. We'll define exactly what you're building. Ready? Write **Start**!"
 
 ## Interview Approach
-Guide the user through the 4-part matrix step by step. For each part, propose drafts based on prior analysis. Challenge vague descriptions — demand specifics. One section at a time.
+Guide the user through the 4-part matrix step by step. For each part, propose drafts based on prior analysis. Challenge vague descriptions - demand specifics. One section at a time.
 
 ## Questionnaire
 

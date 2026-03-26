@@ -1,7 +1,7 @@
 ---
 id: red-room
 title: Roter Raum
-description: 🔴 Wertversprechen entwickeln – Kundenprobleme in konkrete Lösungen übersetzen
+description: 🔴 Wertversprechen entwickeln - Kundenprobleme in konkrete Lösungen übersetzen
 sidebar_position: 4
 ---
 
@@ -55,7 +55,7 @@ Der Rote Raum ist der **Brückenschlag** zwischen dem, was der Kunde braucht (Bl
 
 ## 1. Die Match-Matrix
 
-Die **Match-Matrix** ist das zentrale Werkzeug im Roten Raum. Sie verbindet die **Erkenntnisse aus dem Blauen Raum** mit deinem Angebot und stellt sicher, dass jedes Feature einen klaren Bezug zu einem validierten Kundenproblem hat. Durch die strukturierte Zuordnung von Pain Relievers und Gain Creators wird sichtbar, wo echte Wirkhebel liegen – und welche Features keinen Kundenbezug haben und gestrichen werden sollten.
+Die **Match-Matrix** ist das zentrale Werkzeug im Roten Raum. Sie verbindet die **Erkenntnisse aus dem Blauen Raum** mit deinem Angebot und stellt sicher, dass jedes Feature einen klaren Bezug zu einem validierten Kundenproblem hat. Durch die strukturierte Zuordnung von Pain Relievers und Gain Creators wird sichtbar, wo echte Wirkhebel liegen - und welche Features keinen Kundenbezug haben und gestrichen werden sollten.
 
 ### Struktur der Match-Matrix
 
@@ -75,7 +75,7 @@ Die **Match-Matrix** ist das zentrale Werkzeug im Roten Raum. Sie verbindet die 
 ### Konsequentes Weglassen
 
 :::warning Wichtig
-**Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** — sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast. Weg damit!
+**Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** - sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast. Weg damit!
 :::
 
 ---
@@ -112,13 +112,13 @@ Typische Bausteine eines datenbasierten Angebots:
 
 ## 3. Value Proposition Statement
 
-Das **Value Proposition Statement** ist **die prägnante Essenz** deines Angebots – der eine Satz, der alles zusammenfasst. Es dient als Prüfstein für alle nachfolgenden Entscheidungen in Produktentwicklung, Preisgestaltung und Vertrieb.
+Das **Value Proposition Statement** ist **die prägnante Essenz** deines Angebots - der eine Satz, der alles zusammenfasst. Es dient als Prüfstein für alle nachfolgenden Entscheidungen in Produktentwicklung, Preisgestaltung und Vertrieb.
 
 ### Struktur
 
 > Für **[Zielkunde/Persona]**, der/die **[Job/Problem]** hat,
 > bieten wir **[Lösung/Angebot]**,
-> die/das **[Kernnutzen]** ermöglicht —
+> die/das **[Kernnutzen]** ermöglicht -
 > anders als **[heutige Alternative]**,
 > weil **[Differenzierung]**.
 
@@ -126,7 +126,7 @@ Das **Value Proposition Statement** ist **die prägnante Essenz** deines Angebot
 
 > Für **Produktionsleiter in der diskreten Fertigung**, die **ungeplante Stillstände minimieren** wollen,
 > bieten wir einen **KI-gestützten Condition-Monitoring-Service**,
-> der **Ausfälle bis zu 48h im Voraus erkennt** und den **Nutzen über KPIs messbar macht** —
+> der **Ausfälle bis zu 48h im Voraus erkennt** und den **Nutzen über KPIs messbar macht** -
 > anders als **klassische Wartungsverträge oder reaktive Instandhaltung**,
 > weil wir **proaktiv statt reaktiv handeln** und **datenbasierte Transparenz** schaffen.
 
@@ -143,14 +143,14 @@ Ein gutes Value Proposition Statement ist:
 | **Einfach** | In einem Satz verständlich |
 
 :::info Prüfstein
-Dieser Satz ist Gold wert: Er ist dein Prüfstein für alles, was du später tust – Produktentwicklung, Preisgestaltung, Vertrieb, Marketing.
+Dieser Satz ist Gold wert: Er ist dein Prüfstein für alles, was du später tust - Produktentwicklung, Preisgestaltung, Vertrieb, Marketing.
 :::
 
 ---
 
 ## 4. Differenzierungsanalyse
 
-Was macht dein Angebot **einzigartig**? Die **Differenzierungsanalyse** vergleicht dein Angebot systematisch mit allen Alternativen – von DIY-Lösungen über klassische Ansätze bis hin zu direkten Wettbewerbern und der Option „Nichts tun". Nur wenn klar ist, warum der Kunde zu dir kommen sollte, ist das Wertversprechen vollständig.
+Was macht dein Angebot **einzigartig**? Die **Differenzierungsanalyse** vergleicht dein Angebot systematisch mit allen Alternativen - von DIY-Lösungen über klassische Ansätze bis hin zu direkten Wettbewerbern und der Option „Nichts tun". Nur wenn klar ist, warum der Kunde zu dir kommen sollte, ist das Wertversprechen vollständig.
 
 ### Wettbewerbslandschaft
 

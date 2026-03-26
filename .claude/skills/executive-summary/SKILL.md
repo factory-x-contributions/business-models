@@ -8,11 +8,11 @@ user-invocable: true
 
 ## Purpose
 
-This is the final synthesis method. It consolidates all results from every prior analysis phase — customer research (Desirability), value proposition design, value creation design (Feasibility), financial analysis (Viability), and risk/action planning — into a single, decision-ready one-pager. The Executive Summary serves as the primary artifact for gate reviews, investment pitches, and management presentations, providing a complete but concise view of the business model with clear Go/No-Go recommendations.
+This is the final synthesis method. It consolidates all results from every prior analysis phase - customer research (Desirability), value proposition design, value creation design (Feasibility), financial analysis (Viability), and risk/action planning - into a single, decision-ready one-pager. The Executive Summary serves as the primary artifact for gate reviews, investment pitches, and management presentations, providing a complete but concise view of the business model with clear Go/No-Go recommendations.
 
 ## Input Requirements
 
-- Artifacts (all required — the Executive Summary draws from every prior step):
+- Artifacts (all required - the Executive Summary draws from every prior step):
   - **Customer research:** Market segmentation, stakeholder matrix, persona profiles, VPC customer side
   - **Value proposition design:** Match matrix, value proposition formula, product/service idea
   - **Value creation design:** Roles & actors mapping, value network analysis, value creation process, ecosystem synthesis
@@ -26,11 +26,11 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-This is a synthesis method, not a discovery interview. The user has already provided all inputs through the preceding steps. The interview here focuses on editorial decisions: what to emphasize, what to de-emphasize, and how to frame the narrative for the specific audience. Ask targeted questions to shape the one-pager. Force concreteness on "The Ask" — what exactly does the team need from decision-makers?
+This is a synthesis method, not a discovery interview. The user has already provided all inputs through the preceding steps. The interview here focuses on editorial decisions: what to emphasize, what to de-emphasize, and how to frame the narrative for the specific audience. Ask targeted questions to shape the one-pager. Force concreteness on "The Ask" - what exactly does the team need from decision-makers?
 
 ## Questionnaire
 
-### Section 1 — Business Idea & Target Group (from Customer Research)
+### Section 1 - Business Idea & Target Group (from Customer Research)
 
 **Main Question:** Summarize the business idea and primary target group in 3-4 sentences.
 
@@ -44,7 +44,7 @@ Pull from customer research artifacts:
 - Which single customer segment is the beachhead for market entry?
 - What is the one sentence that captures why this target group cares?
 
-### Section 2 — Value Proposition & Product Description (from Value Proposition Design)
+### Section 2 - Value Proposition & Product Description (from Value Proposition Design)
 
 **Main Question:** State the value proposition and describe the product/service in concrete terms.
 
@@ -58,7 +58,7 @@ Pull from value proposition artifacts:
 - Can you state the value proposition in the "We help [segment] to [outcome] by [mechanism]" format?
 - What does the customer see/experience/interact with? (Make it tangible.)
 
-### Section 3 — Value Network & Roles (from Value Creation Design)
+### Section 3 - Value Network & Roles (from Value Creation Design)
 
 **Main Question:** Describe the ecosystem required to deliver the value proposition.
 
@@ -72,9 +72,9 @@ Pull from value creation design artifacts:
 - Which partnerships are secured vs. still in negotiation?
 - Can you draw the value network in 5 boxes and 5 arrows or fewer? (Force simplification for the one-pager.)
 
-### Section 4 — Business Case & Pricing (from Financial Analysis)
+### Section 4 - Business Case & Pricing (from Financial Analysis)
 
-**Main Question:** Present the business case — how does this make money?
+**Main Question:** Present the business case - how does this make money?
 
 Pull from financial analysis artifacts:
 - Value formulas: Top line value created per customer (EUR/year)
@@ -88,7 +88,7 @@ Pull from financial analysis artifacts:
 - When does the business model break even? (Customers needed, months from launch)
 - What is the single most critical financial assumption?
 
-### Section 5 — Risks & Measures (from Risk Analysis + Action Plan)
+### Section 5 - Risks & Measures (from Risk Analysis + Action Plan)
 
 **Main Question:** What are the top risks and what is being done about them?
 
@@ -104,7 +104,7 @@ Pull from risk and action planning artifacts:
 
 **IMPORTANT:** All measures must trace back to Risk IDs for full traceability. Include the ID references in the summary (e.g., "Measure M-T01 addresses risk VC1").
 
-### Section 6 — Next Steps & "The Ask"
+### Section 6 - Next Steps & "The Ask"
 
 **Main Question:** What exactly do you need from decision-makers to proceed?
 
@@ -125,11 +125,11 @@ Define "The Ask" with maximum clarity:
 ## Quality Criteria
 
 - All six sections are populated with concrete data from the corresponding analyses.
-- No section contains only generic statements — every claim has numbers, names, or specific references.
+- No section contains only generic statements - every claim has numbers, names, or specific references.
 - Risk IDs and Measure IDs are traceable throughout the document.
 - "The Ask" is specific: EUR amounts, headcount, deadlines, decision makers named.
 - Go/No-Go recommendation is explicit with supporting evidence.
-- The document can stand alone — a reader who has not seen the full process can understand the business model.
+- The document can stand alone - a reader who has not seen the full process can understand the business model.
 - The one-pager fits on a single printed page (or single slide) in its visual format, with an optional 2-3 page appendix.
 
 ## Output
@@ -189,10 +189,10 @@ Generate the output as Markdown and/or PPTX with the following visual layout:
   - Risk heatmap excerpt: Count of Red/Orange risks, top risk description
   - 30/60/90-day timeline: Visual timeline with key milestones
   - Go/No-Go traffic light:
-    - Green circle `#2E7D32`: GO — proceed as planned
-    - Yellow circle `#F9A825`: CONDITIONAL GO — proceed with stated conditions
-    - Red circle `#C62828`: NO-GO — do not proceed, fundamental issues unresolved
-- **Footer bar:** "The Ask" — resources, budget, and decision deadline in one line.
+    - Green circle `#2E7D32`: GO - proceed as planned
+    - Yellow circle `#F9A825`: CONDITIONAL GO - proceed with stated conditions
+    - Red circle `#C62828`: NO-GO - do not proceed, fundamental issues unresolved
+- **Footer bar:** "The Ask" - resources, budget, and decision deadline in one line.
 
 ### Markdown Version
 
@@ -212,8 +212,8 @@ In addition to the visual one-pager, generate a structured Markdown document wit
 |---------|-------------------|-------------------|----------------|--------------------|-----------------------|
 | Segment | *(ref)* | *(ref)* | *(ref)* | *(ref)* | *(ref)* |
 | Value Prop | *(ref)* | *(ref)* | *(ref)* | *(ref)* | *(ref)* |
-| Revenue Model | — | — | *(ref)* | *(ref)* | *(ref)* |
-| Risk IDs | — | — | — | — | *(ref)* |
+| Revenue Model | - | - | *(ref)* | *(ref)* | *(ref)* |
+| Risk IDs | - | - | - | - | *(ref)* |
 
 **Filename:** `Exit_P4_ExecutiveSummary.md` or populated PPTX slide
 
@@ -221,8 +221,8 @@ In addition to the visual one-pager, generate a structured Markdown document wit
 
 After generating the Executive Summary, the following final outputs are produced:
 
-1. **Final Elevator Pitch** (.md) — Comprehensive elevator pitch incorporating all analysis insights, max 150 words.
-2. **Complete Summary** (.md) — Full process summary covering all steps with key decisions and artifacts.
-3. **Chat History** (.json) — Complete conversation log in JSON format with field "messages" containing all exchanges.
+1. **Final Elevator Pitch** (.md) - Comprehensive elevator pitch incorporating all analysis insights, max 150 words.
+2. **Complete Summary** (.md) - Full process summary covering all steps with key decisions and artifacts.
+3. **Chat History** (.json) - Complete conversation log in JSON format with field "messages" containing all exchanges.
 
 Display after completion: "In case this conversation is limited, save these downloads locally. Start a new chat with this script and the chat history to continue."

@@ -65,9 +65,9 @@ Identify supporting actors:
 
 ### (5/5) Make-or-Buy Assessment
 For each capability needed (from the Product/Service Idea components):
-- **Make**: Develop internally — when strategically critical
-- **Buy**: Purchase from vendor — when commodity
-- **Partner**: Collaborate — when complementary strengths needed
+- **Make**: Develop internally - when strategically critical
+- **Buy**: Purchase from vendor - when commodity
+- **Partner**: Collaborate - when complementary strengths needed
 - Criteria: Strategic relevance, cost, time-to-market, risk
 
 ## Quality Criteria

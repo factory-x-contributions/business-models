@@ -1,8 +1,8 @@
 ---
-id: ai_overview
-title: Anleitung AI-Chatbot
-description: Einführung in Estelle – den AI-Assistenten für datenbasierte Geschäftsmodellentwicklung
-sidebar_position: 1
+id: single_prompt_anleitung
+title: "Single Prompt: Anleitung"
+description: Einführung in Estelle - den AI-Assistenten für datenbasierte Geschäftsmodellentwicklung
+sidebar_position: 2
 ---
 
 <br></br>
@@ -14,7 +14,7 @@ sidebar_position: 1
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Geschäftsmodelle mit Estelle entwickeln</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
-    <strong>Estelle</strong> ist dein AI-gestützter Assistent für die Entwicklung von Geschäftsmodellen. Sie führt dich durch die Hausbaulogik – vom Eingangsbereich über die vier Dimensionen bis zum Ausgangsbereich. Dabei stellt sie gezielte Fragen, prüft die Konsistenz und erstellt strukturierte Output-Dokumente.
+    <strong>Estelle</strong> ist dein AI-gestützter Assistent für die Entwicklung von Geschäftsmodellen. Sie führt dich durch die Hausbaulogik - vom Eingangsbereich über die vier Dimensionen bis zum Ausgangsbereich. Dabei stellt sie gezielte Fragen, prüft die Konsistenz und erstellt strukturierte Output-Dokumente.
   </p>
 </div>
 
@@ -29,8 +29,8 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 <div style={{marginTop: '1rem', display: 'inline-block'}}>
   <GradientButton
-    href="https://raw.githubusercontent.com/factory-x-contributions/business-models/main/files/ai/DE_BusinessModel_Chatbot.md"
-    text="DE_BusinessModel_Chatbot.md"
+    href="https://raw.githubusercontent.com/factory-x-contributions/business-models/main/files/ai/DE_BusinessModel_SinglePrompt.md"
+    text="DE_BusinessModel_SinglePrompt.md"
     icon={FileDownloadIcon}
     gradient="linear-gradient(135deg, #386FB3 0%, #2d5a94 100%)"
     shadowColor="rgba(56, 111, 179, 0.3)"
@@ -48,7 +48,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 Öffne dein bevorzugtes AI-Tool (z.B. ChatGPT, Claude, Copilot) und lade die heruntergeladene Datei hoch oder füge den Inhalt ein.
 
 :::info Datenschutz beachten
-Die erarbeiteten Geschäftsmodell-Daten sind sensibel. Nutze bevorzugt unternehmensinterne Chatbots, die deine Daten vertraulich behandeln. Siehe [Best Practices](./ai_best_practices).
+Die erarbeiteten Geschäftsmodell-Daten sind sensibel. Nutze bevorzugt unternehmensinterne Chatbots, die deine Daten vertraulich behandeln. Siehe [Best Practices](./single_prompt_best_practices).
 :::
 
 ---

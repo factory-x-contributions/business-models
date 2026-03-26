@@ -8,7 +8,7 @@ user-invocable: true
 
 ## Purpose
 
-This method designs how value is captured as revenue — selecting the right price basis, revenue model type, and price components. It produces a shortlist of 2-3 pricing patterns with full unit economics simulation and sales-ready calculation examples that bridge the gap between value quantification and actual customer invoicing.
+This method designs how value is captured as revenue - selecting the right price basis, revenue model type, and price components. It produces a shortlist of 2-3 pricing patterns with full unit economics simulation and sales-ready calculation examples that bridge the gap between value quantification and actual customer invoicing.
 
 ## Input Requirements
 
@@ -26,7 +26,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Push for explicit calculation examples. Do not accept pricing patterns without justification of fit to the specific use case. Every pricing component must be measurable, billable, and explainable to both the sales team and the customer.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Push for explicit calculation examples. Do not accept pricing patterns without justification of fit to the specific use case. Every pricing component must be measurable, billable, and explainable to both the sales team and the customer.
 
 ## Questionnaire
 
@@ -49,7 +49,7 @@ Evaluate and select from these price base options:
 
 ### 2.2 Model Type
 
-**Main Question:** Which revenue model type fits best — and is the market single-sided or multi-sided?
+**Main Question:** Which revenue model type fits best - and is the market single-sided or multi-sided?
 
 Evaluate each option:
 - **Subscription (recurring flat fee):** Predictable revenue, low usage risk. Best when: value is continuous, customer prefers budget certainty.
@@ -95,12 +95,12 @@ Address each mechanism:
 **Sub-questions:**
 - At what scale does the current pricing model break (too cheap or too expensive)?
 - How do you handle edge cases: very small customers, very large customers, seasonal variation?
-- What happens when usage drops to zero — does the customer still pay?
+- What happens when usage drops to zero - does the customer still pay?
 - How are disputes about measurement/metering resolved?
 
 ### 2.5 Shortlist (2-3 Pricing Patterns)
 
-**Main Question:** Select 2-3 pricing patterns for further evaluation. This is a deliberate, argued selection — not a brainstorm.
+**Main Question:** Select 2-3 pricing patterns for further evaluation. This is a deliberate, argued selection - not a brainstorm.
 
 For each pattern on the shortlist, document:
 - **Pattern name and structure:** (e.g., "Tiered Subscription + Outcome Bonus")
@@ -148,9 +148,9 @@ Build the provider-side view:
 **Main Question:** Provide concrete, sales-ready calculation examples and rules.
 
 Deliver:
-- **Calculation example 1:** Small customer scenario — full walkthrough from inputs to invoice.
-- **Calculation example 2:** Medium customer scenario — full walkthrough.
-- **Calculation example 3:** Large / enterprise customer scenario — full walkthrough.
+- **Calculation example 1:** Small customer scenario - full walkthrough from inputs to invoice.
+- **Calculation example 2:** Medium customer scenario - full walkthrough.
+- **Calculation example 3:** Large / enterprise customer scenario - full walkthrough.
 - **Offer schema:** Standard template for customer proposals with all fields and decision points.
 - **Sales calculator logic:** Input fields, formulas, output fields. Suitable for Excel or web tool implementation.
 
@@ -193,7 +193,7 @@ Generate a PDF document with the following specifications:
 
 **Layout: Two-column design**
 
-**Left column (62% width) — Main Table** (7 columns):
+**Left column (62% width) - Main Table** (7 columns):
 
 | Component | Pattern | Price Basis | Price Components | Payer/Provider | Scaling | EUR Quantification |
 |-----------|---------|-------------|-----------------|----------------|---------|-------------------|
@@ -201,7 +201,7 @@ Generate a PDF document with the following specifications:
 
 **Right column (38% width):**
 
-**Pattern Shortlist Cards** — One card per shortlisted pattern:
+**Pattern Shortlist Cards** - One card per shortlisted pattern:
 - Pattern name (bold)
 - 2-3 bullet points: key characteristics
 - Fit rating: stars or score out of 5

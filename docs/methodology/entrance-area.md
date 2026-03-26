@@ -38,7 +38,7 @@ Wir haben in unseren Unternehmen **Unmengen an technischen Daten** (Stückzahlen
 
 > **Die zentrale Frage:** Wie können wir aus unseren Daten echten Mehrwert schaffen?
 
-Der Eingangsbereich transformiert diese vage Idee in ein **konkretes Ziel** – aus „man müsste mal" wird ein strukturierter Ausgangspunkt für die Geschäftsmodellentwicklung.
+Der Eingangsbereich transformiert diese vage Idee in ein **konkretes Ziel** - aus „man müsste mal" wird ein strukturierter Ausgangspunkt für die Geschäftsmodellentwicklung.
 
 ---
 
@@ -92,7 +92,7 @@ Ordne dich einer oder mehreren Rollen zu:
 
 ## 2. Erlösmodell (Ist-Zustand)
 
-Hier klärst du dein **aktuelles** Geschäftsmodell — nicht das zukünftige.
+Hier klärst du dein **aktuelles** Geschäftsmodell - nicht das zukünftige.
 
 ### Aktuelle Erlösquellen
 
@@ -169,7 +169,7 @@ Erstelle eine erste Übersicht deiner Daten:
 
 ## 5. Digitaler Reifegrad
 
-Der digitale Reifegrad zeigt, **wie digitalfähig du heute bist** – eine ehrliche Einschätzung ist wichtiger als eine optimistische.
+Der digitale Reifegrad zeigt, **wie digitalfähig du heute bist** - eine ehrliche Einschätzung ist wichtiger als eine optimistische.
 Um deinen digitalen Reifegrad zu bestimmen hilft dir z.B. der Industrie 4.0 Readiness Check des VDMA - ein kostenloses Tool, das dich durch die Bewertung führt und konkrete Handlungsfelder aufzeigt:
 <div style={{display: 'inline-block', marginTop: '1rem'}}>
 <GradientButton
@@ -225,7 +225,7 @@ Gute Ziele sind:
 
 ## 7. Scope & Rahmenbedingungen
 
-Damit der Prozess fokussiert bleibt, definierst du den **Rahmen** – was betrachtet wird und was explizit nicht.
+Damit der Prozess fokussiert bleibt, definierst du den **Rahmen** - was betrachtet wird und was explizit nicht.
 
 ### Scope-Definition
 
@@ -247,7 +247,7 @@ Damit der Prozess fokussiert bleibt, definierst du den **Rahmen** – was betrac
 
 ## 8. Rolle des Datenraums
 
-Ein Datenraum (Factory-X, Catena-X) ist mehr als eine Datenablage — er ist ein **Kooperationsraum** für souveränen Datenaustausch.
+Ein Datenraum (Factory-X, Catena-X) ist mehr als eine Datenablage - er ist ein **Kooperationsraum** für souveränen Datenaustausch.
 
 ### Erste Einordnung
 
@@ -327,5 +327,5 @@ Bevor du in den Blauen Raum wechselst, prüfe:
 ---
 
 :::info Merke
-**Der Eingangsbereich ist das Fundament deines Hauses.** Je klarer dieser Abschnitt ausgearbeitet wird, desto stabiler wird alles, was danach kommt. Die ehrliche Bestandsaufnahme ist wichtiger als eine optimistische Darstellung – radikale Ehrlichkeit zahlt sich in allen folgenden Räumen aus.
+**Der Eingangsbereich ist das Fundament deines Hauses.** Je klarer dieser Abschnitt ausgearbeitet wird, desto stabiler wird alles, was danach kommt. Die ehrliche Bestandsaufnahme ist wichtiger als eine optimistische Darstellung - radikale Ehrlichkeit zahlt sich in allen folgenden Räumen aus.
 :::

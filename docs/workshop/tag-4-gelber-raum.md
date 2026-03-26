@@ -19,7 +19,7 @@ sidebar_position: 6
       <span style={{fontSize: '1.1rem'}}>🎯</span>
       <strong style={{color: '#C4A000', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
     </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Wertquantifizierung in EUR, ein Preismodell und einen ersten Business Case</strong> – der Reality-Check für das Geschäftsmodell.</p>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Wertquantifizierung in EUR, ein Preismodell und einen ersten Business Case</strong> - der Reality-Check für das Geschäftsmodell.</p>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ Kunden zahlen für **Ergebnisse**, nicht für Features. Verknüpfe den Preis mit
 ### Moderationsfragen
 
 - „Für welchen konkreten Wert zahlt der Kunde?"
-- „Eher 5% oder 30% Kostenreduktion – was ist realistisch?"
+- „Eher 5% oder 30% Kostenreduktion - was ist realistisch?"
 - „Wie können wir den Wert messbar machen?"
 
 ---
@@ -131,7 +131,7 @@ Das **passende Erlösmodell** für das Angebot wählen.
 
 ### Ziel
 
-Alle **relevanten Kostenblöcke** dokumentieren – ehrlich und vollständig.
+Alle **relevanten Kostenblöcke** dokumentieren - ehrlich und vollständig.
 
 ### Kostenarten
 

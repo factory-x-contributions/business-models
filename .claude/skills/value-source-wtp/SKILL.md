@@ -25,7 +25,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Do not accept vague statements like "significant savings" or "improved efficiency" without quantification. Push for EUR amounts, percentages, and time horizons. If the user cannot provide numbers, document the gap as a hypothesis requiring validation.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Do not accept vague statements like "significant savings" or "improved efficiency" without quantification. Push for EUR amounts, percentages, and time horizons. If the user cannot provide numbers, document the gap as a hypothesis requiring validation.
 
 ## Questionnaire
 
@@ -45,7 +45,7 @@ Strict sequence, one question at a time. Force concreteness — challenge generi
 
 ### 1.2 Economic Pain (Today)
 
-**Main Question:** Which cost blocks or loss blocks occur today in the customer's world — before our solution exists?
+**Main Question:** Which cost blocks or loss blocks occur today in the customer's world - before our solution exists?
 
 For each segment/use case, quantify the following pain categories:
 - **Downtime costs:** Unplanned stops, planned maintenance windows. Quantify in EUR/hour or EUR/event and annual frequency.
@@ -209,10 +209,10 @@ Generate a PDF document with the following specifications:
 ### Intermediate Result Summary
 
 Generate a structured intermediate result containing:
-1. **Segment/Use Case Map** — Matrix of segments vs. use cases with priority ranking
-2. **Value Formulas (EUR/year)** — All formulas with pessimistic/realistic/optimistic scenarios
-3. **Evidence Status** — Summary table: each formula with A/B/C rating and key source
-4. **WTP Range** — Per segment: min/expected/max with validation status
-5. **Risks & Open Points** — Unvalidated assumptions, evidence gaps, conflicting data
-6. **Go / Check / Stop** — Per segment/use case: recommendation with brief rationale
+1. **Segment/Use Case Map** - Matrix of segments vs. use cases with priority ranking
+2. **Value Formulas (EUR/year)** - All formulas with pessimistic/realistic/optimistic scenarios
+3. **Evidence Status** - Summary table: each formula with A/B/C rating and key source
+4. **WTP Range** - Per segment: min/expected/max with validation status
+5. **Risks & Open Points** - Unvalidated assumptions, evidence gaps, conflicting data
+6. **Go / Check / Stop** - Per segment/use case: recommendation with brief rationale
 

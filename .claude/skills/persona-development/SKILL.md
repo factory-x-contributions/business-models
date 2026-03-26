@@ -7,7 +7,7 @@ user-invocable: true
 # Persona Development
 
 ## Purpose
-Persona Development transforms the abstract stakeholder profiles from the Stakeholder Matrix into vivid, detailed representations of real people. By building 1-2 rich personas with both CORE attributes (who they are) and ENVIRONMENT context (how they work and decide), the team gains deep empathy for the customer — the essential foundation for crafting a compelling value proposition.
+Persona Development transforms the abstract stakeholder profiles from the Stakeholder Matrix into vivid, detailed representations of real people. By building 1-2 rich personas with both CORE attributes (who they are) and ENVIRONMENT context (how they work and decide), the team gains deep empathy for the customer - the essential foundation for crafting a compelling value proposition.
 
 ## Input Requirements
 - Required: Stakeholder Matrix results (2x2 matrix, Key Stakeholder Shortlist)
@@ -23,7 +23,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > We now move to Persona Development.
-> Here we bring your key stakeholders to life as detailed personas. This takes approximately 30 minutes.
+> Here we bring your key stakeholders to life as detailed personas..
 > We will create 1-2 personas based on the key stakeholders identified in the Stakeholder Matrix.
 > Would you like a detailed explanation? Write **Method**! Or start directly? Write **Start**!
 
@@ -70,7 +70,7 @@ Explore:
 *Guidance:* This should read like a brief character sketch. Example: "Thomas is a hands-on production leader who has risen through the ranks over 15 years. He is respected for his deep machine knowledge but increasingly frustrated by the gap between his shop-floor expertise and the digital transformation demands from management."
 
 #### Question 1.3: Key Problems and Challenges
-**"What are the main problems and challenges this persona faces in their daily work — specifically related to the area your offering addresses?"**
+**"What are the main problems and challenges this persona faces in their daily work - specifically related to the area your offering addresses?"**
 
 Explore:
 - **Operational problems:** What breaks, fails, takes too long, costs too much?
@@ -101,7 +101,7 @@ Explore:
 *Guidance:* Demographics should be realistic for the segment. A Head of Production at a German Mittelstand company has a different profile than a VP Manufacturing at a global enterprise. Ensure consistency with the segment definition.
 
 #### Question 1.5: Wishes and Goals
-**"What does this persona want to achieve — both professionally and personally?"**
+**"What does this persona want to achieve - both professionally and personally?"**
 
 Explore:
 - **Professional goals:** What does success look like in their role? (e.g., reduce downtime by 20%, lead digital transformation, expand into new markets)
@@ -110,7 +110,7 @@ Explore:
 - **Success metrics:** How is their performance measured? What KPIs matter?
 - **Ideal state:** "If you could wave a magic wand, what would their work environment look like?"
 
-*Guidance:* Goals should be concrete and measurable where possible. "Better efficiency" becomes "reduce unplanned downtime from 8% to 3% within 12 months." Connect goals to the value your offering could provide — but don't force the connection yet; that comes in the Value Proposition Canvas.
+*Guidance:* Goals should be concrete and measurable where possible. "Better efficiency" becomes "reduce unplanned downtime from 8% to 3% within 12 months." Connect goals to the value your offering could provide - but don't force the connection yet; that comes in the Value Proposition Canvas.
 
 ---
 
@@ -198,7 +198,7 @@ Synthesize: "If you had to describe this persona's core motivation in one senten
 - **Explainability:** Anyone on the team should be able to read the persona and immediately understand who this customer is
 - **Consistency:** The persona must be consistent with the market segment, stakeholder position, and company assessment. A "digital-savvy innovation leader" persona doesn't fit a segment characterized by "low digital maturity"
 - **Completeness:** Both CORE and ENVIRONMENT blocks must be fully completed for each persona (1-2 personas total)
-- **Empathy:** The persona should generate genuine empathy — the team should be able to "feel" the persona's frustrations and aspirations
+- **Empathy:** The persona should generate genuine empathy - the team should be able to "feel" the persona's frustrations and aspirations
 - **Actionability:** Every persona attribute should have implications for the value proposition, messaging, or go-to-market strategy
 
 ## Output
@@ -234,9 +234,9 @@ For each persona, generate a structured profile document:
 ║  • [Task 2]           │  • [Barrier 2]                  ║
 ║  • [Task 3]           │  • [Barrier 3]                  ║
 ║───────────────────────┼─────────────────────────────────║
-║  TRIGGERS             │  EMOTIONS — BUY                 ║
+║  TRIGGERS             │  EMOTIONS - BUY                 ║
 ║  • [Trigger 1]        │  • [Emotion during buying]      ║
-║  • [Trigger 2]        │  EMOTIONS — USAGE               ║
+║  • [Trigger 2]        │  EMOTIONS - USAGE               ║
 ║  • [Trigger 3]        │  • [Emotion during usage]       ║
 ║───────────────────────┼─────────────────────────────────║
 ║  MOTIVATION                                             ║

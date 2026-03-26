@@ -1,8 +1,8 @@
 ---
-id: ai_best_practices
-title: Best Practices
+id: single_prompt_best_practices
+title: "Single Prompt: Best Practices"
 description: Praktische Tipps für effektive Prompts und optimale Nutzung des AI-Assistenten
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 <br></br>
@@ -14,7 +14,7 @@ sidebar_position: 2
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Best Practices für die AI-Nutzung</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
-    Tipps für die optimale Arbeit mit der Hausbaulogik und dem AI-Chatbot Estelle – von der Vorbereitung bis zur Dokumentensicherung.
+    Tipps für die optimale Arbeit mit der Hausbaulogik und dem AI-Assistenten Estelle - von der Vorbereitung bis zur Dokumentensicherung.
   </p>
 </div>
 
@@ -43,15 +43,15 @@ sidebar_position: 2
 
 | Schritt | Beschreibung |
 |:-------:|--------------|
-| **1** | **Starte mit dem Eingangsbereich** – Ausgangslage und Idee klären |
+| **1** | **Starte mit dem Eingangsbereich** - Ausgangslage und Idee klären |
 | **2** | **Räume durchlaufen nach der Reihenfolge:** 🔵 Kunde → 🔴 Wertversprechen → 🟢 Werterzeugung → 🟡 Monetarisierung |
-| **3** | **Ausgangsbereich nutzen** – Chancen/Risiken und nächste Schritte erhalten |
+| **3** | **Ausgangsbereich nutzen** - Chancen/Risiken und nächste Schritte erhalten |
 
 ---
 
 ## Kontextfenster & Dokumentensicherung
 
-Jeder AI-Chatbot hat ein **begrenztes Kontextfenster**. Nach einer gewissen Anzahl an Nachrichten kann die Kapazität erschöpft sein.
+Jeder AI-Assistent hat ein **begrenztes Kontextfenster**. Nach einer gewissen Anzahl an Nachrichten kann die Kapazität erschöpft sein.
 
 <div style={{background: 'var(--ifm-color-emphasis-100)', borderRadius: '8px', padding: '1rem 1.25rem', marginTop: '1rem'}}>
 

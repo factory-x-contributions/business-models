@@ -23,11 +23,11 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'AI-Chatbot',
+      label: 'AI-Assistent',
       link: {
         type: 'generated-index',
-        title: 'AI-Chatbot',
-        description: 'Diese Sektion erklärt, wie mithilfe eines AI-Chatbots die Hausbaulogik durchlaufen werden kann.',
+        title: 'AI-Assistent',
+        description: 'Diese Sektion erklärt, wie mithilfe eines AI-Assistenten die Hausbaulogik durchlaufen werden kann.',
         slug: '/ai',
       },
       items: [

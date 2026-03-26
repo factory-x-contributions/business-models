@@ -9,7 +9,7 @@ import GradientButton from '@site/src/components/buttons/GradientButton';
 
 ## Was ist die Hausbaulogik?
 
-Die **Hausbaulogik (HBL)** ist ein strukturierter Ansatz zur Entwicklung datenbasierter Geschäftsmodelle – speziell für den industriellen Kontext wie Maschinen- und Anlagenbau.
+Die **Hausbaulogik (HBL)** ist ein strukturierter Ansatz zur Entwicklung datenbasierter Geschäftsmodelle - speziell für den industriellen Kontext wie Maschinen- und Anlagenbau.
 
 Klassische Frameworks wie das Business Model Canvas sind oft zu abstrakt: Sie zeigen zwar, welche Bausteine ein Geschäftsmodell hat, aber nicht, wie man diese erarbeitet. Teams stehen vor einem leeren Canvas und wissen nicht, wo sie anfangen sollen. Die HBL löst dieses Problem, indem sie einen **klaren Ablauf mit konkreten Methoden** vorgibt.
 
@@ -17,11 +17,11 @@ Klassische Frameworks wie das Business Model Canvas sind oft zu abstrakt: Sie ze
 
 Das Framework nutzt die Metapher eines **Hauses**, weil sie intuitiv verständlich ist:
 
-- **Du betrittst das Haus durch den Eingang** – hier klärst du die Ausgangslage und definierst deine Geschäftsidee
-- **Du durchläufst verschiedene Räume** – jeder Raum behandelt eine zentrale Frage deines Geschäftsmodells
-- **Du verlässt das Haus durch den Ausgang** – mit einem fertigen, validierten Geschäftsmodell
+- **Du betrittst das Haus durch den Eingang** - hier klärst du die Ausgangslage und definierst deine Geschäftsidee
+- **Du durchläufst verschiedene Räume** - jeder Raum behandelt eine zentrale Frage deines Geschäftsmodells
+- **Du verlässt das Haus durch den Ausgang** - mit einem fertigen, validierten Geschäftsmodell
 
-Die Räume sind farblich kodiert und werden in einer festen Reihenfolge durchlaufen. Jeder Raum baut auf den Ergebnissen des vorherigen auf – so entsteht ein konsistentes Gesamtbild.
+Die Räume sind farblich kodiert und werden in einer festen Reihenfolge durchlaufen. Jeder Raum baut auf den Ergebnissen des vorherigen auf - so entsteht ein konsistentes Gesamtbild.
 
 ---
 
@@ -167,14 +167,14 @@ Klicke auf einen Raum, um die Details zu sehen:
 
 **Der Ablauf in Kurzform:**
 
-1. **Eingangsbereich** – Geschäftsidee definieren, Scope festlegen
-2. **Blauer Raum** – Kunden verstehen: Wer sind sie? Was brauchen sie?
-3. **Roter Raum** – Wertversprechen entwickeln: Welchen Wert bieten wir?
-4. **Grüner Raum** – Wertschöpfung planen: Wie erzeugen wir den Wert?
-5. **Gelber Raum** – Wirtschaftlichkeit prüfen: Wie verdienen wir Geld?
-6. **Ausgangsbereich** – Synthese und Entscheidung: Go, Prüfen oder Stop?
+1. **Eingangsbereich** - Geschäftsidee definieren, Scope festlegen
+2. **Blauer Raum** - Kunden verstehen: Wer sind sie? Was brauchen sie?
+3. **Roter Raum** - Wertversprechen entwickeln: Welchen Wert bieten wir?
+4. **Grüner Raum** - Wertschöpfung planen: Wie erzeugen wir den Wert?
+5. **Gelber Raum** - Wirtschaftlichkeit prüfen: Wie verdienen wir Geld?
+6. **Ausgangsbereich** - Synthese und Entscheidung: Go, Prüfen oder Stop?
 
-Am Ende jedes Raums steht ein **Quality Gate** – eine Checkliste, die sicherstellt, dass alle wichtigen Fragen beantwortet sind, bevor es weitergeht.
+Am Ende jedes Raums steht ein **Quality Gate** - eine Checkliste, die sicherstellt, dass alle wichtigen Fragen beantwortet sind, bevor es weitergeht.
 
 ---
 
@@ -196,7 +196,7 @@ Es gibt drei Wege, die Methodik anzuwenden:
   </ul>
 </a>
 
-<a href="../ai/ai_overview" className="variant-card" style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '16px', padding: '1.5rem', position: 'relative', overflow: 'hidden', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'}}>
+<a href="../ai/single_prompt_anleitung" className="variant-card" style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '16px', padding: '1.5rem', position: 'relative', overflow: 'hidden', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'}}>
   <div style={{position: 'absolute', top: 0, right: 0, background: '#84a302', color: 'white', padding: '0.25rem 1rem', borderBottomLeftRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold'}}>KI-GESTÜTZT</div>
   <h4 style={{marginTop: '1rem'}}>Business Model Assistant</h4>
   <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Selbstständig mit KI-Unterstützung arbeiten. Ein Chatbot führt dich durch alle Räume und stellt die richtigen Fragen.</p>

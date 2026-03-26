@@ -1,6 +1,6 @@
 ---
 name: value-network-analysis
-description: Maps all exchange flows between ecosystem actors — goods/services, data, finances, infrastructure, and governance. Use for value network design, data flow mapping, or ecosystem architecture planning.
+description: Maps all exchange flows between ecosystem actors - goods/services, data, finances, infrastructure, and governance. Use for value network design, data flow mapping, or ecosystem architecture planning.
 user-invocable: true
 ---
 
@@ -20,7 +20,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 "Now let's map how value flows between all actors. We'll trace the goods, data, money, infrastructure, and rules that connect the ecosystem. Ready? Write **Start**!"
 
 ## Interview Approach
-Work through the five flow types systematically. For each flow, identify source, sink, content, and conditions. Use visual thinking — describe flows as arrows between actors. One flow type at a time.
+Work through the five flow types systematically. For each flow, identify source, sink, content, and conditions. Use visual thinking - describe flows as arrows between actors. One flow type at a time.
 
 ## Questionnaire
 

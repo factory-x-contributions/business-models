@@ -20,7 +20,7 @@ sidebar_position: 3
       <span style={{fontSize: '1.1rem'}}>🎯</span>
       <strong style={{color: '#386FB3', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
     </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir <strong>validierte Kundensegmente, ausgearbeitete Personas und eine priorisierte Liste von Jobs, Pains und Gains</strong> – lösungsneutral und kundenorientiert.</p>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir <strong>validierte Kundensegmente, ausgearbeitete Personas und eine priorisierte Liste von Jobs, Pains und Gains</strong> - lösungsneutral und kundenorientiert.</p>
   </div>
 </div>
 
@@ -134,7 +134,7 @@ Alle relevanten Stakeholder identifizieren und nach Einfluss/Nähe klassifiziere
 ## Deep-Dive 4: Pains & Gains (16:00 - 17:00)
 
 ### Ziel
-Jobs-to-Be-Done, Pains und Gains der Persona erfassen – **lösungsneutral!**
+Jobs-to-Be-Done, Pains und Gains der Persona erfassen - **lösungsneutral!**
 
 ### Jobs-to-Be-Done
 
@@ -165,7 +165,7 @@ Jobs-to-Be-Done, Pains und Gains der Persona erfassen – **lösungsneutral!**
 
 :::caution Typischer Stolperstein
 Teilnehmer springen oft sofort in Lösungen.
-**Reaktion:** „Das ist eine gute Idee – ich parke sie auf dem Ideen-Parkplatz. Jetzt bleiben wir noch bei den Problemen."
+**Reaktion:** „Das ist eine gute Idee - ich parke sie auf dem Ideen-Parkplatz. Jetzt bleiben wir noch bei den Problemen."
 :::
 
 ### Priorisierung
@@ -207,7 +207,7 @@ Im hybriden Format kann AI den Workshop beschleunigen und die Ergebnisqualität 
 > „Welche typischen Pains hat ein [Persona-Rolle] im Kontext von [Problem]? Unterscheide funktionale, emotionale und soziale Aspekte. Welche Gains würden begeistern?"
 
 :::tip Best Practice
-AI als **Sparringspartner**, nicht als Ersatz für Team-Diskussion. Die AI liefert Impulse und Struktur – die Validierung und Priorisierung bleibt beim Team.
+AI als **Sparringspartner**, nicht als Ersatz für Team-Diskussion. Die AI liefert Impulse und Struktur - die Validierung und Priorisierung bleibt beim Team.
 :::
 
 </div>

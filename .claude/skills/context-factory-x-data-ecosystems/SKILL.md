@@ -1,6 +1,6 @@
 ---
 name: context-factory-x-data-ecosystems
-description: Reference context for Factory-X, data ecosystems, ecosystem roles, and the House Building Logic metaphor. This skill is not user-invocable — it is consumed by other skills for domain context and terminology.
+description: Reference context for Factory-X, data ecosystems, ecosystem roles, and the House Building Logic metaphor. This skill is not user-invocable - it is consumed by other skills for domain context and terminology.
 user-invocable: false
 ---
 
@@ -10,7 +10,7 @@ This document provides the industry context and methodological foundations for b
 
 ## Factory Equipment Industry
 
-The factory equipment industry — also known as factory outfitters — comprises companies that equip industrial production facilities with machines, systems, automation technology, software solutions, and complementary services. It forms a central pillar of industrial value creation, particularly in Germany, and is characterized by high engineering competence, innovative strength, and export orientation.
+The factory equipment industry - also known as factory outfitters - comprises companies that equip industrial production facilities with machines, systems, automation technology, software solutions, and complementary services. It forms a central pillar of industrial value creation, particularly in Germany, and is characterized by high engineering competence, innovative strength, and export orientation.
 
 Traditionally, the focus of this industry was on delivering highly productive and reliable machines and components. However, this product-centric approach is no longer sufficient. The industry is undergoing a profound transformation driven by digitalization, data-driven business models, and new customer requirements. A paradigm shift toward benefit-based added value is essential to differentiate from the competition and remain successful in the long term.
 

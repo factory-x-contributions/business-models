@@ -8,7 +8,7 @@ user-invocable: true
 
 ## Purpose
 
-This method translates the revenue model and cost structure into an actionable pricing strategy — defining goals per segment, competitive positioning, price architecture, discount rules, KPI guardrails, and a go-to-market test plan. It also performs a comprehensive closing checklist to ensure all viability elements are complete and consistent.
+This method translates the revenue model and cost structure into an actionable pricing strategy - defining goals per segment, competitive positioning, price architecture, discount rules, KPI guardrails, and a go-to-market test plan. It also performs a comprehensive closing checklist to ensure all viability elements are complete and consistent.
 
 ## Input Requirements
 
@@ -25,7 +25,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. This is the synthesis step — demand that every answer connects back to evidence from the prior viability analyses. Push for operational feasibility: pricing that looks good on paper but cannot be executed in the field is worthless.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. This is the synthesis step - demand that every answer connects back to evidence from the prior viability analyses. Push for operational feasibility: pricing that looks good on paper but cannot be executed in the field is worthless.
 
 ## Questionnaire
 
@@ -57,12 +57,12 @@ For each segment, select and justify the primary goal:
 **Sub-questions:**
 - Is the price position consistent across segments or differentiated?
 - How will competitors likely react to your pricing?
-- What is the price elasticity — how much volume would you lose/gain with a 10% price change?
+- What is the price elasticity - how much volume would you lose/gain with a 10% price change?
 - Is there a price anchor that customers will inevitably compare against?
 
 ### 4.3 Price Architecture
 
-**Main Question:** How is the price structured — what architecture delivers the pricing goal?
+**Main Question:** How is the price structured - what architecture delivers the pricing goal?
 
 Evaluate and select:
 - **Flat rate:** Single price for everything. Simple but may leave money on the table or exclude small customers.
@@ -73,7 +73,7 @@ Evaluate and select:
 For the chosen architecture:
 - Define each tier/bundle/package: name, included scope, price, target customer profile.
 - Show the upgrade path from smallest to largest package.
-- Identify the "Goldilocks" option — the package most customers should select.
+- Identify the "Goldilocks" option - the package most customers should select.
 
 **Sub-questions:**
 - How many pricing options should the customer see? (Recommendation: 3, max 4)
@@ -152,7 +152,7 @@ For each KPI:
 Define:
 - **Pilot offers:** Which customers, which pricing pattern, which duration? Success criteria.
 - **A/B tests:** What pricing variations will you test per segment? Sample size, duration, evaluation method.
-- **Price narrative:** The story around the price — how does the sales team explain why this price is fair and valuable? Test this narrative in customer conversations.
+- **Price narrative:** The story around the price - how does the sales team explain why this price is fair and valuable? Test this narrative in customer conversations.
 
 **Sub-questions:**
 - What is the minimum viable test that gives you confidence to scale?

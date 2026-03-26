@@ -1,7 +1,7 @@
 ---
 id: blue-room
 title: Blauer Raum
-description: 🔵 Kundenbedürfnisse verstehen – Personas, Pains und Gains erarbeiten
+description: 🔵 Kundenbedürfnisse verstehen - Personas, Pains und Gains erarbeiten
 sidebar_position: 3
 ---
 
@@ -38,7 +38,7 @@ Eine allgemeine Aussage wie „alle Fabriken" ist zu unscharf. Der Blaue Raum zw
 - Was ist sein echtes Problem?
 - Wer entscheidet, wer nutzt, wer zahlt?
 
-> **Wichtig:** Im Blauen Raum betrachten wir nur die **Realität der Kundenseite** – noch keine Lösungen!
+> **Wichtig:** Im Blauen Raum betrachten wir nur die **Realität der Kundenseite** - noch keine Lösungen!
 
 ---
 
@@ -89,7 +89,7 @@ Am Ende solltest du **1-2 Kernsegmente** priorisiert haben, auf die du dich foku
 
 ## Ebene 2: Stakeholder-Analyse
 
-Jetzt zoomen wir heraus: **Wer ist alles beteiligt?** Nicht nur „der Kunde", sondern alle Personen, die mitentscheiden oder betroffen sind. Mit dem **Stakeholder Mapping** visualisierst du systematisch Einfluss und Rollen aller Beteiligten – besonders wichtig bei komplexen Entscheidungsstrukturen im B2B-Umfeld.
+Jetzt zoomen wir heraus: **Wer ist alles beteiligt?** Nicht nur „der Kunde", sondern alle Personen, die mitentscheiden oder betroffen sind. Mit dem **Stakeholder Mapping** visualisierst du systematisch Einfluss und Rollen aller Beteiligten - besonders wichtig bei komplexen Entscheidungsstrukturen im B2B-Umfeld.
 
 ### Typische Stakeholder im B2B-Kontext
 
@@ -129,7 +129,7 @@ Ordne jeden Stakeholder nach **Einfluss** und **Nähe zum Problem**:
 
 ## Ebene 3: Persona & Jobs, Pains, Gains
 
-Aus dem gewählten Kernsegment nimmst du dir eine oder mehrere **beispielhafte Personen** vor. Der **Jobs-to-Be-Done (JTBD) Ansatz** erfasst dabei nicht nur, was Kunden sagen, dass sie brauchen, sondern was sie wirklich erreichen wollen – auf funktionaler, emotionaler und sozialer Ebene. Ergänzend hilft eine **Pain/Gain-Priorisierung**, die wichtigsten Probleme und Wünsche nach Häufigkeit, Intensität und Lösbarkeit zu bewerten.
+Aus dem gewählten Kernsegment nimmst du dir eine oder mehrere **beispielhafte Personen** vor. Der **Jobs-to-Be-Done (JTBD) Ansatz** erfasst dabei nicht nur, was Kunden sagen, dass sie brauchen, sondern was sie wirklich erreichen wollen - auf funktionaler, emotionaler und sozialer Ebene. Ergänzend hilft eine **Pain/Gain-Priorisierung**, die wichtigsten Probleme und Wünsche nach Häufigkeit, Intensität und Lösbarkeit zu bewerten.
 
 ### Persona-Template
 
@@ -144,7 +144,7 @@ Aus dem gewählten Kernsegment nimmst du dir eine oder mehrere **beispielhafte P
 
 ### Jobs-to-Be-Done (JTBD)
 
-Das JTBD-Framework erfasst, **was Kunden wirklich erreichen wollen** — nicht was sie sagen, dass sie brauchen.
+Das JTBD-Framework erfasst, **was Kunden wirklich erreichen wollen** - nicht was sie sagen, dass sie brauchen.
 
 | Job-Typ | Beschreibung | Beispiel |
 |---------|--------------|----------|
@@ -153,7 +153,7 @@ Das JTBD-Framework erfasst, **was Kunden wirklich erreichen wollen** — nicht w
 | **Sozial** | Wie möchte der Kunde wahrgenommen werden? | Als kompetent, innovativ, vorausschauend |
 
 :::info Insight
-Kunden kaufen keine Produkte — sie „heuern" Lösungen an, um einen Job zu erledigen. Verstehe den Job, nicht das Feature.
+Kunden kaufen keine Produkte - sie „heuern" Lösungen an, um einen Job zu erledigen. Verstehe den Job, nicht das Feature.
 :::
 
 ### Pains (Probleme)
@@ -285,5 +285,5 @@ Bevor du in den Roten Raum wechselst, prüfe:
 ---
 
 :::info Merke
-**Der Blaue Raum ist das Herzstück der Kundenorientierung.** Je besser du deine Kunden verstehst, desto relevanter und erfolgreicher wird dein Wertversprechen. Hier merkst du sofort: Löst unsere Idee ein echtes Problem – oder fanden wir sie nur selbst gut?
+**Der Blaue Raum ist das Herzstück der Kundenorientierung.** Je besser du deine Kunden verstehst, desto relevanter und erfolgreicher wird dein Wertversprechen. Hier merkst du sofort: Löst unsere Idee ein echtes Problem - oder fanden wir sie nur selbst gut?
 :::

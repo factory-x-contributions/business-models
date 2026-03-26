@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Was muss vorab passieren?
 
-Der **Eingangsbereich** wird nicht im Workshop thematisiert – die Inhalte müssen vorher erarbeitet werden. Der Workshop baut auf einer konkreten Geschäftsidee auf, die am ersten Tag vorgestellt wird.
+Der **Eingangsbereich** wird nicht im Workshop thematisiert - die Inhalte müssen vorher erarbeitet werden. Der Workshop baut auf einer konkreten Geschäftsidee auf, die am ersten Tag vorgestellt wird.
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
   <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary)'}}>
@@ -20,7 +20,7 @@ Der **Eingangsbereich** wird nicht im Workshop thematisiert – die Inhalte müs
   </div>
   <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid var(--ifm-color-primary-darkest)'}}>
     <h4 style={{margin: '0 0 0.5rem 0'}}>Optional: Ideenworkshop</h4>
-    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Falls noch keine konkrete Idee vorhanden – vorab Brainstorming-Sessions durchführen</p>
+    <p style={{margin: 0, fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Falls noch keine konkrete Idee vorhanden - vorab Brainstorming-Sessions durchführen</p>
   </div>
 </div>
 
@@ -131,7 +131,7 @@ Nicht alle Personen müssen an allen 5 Tagen teilnehmen. Die Zusammensetzung sol
 </br>
 
 :::tip KI-Unterstützung
-Der Workshop kann mit dem **[Business Model AI Assistant](../ai/ai_overview)** kombiniert werden. Klebezettel lassen sich digitalisieren und in Templates übertragen – so kann der zeitliche Rahmen reduziert werden.
+Der Workshop kann mit dem **[Business Model AI Assistant](../ai/single_prompt_anleitung)** kombiniert werden. Klebezettel lassen sich digitalisieren und in Templates übertragen - so kann der zeitliche Rahmen reduziert werden.
 :::
 
 ---

@@ -19,7 +19,7 @@ sidebar_position: 4
       <span style={{fontSize: '1.1rem'}}>🎯</span>
       <strong style={{color: '#B85450', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
     </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Match-Matrix, ein formuliertes Value Proposition Statement und eine strukturierte Servicebeschreibung</strong> – der Brückenschlag zwischen Kundenproblem und Lösung.</p>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Match-Matrix, ein formuliertes Value Proposition Statement und eine strukturierte Servicebeschreibung</strong> - der Brückenschlag zwischen Kundenproblem und Lösung.</p>
   </div>
 </div>
 
@@ -69,7 +69,7 @@ Die Match-Matrix verbindet die **Erkenntnisse aus dem Blauen Raum** mit konkrete
 - „Welcher Pain bleibt ungelöst?"
 
 :::warning Konsequentes Weglassen
-**Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** — sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast.
+**Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** - sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast.
 :::
 
 ---
@@ -78,13 +78,13 @@ Die Match-Matrix verbindet die **Erkenntnisse aus dem Blauen Raum** mit konkrete
 
 ### Ziel
 
-Das Value Proposition Statement ist **die prägnante Essenz** des Angebots – der eine Satz, der alles zusammenfasst.
+Das Value Proposition Statement ist **die prägnante Essenz** des Angebots - der eine Satz, der alles zusammenfasst.
 
 ### VP-Formel
 
 > Für **[Zielkunde/Persona]**, der/die **[Job/Problem]** hat,
 > bieten wir **[Lösung/Angebot]**,
-> die/das **[Kernnutzen]** ermöglicht —
+> die/das **[Kernnutzen]** ermöglicht -
 > anders als **[heutige Alternative]**,
 > weil **[Differenzierung]**.
 
@@ -142,7 +142,7 @@ Strukturierte Dokumentation des Angebots, sodass ein Dritter es versteht.
 
 ### Ziel
 
-Klare Abgrenzung zu Alternativen – warum sollte der Kunde zu uns kommen?
+Klare Abgrenzung zu Alternativen - warum sollte der Kunde zu uns kommen?
 
 ### Wettbewerbslandschaft
 

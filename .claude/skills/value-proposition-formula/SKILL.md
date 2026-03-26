@@ -27,26 +27,26 @@ Work through the 6 components sequentially. For each component, propose a draft 
 ### (1/6) Value Proposition Formula
 
 The formula template:
-> "Our **[product/service]** helps **[customer segment]**, who want to **[customer job]**, by **[solving problems]** and **[creating gains]** — unlike **[alternative]**."
+> "Our **[product/service]** helps **[customer segment]**, who want to **[customer job]**, by **[solving problems]** and **[creating gains]** - unlike **[alternative]**."
 
 Work through each component:
 
-**Component 1 — Product/Service:**
+**Component 1 - Product/Service:**
 What is the offering? (Name, type: product, service, platform, combination)
 
-**Component 2 — Customer Segment:**
+**Component 2 - Customer Segment:**
 Who specifically benefits? (From prioritized segments and personas)
 
-**Component 3 — Customer Job:**
+**Component 3 - Customer Job:**
 What are they trying to accomplish? (From customer Jobs-to-be-Done)
 
-**Component 4 — Pain Relief:**
-How does it solve their problems? (From Match Matrix Essentials — Pain Relievers)
+**Component 4 - Pain Relief:**
+How does it solve their problems? (From Match Matrix Essentials - Pain Relievers)
 
-**Component 5 — Gain Creation:**
-What additional value does it create? (From Match Matrix Essentials — Gain Creators)
+**Component 5 - Gain Creation:**
+What additional value does it create? (From Match Matrix Essentials - Gain Creators)
 
-**Component 6 — Differentiation:**
+**Component 6 - Differentiation:**
 How is it different from alternatives? (Competitors, substitutes, DIY, do-nothing)
 
 ### (2/6) Promise-Deliver-Proof Framework
@@ -102,7 +102,7 @@ Mark what exists and what is missing. Create action items for missing evidence.
 | Differentiation | | | | |
 
 ## Quality Criteria
-- Value Proposition Statement uses all 6 components — no placeholders
+- Value Proposition Statement uses all 6 components - no placeholders
 - Promise is specific and measurable (not vague like "better" or "innovative")
 - Deliver mechanisms are concrete (not "we will figure it out")
 - Proof has at least one strong evidence point; missing evidence has action items

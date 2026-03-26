@@ -8,7 +8,7 @@ user-invocable: true
 
 ## Purpose
 
-This method maps every cost block across the entire value creation lifecycle — from customer onboarding through operations to billing. It separates fixed from variable, one-time from recurring, and own costs from partner costs, then stress-tests scalability and controllability. The result ensures the revenue model from the pricing analysis is backed by a realistic, complete cost picture.
+This method maps every cost block across the entire value creation lifecycle - from customer onboarding through operations to billing. It separates fixed from variable, one-time from recurring, and own costs from partner costs, then stress-tests scalability and controllability. The result ensures the revenue model from the pricing analysis is backed by a realistic, complete cost picture.
 
 ## Input Requirements
 
@@ -25,7 +25,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Do not accept cost estimates without specifying the unit, frequency, and driver. Challenge "included in overhead" answers — every cost must be allocated. Push for transparency on partner cost structures and SLA conditions.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Do not accept cost estimates without specifying the unit, frequency, and driver. Challenge "included in overhead" answers - every cost must be allocated. Push for transparency on partner cost structures and SLA conditions.
 
 ## Questionnaire
 
@@ -93,7 +93,7 @@ For each cost block, specify:
 - **Partner payments:** Ongoing revenue shares, service fees. EUR per period or per transaction.
 
 **Sub-questions:**
-- What is the total one-time cost to acquire and onboard a new customer (Customer Acquisition Cost — fully loaded)?
+- What is the total one-time cost to acquire and onboard a new customer (Customer Acquisition Cost - fully loaded)?
 - How long until one-time costs are recovered through recurring revenue (payback period)?
 - Are there hidden one-time costs that recur (e.g., annual recertification, periodic hardware refresh)?
 - Which one-time costs can be charged to the customer vs. absorbed by the provider?
@@ -134,7 +134,7 @@ For each segment/use case combination:
 
 ### 3.6 Scalability Assessment
 
-**Main Question:** Where are the limits — where does technical scaling diverge from economic scaling?
+**Main Question:** Where are the limits - where does technical scaling diverge from economic scaling?
 
 **Technical scalability:**
 - Can the platform/service handle 10x / 100x current load?
@@ -205,7 +205,7 @@ Generate a PDF document with the following specifications:
 - **Title:** "Cost Structure Analysis"
 - **Subtitle:** Business model name, date, version
 
-**Block A — Lifecycle Cost Table** (6 columns):
+**Block A - Lifecycle Cost Table** (6 columns):
 
 | Value Creation Step | Cost Block | Fixed / Variable | One-time / Recurring | EUR Amount (per unit / per period) | Cost Driver & Scaling |
 |--------------------|-----------|-----------------|---------------------|-----------------------------------|----------------------|
@@ -216,7 +216,7 @@ Generate a PDF document with the following specifications:
 | Partners | *(detail)* | *(F/V/SV)* | *(OT/R)* | *(EUR)* | *(driver)* |
 | Billing/Admin | *(detail)* | *(F/V/SV)* | *(OT/R)* | *(EUR)* | *(driver)* |
 
-**Block B — Fixed/Variable 2x2 Matrix:**
+**Block B - Fixed/Variable 2x2 Matrix:**
 
 A 2x2 matrix visualization:
 - Y-axis: One-time vs. Recurring
@@ -224,7 +224,7 @@ A 2x2 matrix visualization:
 - Each quadrant lists the relevant cost blocks with EUR amounts
 - Quadrant shading: darker = higher total cost
 
-**Block C — Risks & Control:**
+**Block C - Risks & Control:**
 
 | Risk / Open Point | Impact (EUR) | Likelihood | Mitigation | Owner |
 |-------------------|-------------|------------|------------|-------|

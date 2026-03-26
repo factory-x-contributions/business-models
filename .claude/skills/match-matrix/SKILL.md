@@ -59,7 +59,7 @@ Group the prioritized levers:
 ## Quality Criteria
 - Every solution lever traces back to a specific Pain or Gain (no orphan features)
 - Value is expressed in measurable terms (EUR, hours, percentage)
-- Essentials are genuinely essential — challenge any cluster with more than 5 items
+- Essentials are genuinely essential - challenge any cluster with more than 5 items
 - Cross-check: Do the Essentials align with the business idea?
 
 ## Output

@@ -71,7 +71,7 @@ const config = {
         },
         items: [
           {to: 'docs/methodology/overview', label: 'Methodik', position: 'left'},
-          {to: 'docs/ai/ai_overview', label: 'AI-Chatbot', position: 'left'},
+          {to: 'docs/ai/ai_approaches', label: 'AI-Assistent', position: 'left'},
           {to: 'docs/workshop/overview_workshop', label: 'Workshop', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -91,8 +91,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'AI-Chatbot',
-                to: 'docs/ai/ai_overview',
+              label: 'AI-Assistent',
+                to: 'docs/ai/single_prompt_anleitung',
               },
               {
                 label: 'Methodik',

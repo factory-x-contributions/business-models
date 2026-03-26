@@ -79,8 +79,11 @@ export default function ProcessFlow({ phases: customPhases }) {
                 }}
               >
                 {phase.skills.map((skill, si) => (
-                  <div
+                  <a
                     key={skill}
+                    href={`https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${skill}/SKILL.md`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onMouseEnter={() => setActiveSkill(skill)}
                     onMouseLeave={() => setActiveSkill(null)}
                     style={{
@@ -88,18 +91,20 @@ export default function ProcessFlow({ phases: customPhases }) {
                       fontSize: '0.73rem',
                       fontWeight: 500,
                       borderRadius: '4px',
-                      cursor: 'default',
+                      cursor: 'pointer',
                       background: activeSkill === skill ? phase.color + '18' : 'var(--ifm-card-background-color)',
                       border: `1px solid ${activeSkill === skill ? phase.color : 'var(--ifm-color-emphasis-200)'}`,
                       transition: 'all 0.15s',
                       textAlign: 'center',
                       lineHeight: 1.3,
                       color: activeSkill === skill ? phase.color : 'var(--ifm-font-color-base)',
+                      textDecoration: 'none',
+                      display: 'block',
                     }}
                     title={skill}
                   >
                     {phase.shortLabels[si]}
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

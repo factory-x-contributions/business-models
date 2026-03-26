@@ -23,7 +23,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > Welcome to the Business Idea Canvas!
-> Here we will shape your first business idea into a structured format. This takes approximately 30-45 minutes.
+> Here we will shape your first business idea into a structured format..
 > Would you like to learn more about this method? Write **Method**! Or would you like to start immediately? Write **Start**!
 
 ## Interview Approach
@@ -41,8 +41,8 @@ Display EXACTLY this message when the skill is invoked:
 ### Gate Question: Idea Present?
 **"Do you already have a first business idea related to data ecosystems or digital services?"**
 
-- **Yes** — proceed to the Idea Description (6 Canvas Blocks) below
-- **No** — proceed to the Guided Ideation section
+- **Yes** - proceed to the Idea Description (6 Canvas Blocks) below
+- **No** - proceed to the Guided Ideation section
 
 ---
 
@@ -60,14 +60,14 @@ If the user has no idea yet, guide ideation based on the Company Assessment:
 
 **Step A2: Idea Patterns**
 Present relevant business model patterns from the Factory-X context:
-- **Predictive Maintenance as a Service** — using machine data to predict failures
-- **Digital Twin Services** — virtual representations for simulation and optimization
-- **Condition Monitoring** — continuous asset health tracking
-- **Process Optimization** — cross-machine or cross-plant analytics
-- **Energy Management** — consumption optimization and CO2 tracking
-- **Quality Assurance** — data-driven defect detection and traceability
-- **Supply Chain Transparency** — real-time visibility across partners
-- **Pay-per-Use / Outcome-based Models** — shifting from CAPEX to OPEX for customers
+- **Predictive Maintenance as a Service** - using machine data to predict failures
+- **Digital Twin Services** - virtual representations for simulation and optimization
+- **Condition Monitoring** - continuous asset health tracking
+- **Process Optimization** - cross-machine or cross-plant analytics
+- **Energy Management** - consumption optimization and CO2 tracking
+- **Quality Assurance** - data-driven defect detection and traceability
+- **Supply Chain Transparency** - real-time visibility across partners
+- **Pay-per-Use / Outcome-based Models** - shifting from CAPEX to OPEX for customers
 
 Ask: "Which of these patterns resonates with your competencies and market position? Or does a different direction come to mind?"
 
@@ -78,7 +78,7 @@ Help the user formulate a first rough idea in 2-3 sentences, then proceed to the
 
 ---
 
-### Path B: Idea Description — 6 Canvas Blocks
+### Path B: Idea Description - 6 Canvas Blocks
 
 Work through each block **one at a time**. For each block, probe until the answer is specific and substantive.
 
@@ -89,7 +89,7 @@ Explore:
 - Is it driven by a **customer need** (market-pull) or a **new technology/capability** (technology-push)?
 - Is it a **completely new product/service** or an **extension of an existing offering**?
 - Which **core competency** of your company does this idea leverage?
-- What was the initial spark — a customer request, a trend observation, internal R&D, a competitor move?
+- What was the initial spark - a customer request, a trend observation, internal R&D, a competitor move?
 
 *Guidance:* Understanding the origin helps assess whether the idea is grounded in real demand or speculative. Both are valid, but they require different validation approaches.
 
@@ -99,11 +99,11 @@ Explore:
 Explore:
 - Is the data ecosystem **essential** (the idea wouldn't work without it) or **enhancing** (it adds value but isn't strictly required)?
 - Which data from which sources (own, customer, partner, public) is needed?
-- What is the data flow — who provides data, who consumes it, who processes it?
-- Which ecosystem role(s) would your company take? (Data Provider, Data Consumer, Service Provider, Infrastructure Provider, Orchestrator — refer to `context-factory-x-data-ecosystems`)
+- What is the data flow - who provides data, who consumes it, who processes it?
+- Which ecosystem role(s) would your company take? (Data Provider, Data Consumer, Service Provider, Infrastructure Provider, Orchestrator - refer to `context-factory-x-data-ecosystems`)
 - Is Factory-X, Catena-X, Gaia-X, or another specific ecosystem relevant?
 
-*Guidance:* This block connects the idea to the data ecosystem context. Challenge ideas where the data ecosystem role is unclear — it should be concrete.
+*Guidance:* This block connects the idea to the data ecosystem context. Challenge ideas where the data ecosystem role is unclear - it should be concrete.
 
 #### Block 3 of 6: Target Audience and Current Behavior
 **"Who is the target customer, what problem do they have, and how do they solve it today?"**
@@ -114,7 +114,7 @@ Explore:
 - How does the customer currently deal with this problem (workaround, competitor solution, manual process, ignoring it)?
 - What are the consequences of the current situation (cost, risk, inefficiency, lost opportunity)?
 
-*Guidance:* Push for specificity. "Manufacturing companies" is too broad — aim for "production managers at mid-size automotive suppliers struggling with unplanned downtime on CNC machines."
+*Guidance:* Push for specificity. "Manufacturing companies" is too broad - aim for "production managers at mid-size automotive suppliers struggling with unplanned downtime on CNC machines."
 
 #### Block 4 of 6: Offering and Benefit
 **"What exactly is the product or service, and what concrete benefit does it deliver?"**
@@ -177,11 +177,11 @@ After completing the 6 blocks, assess alignment:
 *Guidance:* This is a critical reality check. A brilliant idea with zero strategic fit will not survive internal decision-making. Help the user identify both alignment points and tension areas.
 
 ## Quality Criteria
-- **Concreteness:** Each canvas block should contain specific, actionable content — not generic statements
+- **Concreteness:** Each canvas block should contain specific, actionable content - not generic statements
 - **Explainability:** The complete idea should be explainable to a non-expert in under 2 minutes
 - **Consistency:** Cross-check the 6 blocks against each other and against the Company Assessment. Flag contradictions (e.g., targeting a segment not mentioned in the customer base, claiming a competency not identified in the Company Assessment)
 - **Completeness:** All 6 canvas blocks and the strategic fit assessment must be completed
-- **Ecosystem Connection:** The data ecosystem role must be clearly articulated — this is not a generic business idea exercise
+- **Ecosystem Connection:** The data ecosystem role must be clearly articulated - this is not a generic business idea exercise
 
 ## Output
 After completing all questions, automatically generate:

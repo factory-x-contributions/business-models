@@ -8,7 +8,7 @@ sidebar_position: 7
 <div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🏁</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Ausleitung – Konsolidierung & Entscheidung</span>
+    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Ausleitung - Konsolidierung & Entscheidung</span>
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Wie geht es weiter?</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
@@ -19,7 +19,7 @@ sidebar_position: 7
       <span style={{fontSize: '1.1rem'}}>🎯</span>
       <strong style={{color: '#6B7280', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
     </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Executive Summary, eine Risiko-Heatmap, einen 30/60/90-Tage-Plan und eine Go/Prüfen/Stop-Empfehlung</strong> – alles für eine fundierte Management-Entscheidung.</p>
+    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Executive Summary, eine Risiko-Heatmap, einen 30/60/90-Tage-Plan und eine Go/Prüfen/Stop-Empfehlung</strong> - alles für eine fundierte Management-Entscheidung.</p>
   </div>
 </div>
 

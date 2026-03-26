@@ -1,13 +1,13 @@
 ---
 name: vpc-customer-side
-description: Develops the customer side of the Value Proposition Canvas — Customer Jobs (functional, emotional, social), Pains (categorized and prioritized), and Gains (required, expected, desired, unexpected). Produces a prioritized VPC customer profile ready for solution mapping.
+description: Develops the customer side of the Value Proposition Canvas - Customer Jobs (functional, emotional, social), Pains (categorized and prioritized), and Gains (required, expected, desired, unexpected). Produces a prioritized VPC customer profile ready for solution mapping.
 user-invocable: true
 ---
 
-# Value Proposition Canvas — Customer Side
+# Value Proposition Canvas - Customer Side
 
 ## Purpose
-The Value Proposition Canvas (Customer Side) systematically captures what the customer is trying to achieve (Jobs), what frustrates or blocks them (Pains), and what would delight them (Gains). By categorizing and prioritizing these elements, it creates a precise customer-need profile that directly feeds into solution mapping — where solutions are mapped against these needs.
+The Value Proposition Canvas (Customer Side) systematically captures what the customer is trying to achieve (Jobs), what frustrates or blocks them (Pains), and what would delight them (Gains). By categorizing and prioritizing these elements, it creates a precise customer-need profile that directly feeds into solution mapping - where solutions are mapped against these needs.
 
 ## Input Requirements
 - Required: Persona Profile(s) from Persona Development
@@ -23,7 +23,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > We are now at the Value Proposition Canvas (Customer Side)!
-> This is where we crystallize everything we've learned about the customer into a structured Jobs-Pains-Gains profile. This takes approximately 30 minutes.
+> This is where we crystallize everything we've learned about the customer into a structured Jobs-Pains-Gains profile..
 > Would you like a detailed explanation? Write **Method**! Or start directly? Write **Start**!
 
 ## Interview Approach
@@ -31,15 +31,15 @@ Display EXACTLY this message when the skill is invoked:
 - Work through the three sections (Jobs, Pains, Gains) **one at a time**
 - **NEVER ask multiple questions at once!**
 - ALL three sections must be completed, each with categorization and prioritization
-- Draw heavily on the Persona Profile(s) — reference specific persona attributes to ground the discussion
+- Draw heavily on the Persona Profile(s) - reference specific persona attributes to ground the discussion
 - Answers can be provided as text or via uploaded documents
 - Start divergent (brainstorm all possible jobs, pains, gains), then converge (categorize, rank, prioritize)
 - If multiple personas were created, develop VPC for the primary persona first, then note differences for secondary persona(s)
 
-## Questionnaire: Value Proposition Canvas — Customer Side (3 Sections)
+## Questionnaire: Value Proposition Canvas - Customer Side (3 Sections)
 
 *Begin by confirming the focus:*
-**"We will develop the VPC Customer Side for [Primary Persona Name — from Persona Development]. Let's start by understanding what they are trying to get done."**
+**"We will develop the VPC Customer Side for [Primary Persona Name - from Persona Development]. Let's start by understanding what they are trying to get done."**
 
 ---
 
@@ -160,7 +160,7 @@ Create a ranked list of the top 5-7 pains, categorized by type.
 
 ### Section 3 of 3: Customer Gains
 
-**"Finally, let's explore what would make [Persona Name] happy — what outcomes do they desire?"**
+**"Finally, let's explore what would make [Persona Name] happy - what outcomes do they desire?"**
 
 Work through each gain category:
 
@@ -184,7 +184,7 @@ Work through each gain category:
 - "What would save them significant time, money, or stress?"
 
 #### 3d) Unexpected Gains (Delightful)
-**"What could positively surprise [Persona Name] — something they haven't even considered?"**
+**"What could positively surprise [Persona Name] - something they haven't even considered?"**
 - "What emerging possibilities could transform their work?" (e.g., AI-driven insights, ecosystem-wide benchmarking, predictive capabilities)
 - "What adjacent problems could be solved as a side effect?"
 - "What new capabilities would open up if the primary problem is solved?"
@@ -204,7 +204,7 @@ Create a ranked list of the top 5-7 gains, categorized by type.
 ---
 
 ## Quality Criteria
-- **Concreteness:** Jobs, Pains, and Gains must be specific and measurable where possible. "Better efficiency" is too vague — "reduce unplanned downtime from 8% to 3%, saving EUR 200K/year" is concrete
+- **Concreteness:** Jobs, Pains, and Gains must be specific and measurable where possible. "Better efficiency" is too vague - "reduce unplanned downtime from 8% to 3%, saving EUR 200K/year" is concrete
 - **Explainability:** The VPC should be self-explanatory to anyone on the team, even without context from prior analysis
 - **Consistency:** Jobs/Pains/Gains must be consistent with the Persona Profile. A persona with "low tech-savviness" shouldn't have a job like "build custom analytics dashboards"
 - **Completeness:** All three sections (Jobs, Pains, Gains) completed with categorization and prioritization. At least 5 items per section
@@ -214,18 +214,18 @@ Create a ranked list of the top 5-7 gains, categorized by type.
 ## Output
 After completing all three sections, automatically generate:
 
-### 1. VPC Customer Side — Prioritized Profile
+### 1. VPC Customer Side - Prioritized Profile
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║            VALUE PROPOSITION CANVAS — CUSTOMER SIDE             ║
+║            VALUE PROPOSITION CANVAS - CUSTOMER SIDE             ║
 ║                    Persona: [Name, Role]                        ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                 ║
 ║  CUSTOMER JOBS (ranked by priority)                             ║
 ║  ┌─────────────────────────────────────────────────────────┐    ║
 ║  │ Functional:                                             │    ║
-║  │   1. [Job — Importance: X, Frequency: Y, Satisfaction: Z]│   ║
+║  │   1. [Job - Importance: X, Frequency: Y, Satisfaction: Z]│   ║
 ║  │   2. [Job]                                              │    ║
 ║  │ Emotional:                                              │    ║
 ║  │   1. [Job]                                              │    ║
@@ -235,9 +235,9 @@ After completing all three sections, automatically generate:
 ║                                                                 ║
 ║  PAINS (ranked by priority score)                               ║
 ║  ┌─────────────────────────────────────────────────────────┐    ║
-║  │ 1. [Pain — Category — Score: X]                         │    ║
-║  │ 2. [Pain — Category — Score: X]                         │    ║
-║  │ 3. [Pain — Category — Score: X]                         │    ║
+║  │ 1. [Pain - Category - Score: X]                         │    ║
+║  │ 2. [Pain - Category - Score: X]                         │    ║
+║  │ 3. [Pain - Category - Score: X]                         │    ║
 ║  │ ...                                                     │    ║
 ║  └─────────────────────────────────────────────────────────┘    ║
 ║                                                                 ║

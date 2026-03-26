@@ -26,15 +26,15 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. For risk identification, use the structured "We risk that..., because..." format. Do not accept vague risks like "market might not accept it" — demand specificity on what exactly could fail, why, and what the impact would be.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. For risk identification, use the structured "We risk that..., because..." format. Do not accept vague risks like "market might not accept it" - demand specificity on what exactly could fail, why, and what the impact would be.
 
 ## Questionnaire
 
-### 1.1 Identify Risks (15 minutes)
+### 1.1 Identify Risks
 
 **Main Question:** Collect the top 2-3 risks per perspective. Use the format: "We risk that ..., because ..." and assign a unique ID.
 
-**Perspective A — Desirability (Customer/Market):**
+**Perspective A - Desirability (Customer/Market):**
 Risks related to customer demand, market fit, and adoption.
 
 - **D1, D2, D3:** Examples of risk areas to probe:
@@ -49,7 +49,7 @@ Risks related to customer demand, market fit, and adoption.
 - Is there a risk that the target segment is too small or too fragmented?
 - Could a macro trend (regulation, economic downturn, technology shift) eliminate demand?
 
-**Perspective B — Value Proposition:**
+**Perspective B - Value Proposition:**
 Risks related to the value promise itself.
 
 - **VP1, VP2, VP3:** Examples of risk areas to probe:
@@ -63,7 +63,7 @@ Risks related to the value promise itself.
 - Is the differentiation sustainable for 2+ years?
 - Could the value proposition be commoditized by a platform player?
 
-**Perspective C — Value Creation (Feasibility/Ecosystem):**
+**Perspective C - Value Creation (Feasibility/Ecosystem):**
 Risks related to delivering the value.
 
 - **VC1, VC2, VC3:** Examples of risk areas to probe:
@@ -78,7 +78,7 @@ Risks related to delivering the value.
 - What is the technology readiness level (TRL) of the core components?
 - Are there regulatory or compliance risks in the value creation chain?
 
-**Perspective D — Viability (Profitability):**
+**Perspective D - Viability (Profitability):**
 Risks related to financial sustainability.
 
 - **V1, V2, V3:** Examples of risk areas to probe:
@@ -205,13 +205,13 @@ Place each risk ID in the appropriate cell. Note when multiple risks cluster in 
 
 Generate a Risk Heatmap as PDF or PPTX with the following content:
 
-**Page 1 — Heatmap Visualization:**
+**Page 1 - Heatmap Visualization:**
 - 5x5 grid with probability (Y-axis) vs. severity (X-axis)
 - Risk IDs placed in appropriate cells
 - Color coding: Red `#C62828`, Orange `#EF6C00`, Yellow `#F9A825`, Green `#2E7D32`
 - Legend explaining color zones and response requirements
 
-**Page 2 — Risk Register Table:**
+**Page 2 - Risk Register Table:**
 
 | Risk ID | Perspective | Risk Statement | Probability | Severity | Zone | Owner | Next Step | Deadline |
 |---------|-------------|----------------|-------------|----------|------|-------|-----------|----------|
@@ -220,7 +220,7 @@ Generate a Risk Heatmap as PDF or PPTX with the following content:
 | VC1 | Value Creation | "We risk that..." | *(1-5)* | *(1-5)* | *(color)* | *(name)* | *(action)* | *(date)* |
 | V1 | Viability | "We risk that..." | *(1-5)* | *(1-5)* | *(color)* | *(name)* | *(action)* | *(date)* |
 
-**Page 3 — Prioritization Summary:**
+**Page 3 - Prioritization Summary:**
 - Top 5 risks ranked by combined score (probability x severity)
 - Risk clusters identified
 - Systemic issues flagged

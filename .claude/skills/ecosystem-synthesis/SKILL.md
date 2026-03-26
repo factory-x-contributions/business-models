@@ -1,6 +1,6 @@
 ---
 name: ecosystem-synthesis
-description: Synthesizes and evaluates the entire value creation design — monetizable contributions, costs, governance maturity, risks, and Go/Review/Stop recommendation. Use for ecosystem feasibility assessment or when completing value creation analysis.
+description: Synthesizes and evaluates the entire value creation design - monetizable contributions, costs, governance maturity, risks, and Go/Review/Stop recommendation. Use for ecosystem feasibility assessment or when completing value creation analysis.
 user-invocable: true
 ---
 
@@ -20,7 +20,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 "Let's bring together everything from the value creation analysis into a synthesis. We'll evaluate what's monetizable, what it costs, and whether we're ready to proceed. Ready? Write **Start**!"
 
 ## Interview Approach
-Work through each synthesis dimension systematically. Be rigorous — challenge optimistic assumptions, demand evidence. One dimension at a time.
+Work through each synthesis dimension systematically. Be rigorous - challenge optimistic assumptions, demand evidence. One dimension at a time.
 
 ## Questionnaire
 

@@ -7,7 +7,7 @@ user-invocable: true
 # Company Assessment
 
 ## Purpose
-The Company Assessment captures the current state of the company for which a business model is being developed. It establishes the baseline — who you are, what you do, how you earn money, and how digitally mature you are — before any new business model concept is shaped.
+The Company Assessment captures the current state of the company for which a business model is being developed. It establishes the baseline - who you are, what you do, how you earn money, and how digitally mature you are - before any new business model concept is shaped.
 
 ## Input Requirements
 - Required: None (this is the first method)
@@ -23,8 +23,8 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > Welcome to the Company Assessment!
-> This assessment captures your company's current state and takes approximately 30-45 minutes.
-> The content should be completable by an innovation manager or business developer — at minimum based on assumptions and available documents.
+> This assessment captures your company's current state.
+> The content should be completable by an innovation manager or business developer - at minimum based on assumptions and available documents.
 > Would you like to learn more about this method? Write **Method**! Or would you like to start immediately? Write **Start**!
 
 ## Interview Approach
@@ -55,16 +55,16 @@ Collect a brief company description including:
 **"Which role best describes your company's position in the industrial value chain?"**
 
 Present these options:
-- **Factory operator** — operates production facilities, consumes machines and services
-- **Machine builder** — designs and manufactures production equipment
-- **Component supplier** — provides parts, modules, or sub-assemblies
-- **Software / platform provider** — delivers digital solutions, analytics, or platforms
-- **Service provider** — offers maintenance, consulting, or operational services
-- **Logistics provider** — manages supply chain and material flows
-- **Recycler** — handles end-of-life, circular economy processes
-- **Other** — specify
+- **Factory operator** - operates production facilities, consumes machines and services
+- **Machine builder** - designs and manufactures production equipment
+- **Component supplier** - provides parts, modules, or sub-assemblies
+- **Software / platform provider** - delivers digital solutions, analytics, or platforms
+- **Service provider** - offers maintenance, consulting, or operational services
+- **Logistics provider** - manages supply chain and material flows
+- **Recycler** - handles end-of-life, circular economy processes
+- **Other** - specify
 
-*Guidance:* If "Other" is selected, probe for details. A company may hold multiple roles — capture the primary role and note secondary ones.
+*Guidance:* If "Other" is selected, probe for details. A company may hold multiple roles - capture the primary role and note secondary ones.
 
 ### Question 3 of 9: Current Offering
 **"What does your current offering comprise?"**
@@ -75,7 +75,7 @@ Explore:
 - Services (maintenance, consulting, training)
 - Combined offerings (product-service bundles)
 
-*Guidance:* Push for specificity. "We sell machines" is too vague — ask which types, for which applications, with which differentiating features.
+*Guidance:* Push for specificity. "We sell machines" is too vague - ask which types, for which applications, with which differentiating features.
 
 ### Question 4 of 9: Current Revenue Model
 **"How does your company currently generate revenue?"**
@@ -86,9 +86,9 @@ Explore:
 - Project-based revenue (consulting, engineering services)
 - Usage-based models (pay-per-use, pay-per-outcome)
 - Licensing / royalties
-- Mix of the above — approximate revenue split if possible
+- Mix of the above - approximate revenue split if possible
 
-*Guidance:* Ask for approximate percentage splits between revenue streams if the company has multiple models. Challenge vague answers like "we sell products" — seek the underlying pricing and payment structure.
+*Guidance:* Ask for approximate percentage splits between revenue streams if the company has multiple models. Challenge vague answers like "we sell products" - seek the underlying pricing and payment structure.
 
 ### Question 5 of 9: Current Customers
 **"Who are your current customers?"**
@@ -140,12 +140,12 @@ Request:
 **Readiness Levels for Reference:**
 | Level | Description |
 |-------|-------------|
-| 0 — Outsider | No Industry 4.0 activities |
-| 1 — Beginner | Initial pilot projects |
-| 2 — Intermediate | Strategy defined, implementation started |
-| 3 — Experienced | Digital integration across departments |
-| 4 — Expert | Fully integrated, data-driven operations |
-| 5 — Top Performer | Industry benchmark, continuous innovation |
+| 0 - Outsider | No Industry 4.0 activities |
+| 1 - Beginner | Initial pilot projects |
+| 2 - Intermediate | Strategy defined, implementation started |
+| 3 - Experienced | Digital integration across departments |
+| 4 - Expert | Fully integrated, data-driven operations |
+| 5 - Top Performer | Industry benchmark, continuous innovation |
 
 *Guidance:* If the user hasn't completed the IMPULS assessment, guide a brief self-assessment across the six dimensions: Strategy & Organization, Smart Factory, Smart Operations, Smart Products, Data-Driven Services, and Employees. Note this as an assumption to be validated.
 
@@ -153,10 +153,10 @@ Request:
 **"Does your company already have a touchpoint with a digital or data ecosystem?"**
 
 Present these options:
-- **No** — no involvement with data ecosystems yet
-- **Yes, as a provider** — we offer data, services, or infrastructure into an ecosystem
-- **Yes, as a user/consumer** — we consume data or services from an ecosystem
-- **Yes, as both provider and user** — we participate on both sides
+- **No** - no involvement with data ecosystems yet
+- **Yes, as a provider** - we offer data, services, or infrastructure into an ecosystem
+- **Yes, as a user/consumer** - we consume data or services from an ecosystem
+- **Yes, as both provider and user** - we participate on both sides
 
 For any "Yes" answer, follow up:
 - Which ecosystem(s)? (e.g., Factory-X, Catena-X, Gaia-X, Manufacturing-X, proprietary)
@@ -167,7 +167,7 @@ For any "Yes" answer, follow up:
 *Guidance:* If the user answers "No," explore whether there is awareness of data ecosystems and interest in participating. This sets the stage for the business idea development.
 
 ## Quality Criteria
-- **Concreteness:** Numbers, units, timeframes — challenge generic answers. "Large company" should become "~2,000 employees, EUR 500M revenue."
+- **Concreteness:** Numbers, units, timeframes - challenge generic answers. "Large company" should become "~2,000 employees, EUR 500M revenue."
 - **Explainability:** Every answer must be specific enough that a non-expert could understand the company's position
 - **Consistency:** Cross-check inputs against each other. If core competency is "mechanical engineering" but the offering is "pure software," flag the disconnect
 - **Completeness:** All 9 questions must be answered. Flag missing information as open items to be resolved
@@ -179,12 +179,12 @@ After completing all 9 questions, automatically generate:
 ### Company Assessment Summary
 A structured markdown document containing:
 
-1. **Company Profile** — Name, industry, size, geography, role in value chain
-2. **Current Business Model** — Offering, revenue model, customer base
-3. **Market Position** — Competitive landscape, key differentiators
-4. **Core Competency** — Unique strengths and strategic assets
-5. **Digital Maturity** — Level, strengths, gaps
-6. **Ecosystem Readiness** — Current touchpoints, participation maturity
-7. **Open Items** — Any questions that were answered with assumptions or remain unresolved
+1. **Company Profile** - Name, industry, size, geography, role in value chain
+2. **Current Business Model** - Offering, revenue model, customer base
+3. **Market Position** - Competitive landscape, key differentiators
+4. **Core Competency** - Unique strengths and strategic assets
+5. **Digital Maturity** - Level, strengths, gaps
+6. **Ecosystem Readiness** - Current touchpoints, participation maturity
+7. **Open Items** - Any questions that were answered with assumptions or remain unresolved
 
 Format: Provide as a downloadable .md document directly in chat.

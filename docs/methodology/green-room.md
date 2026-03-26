@@ -1,7 +1,7 @@
 ---
 id: green-room
 title: Grüner Raum
-description: 🟢 Wertschöpfung gestalten – Partner, Datenflüsse und operative Umsetzung planen
+description: 🟢 Wertschöpfung gestalten - Partner, Datenflüsse und operative Umsetzung planen
 sidebar_position: 5
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 5
   </div>
   <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Die Wertschöpfung gestalten</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    Bei digitalen Diensten machen wir selten alles allein. Im Grünen Raum gestaltest du die <strong>Wertschöpfungslogik</strong> – wer macht was, wie fließen Daten, Güter und Geld?
+    Bei digitalen Diensten machen wir selten alles allein. Im Grünen Raum gestaltest du die <strong>Wertschöpfungslogik</strong> - wer macht was, wie fließen Daten, Güter und Geld?
   </p>
   <ul style={{margin: '0.75rem 0 0 0', paddingLeft: '1.25rem', fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
     <li>Wer übernimmt welche Aufgaben?</li>
@@ -54,7 +54,7 @@ Wir sind **ein Akteur in einem Netzwerk**. Unser Geschäftsmodell funktioniert n
 
 ## 1. Rollen & Akteure
 
-Bevor Prozesse definiert werden, musst du wissen, **wer beteiligt ist** und welchen Wertbeitrag jeder leistet. Die **Rollen-Akteure-Matrix** unterscheidet dabei klar zwischen Rolle (erwartete Funktion) und Akteur (konkrete Einheit) – denn ein Unternehmen kann mehrere Rollen spielen.
+Bevor Prozesse definiert werden, musst du wissen, **wer beteiligt ist** und welchen Wertbeitrag jeder leistet. Die **Rollen-Akteure-Matrix** unterscheidet dabei klar zwischen Rolle (erwartete Funktion) und Akteur (konkrete Einheit) - denn ein Unternehmen kann mehrere Rollen spielen.
 
 ### Typische Rollen im Datenökosystem
 
@@ -87,23 +87,23 @@ Kläre explizit: **Welche Rolle(n) übernehmen wir?**
 
 <label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
   <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Data Provider – Wir stellen Daten bereit</span>
+  <span>Data Provider - Wir stellen Daten bereit</span>
 </label>
 <label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
   <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Data Consumer – Wir nutzen Daten anderer</span>
+  <span>Data Consumer - Wir nutzen Daten anderer</span>
 </label>
 <label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
   <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Service Provider – Wir bieten Services an</span>
+  <span>Service Provider - Wir bieten Services an</span>
 </label>
 <label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
   <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Platform Operator – Wir betreiben die Plattform</span>
+  <span>Platform Operator - Wir betreiben die Plattform</span>
 </label>
 <label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
   <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Orchestrator – Wir koordinieren das Ökosystem</span>
+  <span>Orchestrator - Wir koordinieren das Ökosystem</span>
 </label>
 
 </div>
@@ -177,8 +177,8 @@ Für jeden Prozessschritt: **Wer macht was?**
 |---------|---------|-------------|--------------|
 | Setup | Konfiguration | Hardware-Zugang | Cloud-Setup |
 | Datenfluss | API-Integration | Datenfreigabe | Connector |
-| Analytics | Modelle, Algorithmen | – | Infrastruktur |
-| Support | L2/L3 Support | L1 Support | – |
+| Analytics | Modelle, Algorithmen | - | Infrastruktur |
+| Support | L2/L3 Support | L1 Support | - |
 
 ---
 

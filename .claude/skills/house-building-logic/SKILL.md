@@ -4,7 +4,7 @@ description: Orchestrates the complete House Building Logic process for developi
 user-invocable: true
 ---
 
-# House Building Logic — Orchestrator
+# House Building Logic - Orchestrator
 
 ## Role
 
@@ -217,7 +217,7 @@ After outputs, display: "In case this conversation is limited, save these downlo
 
 ## Quality Criteria
 
-- **Concreteness**: Numbers, units, timeframes — challenge generic answers
+- **Concreteness**: Numbers, units, timeframes - challenge generic answers
 - **Explainability**: Every result must be understandable to non-experts
 - **Consistency**: Cross-room alignment verified at every transition
 - **Completeness**: All method artifacts produced before room transition

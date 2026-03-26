@@ -25,7 +25,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 
 ## Interview Approach
 
-Strict sequence, one question at a time. Force concreteness — challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Insist on outcomes (measurable results), not activities (things people do). "Conduct interviews" is an activity — "Validate WTP hypothesis with 5 customer confirmations" is an outcome. Push for explicit dependencies and sequencing. Challenge unrealistic timelines.
+Strict sequence, one question at a time. Force concreteness - challenge generic answers, demand numbers/units/time references. Evidence required for WTP claims. Insist on outcomes (measurable results), not activities (things people do). "Conduct interviews" is an activity - "Validate WTP hypothesis with 5 customer confirmations" is an outcome. Push for explicit dependencies and sequencing. Challenge unrealistic timelines.
 
 ## Questionnaire
 
@@ -34,9 +34,9 @@ Strict sequence, one question at a time. Force concreteness — challenge generi
 **Main Question:** Assign each measure from the Action Plan to a 30-day, 60-day, or 90-day phase. Mark the target path.
 
 **Phase Definitions:**
-- **30 days (Quick Wins & Foundations):** Measures that must happen first — prerequisites, quick validations, foundational setup. Low dependency, high urgency.
-- **60 days (Build & Validate):** Measures that build on 30-day foundations — deeper validation, pilot execution, partnership formalization. Medium dependency.
-- **90 days (Scale & Decide):** Measures that produce go/no-go evidence — pilot results, financial validation, market feedback synthesis. High dependency on earlier phases.
+- **30 days (Quick Wins & Foundations):** Measures that must happen first - prerequisites, quick validations, foundational setup. Low dependency, high urgency.
+- **60 days (Build & Validate):** Measures that build on 30-day foundations - deeper validation, pilot execution, partnership formalization. Medium dependency.
+- **90 days (Scale & Decide):** Measures that produce go/no-go evidence - pilot results, financial validation, market feedback synthesis. High dependency on earlier phases.
 
 **Target Path Marking:**
 For each measure, indicate which execution track it belongs to:
@@ -190,7 +190,7 @@ Define:
 
 Generate the output as Markdown and/or PPTX with the following structure:
 
-**Section 1 — Roadmap Overview (Visual):**
+**Section 1 - Roadmap Overview (Visual):**
 
 A timeline view showing three phases (30d / 60d / 90d) with:
 - Measures plotted on the timeline by track (PoC/Tech vs. MVP/Market)
@@ -198,7 +198,7 @@ A timeline view showing three phases (30d / 60d / 90d) with:
 - Phase gate markers at day 30, 60, and 90
 - Color coding by workstream: Tech=blue, GTM=green, Finance=orange, Ecosystem=purple, Internal=gray
 
-**Section 2 — Detailed Phase Plans:**
+**Section 2 - Detailed Phase Plans:**
 
 For each phase (30d, 60d, 90d), a table:
 
@@ -206,7 +206,7 @@ For each phase (30d, 60d, 90d), a table:
 |-----------|-----------------|-------|-------------|-------------|-----------|-----------|--------|
 | *(ID)* | *(description)* | *(track)* | *(prerequisite IDs)* | *(outcome + target)* | *(name)* | *(people, budget, tools)* | *(traffic light)* |
 
-**Section 3 — Phase Gates:**
+**Section 3 - Phase Gates:**
 
 | Gate | Date | Go Criteria | No-Go Criteria | Decision Maker |
 |------|------|-------------|----------------|----------------|
@@ -214,11 +214,11 @@ For each phase (30d, 60d, 90d), a table:
 | 60-day | *(date)* | *(criteria)* | *(criteria)* | *(name)* |
 | 90-day | *(date)* | *(criteria)* | *(criteria)* | *(name)* |
 
-**Section 4 — Resources & Decisions:**
+**Section 4 - Resources & Decisions:**
 
 Resources table and Decision Needs table as defined in 3.4.
 
-**Section 5 — Governance & Tracking:**
+**Section 5 - Governance & Tracking:**
 
 - Review rhythm and participants
 - Traffic light definitions

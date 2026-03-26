@@ -23,7 +23,7 @@ For domain context, refer to `context-factory-x-data-ecosystems`.
 Display EXACTLY this message when the skill is invoked:
 
 > Welcome to Market Segmentation!
-> Here we identify, evaluate, and prioritize target customer segments for your business idea. Total effort is approximately 30-45 minutes.
+> Here we identify, evaluate, and prioritize target customer segments for your business idea..
 > Would you like a detailed explanation of the approach? Write **Method**! Or would you like to start right away? Write **Start**!
 
 ## Interview Approach
@@ -76,7 +76,7 @@ Explore the following dimensions one at a time:
 - Is this a should-solve problem (significant cost, competitive disadvantage)?
 - Is this a nice-to-solve problem (incremental improvement)?
 
-*Guidance:* After exploring all dimensions, help the user define 3-5 distinct segment-use-case combinations. A segment is not just "automotive" — it's "mid-size automotive Tier-1 suppliers with CNC machining operations seeking predictive maintenance to reduce unplanned downtime."
+*Guidance:* After exploring all dimensions, help the user define 3-5 distinct segment-use-case combinations. A segment is not just "automotive" - it's "mid-size automotive Tier-1 suppliers with CNC machining operations seeking predictive maintenance to reduce unplanned downtime."
 
 ### Step 2 of 5: Segmentation Criteria and Weighting
 **"Which criteria should we use to evaluate and compare the segments?"**
@@ -97,7 +97,7 @@ Present standard criteria and let the user select and weight them:
 Ask:
 - "Which of these criteria are most important for your specific situation?"
 - "Would you like to add any criteria specific to your context?"
-- "How would you weight them — shall we use a simple High/Medium/Low weighting or a numerical scale (1-5)?"
+- "How would you weight them - shall we use a simple High/Medium/Low weighting or a numerical scale (1-5)?"
 
 ### Step 3 of 5: Segment Evaluation
 **"Let's evaluate each segment against the criteria."**
@@ -116,7 +116,7 @@ For each segment:
 - "What are the concrete problems or pain points customers face in this segment?"
 - "What are the causes and effects of these problems?"
 - "What is the economic impact? (cost of downtime, waste, rework, compliance fines, lost revenue)"
-- "How urgently do customers need a solution — what is the priority level?"
+- "How urgently do customers need a solution - what is the priority level?"
 - "Are customers actively looking for solutions, or do they accept the status quo?"
 
 **3c) Willingness to Pay**
@@ -135,7 +135,7 @@ For each segment:
 For each segment:
 - "Who are the established players offering solutions in this segment?"
 - "Are there substitute solutions (manual processes, in-house tools, competitor platforms)?"
-- "What is your differentiation — why would customers choose you?"
+- "What is your differentiation - why would customers choose you?"
 
 *Guidance:* Use a consistent evaluation scale across all segments (e.g., 1-5 or Low/Medium/High). Build a Segment x Criteria evaluation matrix as you go.
 
@@ -157,7 +157,7 @@ For each segment:
   - The primary problem/pain point to address
   - The estimated market opportunity
   - The key challenge or risk for this segment
-- Document why other segments were deprioritized (not discarded — they may be revisited in future iterations)
+- Document why other segments were deprioritized (not discarded - they may be revisited in future iterations)
 
 ## Quality Criteria
 - **Concreteness:** Segments must be specific enough to identify real companies, not just abstract categories. Market size estimates should include numbers and units (EUR, number of companies, etc.)

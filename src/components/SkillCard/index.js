@@ -40,6 +40,9 @@ function CopyButton({ text, copyText = 'Prompt kopieren', copiedText = 'Kopiert!
 export default function SkillCard({ name, title, description, prompt, output, duration, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt' }) {
   const [open, setOpen] = useState(false);
 
+  const githubUrl = `https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${name}/SKILL.md`;
+  const downloadUrl = `https://raw.githubusercontent.com/factory-x-contributions/business-models/main/.claude/skills/${name}/SKILL.md`;
+
   return (
     <div
       style={{
@@ -78,21 +81,6 @@ export default function SkillCard({ name, title, description, prompt, output, du
             {description}
           </div>
         </div>
-        {duration && (
-          <span
-            style={{
-              fontSize: '0.72rem',
-              color: 'var(--ifm-font-color-secondary)',
-              background: 'var(--ifm-color-emphasis-100)',
-              padding: '0.2rem 0.5rem',
-              borderRadius: '4px',
-              whiteSpace: 'nowrap',
-              flexShrink: 0,
-            }}
-          >
-            ~{duration}
-          </span>
-        )}
       </div>
 
       {open && (
@@ -138,14 +126,34 @@ export default function SkillCard({ name, title, description, prompt, output, du
             </div>
           )}
 
-          <div
-            style={{
-              fontSize: '0.75rem',
-              color: 'var(--ifm-font-color-secondary)',
-              fontFamily: 'var(--ifm-font-family-monospace)',
-            }}
-          >
-            Skill: <code>{name}</code>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-secondary)', fontFamily: 'var(--ifm-font-family-monospace)' }}>
+              Skill:{' '}
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <code style={{ color: 'var(--ifm-color-primary)' }}>{name}</code>
+              </a>
+            </div>
+            <a
+              href={downloadUrl}
+              download={`${name}.md`}
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                padding: '0.35rem 0.7rem',
+                fontSize: '0.78rem',
+                fontWeight: 500,
+                border: '1px solid var(--ifm-color-emphasis-300)',
+                borderRadius: '6px',
+                background: 'var(--ifm-card-background-color)',
+                color: 'var(--ifm-font-color-secondary)',
+                textDecoration: 'none',
+                cursor: 'pointer',
+              }}
+            >
+              ↓ Skill herunterladen
+            </a>
           </div>
         </div>
       )}
