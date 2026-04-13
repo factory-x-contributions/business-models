@@ -9,6 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://factory-x-contributions.github.io/business-models/">
+    <img src="https://img.shields.io/badge/🌐 Live Website-factory--x--contributions.github.io-0066cc?style=for-the-badge" alt="Live Website"/>
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/factory-x-contributions/business-models/actions"><img src="https://img.shields.io/github/actions/workflow/status/factory-x-contributions/business-models/build-and-deploy-gh-pages.yaml?style=flat-square&label=Build" alt="Build Status"/></a>
   <a href="https://github.com/factory-x-contributions/business-models/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License Code"/></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=flat-square" alt="License Docs"/></a>
