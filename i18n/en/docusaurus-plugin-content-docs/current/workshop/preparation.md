@@ -131,7 +131,7 @@ Not all people need to participate on all 5 days. The composition should be adju
 </br>
 
 :::tip AI Support
-The workshop can be combined with the **[Business Model AI Assistant](../ai/ai_overview)**. Sticky notes can be digitized and transferred to templates - this can reduce the time frame.
+The workshop can be combined with the **[Business Model AI Assistant](../ai/overview)**. Sticky notes can be digitized and transferred to templates - this can reduce the time frame.
 :::
 
 ---

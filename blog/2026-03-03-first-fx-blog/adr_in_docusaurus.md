@@ -7,7 +7,7 @@ tags: [business_models, factory-x, hausbaulogik]
 
 Die Dokumentation zur Geschäftsmodellentwicklung in Factory-X ist jetzt online. Im Zentrum steht die **Hausbaulogik** – eine praxiserprobte Methodik für datenbasierte Geschäftsmodelle im industriellen Kontext.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Die vier Räume der Hausbaulogik
 
