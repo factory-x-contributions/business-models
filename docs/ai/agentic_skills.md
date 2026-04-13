@@ -293,4 +293,4 @@ user-invocable: true
 - [Agent Skills Open Standard](https://agentskills.io) - Der offene Standard hinter den Skills
 - [Hausbaulogik - Methodik](/docs/methodology/overview) - Die vollständige Methodenbeschreibung
 - [Workshop-Konzept](/docs/workshop/overview_workshop) - Die Skills als 5-Tage-Workshop
-- [AI-Assistent Anleitung](/docs/ai/single_prompt_anleitung) - Estelle als AI-Assistenten nutzen
+- [AI-Assistent Anleitung](/docs/ai/single_prompt_guide) - Estelle als AI-Assistenten nutzen

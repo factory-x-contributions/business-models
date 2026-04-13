@@ -127,7 +127,7 @@ Dieser **5-tägige Workshop** führt Sie Schritt für Schritt durch die Entwickl
   :::tip Hybride Workshop-Variante mit AI-Unterstützung
 Dieser Workshop kann auch **hybrid mit AI-Unterstützung** durchgeführt werden. Dafür:
 
-1. Richten Sie zunächst den AI-Assistenten **Estelle** ein - folgen Sie der [Anleitung AI-Assistent](../ai/single_prompt_anleitung)
+1. Richten Sie zunächst den AI-Assistenten **Estelle** ein - folgen Sie der [Anleitung AI-Assistent](../ai/single_prompt_guide)
 2. Auf den jeweiligen **Seiten der Workshop-Tage** finden Sie farblich hervorgehobene, konkrete Hinweise, wie Estelle Sie bei den einzelnen Aufgaben unterstützen kann
 
 So kombinieren Sie strukturierte Workshop-Arbeit mit intelligenter AI-Begleitung.

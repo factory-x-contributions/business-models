@@ -1,5 +1,5 @@
 ---
-id: heute_zukunft
+id: present_and_future
 title: Heute & Zukunft
 description: Was mit AI-Unterstützung heute möglich ist - und wohin die Reise geht
 sidebar_position: 5

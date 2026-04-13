@@ -1,5 +1,5 @@
 ---
-id: single_prompt_anleitung
+id: single_prompt_guide
 title: "Single Prompt: Anleitung"
 description: Einführung in Estelle - den AI-Assistenten für datenbasierte Geschäftsmodellentwicklung
 sidebar_position: 2

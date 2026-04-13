@@ -196,7 +196,7 @@ Es gibt drei Wege, die Methodik anzuwenden:
   </ul>
 </a>
 
-<a href="../ai/single_prompt_anleitung" className="variant-card" style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '16px', padding: '1.5rem', position: 'relative', overflow: 'hidden', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'}}>
+<a href="../ai/single_prompt_guide" className="variant-card" style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '16px', padding: '1.5rem', position: 'relative', overflow: 'hidden', textDecoration: 'none', color: 'inherit', display: 'block', transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease'}}>
   <div style={{position: 'absolute', top: 0, right: 0, background: '#84a302', color: 'white', padding: '0.25rem 1rem', borderBottomLeftRadius: '12px', fontSize: '0.75rem', fontWeight: 'bold'}}>KI-GESTÜTZT</div>
   <h4 style={{marginTop: '1rem'}}>Business Model Assistant</h4>
   <p style={{fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-700)'}}>Selbstständig mit KI-Unterstützung arbeiten. Ein Chatbot führt dich durch alle Räume und stellt die richtigen Fragen.</p>

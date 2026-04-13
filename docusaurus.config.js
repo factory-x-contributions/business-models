@@ -92,7 +92,7 @@ const config = {
             items: [
               {
               label: 'AI-Assistent',
-                to: 'docs/ai/single_prompt_anleitung',
+                to: 'docs/ai/single_prompt_guide',
               },
               {
                 label: 'Methodik',

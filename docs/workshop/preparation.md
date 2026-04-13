@@ -131,7 +131,7 @@ Nicht alle Personen müssen an allen 5 Tagen teilnehmen. Die Zusammensetzung sol
 </br>
 
 :::tip KI-Unterstützung
-Der Workshop kann mit dem **[Business Model AI Assistant](../ai/single_prompt_anleitung)** kombiniert werden. Klebezettel lassen sich digitalisieren und in Templates übertragen - so kann der zeitliche Rahmen reduziert werden.
+Der Workshop kann mit dem **[Business Model AI Assistant](../ai/single_prompt_guide)** kombiniert werden. Klebezettel lassen sich digitalisieren und in Templates übertragen - so kann der zeitliche Rahmen reduziert werden.
 :::
 
 ---
