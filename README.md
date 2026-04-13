@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/factory-x-contributions/business-models/actions"><img src="https://img.shields.io/github/actions/workflow/status/factory-x-contributions/business-models/deploy.yml?style=flat-square&label=Build" alt="Build Status"/></a>
+  <a href="https://github.com/factory-x-contributions/business-models/actions"><img src="https://img.shields.io/github/actions/workflow/status/factory-x-contributions/business-models/build-and-deploy-gh-pages.yaml?style=flat-square&label=Build" alt="Build Status"/></a>
   <a href="https://github.com/factory-x-contributions/business-models/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License Code"/></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=flat-square" alt="License Docs"/></a>
-  <a href="https://docusaurus.io/"><img src="https://img.shields.io/badge/Docusaurus-3.9.2-blue.svg?style=flat-square" alt="Docusaurus"/></a>
+  <a href="https://docusaurus.io/"><img src="https://img.shields.io/badge/Docusaurus-3.10.0-blue.svg?style=flat-square" alt="Docusaurus"/></a>
 </p>
 
 <p align="center">
