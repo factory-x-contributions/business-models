@@ -11,9 +11,9 @@
     "message": "Methodology",
     "description": "Navbar item with label Methodik"
   },
-  "item.label.AI-Chatbot": {
-    "message": "AI Chatbot",
-    "description": "Navbar item with label AI-Chatbot"
+  "item.label.AI-Assistent": {
+    "message": "AI Assistant",
+    "description": "Navbar item with label AI-Assistent"
   },
   "item.label.Workshop": {
     "message": "Workshop",

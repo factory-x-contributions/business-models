@@ -15,17 +15,17 @@
     "message": "This section explains the methodology behind the House-Building Logic.",
     "description": "The generated-index page description for category 'Methodik' in sidebar 'docs'"
   },
-  "sidebar.docs.category.AI-Chatbot": {
-    "message": "AI Chatbot",
-    "description": "The label for category 'AI-Chatbot' in sidebar 'docs'"
+  "sidebar.docs.category.AI-Assistent": {
+    "message": "AI Assistant",
+    "description": "The label for category 'AI-Assistent' in sidebar 'docs'"
   },
-  "sidebar.docs.category.AI-Chatbot.link.generated-index.title": {
-    "message": "AI Chatbot",
-    "description": "The generated-index page title for category 'AI-Chatbot' in sidebar 'docs'"
+  "sidebar.docs.category.AI-Assistent.link.generated-index.title": {
+    "message": "AI Assistant",
+    "description": "The generated-index page title for category 'AI-Assistent' in sidebar 'docs'"
   },
-  "sidebar.docs.category.AI-Chatbot.link.generated-index.description": {
-    "message": "This section explains how to work through the House-Building Logic using an AI chatbot.",
-    "description": "The generated-index page description for category 'AI-Chatbot' in sidebar 'docs'"
+  "sidebar.docs.category.AI-Assistent.link.generated-index.description": {
+    "message": "This section explains how to work through the House-Building Logic using an AI assistant.",
+    "description": "The generated-index page description for category 'AI-Assistent' in sidebar 'docs'"
   },
   "sidebar.docs.category.Workshop": {
     "message": "Workshop",
