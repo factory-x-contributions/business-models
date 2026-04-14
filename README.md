@@ -75,7 +75,7 @@ The House Building Logic uses the metaphor of a house to make the complex proces
 
 - Full support for German (default) and English
 - Language switcher in the navigation bar
-- Translated documentation, blog posts, and UI elements
+- Translated UI elements and navbar/footer strings
 
 ## 🚀 Quick Start
 
@@ -119,35 +119,44 @@ npm start -- --locale en        # English version
 
 ```text
 business-models/
-├── docs/                    # Documentation (MDX)
-│   ├── methodology/         # House Building Logic methodology
-│   │   ├── overview.md      # Introduction
-│   │   ├── entrance-area.md # Entrance area
-│   │   ├── blue-room.md     # Blue Room
-│   │   ├── red-room.md      # Red Room
-│   │   ├── green-room.md    # Green Room
-│   │   ├── yellow-room.md   # Yellow Room
-│   │   └── exit-room.md     # Exit area
-│   ├── workshop/            # Workshop materials
-│   └── ai/                  # AI assistant documentation
-├── i18n/                    # Internationalization
-│   └── en/                  # English translations
-│       ├── docusaurus-plugin-content-docs/
-│       │   └── current/     # Translated documentation
-│       ├── docusaurus-plugin-content-blog/
-│       │                    # Translated blog posts
+├── docs/                        # Documentation (MDX)
+│   ├── methodology/             # House Building Logic methodology
+│   │   ├── overview.mdx         # Introduction
+│   │   ├── entrance-area.mdx    # Entrance area
+│   │   ├── blue-room.mdx        # Blue Room
+│   │   ├── red-room.mdx         # Red Room
+│   │   ├── green-room.mdx       # Green Room
+│   │   ├── yellow-room.mdx      # Yellow Room
+│   │   └── exit-room.mdx        # Exit area
+│   ├── workshop/                # Workshop materials (5-day format)
+│   │   ├── overview_workshop.mdx
+│   │   ├── preparation.mdx
+│   │   ├── day-1-blue-room.mdx
+│   │   ├── day-2-red-room.mdx
+│   │   ├── day-3-green-room.mdx
+│   │   ├── day-4-yellow-room.mdx
+│   │   └── day-5-closing.mdx
+│   └── ai/                      # AI assistant documentation
+│       ├── ai_approaches.mdx
+│       ├── single_prompt_guide.mdx
+│       ├── single_prompt_best_practices.mdx
+│       ├── agentic_skills.mdx
+│       └── present_and_future.mdx
+├── i18n/                        # Internationalization
+│   └── en/                      # English translations
 │       ├── docusaurus-theme-classic/
-│       │                    # Navbar & footer translations
-│       └── code.json        # UI string translations
-├── files/
-│   └── ai/                  # System prompt for AI assistants
+│       │                        # Navbar & footer translations
+│       └── code.json            # UI string translations
+├── static/                      # Static assets
+│   ├── img/                     # Images
+│   ├── files/ai/                # Downloadable system prompt files (DE + EN)
+│   └── robots.txt               # Crawler directives
+├── blog/                        # Blog posts
 ├── src/
-│   ├── components/          # React components
-│   ├── css/                 # Styling
-│   └── pages/               # Static pages
-├── static/                  # Static assets
-├── blog/                    # Blog posts (German)
-└── docusaurus.config.js     # Docusaurus configuration
+│   ├── components/              # React components
+│   ├── css/                     # Styling
+│   └── pages/                   # Static pages (homepage)
+└── docusaurus.config.js         # Docusaurus configuration
 ```
 
 ## 🤝 Contributing
