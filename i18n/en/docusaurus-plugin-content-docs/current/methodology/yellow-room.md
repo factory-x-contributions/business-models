@@ -5,6 +5,8 @@ description: Checking profitability – calculating costs, revenues, and pricing
 sidebar_position: 6
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(196, 160, 0, 0.08) 0%, rgba(196, 160, 0, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🟡</span>
@@ -91,9 +93,10 @@ Define KPIs that make value measurable:
 | MTTR (Mean Time to Repair) | Secondary | Maintenance | Direct |
 | Maintenance Costs (EUR/machine) | Secondary | Controlling | Calculated |
 
-:::info Management KPIs
+
+<Admonition type="info" title="Management KPIs">
 For management: Focus on **one primary KPI** that is directly linked to economic benefit. OEE is often too aggregated, MTBF too abstract.
-:::
+</Admonition>
 
 ---
 
@@ -224,9 +227,10 @@ Which parameters have the greatest impact?
 | Variable costs | -20% | -1 month |
 | **Customer count** | +50% | **-6 months** |
 
-:::info Key Insight
+
+<Admonition type="info" title="Key Insight">
 The decisive lever is often **not the price**, but **scaling via machine count per customer**. Volume beats price optimization.
-:::
+</Admonition>
 
 ---
 
@@ -322,6 +326,7 @@ Before moving to the Exit Area, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The Yellow Room is the reality check for the business model.** It ensures that the idea is not only attractive and feasible but also **financially viable**. A comprehensible argument for why the offering is worthwhile is the foundation for every decision document.
-:::
+</Admonition>

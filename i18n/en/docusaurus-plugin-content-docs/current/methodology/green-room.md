@@ -5,6 +5,8 @@ description: Designing value creation – planning partners, data flows, and ope
 sidebar_position: 5
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.08) 0%, rgba(107, 142, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🟢</span>
@@ -328,6 +330,7 @@ Before moving to the Yellow Room, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The Green Room is the engine behind the business model.** Here it's decided whether the model is not only desirable but also **feasible and scalable**. A realistic picture of value creation including roles and partners is the foundation for economic success.
-:::
+</Admonition>

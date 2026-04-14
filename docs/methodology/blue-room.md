@@ -5,6 +5,8 @@ description: 🔵 Kundenbedürfnisse verstehen - Personas, Pains und Gains erarb
 sidebar_position: 3
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.08) 0%, rgba(56, 111, 179, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🔵</span>
@@ -81,9 +83,10 @@ Nach der Identifikation: **Welches Segment ist am wichtigsten?**
 | **Zahlungsbereitschaft** | Gibt es Budget für Lösungen? | Hoch |
 | **Fit** | Passt das Segment zu unseren Stärken? | Mittel |
 
-:::info Fokussierung
+
+<Admonition type="info" title="Fokussierung">
 Am Ende solltest du **1-2 Kernsegmente** priorisiert haben, auf die du dich fokussierst. Lieber ein Segment richtig verstehen als fünf oberflächlich.
-:::
+</Admonition>
 
 ---
 
@@ -152,9 +155,10 @@ Das JTBD-Framework erfasst, **was Kunden wirklich erreichen wollen** - nicht was
 | **Emotional** | Wie möchte sich der Kunde dabei fühlen? | Sicher, in Kontrolle, nicht gestresst |
 | **Sozial** | Wie möchte der Kunde wahrgenommen werden? | Als kompetent, innovativ, vorausschauend |
 
-:::info Insight
+
+<Admonition type="info" title="Insight">
 Kunden kaufen keine Produkte - sie „heuern" Lösungen an, um einen Job zu erledigen. Verstehe den Job, nicht das Feature.
-:::
+</Admonition>
 
 ### Pains (Probleme)
 
@@ -284,6 +288,7 @@ Bevor du in den Roten Raum wechselst, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Blaue Raum ist das Herzstück der Kundenorientierung.** Je besser du deine Kunden verstehst, desto relevanter und erfolgreicher wird dein Wertversprechen. Hier merkst du sofort: Löst unsere Idee ein echtes Problem - oder fanden wir sie nur selbst gut?
-:::
+</Admonition>

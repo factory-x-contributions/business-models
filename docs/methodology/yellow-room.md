@@ -5,6 +5,8 @@ description: 🟡 Wirtschaftlichkeit prüfen - Kosten, Erlöse und Preismodelle 
 sidebar_position: 6
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(196, 160, 0, 0.08) 0%, rgba(196, 160, 0, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🟡</span>
@@ -91,9 +93,10 @@ Definiere KPIs, die den Wert messbar machen:
 | MTTR (Mean Time to Repair) | Sekundär | Instandhaltung | Direkt |
 | Wartungskosten (EUR/Maschine) | Sekundär | Controlling | Berechnet |
 
-:::info Management-KPIs
+
+<Admonition type="info" title="Management-KPIs">
 Für die Geschäftsführung: Fokussiere auf **einen Primär-KPI**, der direkt mit wirtschaftlichem Nutzen verknüpft ist. OEE ist oft zu aggregiert, MTBF zu abstrakt.
-:::
+</Admonition>
 
 ---
 
@@ -224,9 +227,10 @@ Welche Parameter haben den größten Einfluss?
 | Variable Kosten | -20% | -1 Monat |
 | **Kundenanzahl** | +50% | **-6 Monate** |
 
-:::info Kernaussage
+
+<Admonition type="info" title="Kernaussage">
 Der entscheidende Hebel ist oft **nicht der Preis**, sondern die **Skalierung über Maschinenanzahl pro Kunde**. Volumen schlägt Preisoptimierung.
-:::
+</Admonition>
 
 ---
 
@@ -322,6 +326,7 @@ Bevor du in den Ausgangsbereich wechselst, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Gelbe Raum ist der Reality-Check für das Geschäftsmodell.** Er stellt sicher, dass die Idee nicht nur attraktiv und umsetzbar, sondern auch **finanziell tragfähig** ist. Eine nachvollziehbare Argumentation, warum sich das Angebot lohnt, ist die Grundlage für jede Entscheidungsvorlage.
-:::
+</Admonition>

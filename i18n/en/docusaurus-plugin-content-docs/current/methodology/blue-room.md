@@ -5,6 +5,8 @@ description: Understanding customer needs – developing personas, pains, and ga
 sidebar_position: 3
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.08) 0%, rgba(56, 111, 179, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🔵</span>
@@ -81,9 +83,10 @@ After identification: **Which segment is most important?**
 | **Willingness to Pay** | Is there budget for solutions? | High |
 | **Fit** | Does the segment match our strengths? | Medium |
 
-:::info Focus
+
+<Admonition type="info" title="Focus">
 At the end, you should have **1-2 core segments** prioritized that you focus on. Better to understand one segment properly than five superficially.
-:::
+</Admonition>
 
 ---
 
@@ -152,9 +155,10 @@ The JTBD framework captures **what customers really want to achieve** — not wh
 | **Emotional** | How does the customer want to feel? | Safe, in control, not stressed |
 | **Social** | How does the customer want to be perceived? | As competent, innovative, forward-thinking |
 
-:::info Insight
+
+<Admonition type="info" title="Insight">
 Customers don't buy products — they "hire" solutions to get a job done. Understand the job, not the feature.
-:::
+</Admonition>
 
 ### Pains (Problems)
 
@@ -284,6 +288,7 @@ Before moving to the Red Room, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The Blue Room is the heart of customer orientation.** The better you understand your customers, the more relevant and successful your value proposition will be. Here you'll immediately notice: Does our idea solve a real problem – or did we just like it ourselves?
-:::
+</Admonition>

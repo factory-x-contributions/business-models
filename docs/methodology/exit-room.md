@@ -5,6 +5,8 @@ description: 🚪 Ergebnisse bündeln, Risiken bewerten und Entscheidungsvorlage
 sidebar_position: 7
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🚪</span>
@@ -350,6 +352,7 @@ Bevor du das Haus verlässt, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Ausgangsbereich ist mehr als nur eine Zusammenfassung.** Er identifiziert kritische Risiken, definiert konkrete Maßnahmen und schafft die Grundlage für eine fundierte Entscheidung. Mit der HBL hast du nicht „noch ein Canvas" ausgefüllt, sondern ein Geschäftsmodell gebaut, das im Kontext von Datenräumen wie Factory-X **wirklich Substanz** hat.
-:::
+</Admonition>

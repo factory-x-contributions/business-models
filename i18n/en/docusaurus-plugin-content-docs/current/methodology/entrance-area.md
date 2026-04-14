@@ -6,6 +6,7 @@ sidebar_position: 2
 ---
 
 import GradientButton from '@site/src/components/buttons/GradientButton';
+import Admonition from '@theme/Admonition';
 
 <div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
@@ -98,9 +99,10 @@ Here you clarify your **current** business model — not the future one.
 
 Briefly document how you make money today (e.g., product sales, service contracts, spare parts, licenses, consulting).
 
-:::tip Future Revenue Models
+
+<Admonition type="tip" title="Future Revenue Models">
 The development of new revenue models (subscription, pay-per-use, outcome-based) takes place in the [Yellow Room](./yellow-room.md#2-revenue-mechanics--pricing-model).
-:::
+</Admonition>
 
 ### Customer Analysis
 
@@ -108,9 +110,10 @@ The development of new revenue models (subscription, pay-per-use, outcome-based)
 - **Potential Customers:** Which segments *could* you serve but don't yet?
 - **Data Potential:** What data is generated today that would be valuable for customers?
 
-:::info Recognizing Potential
+
+<Admonition type="info" title="Recognizing Potential">
 This analysis often reveals untapped potential: e.g., data that "gathers dust" internally today but would be valuable to customers.
-:::
+</Admonition>
 
 ---
 
@@ -257,9 +260,10 @@ Consider now:
 - What data could you use or provide?
 - What partners do you need in the ecosystem?
 
-:::tip Detailed Role Clarification
+
+<Admonition type="tip" title="Detailed Role Clarification">
 The precise definition of your role in the data space (Data Provider, Data Consumer, Service Provider, Orchestrator) as well as technical integration takes place in the [Green Room](./green-room.md#1-roles--actors).
-:::
+</Admonition>
 
 ---
 
@@ -326,6 +330,7 @@ Before moving to the Blue Room, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The entrance area is the foundation of your house.** The clearer this section is elaborated, the more stable everything that follows will be. An honest assessment is more important than an optimistic presentation – radical honesty pays off in all subsequent rooms.
-:::
+</Admonition>

@@ -5,6 +5,8 @@ description: Developing the value proposition – translating customer problems 
 sidebar_position: 4
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(184, 84, 80, 0.08) 0%, rgba(184, 84, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🔴</span>
@@ -74,9 +76,10 @@ The **Match Matrix** is the central tool in the Red Room. It connects the **insi
 
 ### Consistent Elimination
 
-:::warning Important
+
+<Admonition type="warning" title="Important">
 **Features without clear customer reference are candidates for removal** — they create effort without added value. If a feature cannot be assigned to any pain, it's ballast. Get rid of it!
-:::
+</Admonition>
 
 ---
 
@@ -142,9 +145,10 @@ A good Value Proposition Statement is:
 | **Credible** | Understandable and realistic |
 | **Simple** | Understandable in one sentence |
 
-:::info Touchstone
+
+<Admonition type="info" title="Touchstone">
 This sentence is gold: It's your touchstone for everything you do later – product development, pricing, sales, marketing.
-:::
+</Admonition>
 
 ---
 
@@ -265,6 +269,7 @@ Before moving to the Green Room, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The Red Room is the bridge between customer needs and your offering.** A strong value proposition is the key to acceptance and differentiation in the market. Consistently removing features without customer reference is not a weakness, but a strength.
-:::
+</Admonition>

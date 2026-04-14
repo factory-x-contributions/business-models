@@ -5,6 +5,8 @@ description: Consolidate results, assess risks, and prepare decision document
 sidebar_position: 7
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🚪</span>
@@ -350,6 +352,7 @@ Before you leave the house, check:
 
 ---
 
-:::info Remember
+
+<Admonition type="info" title="Remember">
 **The exit area is more than just a summary.** It identifies critical risks, defines concrete measures, and creates the foundation for a well-founded decision. With the HBL, you haven't just filled out "yet another canvas," but built a business model that has **real substance** in the context of data spaces like Factory-X.
-:::
+</Admonition>

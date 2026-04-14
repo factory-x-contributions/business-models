@@ -5,6 +5,8 @@ description: 🔴 Wertversprechen entwickeln - Kundenprobleme in konkrete Lösun
 sidebar_position: 4
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(184, 84, 80, 0.08) 0%, rgba(184, 84, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🔴</span>
@@ -74,9 +76,10 @@ Die **Match-Matrix** ist das zentrale Werkzeug im Roten Raum. Sie verbindet die 
 
 ### Konsequentes Weglassen
 
-:::warning Wichtig
+
+<Admonition type="warning" title="Wichtig">
 **Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** - sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast. Weg damit!
-:::
+</Admonition>
 
 ---
 
@@ -142,9 +145,10 @@ Ein gutes Value Proposition Statement ist:
 | **Glaubwürdig** | Nachvollziehbar und realistisch |
 | **Einfach** | In einem Satz verständlich |
 
-:::info Prüfstein
+
+<Admonition type="info" title="Prüfstein">
 Dieser Satz ist Gold wert: Er ist dein Prüfstein für alles, was du später tust - Produktentwicklung, Preisgestaltung, Vertrieb, Marketing.
-:::
+</Admonition>
 
 ---
 
@@ -265,6 +269,7 @@ Bevor du in den Grünen Raum wechselst, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Rote Raum ist der Brückenschlag zwischen Kundenbedürfnissen und deinem Angebot.** Ein starkes Wertversprechen ist der Schlüssel für Akzeptanz und Differenzierung am Markt. Konsequentes Weglassen von Features ohne Kundenbezug ist keine Schwäche, sondern Stärke.
-:::
+</Admonition>

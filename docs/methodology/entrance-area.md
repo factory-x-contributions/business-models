@@ -6,6 +6,7 @@ sidebar_position: 2
 ---
 
 import GradientButton from '@site/src/components/buttons/GradientButton';
+import Admonition from '@theme/Admonition';
 
 <div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
@@ -98,9 +99,10 @@ Hier klärst du dein **aktuelles** Geschäftsmodell - nicht das zukünftige.
 
 Dokumentiere kurz, wie du heute Geld verdienst (z.B. Produktverkauf, Serviceverträge, Ersatzteile, Lizenzen, Beratung).
 
-:::tip Zukünftige Erlösmodelle
+
+<Admonition type="tip" title="Zukünftige Erlösmodelle">
 Die Entwicklung neuer Erlösmodelle (Subscription, Pay-per-Use, Outcome-Based) erfolgt im [Gelben Raum](./yellow-room.md#2-erlösmechanik--preismodell).
-:::
+</Admonition>
 
 ### Kundenanalyse
 
@@ -108,9 +110,10 @@ Die Entwicklung neuer Erlösmodelle (Subscription, Pay-per-Use, Outcome-Based) e
 - **Potenzielle Kunden:** Welche Segmente *könntest* du bedienen, tust es aber noch nicht?
 - **Datenpotenzial:** Welche Daten entstehen heute, die für Kunden wertvoll wären?
 
-:::info Potenzial erkennen
+
+<Admonition type="info" title="Potenzial erkennen">
 Diese Analyse zeigt oft ungenutzte Potenziale: z.B. Daten, die heute intern "verstauben", aber für Kunden wertvoll wären.
-:::
+</Admonition>
 
 ---
 
@@ -257,9 +260,10 @@ Ein Datenraum (Factory-X, Catena-X) ist mehr als eine Datenablage - er ist ein *
 - Welche Daten könntest du nutzen oder bereitstellen?
 - Welche Partner brauchst du im Ökosystem?
 
-:::tip Detaillierte Rollenklärung
+
+<Admonition type="tip" title="Detaillierte Rollenklärung">
 Die genaue Definition deiner Rolle im Datenraum (Data Provider, Data Consumer, Service Provider, Orchestrator) sowie die technische Integration erfolgt im [Grünen Raum](./green-room.md#1-rollen--akteure).
-:::
+</Admonition>
 
 ---
 
@@ -326,6 +330,7 @@ Bevor du in den Blauen Raum wechselst, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Eingangsbereich ist das Fundament deines Hauses.** Je klarer dieser Abschnitt ausgearbeitet wird, desto stabiler wird alles, was danach kommt. Die ehrliche Bestandsaufnahme ist wichtiger als eine optimistische Darstellung - radikale Ehrlichkeit zahlt sich in allen folgenden Räumen aus.
-:::
+</Admonition>

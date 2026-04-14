@@ -5,6 +5,8 @@ description: 🟢 Wertschöpfung gestalten - Partner, Datenflüsse und operative
 sidebar_position: 5
 ---
 
+import Admonition from '@theme/Admonition';
+
 <div style={{background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.08) 0%, rgba(107, 142, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
     <span style={{fontSize: '1.5rem'}}>🟢</span>
@@ -328,6 +330,7 @@ Bevor du in den Gelben Raum wechselst, prüfe:
 
 ---
 
-:::info Merke
+
+<Admonition type="info" title="Merke">
 **Der Grüne Raum ist die Maschine hinter dem Geschäftsmodell.** Hier wird entschieden, ob das Modell nicht nur wünschenswert, sondern auch **machbar und skalierbar** ist. Ein realistisches Bild der Wertschöpfung inklusive Rollen und Partnern ist die Basis für den wirtschaftlichen Erfolg.
-:::
+</Admonition>
