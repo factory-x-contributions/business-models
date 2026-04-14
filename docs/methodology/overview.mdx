@@ -6,6 +6,7 @@ sidebar_position: 1
 ---
 
 import GradientButton from '@site/src/components/buttons/GradientButton';
+import RoomHero from '@site/src/components/RoomHero';
 
 export const RoomButton = ({ href, text, gradient, shadowColor, shadowColorHover, tooltip }) => (
   <div style={{ position: 'relative', display: 'contents' }} className="room-button-wrapper">
@@ -24,25 +25,22 @@ export const RoomButton = ({ href, text, gradient, shadowColor, shadowColorHover
   </div>
 );
 
-## Was ist die Hausbaulogik?
-
-Die **Hausbaulogik (HBL)** ist ein strukturierter Ansatz zur Entwicklung datenbasierter Geschäftsmodelle - speziell für den industriellen Kontext wie Maschinen- und Anlagenbau.
-
-Klassische Frameworks wie das Business Model Canvas sind oft zu abstrakt: Sie zeigen zwar, welche Bausteine ein Geschäftsmodell hat, aber nicht, wie man diese erarbeitet. Teams stehen vor einem leeren Canvas und wissen nicht, wo sie anfangen sollen. Die HBL löst dieses Problem, indem sie einen **klaren Ablauf mit konkreten Methoden** vorgibt.
-
-### Warum ein Haus?
-
-Das Framework nutzt die Metapher eines **Hauses**, weil sie intuitiv verständlich ist:
-
-- **Du betrittst das Haus durch den Eingang** - hier klärst du die Ausgangslage und definierst deine Geschäftsidee
-- **Du durchläufst verschiedene Räume** - jeder Raum behandelt eine zentrale Frage deines Geschäftsmodells
-- **Du verlässt das Haus durch den Ausgang** - mit einem fertigen, validierten Geschäftsmodell
-
-Die Räume sind farblich kodiert und werden in einer festen Reihenfolge durchlaufen. Jeder Raum baut auf den Ergebnissen des vorherigen auf - so entsteht ein konsistentes Gesamtbild.
-
----
+<RoomHero
+  icon="🏠"
+  label="Einführung"
+  color="#386FB3"
+  heading="Einführung Hausbaulogik"
+  intro="Die <strong>Hausbaulogik (HBL)</strong> ist ein strukturierter Ansatz zur Entwicklung datenbasierter Geschäftsmodelle – speziell für den industriellen Kontext wie Maschinen- und Anlagenbau. Klassische Frameworks wie das Business Model Canvas sind oft zu abstrakt: Sie zeigen zwar, welche Bausteine ein Geschäftsmodell hat, aber nicht, wie man diese erarbeitet. Die HBL löst dieses Problem, indem sie einen <strong>klaren Ablauf mit konkreten Methoden</strong> vorgibt."
+  bullets={[
+    'Du betrittst das Haus durch den Eingang – hier klärst du die Ausgangslage und definierst deine Geschäftsidee',
+    'Du durchläufst verschiedene Räume – jeder Raum behandelt eine zentrale Frage deines Geschäftsmodells',
+    'Du verlässt das Haus durch den Ausgang – mit einem fertigen, validierten Geschäftsmodell',
+  ]}
+/>
 
 ## Die Räume im Überblick
+
+Die Räume sind farblich kodiert und werden in einer festen Reihenfolge durchlaufen. Jeder Raum baut auf den Ergebnissen des vorherigen auf – am Ende jedes Raums steht ein **Quality Gate**, das sicherstellt, dass alle wichtigen Fragen beantwortet sind.
 
 Klicke auf einen Raum, um die Details zu sehen:
 
@@ -175,8 +173,6 @@ Klicke auf einen Raum, um die Details zu sehen:
 
   </div>
 </div>
-
-Am Ende jedes Raums steht ein **Quality Gate** - eine Checkliste, die sicherstellt, dass alle wichtigen Fragen beantwortet sind, bevor es weitergeht.
 
 ---
 

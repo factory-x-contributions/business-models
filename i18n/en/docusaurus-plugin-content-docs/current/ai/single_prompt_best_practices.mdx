@@ -1,9 +1,11 @@
 ---
-id: ai_best_practices
-title: Best Practices
+id: single_prompt_best_practices
+title: "Single Prompt: Best Practices"
 description: Practical tips for effective prompts and optimal use of the AI assistant
-sidebar_position: 2
+sidebar_position: 3
 ---
+
+import Admonition from '@theme/Admonition';
 
 <br></br>
 
@@ -75,12 +77,12 @@ Every AI chatbot has a **limited context window**. After a certain number of mes
 | [**LLaMA 4**](https://www.meta.ai/) | Open-source, company-internal deployments |
 | [**Mistral Large**](https://chat.mistral.ai/) | European alternative, multilingual, GDPR-compliant |
 
-:::tip Model Settings
+<Admonition type="tip" title="Model Settings">
 Use the **"Auto" mode**, not exclusively the "Thinking" mode. Use neutral chat settings without a specific system prompt.
-:::
+</Admonition>
 
-:::warning Data Privacy
+<Admonition type="warning" title="Data Privacy">
 Avoid using public chatbots with sensitive company data. Prefer company-internal LLMs or secure platforms that handle data confidentially.
-:::
+</Admonition>
 
 

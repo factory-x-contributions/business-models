@@ -5,6 +5,10 @@ description: Introduction to Estelle – the AI assistant for data-driven busine
 sidebar_position: 2
 ---
 
+import Admonition from '@theme/Admonition';
+import { GradientButton } from '@site/src/components/buttons/GradientButton';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+
 <br></br>
 
 <div style={{background: 'linear-gradient(135deg, rgba(56, 111, 179, 0.08) 0%, rgba(56, 111, 179, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
@@ -23,9 +27,6 @@ sidebar_position: 2
 ## Step 1: Download the Document
 
 Download the AI prompt file to activate it later in your AI tool.
-
-import { GradientButton } from '@site/src/components/buttons/GradientButton';
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 <div style={{marginTop: '1rem', display: 'inline-block'}}>
   <GradientButton
@@ -49,9 +50,9 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 Open your preferred AI tool (e.g., ChatGPT, Claude, Copilot) and upload the downloaded file or paste its contents.
 
-:::info Data Privacy Notice
+<Admonition type="info" title="Data Privacy Notice">
 The business model data you develop is sensitive. Preferably use company-internal chatbots that handle your data confidentially. See [Best Practices](./single_prompt_best_practices).
-:::
+</Admonition>
 
 ---
 
@@ -72,6 +73,6 @@ Write in the chat:
 
 <br></br>
 
-:::tip Navigation
+<Admonition type="tip" title="Navigation">
 You can jump directly to any room at any time by mentioning its name (e.g., "Blue Room"). Each room guides you step by step through questions and creates appropriate output documents.
-:::
+</Admonition>

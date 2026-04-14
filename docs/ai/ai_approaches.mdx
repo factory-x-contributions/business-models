@@ -1,0 +1,87 @@
+---
+id: ai_approaches
+title: Zwei Ansätze im Vergleich
+description: Single Prompt File vs. Agentic Skills - wann du welchen Ansatz nutzen solltest
+sidebar_position: 1
+---
+
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🔀"
+  label="Entscheidungshilfe"
+  color="#386FB3"
+  heading="Single Prompt File oder Agentic Skills?"
+  intro="Es gibt zwei Wege, die Hausbaulogik mit AI-Unterstützung zu durchlaufen. Beide nutzen dieselbe Methodik – unterscheiden sich aber in Werkzeug, Flexibilität und technischem Aufwand."
+  bullets={[
+    'Single Prompt File – eine Datei, jeder Chatbot, sofort loslegen',
+    'Agentic Skills – 23 spezialisierte Skills, gezielt und iterativ abrufbar',
+  ]}
+/>
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem'}}>
+
+<div style={{border: '1px solid rgba(56,111,179,0.25)', borderTop: '3px solid #386FB3', borderRadius: '12px', padding: '1.5rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1.25rem'}}>📄</span>
+    <span style={{fontWeight: '700', fontSize: '1.05rem', color: '#386FB3'}}>Single Prompt File</span>
+  </div>
+  <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', lineHeight: '1.6'}}>
+    Eine Markdown-Datei als System-Prompt – AI-Assistent <strong>Estelle</strong> führt durch alle Räume der Hausbaulogik in einem Gespräch.
+  </p>
+  <div style={{display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '1.25rem'}}>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Kein Setup – sofort nutzbar</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>ChatGPT, Claude, Copilot & Co.</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Gesamtprozess in einem Chat</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#f59e0b', flexShrink: 0}}>~</span>Lineare Führung, weniger flexibel</div>
+  </div>
+  <div style={{borderTop: '1px solid var(--ifm-color-emphasis-200)', paddingTop: '0.85rem'}}>
+    <div style={{fontSize: '0.68rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.07em', color: '#386FB3', marginBottom: '0.5rem'}}>Ideal wenn …</div>
+    <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', display: 'flex', flexDirection: 'column', gap: '0.3rem'}}>
+      <li>du den Prozess erstmals durchläufst</li>
+      <li>kein technischer Setup gewünscht ist</li>
+      <li>du das ganze Modell in einer Session entwickelst</li>
+      <li>du im Workshop mit einem Team arbeitest</li>
+    </ul>
+  </div>
+</div>
+
+<div style={{border: '1px solid rgba(149,165,50,0.25)', borderTop: '3px solid #95A532', borderRadius: '12px', padding: '1.5rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem'}}>
+    <span style={{fontSize: '1.25rem'}}>⚡</span>
+    <span style={{fontWeight: '700', fontSize: '1.05rem', color: '#95A532'}}>Agentic Skills</span>
+  </div>
+  <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', lineHeight: '1.6'}}>
+    23 spezialisierte Skill-Dateien für Claude Code – jede Methode einzeln abrufbar, kombinierbar und in Workflows integrierbar.
+  </p>
+  <div style={{display: 'flex', flexDirection: 'column', gap: '0.35rem', marginBottom: '1.25rem'}}>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Einzelne Methoden gezielt abrufbar</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Höhere Konsistenz & Qualitätskontrolle</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Iterative & parallele Arbeit möglich</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#22c55e', flexShrink: 0}}>✓</span>Kompatibel mit AI-Agents & Pipelines</div>
+    <div style={{fontSize: '0.82rem', display: 'flex', gap: '0.5rem'}}><span style={{color: '#f59e0b', flexShrink: 0}}>~</span>Erfordert Claude Code</div>
+  </div>
+  <div style={{borderTop: '1px solid var(--ifm-color-emphasis-200)', paddingTop: '0.85rem'}}>
+    <div style={{fontSize: '0.68rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.07em', color: '#95A532', marginBottom: '0.5rem'}}>Ideal wenn …</div>
+    <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', display: 'flex', flexDirection: 'column', gap: '0.3rem'}}>
+      <li>du einzelne Methoden gezielt anwendest</li>
+      <li>du iterativ arbeitest und Methoden wiederholst</li>
+      <li>du Claude Code nutzt</li>
+      <li>du Skills in Workflows oder Pipelines integrierst</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+---
+
+## Schnellvergleich
+
+| | **Single Prompt File** | **Agentic Skills** |
+|---|---|---|
+| **Werkzeug** | Jeder Chatbot | Claude Code |
+| **Setup** | Datei hochladen | Skills einmalig installieren |
+| **Nutzung** | Geführtes Gespräch | Gezielt per Befehl |
+| **Kontextfenster** | Ein Chat für alles | Fokussiert pro Skill |
+| **Zielgruppe** | Einsteiger, schneller Start | Erfahrene, iterative Arbeit |
