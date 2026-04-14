@@ -29,13 +29,15 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 <div style={{marginTop: '1rem', display: 'inline-block'}}>
   <GradientButton
-    href="https://raw.githubusercontent.com/factory-x-contributions/business-models/main/files/ai/DE_BusinessModel_SinglePrompt.md"
+    href="/files/ai/DE_BusinessModel_SinglePrompt.md"
+    download="DE_BusinessModel_SinglePrompt.md"
     text="DE_BusinessModel_SinglePrompt.md"
     icon={FileDownloadIcon}
     gradient="linear-gradient(135deg, #386FB3 0%, #2d5a94 100%)"
     shadowColor="rgba(56, 111, 179, 0.3)"
     shadowColorHover="rgba(56, 111, 179, 0.4)"
     minWidth="auto"
+    external={false}
   />
 </div>
 

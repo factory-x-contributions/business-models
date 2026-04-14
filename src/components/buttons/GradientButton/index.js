@@ -37,6 +37,7 @@ export const GradientButton = ({
   return (
     <a
       href={href}
+      download={download || undefined}
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
       className="gradient-button"
