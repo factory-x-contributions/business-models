@@ -1,7 +1,6 @@
 {
   "homepage.startButton": {
-    "message": "Start",
-    "description": "Start button on homepage"
+    "message": "Start"
   },
   "pdf.downloadButton": {
     "message": "PDF",
@@ -12,12 +11,10 @@
     "description": "Label shown while PDF is being generated"
   },
   "title": {
-    "message": "Factory-X Business Models",
-    "description": "The title in the navbar"
+    "message": "Factory-X Business Models"
   },
   "tagline": {
-    "message": "Structured guide to developing data-driven business models in Factory-X – featuring House Building Logic, AI assistant, and workshop format.",
-    "description": "The tagline"
+    "message": "Structured guide to developing data-driven business models in Factory-X – featuring House Building Logic, AI assistant, and workshop format."
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

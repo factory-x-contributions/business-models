@@ -35,6 +35,7 @@ const config = {
       en: {
         label: 'English',
         htmlLang: 'en-US',
+        path: 'en',
       },
     },
   },
@@ -70,7 +71,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Factory-X Business Models',
+        title: 'Factory-X Geschäftsmodelle',
         logo: {
           alt: 'Factory-X Logo',
           src: 'https://factory-x.org/wp-content/uploads//factory-x-logo.svg',
