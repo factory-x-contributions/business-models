@@ -1,0 +1,30 @@
+# Factory-X Business Models
+
+> Structured methodology and tooling for developing data-driven business models
+> in industrial contexts (Factory-X / Manufacturing-X ecosystem).
+> Covers the House Building Logic (6-step framework), AI assistant "Estelle",
+> and a 5-day workshop format. Default language: German. English version available.
+
+## Methodology
+
+- [Introduction to House Building Logic](https://factory-x-contributions.github.io/business-models/docs/methodology/overview): Overview of the HBL framework and how to use it
+- [Entrance Area](https://factory-x-contributions.github.io/business-models/docs/methodology/entrance-area): Define the business idea, conduct market analysis, set strategic direction
+- [Blue Room](https://factory-x-contributions.github.io/business-models/docs/methodology/blue-room): Understand customer needs – develop personas, pains, and gains
+- [Red Room](https://factory-x-contributions.github.io/business-models/docs/methodology/red-room): Develop the value proposition – translate customer problems into concrete solutions
+- [Green Room](https://factory-x-contributions.github.io/business-models/docs/methodology/green-room): Design value creation – plan partners, data flows, and operational implementation
+- [Yellow Room](https://factory-x-contributions.github.io/business-models/docs/methodology/yellow-room): Validate economic viability – calculate costs, revenues, and pricing models
+- [Exit Area](https://factory-x-contributions.github.io/business-models/docs/methodology/exit-room): Bundle results, assess risks, create a Go/Review/Stop decision proposal
+
+## AI Assistant
+
+- [Two Approaches Compared](https://factory-x-contributions.github.io/business-models/docs/ai/ai_approaches): Single Prompt File vs. Agentic Skills – when to use which
+- [Single Prompt Guide](https://factory-x-contributions.github.io/business-models/docs/ai/single_prompt_guide): Setup guide for AI assistant Estelle (ChatGPT, Claude, Copilot)
+- [Single Prompt Best Practices](https://factory-x-contributions.github.io/business-models/docs/ai/single_prompt_best_practices): Tips for working effectively with Estelle
+- [Agentic Skills Overview](https://factory-x-contributions.github.io/business-models/docs/ai/agentic_skills): 23 specialized Claude Code skills for each HBL method
+- [Today & Future](https://factory-x-contributions.github.io/business-models/docs/ai/present_and_future): What AI-assisted business model development can do now and in the future
+
+## Optional
+
+- [Workshop Overview](https://factory-x-contributions.github.io/business-models/docs/workshop/overview_workshop): 5-day design sprint concept for applying the House Building Logic with teams
+- [Workshop Preparation](https://factory-x-contributions.github.io/business-models/docs/workshop/preparation): Prerequisites and setup before the workshop
+- [Blog](https://factory-x-contributions.github.io/business-models/blog): Updates and announcements about the project
