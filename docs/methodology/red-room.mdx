@@ -1,0 +1,224 @@
+---
+id: red-room
+title: Roter Raum
+description: 🔴 Wertversprechen entwickeln - Kundenprobleme in konkrete Lösungen übersetzen
+sidebar_position: 4
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import QualityGate from '@site/src/components/QualityGate';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🔴"
+  label="Roter Raum"
+  color="#B85450"
+  heading="Das Wertversprechen entwickeln"
+  intro="Der Rote Raum ist der <strong>Brückenschlag zwischen Kundenbedarf und Angebot</strong>. Jetzt übersetzen wir validierte Probleme in eine konkrete Lösung – und lassen konsequent alles weg, was kein echtes Problem löst. Kein Feature ohne Kundenbezug."
+  bullets={[
+    'Welchen einzigartigen Wert schaffen wir?',
+    'Warum sollten sich Kunden für uns entscheiden?',
+    'Wie kommunizieren wir den Nutzen klar?',
+  ]}
+  goalText="Dieser Abschnitt liefert ein <strong>prägnantes Wertversprechen</strong>, das Kundenbedürfnisse mit konkreten Lösungsmerkmalen verbindet."
+/>
+
+
+---
+
+## Vorgehensweise
+
+<details>
+<summary>1. Match-Matrix – Wie verknüpfen wir Pains/Gains mit Lösungen?</summary>
+<div className="details-content">
+
+Die **Match-Matrix** ist das zentrale Werkzeug im Roten Raum. Sie verbindet die **Erkenntnisse aus dem Blauen Raum** mit deinem Angebot und stellt sicher, dass jedes Feature einen klaren Bezug zu einem validierten Kundenproblem hat. Durch die strukturierte Zuordnung von Pain Relievers und Gain Creators wird sichtbar, wo echte Wirkhebel liegen - und welche Features keinen Kundenbezug haben und gestrichen werden sollten.
+
+### Struktur der Match-Matrix
+
+| Kundenproblem (Pain) | Pain Reliever | Kundengewinn (Gain) | Gain Creator |
+|----------------------|---------------|---------------------|--------------|
+| Was frustriert? | Wie lindern wir den Schmerz? | Was wünscht sich der Kunde? | Wie erzeugen wir den Gewinn? |
+
+### Beispiel: Condition Monitoring Service
+
+<Tabs>
+<TabItem value="beispiel" label="Beispiel" default>
+
+| Pain | Pain Reliever | Gain | Gain Creator |
+|------|---------------|------|--------------|
+| Ungeplante Stillstände | Frühwarnsystem mit Anomalie-Erkennung | Höhere Verfügbarkeit | Echtzeit-Monitoring & Dashboards |
+| Reaktive Instandhaltung | Zustandsbasierte Wartungsempfehlungen | Planbare Wartung | Predictive Analytics |
+| Mangelnde Transparenz | Zentrale Datenplattform | Bessere Entscheidungen | KPI-Reporting & Alerts |
+| Hohe Servicekosten | Remote-Diagnose | Kosteneffizienz | Automatisierte Fehleranalyse |
+
+</TabItem>
+<TabItem value="leer" label="Vorlage (leer)">
+
+| Pain | Pain Reliever | Gain | Gain Creator |
+|------|---------------|------|--------------|
+| | | | |
+| | | | |
+| | | | |
+
+</TabItem>
+</Tabs>
+
+### Konsequentes Weglassen
+
+<Admonition type="warning" title="Wichtig">
+**Features ohne klaren Kundenbezug sind Kandidaten für die Streichung** - sie erzeugen Aufwand ohne Mehrwert. Wenn ein Feature keinem Pain zugeordnet werden kann, ist es Ballast. Weg damit!
+</Admonition>
+
+</div>
+</details>
+
+<details>
+<summary>2. Produkt-/Servicebeschreibung – Was ist unser Angebot konkret?</summary>
+<div className="details-content">
+
+Beschreibe die Lösung so, dass ein Dritter sie versteht. Was ist eigentlich das „Produkt"?
+
+### Beschreibungsstruktur
+
+<Tabs>
+<TabItem value="beispiel" label="Mit Beispiel" default>
+
+| Element | Beschreibung | Beispiel |
+|---------|--------------|----------|
+| **Angebotstyp** | Was ist es? | Digitaler Service, Software, Hardware-Software-Kombination |
+| **Kernfunktionen** | Was kann es? | Datenerfassung, Analyse, Alerting, Reporting |
+| **Nutzergruppen** | Wer nutzt es? | Instandhalter, Produktionsleiter, Management |
+| **Datenquellen** | Welche Daten? | Maschinensensorik, Prozessdaten, ERP-Daten |
+| **Integration** | Wie eingebunden? | OPC UA, REST API, Datenraum-Connector |
+| **Liefermodell** | Wie bereitgestellt? | SaaS, On-Premise, Hybrid |
+
+</TabItem>
+<TabItem value="konzept" label="Konzept">
+
+| Element | Beschreibung |
+|---------|--------------|
+| **Angebotstyp** | Was ist es? |
+| **Kernfunktionen** | Was kann es? |
+| **Nutzergruppen** | Wer nutzt es? |
+| **Datenquellen** | Welche Daten? |
+| **Integration** | Wie eingebunden? |
+| **Liefermodell** | Wie bereitgestellt? |
+
+</TabItem>
+</Tabs>
+
+### Lösungsbausteine
+
+Typische Bausteine eines datenbasierten Angebots:
+
+| Baustein | Beschreibung |
+|----------|--------------|
+| **Datenerfassung** | Sensoren, Gateways, Schnittstellen |
+| **Datenintegration** | ETL, Normalisierung, Datenraum-Anbindung |
+| **Speicherung** | Cloud, Edge, Hybrid |
+| **Analytics** | Regelbasiert, ML-basiert, KI-gestützt |
+| **Visualisierung** | Dashboards, Reports, Alerts |
+| **Prozessintegration** | Workflows, Ticketing, ERP-Anbindung |
+
+</div>
+</details>
+
+<details>
+<summary>3. Value Proposition Statement – Wie formulieren wir den Nutzen prägnant?</summary>
+<div className="details-content">
+
+Das **Value Proposition Statement** ist **die prägnante Essenz** deines Angebots - der eine Satz, der alles zusammenfasst. Es dient als Prüfstein für alle nachfolgenden Entscheidungen in Produktentwicklung, Preisgestaltung und Vertrieb.
+
+### Struktur
+
+> Für **[Zielkunde/Persona]**, der/die **[Job/Problem]** hat,
+> bieten wir **[Lösung/Angebot]**,
+> die/das **[Kernnutzen]** ermöglicht -
+> anders als **[heutige Alternative]**,
+> weil **[Differenzierung]**.
+
+### Beispiel: Condition Monitoring
+
+> Für **Produktionsleiter in der diskreten Fertigung**, die **ungeplante Stillstände minimieren** wollen,
+> bieten wir einen **KI-gestützten Condition-Monitoring-Service**,
+> der **Ausfälle bis zu 48h im Voraus erkennt** und den **Nutzen über KPIs messbar macht** -
+> anders als **klassische Wartungsverträge oder reaktive Instandhaltung**,
+> weil wir **proaktiv statt reaktiv handeln** und **datenbasierte Transparenz** schaffen.
+
+### Qualitätskriterien
+
+| Kriterium | Beschreibung |
+|-----------|--------------|
+| **Spezifisch** | Klare Zielgruppe, nicht „alle" |
+| **Relevant** | Adressiert echtes Problem |
+| **Differenziert** | Unterscheidet sich von Alternativen |
+| **Glaubwürdig** | Nachvollziehbar und realistisch |
+| **Einfach** | In einem Satz verständlich |
+
+<Admonition type="info" title="Prüfstein">
+Dieser Satz ist Gold wert: Er ist dein Prüfstein für alles, was du später tust - Produktentwicklung, Preisgestaltung, Vertrieb, Marketing.
+</Admonition>
+
+</div>
+</details>
+
+<details>
+<summary>4. Differenzierung – Was unterscheidet uns vom Wettbewerb?</summary>
+<div className="details-content">
+
+Was macht dein Angebot **einzigartig**? Die **Differenzierungsanalyse** vergleicht dein Angebot systematisch mit allen Alternativen - von DIY-Lösungen über klassische Ansätze bis hin zu direkten Wettbewerbern und der Option „Nichts tun". Nur wenn klar ist, warum der Kunde zu dir kommen sollte, ist das Wertversprechen vollständig.
+
+### Wettbewerbslandschaft
+
+<Tabs>
+<TabItem value="beispiel" label="Beispiel" default>
+
+| Alternative | Stärken | Schwächen | Unsere Differenzierung |
+|-------------|---------|-----------|------------------------|
+| Eigene Lösung (DIY) | Volle Kontrolle | Hoher Aufwand, Know-how | Schlüsselfertig, schneller ROI |
+| Klassische Wartung | Bekannt, etabliert | Reaktiv, teuer | Proaktiv, datenbasiert |
+| Wettbewerber A | Marktführer | Komplex, teuer | Einfacher, fokussiert |
+| Nichts tun | Kein Aufwand | Risiko, Kosten | Messbare Verbesserung |
+
+</TabItem>
+<TabItem value="vorlage" label="Vorlage (leer)">
+
+| Alternative | Stärken | Schwächen | Unsere Differenzierung |
+|-------------|---------|-----------|------------------------|
+| | | | |
+| | | | |
+| | | | |
+
+</TabItem>
+</Tabs>
+
+### Differenzierungsdimensionen
+
+| Dimension | Fragen |
+|-----------|--------|
+| **Funktional** | Was können wir besser? |
+| **Emotional** | Wie fühlt sich der Kunde besser? |
+| **Ökonomisch** | Warum ist es wirtschaftlicher? |
+| **Technisch** | Was ist technisch überlegen? |
+| **Service** | Wie ist der Support besser? |
+
+</div>
+</details>
+
+---
+
+<QualityGate
+  color="#B85450"
+  items={[
+    'Jedes Feature ist einem validierten Pain/Gain zugeordnet',
+    'Features ohne Kundenbezug wurden gestrichen',
+    'Value Proposition Statement ist formuliert und verständlich',
+    'Differenzierung zu Alternativen ist klar',
+    'Mit dem Value Proposition Statement könnten wir intern bereits Leute überzeugen',
+  ]}
+/>
+
+---

@@ -1,0 +1,232 @@
+---
+id: green-room
+title: Grüner Raum
+description: 🟢 Wertschöpfung gestalten - Partner, Datenflüsse und operative Umsetzung planen
+sidebar_position: 5
+---
+
+import Admonition from '@theme/Admonition';
+import QualityGate from '@site/src/components/QualityGate';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🟢"
+  label="Grüner Raum"
+  color="#6B8E50"
+  heading="Die Wertschöpfung gestalten"
+  intro='Wir sind <strong>ein Akteur in einem Netzwerk</strong> – moderne Geschäftsmodelle leben von Vernetzung und Kooperation. Im Grünen Raum gestaltest du die Wertschöpfungslogik: wer macht was, wie fließen Daten, Güter und Geld? „Wir machen alles selbst" ist selten die Antwort.'
+  bullets={[
+    'Wer übernimmt welche Aufgaben?',
+    'Wie fließen Daten, Güter und Geld?',
+    'Welche Partner brauchen wir?',
+  ]}
+  goalText="Dieser Abschnitt liefert ein <strong>vollständiges Wertschöpfungsmodell</strong> mit definierten Rollen, Prozessen und Ökosystemintegration."
+/>
+
+
+---
+
+## Vorgehensweise
+
+<details>
+<summary>1. Rollen & Akteure – Wer übernimmt welche Aufgaben?</summary>
+<div className="details-content">
+
+Bevor Prozesse definiert werden, musst du wissen, **wer beteiligt ist** und welchen Wertbeitrag jeder leistet. Die **Rollen-Akteure-Matrix** unterscheidet dabei klar zwischen Rolle (erwartete Funktion) und Akteur (konkrete Einheit) - denn ein Unternehmen kann mehrere Rollen spielen.
+
+### Typische Rollen im Datenökosystem
+
+| Rolle | Beschreibung | Wertbeitrag |
+|-------|--------------|-------------|
+| **Data Provider** | Stellt Daten bereit | Maschinendaten, Sensordaten, Betriebsdaten |
+| **Data Consumer** | Nutzt Daten | Analysen, Entscheidungen, Services |
+| **Service Provider** | Bietet Services auf Datenbasis | Analytics, Alerts, Empfehlungen |
+| **Platform Operator** | Betreibt technische Infrastruktur | Hosting, Skalierung, Verfügbarkeit |
+| **Orchestrator** | Koordiniert das Ökosystem | Governance, Onboarding, Standards |
+| **Infrastructure Provider** | Stellt Basisinfrastruktur | Netzwerk, Cloud, Security |
+
+### Akteurslandschaft
+
+Liste alle relevanten Akteure und ordne sie Rollen zu:
+
+| Akteur | Rolle(n) | Wertbeitrag | Intern/Extern |
+|--------|----------|-------------|---------------|
+| Betreiber (Kunde) | Data Provider, Consumer | Maschinendaten, Nutzung | Extern |
+| Wir (Anbieter) | Service Provider | Analytics, Alerting | Intern |
+| Cloud-Provider | Infrastructure | Hosting, Skalierung | Extern |
+| Datenraum-Operator | Orchestrator | Governance, IAM | Extern |
+| Maschinenbauer | Data Provider | Konstruktionsdaten | Extern |
+
+### Deine eigene Rolle
+
+Kläre explizit: **Welche Rolle(n) übernehmen wir?**
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
+
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span>Data Provider - Wir stellen Daten bereit</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span>Data Consumer - Wir nutzen Daten anderer</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span>Service Provider - Wir bieten Services an</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span>Platform Operator - Wir betreiben die Plattform</span>
+</label>
+<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
+  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
+  <span>Orchestrator - Wir koordinieren das Ökosystem</span>
+</label>
+
+</div>
+
+</div>
+</details>
+
+<details>
+<summary>2. Wertschöpfungsnetzwerk – Wie fließen Güter, Daten und Finanzen?</summary>
+<div className="details-content">
+
+Das **Wertschöpfungsnetzwerk (Value Network)** beschreibt, **wie zwischen den Akteuren Güter, Services, Daten und Geld fließen**. Es visualisiert alle Ströme zwischen den Beteiligten und macht Abhängigkeiten sowie kritische Übergaben sichtbar.
+
+### Die drei Flussarten
+
+| Flussart | Beschreibung | Beispiele |
+|----------|--------------|-----------|
+| **Güter & Services** | Physische Produkte, digitale Leistungen | Maschinenwartung, Software-Updates, Reports |
+| **Daten & Informationen** | Rohdaten, aufbereitete Daten, Insights | Sensordaten, Analytics-Ergebnisse, Alerts |
+| **Finanzen** | Zahlungsströme, Erlösverteilung | Subscription, Pay-per-Use, Revenue Share |
+
+### Beispiel: Wertflüsse im Condition Monitoring
+
+```text
+┌─────────────┐     Maschinendaten      ┌─────────────────┐
+│  Betreiber  │ ───────────────────────▶│ Service Provider│
+│   (Kunde)   │                         │     (Wir)       │
+└─────────────┘                         └─────────────────┘
+       ▲                                        │
+       │                                        │
+       │    Analytics, Alerts, Reports          │
+       └────────────────────────────────────────┘
+
+       │                                        ▲
+       │ Subscription-Gebühr                    │ Hosting-Kosten
+       ▼                                        │
+┌─────────────┐                         ┌─────────────────┐
+│   Zahlung   │                         │ Cloud Provider  │
+└─────────────┘                         └─────────────────┘
+```
+
+### Zentrale Fragen
+
+- Wer liefert welche Daten?
+- Wer reichert Daten an / analysiert?
+- Wer betreibt die Datenraum-Infrastruktur?
+- Wer zahlt an wen und wofür?
+- Welche Abhängigkeiten bestehen?
+
+</div>
+</details>
+
+<details>
+<summary>3. Wertschöpfungsprozess – Was passiert wann in welcher Reihenfolge?</summary>
+<div className="details-content">
+
+Der **Wertschöpfungsprozess** bringt das Ganze in eine **zeitliche Reihenfolge**: Was passiert, wenn ein Kunde unser Angebot nutzt? Für jeden Prozessschritt wird mit einer **RACI-Matrix** geklärt, wer Responsible (führt aus), Accountable (verantwortlich), Consulted (liefert Input) und Informed (wird informiert) ist.
+
+### End-to-End-Prozess
+
+| Phase | Aktivitäten | Verantwortlich | Datenraum-Relevanz |
+|-------|-------------|----------------|-------------------|
+| **1. Onboarding** | Vertrag, Setup, Integration | Vertrieb, IT | IAM, Policy |
+| **2. Datenanbindung** | Sensorik, Schnittstellen, Konnektoren | IT, OT | Connector, Registry |
+| **3. Monitoring** | Laufende Datenerfassung | Automatisiert | Data Exchange |
+| **4. Analyse** | Anomalie-Erkennung, Analytics | Service Provider | Compute, ML |
+| **5. Alerting** | Warnungen, Benachrichtigungen | Automatisiert | Notification |
+| **6. Service-Ausführung** | Wartung, Reparatur, Support | Instandhaltung | Service Catalog |
+| **7. Reporting** | KPI-Berichte, Nutzennachweise | Controlling | Dashboard |
+| **8. Optimierung** | Modelle verbessern, Regeln anpassen | Data Science | Continuous Learning |
+
+### Prozessverantwortung klären
+
+Für jeden Prozessschritt: **Wer macht was?**
+
+| Schritt | Bei uns | Beim Kunden | Bei Partnern |
+|---------|---------|-------------|--------------|
+| Setup | Konfiguration | Hardware-Zugang | Cloud-Setup |
+| Datenfluss | API-Integration | Datenfreigabe | Connector |
+| Analytics | Modelle, Algorithmen | - | Infrastruktur |
+| Support | L2/L3 Support | L1 Support | - |
+
+</div>
+</details>
+
+<details>
+<summary>Ökosystemintegration &amp; Skalierbarkeit</summary>
+<div className="details-content">
+
+### Plattform-Integration
+
+| Plattform | Funktion | Integration |
+|-----------|----------|-------------|
+| **Factory-X** | Datenraum für Fabrikausrüster | Connector, Registry, IAM |
+| **Catena-X** | Automotive-Datenraum | Standards, Use Cases |
+| **GAIA-X** | Europäische Cloud-Infrastruktur | Compliance, Souveränität |
+
+### Technische Schnittstellen
+
+| Schnittstelle | Beschreibung | Standard |
+|---------------|--------------|----------|
+| **Daten-Connector** | Anbindung an Datenraum | Eclipse Dataspace Connector |
+| **Identität** | Authentifizierung | IAM, DID |
+| **Verträge** | Usage Policies | ODRL |
+| **Katalog** | Service Discovery | DCAT |
+
+### Compliance & Governance
+
+- **Datenhoheit:** Wer kontrolliert welche Daten?
+- **Nutzungsrechte:** Welche Policies gelten?
+- **Audit:** Wie wird Compliance nachgewiesen?
+- **Exit:** Was passiert bei Vertragsende?
+
+### Skalierungsfragen
+
+| Dimension | Fragen |
+|-----------|--------|
+| **Technisch** | Skaliert die Infrastruktur mit? Cloud-native? |
+| **Organisatorisch** | Können Prozesse standardisiert werden? |
+| **Partner** | Können Partner repliziert werden? |
+| **Kosten** | Wie entwickeln sich Kosten bei Wachstum? |
+
+### Typische Engpässe
+
+| Engpass | Beschreibung | Mitigation |
+|---------|--------------|------------|
+| Support | Kundenanzahl übersteigt Kapazität | Self-Service, Automation |
+| Integration | Jeder Kunde ist Sonderfall | Standardisierung |
+| Datenqualität | Heterogene Datenquellen | Validation, Normalisierung |
+| Partner | Abhängigkeit von Einzelnen | Redundanz, Standards |
+
+</div>
+</details>
+
+---
+
+<QualityGate
+  color="#6B8E50"
+  items={[
+    'Alle relevanten Akteure sind identifiziert und Rollen zugeordnet',
+    'Daten-, Güter- und Finanzflüsse sind beschrieben',
+    'End-to-End-Prozess ist definiert mit klaren Verantwortlichkeiten',
+    'Datenraum-Integration ist berücksichtigt',
+    'Skalierbarkeit und Engpässe sind reflektiert',
+  ]}
+/>
+
+---

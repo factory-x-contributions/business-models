@@ -7,6 +7,23 @@ sidebar_position: 1
 
 import GradientButton from '@site/src/components/buttons/GradientButton';
 
+export const RoomButton = ({ href, text, gradient, shadowColor, shadowColorHover, tooltip }) => (
+  <div style={{ position: 'relative', display: 'contents' }} className="room-button-wrapper">
+    <div style={{ position: 'relative' }} className="room-tooltip-anchor">
+      <GradientButton
+        href={href}
+        text={text}
+        gradient={gradient}
+        shadowColor={shadowColor}
+        shadowColorHover={shadowColorHover}
+        external={false}
+        minWidth="auto"
+      />
+      <div className="room-tooltip">{tooltip}</div>
+    </div>
+  </div>
+);
+
 ## Was ist die Hausbaulogik?
 
 Die **Hausbaulogik (HBL)** ist ein strukturierter Ansatz zur Entwicklung datenbasierter Geschäftsmodelle - speziell für den industriellen Kontext wie Maschinen- und Anlagenbau.
@@ -29,8 +46,8 @@ Die Räume sind farblich kodiert und werden in einer festen Reihenfolge durchlau
 
 Klicke auf einen Raum, um die Details zu sehen:
 
-{/* Haus-Visualisierung - Modern mit Details */}
-<div style={{ width: '100%', maxWidth: '480px', marginTop: '1.5rem', marginBottom: '2rem' }}>
+{/* Haus-Visualisierung - zentriert */}
+<div style={{ width: '100%', maxWidth: '480px', marginTop: '1.5rem', marginBottom: '2rem', marginLeft: 'auto', marginRight: 'auto' }}>
 
   {/* Dach mit SVG */}
   <svg viewBox="0 0 200 50" style={{ width: '100%', height: 'auto', display: 'block' }}>
@@ -75,41 +92,37 @@ Klicke auf einen Raum, um die Details zu sehen:
       borderRadius: '8px',
       border: '1px solid var(--ifm-color-emphasis-300)'
     }}>
-      <GradientButton
+      <RoomButton
         href='./blue-room'
         text="Blauer Raum"
         gradient="linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)"
         shadowColor="rgba(59, 130, 246, 0.15)"
         shadowColorHover="rgba(59, 130, 246, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Kunden verstehen: Wer sind sie? Was brauchen sie?"
       />
-      <GradientButton
+      <RoomButton
         href='./red-room'
         text="Roter Raum"
         gradient="linear-gradient(135deg, #f87171 0%, #ef4444 100%)"
         shadowColor="rgba(239, 68, 68, 0.15)"
         shadowColorHover="rgba(239, 68, 68, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Wertversprechen entwickeln: Welchen Wert bieten wir?"
       />
-      <GradientButton
+      <RoomButton
         href='./green-room'
         text="Grüner Raum"
         gradient="linear-gradient(135deg, #34d399 0%, #10b981 100%)"
         shadowColor="rgba(16, 185, 129, 0.15)"
         shadowColorHover="rgba(16, 185, 129, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Wertschöpfung planen: Wie erzeugen wir den Wert?"
       />
-      <GradientButton
+      <RoomButton
         href='./yellow-room'
         text="Gelber Raum"
         gradient="linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)"
         shadowColor="rgba(245, 158, 11, 0.15)"
         shadowColorHover="rgba(245, 158, 11, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Wirtschaftlichkeit prüfen: Wie verdienen wir Geld?"
       />
     </div>
 
@@ -134,23 +147,21 @@ Klicke auf einen Raum, um die Details zu sehen:
       borderRadius: '8px',
       border: '1px solid var(--ifm-color-emphasis-300)'
     }}>
-      <GradientButton
+      <RoomButton
         href='./entrance-area'
         text="Eingang"
         gradient="linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)"
         shadowColor="rgba(107, 114, 128, 0.15)"
         shadowColorHover="rgba(107, 114, 128, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Geschäftsidee definieren, Scope festlegen"
       />
-      <GradientButton
+      <RoomButton
         href='./exit-room'
         text="Ausgang"
         gradient="linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)"
         shadowColor="rgba(107, 114, 128, 0.15)"
         shadowColorHover="rgba(107, 114, 128, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Synthese und Entscheidung: Go, Prüfen oder Stop?"
       />
     </div>
 
@@ -164,15 +175,6 @@ Klicke auf einen Raum, um die Details zu sehen:
 
   </div>
 </div>
-
-**Der Ablauf in Kurzform:**
-
-1. **Eingangsbereich** - Geschäftsidee definieren, Scope festlegen
-2. **Blauer Raum** - Kunden verstehen: Wer sind sie? Was brauchen sie?
-3. **Roter Raum** - Wertversprechen entwickeln: Welchen Wert bieten wir?
-4. **Grüner Raum** - Wertschöpfung planen: Wie erzeugen wir den Wert?
-5. **Gelber Raum** - Wirtschaftlichkeit prüfen: Wie verdienen wir Geld?
-6. **Ausgangsbereich** - Synthese und Entscheidung: Go, Prüfen oder Stop?
 
 Am Ende jedes Raums steht ein **Quality Gate** - eine Checkliste, die sicherstellt, dass alle wichtigen Fragen beantwortet sind, bevor es weitergeht.
 

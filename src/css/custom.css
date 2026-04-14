@@ -121,6 +121,21 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Override Docusaurus default details/summary blue tint */
+details {
+  --docusaurus-details-decoration-color: var(--ifm-color-emphasis-400);
+  border-color: var(--ifm-color-emphasis-300) !important;
+  background: var(--ifm-background-surface-color) !important;
+}
+
+details > summary {
+  color: var(--ifm-font-color-base) !important;
+}
+
+details > summary::before {
+  border-color: transparent transparent transparent var(--ifm-color-emphasis-500) !important;
+}
+
 /* Variant Cards (Umsetzungsvarianten) */
 .variant-card:hover {
   transform: translateY(-4px);
@@ -134,4 +149,47 @@
 
 [data-theme='dark'] .variant-card:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Room button tooltip */
+.room-tooltip-anchor {
+  position: relative;
+}
+
+.room-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  white-space: normal;
+  word-break: keep-all;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 100;
+  width: max-content;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--ifm-color-emphasis-300);
+}
+
+.room-tooltip-anchor:hover .room-tooltip {
+  opacity: 1;
 }
