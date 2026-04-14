@@ -49,6 +49,12 @@ const config = {
         blog: {
           showReadingTime: true,
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: [],
+          filename: 'sitemap.xml',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

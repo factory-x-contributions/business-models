@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://factory-x-contributions.github.io/business-models/sitemap.xml

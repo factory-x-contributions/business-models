@@ -45,7 +45,7 @@ export default function Home() {
   });
   const pageDescription = translate({
     id: 'tagline',
-    message: 'Diese Website erklärt die Hausbaulogik und ihre Anwendung.',
+    message: 'Strukturierter Leitfaden zur Entwicklung datenbasierter Geschäftsmodelle in Factory-X – mit Hausbaulogik, AI-Assistent und Workshop-Format.',
   });
 
   return (
