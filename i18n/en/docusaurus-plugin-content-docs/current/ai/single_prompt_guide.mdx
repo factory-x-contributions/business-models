@@ -8,6 +8,7 @@ sidebar_position: 2
 import Admonition from '@theme/Admonition';
 import { GradientButton } from '@site/src/components/buttons/GradientButton';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <br></br>
 
@@ -30,7 +31,7 @@ Download the AI prompt file to activate it later in your AI tool.
 
 <div style={{marginTop: '1rem', display: 'inline-block'}}>
   <GradientButton
-    href="/files/ai/EN_BusinessModel_SinglePrompt.md"
+    href={useBaseUrl('/files/ai/EN_BusinessModel_SinglePrompt.md')}
     download="EN_BusinessModel_SinglePrompt.md"
     text="EN_BusinessModel_SinglePrompt.md"
     icon={FileDownloadIcon}

@@ -27,10 +27,11 @@ Lade die AI-Prompt-Datei herunter, um diese später in deinem AI-Tool aktivieren
 
 import { GradientButton } from '@site/src/components/buttons/GradientButton';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <div style={{marginTop: '1rem', display: 'inline-block'}}>
   <GradientButton
-    href="/files/ai/DE_BusinessModel_SinglePrompt.md"
+    href={useBaseUrl('/files/ai/DE_BusinessModel_SinglePrompt.md')}
     download="DE_BusinessModel_SinglePrompt.md"
     text="DE_BusinessModel_SinglePrompt.md"
     icon={FileDownloadIcon}
