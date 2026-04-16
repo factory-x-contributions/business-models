@@ -71,6 +71,16 @@ The House Building Logic uses the metaphor of a house to make the complex proces
 - Guided business model development through all rooms
 - Automatic document generation
 
+### 🛠️ Agentic Skills for Claude Code
+
+22 structured AI skills following the [Agent Skills](https://agentskills.io) open standard — one per methodology step. Install them directly into Claude Code, Cursor, or Cline:
+
+```bash
+npx skills add factory-x-contributions/business-models
+```
+
+Or browse them at [skills.sh](https://skills.sh).
+
 ### 🌐 Internationalization (i18n)
 
 - Full support for German (default) and English
@@ -142,6 +152,10 @@ business-models/
 │       ├── single_prompt_best_practices.mdx
 │       ├── agentic_skills.mdx
 │       └── present_and_future.mdx
+├── skills/                      # Agentic Skills (Agent Skills standard)
+│   ├── business-idea-canvas/SKILL.md
+│   ├── house-building-logic/SKILL.md
+│   └── ...                      # 22 skills total
 ├── i18n/                        # Internationalization
 │   └── en/                      # English translations
 │       ├── docusaurus-theme-classic/
