@@ -1,0 +1,307 @@
+---
+id: blueprint
+title: Business Model Blueprint
+description: 🔷 CMLS – Vollständiger Business Model Blueprint, Roadmap und Erfahrungen
+sidebar_position: 6
+keywords: [CMLS, Business Model Blueprint, Roadmap, Pilot, Skalierung, Industrialisierung, Erfahrungen, Kernaussagen, Hausbaulogik]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+
+<RoomHero
+  icon="🔷"
+  label="Business Model Blueprint – CMLS"
+  color="#8b5cf6"
+  heading="Value-Oriented Service Business Model (VSBM)"
+  intro="Der Business Model Blueprint fasst alle Ergebnisse aus den vier Räumen in einem <strong>entscheidungsreifen Dokument</strong> zusammen. Er dient als Grundlage für Gate-Reviews, Pilotplanung und Investitionsentscheidungen – und zeigt, wie das CMLS vom ersten Piloten bis zur Industrialisierung skaliert werden kann."
+  bullets={[
+    'Alle 10 Kernelemente des Geschäftsmodells auf einen Blick',
+    'Drei-Phasen-Roadmap: Pilot → Skalierung → Industrialisierung',
+    'Erfahrungen und Kernaussagen aus der realen Anwendung der Hausbaulogik',
+  ]}
+  goalText="Das VSBM ermöglicht eine <strong>skalierbare, wirtschaftlich tragfähige Transformation von Maschinendaten in messbaren Business Value</strong> – über ein strukturiertes, hybrides Monetarisierungsmodell und eine phasenbasierte Implementierungslogik."
+/>
+
+---
+
+## Kernelemente des Geschäftsmodells
+
+<details>
+<summary>1️⃣ Problem / Trigger beim Betreiber</summary>
+<div>
+
+- **Ungeplante Stillstände** verursachen direkte Produktions- und Folgekosten
+- **Reaktive Instandhaltung** (Feuerwehr-Modus) → teuer, ineffizient, stressig
+- **Mangelnde Transparenz** über Zustand/Ursachen → schlechte Entscheidungen
+- **Fachkräftemangel** erhöht Risiko und verlängert Reparaturzeiten
+- **IT/OT-Komplexität** erschwert systematische Zustandsüberwachung
+
+</div>
+</details>
+
+<details>
+<summary>2️⃣ Value Proposition</summary>
+<div>
+
+**Kernnutzen:**
+CMLS reduziert ungeplante Stillstandszeit durch datenbasiertes Condition Monitoring, Analytics und integrierte Serviceprozesse – und macht den Nutzen über KPIs messbar und steuerbar.
+
+**Wirtschaftlicher Nutzen (Kundenvalue):**
+- Weniger ungeplante Stillstände
+- Höhere Anlagenverfügbarkeit
+- Geringere Wartungs-/Servicekosten
+- Bessere Planbarkeit & Entscheidungssicherheit
+- Skalierbarkeit durch digitale Services (weniger Expertenabhängigkeit)
+
+</div>
+</details>
+
+<details>
+<summary>3️⃣ KPI-Set</summary>
+<div>
+
+**Primär-KPI:**
+- **Ungeplante Stillstandzeit (h/Monat)** – unmittelbar mit Produktivitätsverlusten und Kosten korreliert, managementseitig am klarsten bewertbar
+
+**Sekundär-KPIs (erklärend/steuernd):**
+- Anlagenverfügbarkeit (%)
+- MTTR (Mean Time to Repair) in h
+- Wartungskosten pro Maschine (€/Monat oder €/Jahr)
+
+**Bewusst nicht als Leit-KPI:**
+- OEE (zu aggregiert für operative Steuerung)
+- MTBF (zu abstrakt für Management-Reporting)
+
+</div>
+</details>
+
+<details>
+<summary>4️⃣ Lösung / Kernbausteine (CMLS)</summary>
+<div>
+
+1. **Datenerfassung & Integration** (Sensorik/Maschinendaten, IT/OT, ggf. MES/ERP)
+2. **Monitoring & Dashboards** (Echtzeit-Transparenz über Maschinenzustände)
+3. **Analytics & Alerts** (Anomalieerkennung, Ursachenhinweise, RUL-Prognose)
+4. **Optional: Predictive / SLA-Services** (Reaktionszeiten, Verfügbarkeitslevel-Garantien)
+5. **Reporting & Nachweisführung** (KPI-basierter Nutzenbeleg, Vorher-/Nachher-Vergleich)
+
+</div>
+</details>
+
+<details>
+<summary>5️⃣ Value Creation – Akteure & Prozessmodell</summary>
+<div>
+
+**Akteure:**
+- **Fabrikbetreiber** (Owner/User) – stellt Maschinendaten bereit, empfängt Empfehlungen
+- **Maschinenbauer** (Maschine, Support, Services) – analysiert Daten, erzeugt Empfehlungen
+- **Softwareanbieter** (Monitoring/Datenaustausch/Cloud/Modelle) – Plattform-Infrastruktur
+- **Optional: Komponentenhersteller** (Know-how, Ersatzteile, Standards) – spezialisierte Analyse
+
+**Prozesslogik (End-to-End):**
+1. Setup & Integration
+2. Monitoring (laufende Datenerfassung)
+3. Analyse/Alert (Erkennung & Interpretation)
+4. Wartungsentscheidung (Empfehlung, Priorisierung)
+5. Service/Remote Support (Ausführung/Koordination)
+6. Reporting (KPI, Nutzenbeleg)
+7. Continuous Improvement (Modelle/Regeln optimieren)
+
+</div>
+</details>
+
+<details>
+<summary>6️⃣ Monetization – Preismodell (Hybrid) + Preisstrategie</summary>
+<div>
+
+**Preismodell (Hybrid):**
+- **A) Subscription** (€/Maschine/Monat): Plattformbetrieb, Monitoring, Basis-Analytics, Support → ~800 €/Maschine/Monat
+- **B) Variable Komponenten**: Advanced Analytics, SLA-Stufen, Serviceintensität → ~+300 €/Maschine/Monat
+- **C) Setup Fee** (einmalig): Integration/Onboarding/Enablement → ~5.000 € einmalig
+
+**Preisstrategie / Positionierung: B → C „Value Ladder"**
+- Einstieg marktüblich (Pilot-fähig, geringe Hürde)
+- Skalierung premium/wertbasiert (SLA/Analytics als Hebel, Mehrwertabschöpfung)
+
+**Preisargumentation (Management):**
+Preis wird gegen Stillstandskosten/Risiko argumentiert, nicht gegen „Softwarepreis".
+
+</div>
+</details>
+
+<details>
+<summary>7️⃣ Economics (modellhaft)</summary>
+<div>
+
+**Wichtig:** Zahlen sind Szenario-/Annahme-Modell, keine Ist-Kosten.
+
+**Skalierungslogik Kunde:**
+- Start: 1–3 Maschinen (Pilot)
+- Ausbau: bis 10 Maschinen (Wachstum)
+- Skalierung: 15–30+ Maschinen (Industrialisierung)
+
+**Kernaussage Wirtschaftlichkeit:**
+- Break-even modellhaft ab **~5 Maschinen**
+- Stärkster Hebel: **Maschinenanzahl pro Kunde**
+- Preisschwankungen & Kostenvariationen sind nicht der Haupthebel – Volumen ist's
+
+| Szenario | Maschinen | Deckungsbeitrag/Monat |
+|---|---|---|
+| Pilot | 1–3 | Negativ bis ±0 |
+| Break-even | ~5 | ~0–400 € |
+| Standard | 10 | ~4.800 € (~44 %) |
+| Skalierung | 20+ | ~13.600 € (~62 %) |
+
+</div>
+</details>
+
+<details>
+<summary>8️⃣ Assumptions & Risks (Top 5)</summary>
+<div>
+
+**Kritische Annahmen / Risiken:**
+
+| Risiko | Mitigation |
+|---|---|
+| Datenqualität & Datenzugang | Datenqualitäts-Gate als Go-Live-Kriterium; Pilotphase für Validierung |
+| IT-Security/Freigaben & Integrationsaufwand | Stufenweiser Rollout mit klaren Gates (Go/No-Go) |
+| Messbarkeit des Nutzens (Baseline + KPI-Tracking) | KPI-Messkonzept vor Projektstart; Baseline-Erhebung in Setup-Phase |
+| Zahlungsbereitschaft / Buy-in (Management-Ebene) | ROI-Argumentation über Stillstandskosten; Pilot mit Proof of Value |
+| Supportaufwand bei Skalierung (Betriebsmodell) | Automatisierung von Onboarding-Prozessen; standardisierte Templates |
+
+</div>
+</details>
+
+<details>
+<summary>9️⃣ Roadmap (Pilot → Skalierung → Industrialisierung)</summary>
+<div>
+
+**Phase 1 – Pilot (0–6 Monate):**
+1–3 Maschinen, Setup, Baseline-Erhebung, KPI-Nachweis → **Go/No-Go-Entscheidung**
+
+*Kriterien:*
+- Datenqualität ausreichend und stabil
+- KPI-Messbarkeit nachgewiesen
+- Erste Nutzenindizien sichtbar
+
+**Phase 2 – Skalierung (6–18 Monate):**
+5–10 Maschinen, SLA-Aufbau, Automatisierung von Prozessen, Pricing schärfen → **stabiler Betrieb**
+
+*Ziele:*
+- Betriebsmodell läuft standardisiert
+- Break-even erreicht
+- Erste Referenzkunden
+
+**Phase 3 – Industrialisierung (> 18 Monate):**
+20+ Maschinen, Standardisierung, Plattform-Integration, Erweiterung auf weitere Use Cases
+
+*Ziele:*
+- Rollout-Pakete vollständig automatisiert
+- Skalierung auf neue Kundentypen/Branchen
+- Ökosystem-Konformität vollständig
+
+</div>
+</details>
+
+<details>
+<summary>🔟 Abschlussformulierung (Core Statement)</summary>
+<div>
+
+Das **Value-Oriented Service Business Model (VSBM)** ermöglicht eine skalierbare, wirtschaftlich tragfähige Transformation von Maschinendaten in messbaren Business Value – über ein strukturiertes, hybrides Monetarisierungsmodell und eine phasenbasierte Implementierungslogik.
+
+**Drei Erfolgsfaktoren:**
+1. **Stabile Datenqualität & verlässliche Integration** (technische Grundlage)
+2. **Messbarer Nutzen über Baseline-Vergleich & KPI-Tracking** (Vertrauen aufbauen)
+3. **Skalierung über die Anzahl angebundener Maschinen pro Kunde** (wirtschaftlicher Motor)
+
+</div>
+</details>
+
+---
+
+## Roadmap auf einen Blick
+
+<Tabs>
+<TabItem value="pilot" label="Phase 1: Pilot (0–6 Mon.)" default>
+
+### Pilot-Phase
+
+**Ziel:** Machbarkeit beweisen und erste messbare Nutzenindizien erzeugen.
+
+| Was | Detail |
+|---|---|
+| **Scope** | 1–3 Maschinen, klare Systemgrenzen (S1) |
+| **Setup** | Datenanbindung, Monitoring konfigurieren, KPI-Baseline erheben |
+| **Messen** | Ungeplante Stillstandzeit vor/nach, MTTR, Verfügbarkeit |
+| **Entscheidung** | Go/No-Go nach Pilot (Datenqualität + KPI-Messbarkeit + erste Nutzenindizien) |
+| **Dauer** | 0–6 Monate |
+| **Economics** | Negativ bis ±0 (Investment-Phase) |
+
+</TabItem>
+<TabItem value="skalierung" label="Phase 2: Skalierung (6–18 Mon.)">
+
+### Skalierungs-Phase
+
+**Ziel:** Stablien Betrieb aufbauen und Wirtschaftlichkeit nachweisen.
+
+| Was | Detail |
+|---|---|
+| **Scope** | 5–10 Maschinen pro Kunde |
+| **Fokus** | SLA-Aufbau, Prozessautomatisierung, Pricing schärfen |
+| **Messen** | KPI-Reporting etabliert, Nutzennachweis dokumentiert |
+| **Entscheidung** | Standardisierung für nächste Kunden |
+| **Dauer** | 6–18 Monate |
+| **Economics** | Break-even bei ~5 Maschinen, Deckungsbeitrag wächst |
+
+</TabItem>
+<TabItem value="industrialisierung" label="Phase 3: Industrie (> 18 Mon.)">
+
+### Industrialisierungs-Phase
+
+**Ziel:** Skalierung auf 20+ Maschinen und neue Kunden/Branchen.
+
+| Was | Detail |
+|---|---|
+| **Scope** | 20+ Maschinen, mehrere Kunden |
+| **Fokus** | Rollout-Pakete vollständig standardisiert, Ökosystem-Integration |
+| **Messen** | Plattform-KPIs, Ökosystem-Metriken, Kundenportfolio |
+| **Entscheidung** | Erweiterung auf weitere Use Cases / Branchen |
+| **Dauer** | > 18 Monate |
+| **Economics** | Deckungsbeitrag ~62 %+ bei 20 Maschinen |
+
+</TabItem>
+</Tabs>
+
+---
+
+## Erfahrungen & Kernaussagen aus der Anwendung
+
+<Admonition type="info" title="Erkenntnisse aus der realen Anwendung der Hausbaulogik auf CMLS (Factory-X TP3)">
+
+Die Hausbaulogik wurde im Rahmen des Factory-X-Projekts auf den CMLS Use Case (TP2.4) angewendet. Folgende Kernaussagen ergaben sich:
+
+</Admonition>
+
+| Erkenntnis | Detail |
+|---|---|
+| **Vollständige Anwendbarkeit** | Die Hausbaulogik konnte vollständig auf die beispielhafte Service-Idee angewendet werden und führte zu einem umfassend beschriebenen Geschäftsmodell |
+| **Strukturiertes Vorgehen** | Das Schritt-für-Schritt-Vorgehen adressierte Aspekte, die zuvor noch nicht explizit durchdacht worden waren |
+| **Fokussierungsentscheidungen nötig** | Für ein konkretes Ergebnis braucht es Fokussierungen (Zielgruppe, Funktionsumfang) – Eingrenzung von Optionen oder Szenario-Bildung hilft dabei |
+| **Tiefgang durch reale Daten** | Je konkreter die Geschäftsidee und der Unternehmenskontext, desto tiefgreifender die Erkenntnisse. Reale Daten > generische Annahmen |
+| **Bilaterale Beziehungen gut abbildbar** | Die primär bilaterale Beziehung (Maschinenbauer–Fabrikbetreiber) ließ sich klar modellieren und mit konkreten Empfehlungen versehen |
+| **Multilaterale Komplexität als nächster Schritt** | Die Anwendbarkeit bei komplexen multilateralen Geschäftsbeziehungen mit mehreren parallelen Geschäftsmodellen sollte weiter erprobt werden |
+| **Hybrider Anwendungsansatz** | Kombination aus Experteninput, Workshop und AI-Assistenten hat sich bewährt |
+
+---
+
+<QualityGate items={[
+  'Ich kann die 10 Kernelemente des CMLS Business Model Blueprints benennen',
+  'Ich kenne die drei Phasen der Roadmap (Pilot → Skalierung → Industrialisierung) und ihre Go/No-Go-Kriterien',
+  'Ich verstehe die drei Erfolgsfaktoren des VSBM (Datenqualität, Messbarkeit, Skalierung)',
+  'Ich kann die Kernaussagen aus der realen Anwendung der Hausbaulogik auf CMLS wiedergeben',
+  'Ich bin in der Lage, die Hausbaulogik auf eine eigene Geschäftsidee anzuwenden – Raum für Raum',
+]} />

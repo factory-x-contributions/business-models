@@ -78,6 +78,7 @@ const config = {
         },
         items: [
           {to: 'docs/methodology/overview', label: 'Methodik', position: 'left'},
+          {to: 'docs/examples/overview', label: 'Anwendungsbeispiele', position: 'left'},
           {to: 'docs/ai/ai_approaches', label: 'AI-Assistent', position: 'left'},
           {to: 'docs/workshop/overview_workshop', label: 'Workshop', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},

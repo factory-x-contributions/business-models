@@ -1,0 +1,181 @@
+---
+id: blue-room
+title: Blauer Raum – Kunde & Bedarf
+description: 🔵 CMLS – Marktsegmentierung, Stakeholder-Matrix, Personas und Pains & Gains
+sidebar_position: 2
+keywords: [CMLS, Blauer Raum, Persona, Marktsegmentierung, Stakeholder, Pains, Gains, Condition Monitoring]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+
+<RoomHero
+  icon="🔵"
+  label="Blauer Raum – CMLS"
+  color="#386FB3"
+  heading="Kunde und Bedarf"
+  intro="Der Blaue Raum klärt: <strong>Wer ist der Zielkunde – konkret?</strong> Nicht &bdquo;alle Fabriken&ldquo;, sondern präzise definierte Segmente mit echten Personen, echten Problemen und echten Zielen. Hier entstehen Personas, Stakeholder-Maps und ein tiefes Verständnis der Pains &amp; Gains."
+  bullets={[
+    'Welche Kundensegmente werden priorisiert?',
+    'Wer ist Entscheider, wer Nutzer, wer zahlt?',
+    'Was treibt diese Menschen wirklich an?',
+  ]}
+  goalText="Das Ergebnis: <strong>3 validierte Personas (Ulrich, Dora, Christian)</strong>, eine Stakeholder-Matrix und ein klares Bild der Pains & Gains als Grundlage für das Wertversprechen."
+/>
+
+---
+
+<Tabs>
+<TabItem value="segmentierung" label="Marktsegmentierung" default>
+
+## Marktsegmentierung
+
+Die Zielgruppe wurde anhand von fünf Kriterien bewertet. **Segment 1** (KMU, Europa, komplexe Produkte) wurde als Fokussegment identifiziert.
+
+| Kriterium | Ausprägungen | **Segment 1** (Fokus) | Segment 2 | Segment 3 |
+|---|---|---|---|---|
+| **Unternehmensgröße** | Klein / Mittel / Groß | **Klein bis Mittel** | Mittel | Groß |
+| **Produkttyp** | Komplex / Einfach | **Komplex** | Einfach | Komplex |
+| **Location** | Europa / USA / Asien | **Europa** | USA | Asien |
+| **Passung zur Strategie** | Hoch / Mittel / Niedrig | **Hoch** | Mittel | Niedrig |
+| **Größe des Bedarfs** | Klein / Mittel / Groß | **Groß** | Klein | Mittel |
+| **Zusammenfassung / Relevanz** | Hoch / Mittel / Niedrig | **🎯 Hoch** | Mittel | Niedrig |
+
+<Admonition type="tip" title="Fokussegment: KMU Fertigung Europa">
+Fertigungsbetriebe kleiner bis mittlerer Größe in Europa mit hohem Teilemix, geringen Stückzahlen und hoher strategischer Passung. Dieser Typ leidet besonders unter ungeplanten Stillständen und hat klaren ROI-Druck.
+</Admonition>
+
+</TabItem>
+<TabItem value="stakeholder" label="Stakeholder-Matrix">
+
+## Stakeholder-Matrix
+
+Die Stakeholder werden in einer 2×2-Matrix nach **Einfluss** (y-Achse) und **Nähe zum Problem** (x-Achse) positioniert.
+
+| Quadrant | Akteure | Strategie |
+|---|---|---|
+| **Actively Engaged** (hohes Einfluss + nah am Problem) | Fertigungsleiter / Produktionsverantwortlicher, Produktionsprozessverantwortliche (Lean & Co.) | Aktiv einbeziehen, Co-Design, regelmäßige Updates |
+| **Keep Satisfied** (hohes Einfluss + fern vom Problem) | Geschäftsführer, Verantwortlicher für IT- & Netzwerkthemen | Informiert halten, ROI kommunizieren |
+| **Keep Informed** (niedriger Einfluss + nah am Problem) | Produktverantwortlicher / Vertrieb & Marketing, Schichtleiter, Maschinenbediener | Regelmäßige Updates, Schulung |
+| **Monitor** (niedriger Einfluss + fern vom Problem) | „Digitale Bastler" (Mitarbeiter mit Datenanalyse-Interesse), Interner Servicetechniker | Beobachten, ggf. als Champions einsetzen |
+
+<Admonition type="info" title="Primäre Stakeholder">
+**Produktionsleiter (Ulrich)** ist Hauptnutzer und Entscheider auf operativer Ebene. **Geschäftsführer (Christian)** trifft die wirtschaftliche Kaufentscheidung. Beide müssen adressiert werden – mit unterschiedlichen Argumenten.
+</Admonition>
+
+</TabItem>
+<TabItem value="personas" label="Personas">
+
+## Personas
+
+Drei Personas wurden für den CMLS Use Case entwickelt. Sie repräsentieren unterschiedliche Rollen und Perspektiven im Kaufentscheidungsprozess.
+
+<details>
+<summary>🧑‍🔧 Ulrich – Produktionsleiter (Haupt-Persona)</summary>
+<div>
+
+**Beschreibung:** Langjähriger Mitarbeiter mit fundiertem Praxiswissen in der Fertigung. Verantwortlich für Produktionsprozesse, Qualität und Effizienz. Technologieinteressiert, aber kostenbewusst. Kennt Produktionsmaschinen und deren Schwachstellen im Detail.
+
+**Demografie:** Männlich, Mitte 50 | Techniker oder Meister im Maschinenbau | 20+ Jahre Berufserfahrung | Führungsverantwortung für ca. 70 Mitarbeitende
+
+| Kategorie | Details |
+|---|---|
+| **Probleme** | Veraltetes Equipment, manuelle Planungsprozesse, Fachkräftemangel, unzureichende IT-Kompetenz im Team, begrenzte Investitionsmittel |
+| **Ziele** | Wartung vorausschauender gestalten, Produktionsausfälle vermeiden, Transparenz über Maschinenzustände erhöhen, Planungssicherheit verbessern |
+| **Jobs-to-be-Done** | Maschinenausfälle analysieren und reduzieren, Produktionsabläufe stabilisieren, Wartungsintervalle optimieren, Ersatzteilverfügbarkeit sicherstellen |
+| **Tagesverantwortung** | Tägliche Kontrolle der Maschinenverfügbarkeit, Koordination von Wartung und Instandhaltung, Lösung von Störungen und Engpässen, Berichte und KPIs |
+| **Kaufemotionen** | Unsicherheit bei Investitionsentscheidungen, Sorge vor Kontrollverlust, Risikobewertung im Hinblick auf ROI, Hoffnung auf langfristige Entlastung |
+| **Nutzungsemotionen** | Erleichterung bei gelösten Störungen, Zufriedenheit durch bessere Planbarkeit, Vertrauen in stabilen Betrieb |
+| **Trigger** | Akuter Produktionsausfall, Druck von Kunden bei Lieferverzug, erfolgreiche Pilotprojekte im Umfeld, Förderprogramme für Digitalisierung |
+| **Barrieren** | Kosten der Systemeinführung, Widerstand gegen Veränderung im Team, technologische Komplexität, Zweifel an Daten- und IT-Sicherheit |
+
+</div>
+</details>
+
+<details>
+<summary>👩‍💻 Dora – IT-Verantwortliche</summary>
+<div>
+
+**Beschreibung:** IT-Verantwortliche in einem mittelständischen Fertigungsunternehmen. Kümmert sich um Systemintegration, Netzwerkmanagement, Datenmanagement und Datensicherheitsthemen. Bindeglied zwischen IT und Produktion.
+
+**Demografie:** 35–45 Jahre | Technischer/IT-Background, evtl. duales Studium | Arbeitet am Fertigungsstandort Süddeutschland | Erfahrung mit älterer Infrastruktur (~10 Jahre)
+
+| Kategorie | Details |
+|---|---|
+| **Probleme** | Mangel an Expertenwissen im Team, Sicherheitsbedenken wegen veralteter Systeme, wenig IT-Support für Produktions-IT, hohes Risiko bei Systemausfällen, begrenzte Investitionsbereitschaft |
+| **Ziele** | Zuverlässige, integrierbare IT-Systeme, Reduktion von Stillstandzeiten, sichere Datenverwaltung, Automatisierung von IT-Prozessen |
+| **Jobs-to-be-Done** | IT-Systeme auswählen und implementieren, Schnittstellen zur Fertigung schaffen, Netzwerksicherheit gewährleisten, Datenmanagement optimieren |
+| **Trigger** | Systemausfälle oder Sicherheitsvorfälle, Anforderungen neuer Projekte, Forderungen der Geschäftsführung, neue gesetzliche Vorgaben |
+| **Barrieren** | Unsicherheit bei neuen Technologien, mangelndes Budget, komplexe Integration in bestehende Systeme, Zeitmangel |
+
+</div>
+</details>
+
+<details>
+<summary>👔 Christian – CEO / Geschäftsführer</summary>
+<div>
+
+**Beschreibung:** CEO eines mittelständischen Fertigungsunternehmens. Verantwortlich für die strategische und wirtschaftliche Ausrichtung, Compliance und Sicherstellung der Wettbewerbsfähigkeit. Sieht digitale Lösungen als Chance, scheitert aber oft an der Umsetzung.
+
+**Demografie:** ca. 50 Jahre | Langjährige Branchenerfahrung | Führungskraft mit technischem Hintergrund | Produziert in Süddeutschland mit Fokus auf Einzel- und Kleinserienfertigung | Unternehmen mit ca. 100 Mitarbeitern
+
+| Kategorie | Details |
+|---|---|
+| **Probleme** | Komplexität digitaler Transformation, Mangel an IT-Kompetenzen, veraltetes Fertigungsequipment, fehlende Smart-Factory-Infrastruktur, Sicherheitsbedenken bei IT/OT-Integration |
+| **Ziele** | Wettbewerbsfähigkeit durch Digitalisierung steigern, Produktivität und Flexibilität erhöhen, Investitionen besser planen, Zukunftssicherheit schaffen |
+| **Jobs-to-be-Done** | Digitale Lösungen bewerten und priorisieren, Wartungsstrategien definieren, Investitionsentscheidungen treffen, Prozesseffizienz kontinuierlich verbessern |
+| **Kaufemotionen** | Unsicherheit ob Investition sinnvoll ist, Druck mit technologischen Entwicklungen Schritt zu halten, Zweifel an Durchführbarkeit |
+| **Trigger** | Erhöhte Kundenanforderungen, technologische Trends im Markt, Förderprogramme, Konkurrenzdruck, Empfehlung durch Berater |
+| **Barrieren** | Interne Widerstände, Komplexität und Intransparenz digitaler Lösungen, unklare Kosten-Nutzen-Verhältnisse, Mangel an qualifiziertem Personal |
+
+</div>
+</details>
+
+</TabItem>
+<TabItem value="pains" label="Pains & Gains">
+
+## Pains & Gains
+
+### Ulrich (Produktionsleiter) – Betriebsperspektive
+
+| Pains | Gains |
+|---|---|
+| Ungeplante Stillstände | Minimierung ungeplanter Stillstandzeiten |
+| Geringe OEE (Overall Equipment Effectiveness) | Verbesserte OEE |
+| Fachkräftemangel | Kurzfristiger Zugang zu Experten |
+| Hoher Ersatzteilbestand / hohe Kapitalbindung | Geringere Ersatzteil-Bevorratung |
+| Lange Umrüstzeiten | Bessere Planbarkeit von Stillständen |
+| – | Transparenz über Zustand, Lager und Ersatzteile |
+| – | Rüstzeitenoptimierung (Anzahl und Dauer) |
+
+### Christian (CEO) – Unternehmensperspektive
+
+| Pains | Gains |
+|---|---|
+| Hoher Kostendruck | Längere Laufzeit der Maschinen / höherer Maschinenrestwert |
+| Ungeplante Lieferausfälle (Vertragsstrafen) | Weniger drohende Vertragsstrafen |
+| Regulatorik / Nachweispflicht | Geringerer Bedarf an Fachkräften |
+| Fachkräftemangel | Erhöhung der Qualität / weniger Nacharbeit |
+| Qualitätssicherung & Nacharbeit | – |
+| Komplexe IT-Infrastruktur | – |
+| Unklarer ROI | – |
+
+<Admonition type="info" title="Erkenntnisse">
+Die Pains von **Ulrich** (operativ: Stillstände, OEE, Ersatzteile) und **Christian** (strategisch: Kosten, Vertragsstrafen, Regulatorik) sind komplementär. Eine gute Value Proposition muss beide Ebenen adressieren – mit unterschiedlicher Sprache und unterschiedlichen KPIs.
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---
+
+<QualityGate items={[
+  'Ich kann die 3 CMLS-Personas (Ulrich, Dora, Christian) mit ihren Kernproblemen benennen',
+  'Ich verstehe, wie die Stakeholder-Matrix Akteure nach Einfluss und Problemverstehen einordnet',
+  'Ich kenne die wichtigsten Pains von Ulrich (Betrieb) und Christian (Management)',
+  'Ich verstehe, warum KMU in Europa das Fokussegment ist und welche Kriterien dazu geführt haben',
+  'Ich kann den Unterschied zwischen Pains (Problem) und Gains (gewünschtes Ergebnis) erklären',
+]} />

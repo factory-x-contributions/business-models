@@ -1,0 +1,10 @@
+{
+  "label": "CMLS – Condition Monitoring",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "examples/cmls/overview"
+  }
+}

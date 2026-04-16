@@ -1,0 +1,161 @@
+---
+id: green-room
+title: Grüner Raum – Werterzeugung
+description: 🟢 CMLS – Rollen & Akteure, Wertschöpfungsnetzwerk und Wertschöpfungsprozess
+sidebar_position: 4
+keywords: [CMLS, Grüner Raum, Werterzeugung, Value Creation, Rollen, Akteure, Wertschöpfungsnetzwerk, Wertschöpfungsprozess, Datenraum]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+
+<RoomHero
+  icon="🟢"
+  label="Grüner Raum – CMLS"
+  color="#10b981"
+  heading="Werterzeugung"
+  intro="Der Grüne Raum beschreibt, <strong>wer welche Rolle übernimmt</strong> und wie der Service operativ erbracht wird. Wer liefert welche Daten? Wer erbringt welche Services? Wer trägt welche Kosten? Das Ergebnis ist ein vollständiges Bild des Wertschöpfungsnetzwerks und des End-to-End-Prozesses."
+  bullets={[
+    'Welche Akteure sind am Ökosystem beteiligt?',
+    'Wie fließen Daten, Services und Zahlungen zwischen den Akteuren?',
+    'Wie läuft der Prozess von Setup bis laufendem Betrieb ab?',
+  ]}
+  goalText="Das Ergebnis: Eine <strong>Rollen & Akteure Matrix</strong>, zwei Wertschöpfungsnetzwerk-Ansichten (vereinfacht + vollständig) und ein <strong>detaillierter Wertschöpfungsprozess</strong> mit Setup- und Lifecycle-Phase."
+/>
+
+---
+
+<Tabs>
+<TabItem value="rollen" label="Rollen & Akteure" default>
+
+## Rollen & Akteure Matrix
+
+Das CMLS-Ökosystem umfasst vier Hauptakteure, die jeweils unterschiedliche Rollen im Datenökosystem übernehmen.
+
+### Key Actors
+
+| Akteur | Kommentar | Data Provider | Data Consumer | Service Provider | Infrastructure Provider | Equipment Provider | Nutzer |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Fabrikbetreiber** | = Nutzer | ✅ Nutzungsdaten | – | – | – | – | ✅ |
+| **Maschinenbauer** | = Anbieter und Gestalter des neuen Geschäftsmodells | ✅ Nutzungsdaten | ✅ Empfehlungen auf Basis Daten | – | – | ✅ Maschine | ✅ |
+
+### Others
+
+| Akteur | Kommentar | Data Provider | Data Consumer | Service Provider | Infrastructure Provider | Equipment Provider | Nutzer |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Komponentenhersteller** | Optional, in Unterauftrag des Maschinenbauers | ✅ Spezifikationsdaten im Design + Nutzungsdaten | ✅ Empfehlungen auf Basis Daten | – | – | ✅ Komponente | – |
+| **Softwareanbieter** | – | – | – | – | ✅ Dateninfrastruktur & Maintenance System | – | – |
+| Zulieferer | – | – | – | – | – | – | – |
+| Servicedienstleister | – | – | – | – | – | – | – |
+
+<Admonition type="info" title="Zwei Key Actors">
+Das CMLS ist primär eine **bilaterale Geschäftsbeziehung** zwischen Maschinenbauer und Fabrikbetreiber. Der Maschinenbauer übernimmt dabei mehrere Rollen gleichzeitig: Equipment Provider (Maschine), Data Consumer (empfängt Zustandsdaten), Service Provider (Wartungsempfehlungen) und Data Broker (koordiniert Zugriffsberechtigungen für Unterauftragnehmer).
+</Admonition>
+
+</TabItem>
+<TabItem value="netzwerk" label="Wertschöpfungsnetzwerk">
+
+## Wertschöpfungsnetzwerk
+
+### Vereinfachtes Bild (Hauptakteure)
+
+Das vereinfachte Wertschöpfungsnetzwerk zeigt die Hauptflüsse zwischen den zwei Key Actors:
+
+| Von | An | Fluss | Art |
+|---|---|---|---|
+| Maschinenbauer | Fabrikbetreiber | Smart Machine | Güter (physisch) |
+| Maschinenbauer | Fabrikbetreiber | Monitoring 2.0 App | Services (Software) |
+| Maschinenbauer | Fabrikbetreiber | Analysis & Recommendation | Services (datenbasiert) |
+| Fabrikbetreiber | Maschinenbauer | Machine Status Report | Daten |
+| Fabrikbetreiber | Maschinenbauer | Servicegebühr / Subscription | Finanzen |
+
+**Rollen im vereinfachten Bild:**
+- **Maschinenbauer:** Equipment Provider + Data Consumer + Service Provider + Data Broker (Fokus: Autorisierung von Unterauftragnehmern)
+- **Fabrikbetreiber:** End User + Data Provider
+
+### Vollständiges Bild (alle Akteure)
+
+Im vollständigen Bild kommen weitere Akteure hinzu:
+
+| Zusätzlicher Akteur | Rolle | Flüsse |
+|---|---|---|
+| **Software Provider (Maschinenbauer-Seite)** | Infrastructure Provider (Datenraum-Connector) + Technical Enabler (Asset Data Management) | SW-Lizenzen → Maschinenbauer |
+| **Software Provider (Fabrikbetreiber-Seite)** | Infrastructure Provider (Shopfloor-Daten) + Infrastructure Provider (Datenraum-Connector) + Technical Enabler (Asset Data Management) | SW-Lizenzen → Fabrikbetreiber |
+| **Komponentenhersteller** | Equipment Provider + Service Provider + Data Consumer | Komponenten → Maschinenbauer; Komponenten-Statusbericht ← Maschinenbauer; Analyse & Empfehlungen → Maschinenbauer |
+| **Software Provider (zentral)** | Datenraum-Operator + Central Service Provider | SW/Service → Maschinenbauer & Fabrikbetreiber |
+
+<Admonition type="tip" label="Empfehlung: Vom einfachen zum vollständigen Bild">
+Starte immer mit dem vereinfachten Bild (nur Key Actors). Das vollständige Bild wird erst relevant, wenn Partnerverträge, Datenraum-Governance und Software-Lizenzen konkret verhandelt werden.
+</Admonition>
+
+</TabItem>
+<TabItem value="prozess" label="Wertschöpfungsprozess">
+
+## Wertschöpfungsprozess
+
+Der CMLS-Prozess gliedert sich in zwei Phasen: eine einmalige **Setup-Phase** und eine dauerhafte **Lifecycle-Phase**.
+
+### Setup-Phase (einmalig je Kunde)
+
+Die Setup-Phase stellt sicher, dass alle technischen und organisatorischen Voraussetzungen für den laufenden Service erfüllt sind.
+
+| Schritt | Akteur | System/Tool | Aktion |
+|---|---|---|---|
+| 1 | **Maintenance Team (Fabrikbetreiber)** | – | Service-Vertrag abschließen, Scope festlegen (1–3 Maschinen), KPI-Baseline definieren |
+| 2 | **Service Team (Maschinenbauer)** | Asset Data Management System | Risiko-Analyse durchführen (FMECA, Kritikalitäten) |
+| 3 | **Fabrikbetreiber** | Asset Data Management System | IT/OT-Datenverbindung herstellen (REST-API / MQTT-Gateway) |
+| 4 | **Fabrikbetreiber** | Asset Data Management System | System konfigurieren |
+| 5 | **Fabrikbetreiber** | Monitoring 2.0 App | Monitoring App installieren |
+| 6 | **Fabrikbetreiber** | Monitoring 2.0 App | Monitoring App konfigurieren (Schwellenwerte, Alerts, Dashboards) |
+| 7 | **Maschinenbauer** | Asset Data Management System | System konfigurieren (Gegenseite: Datenempfang, Analyse-Pipeline) |
+
+**Deliverables aus der Setup-Phase:**
+- Live-Datenanbindung der Pilotmaschinen
+- KPI-Baseline & Messplan (Vorher-Werte)
+- Konfiguriertes Monitoring + Alerting
+- Abnahme-/Go-Live-Checkliste
+
+### Lifecycle-Phase (kontinuierlich)
+
+Die Lifecycle-Phase ist der eigentliche laufende Service. Sie läuft 365 Tage im Jahr.
+
+| Schritt | Akteur | System/Tool | Aktion |
+|---|---|---|---|
+| 1 | **Fabrikbetreiber** | Asset Data Management System | **365d Asset Monitoring** – kontinuierliche Datenerfassung |
+| 2 | **Fabrikbetreiber** | Monitoring 2.0 App | Aktion notwendig erkannt („Orangene Ampel") → Asset Details und Next Steps einsehen |
+| 3 | **Maintenance Team (Fabrikbetreiber)** | – | Inspektion durchführen |
+| 4 | **Fabrikbetreiber** | Monitoring 2.0 App | Maschinenzustandsbericht erstellen |
+| 5 | **Fabrikbetreiber** | Asset Data Management System | Zustandsbericht bereitstellen (über Datenraum) |
+| 6 | **Maschinenbauer** | Asset Data Management System | Zustandsbericht empfangen |
+| 7 | **Service Team (Maschinenbauer)** | – | Maschinendaten analysieren |
+| 8 | **Service Team (Maschinenbauer)** | – | Wartungsempfehlungen erzeugen |
+| 9 | **Maschinenbauer** | – | Wartungsempfehlungen übermitteln |
+| 10 | **Maintenance Team (Fabrikbetreiber)** | – | Wartungsempfehlungen empfangen und umsetzen |
+
+**Optional – Komponentenhersteller-Loop:**
+
+| Schritt | Akteur | Aktion |
+|---|---|---|
+| A | **Komponentenhersteller** | Komponentendaten empfangen (vom Maschinenbauer über Datenraum) |
+| B | **Service Team (Komponentenhersteller)** | Komponentendaten analysieren, Wartungsempfehlungen erzeugen |
+| C | **Komponentenhersteller** | Wartungsempfehlungen an Maschinenbauer übermitteln |
+
+<Admonition type="info" title="Prozesslogik End-to-End">
+Der vollständige CMLS-Prozess geht von der **Datenerfassung beim Fabrikbetreiber** über die **Analyse beim Maschinenbauer** bis zur **Wartungsempfehlung zurück** an den Fabrikbetreiber. Der Datenraum fungiert als souveräne, zweckgebundene Übergabeebene – keine unkontrollierte Datenweitergabe.
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---
+
+<QualityGate items={[
+  'Ich kann die Rollen der Key Actors (Maschinenbauer, Fabrikbetreiber) im CMLS-Ökosystem beschreiben',
+  'Ich verstehe, welche Datenflüsse, Service-Flüsse und Finanzflüsse zwischen den Akteuren bestehen',
+  'Ich kann die Setup-Phase (einmalig) von der Lifecycle-Phase (kontinuierlich) unterscheiden',
+  'Ich verstehe, welche Rolle der Datenraum im Wertschöpfungsprozess spielt',
+  'Ich kann erklären, warum der Komponentenhersteller nur optional im Prozess auftaucht',
+]} />

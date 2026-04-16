@@ -1,0 +1,181 @@
+---
+id: yellow-room
+title: Gelber Raum – Monetarisierung
+description: 🟡 CMLS – Wertquellen, Preismodell, Kostenstruktur und Kosten-Nutzen-Synthese
+sidebar_position: 5
+keywords: [CMLS, Gelber Raum, Monetarisierung, Viability, Preismodell, Subscription, Unit Economics, Kostenstruktur, Break-even]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+
+<RoomHero
+  icon="🟡"
+  label="Gelber Raum – CMLS"
+  color="#f59e0b"
+  heading="Monetarisierung"
+  intro="Der Gelbe Raum beantwortet die zentrale wirtschaftliche Frage: <strong>Wie wird das Geschäftsmodell finanziell tragfähig?</strong> Er leitet aus dem Kundennutzen messbare Wertquellen ab, definiert das Preismodell, analysiert die Kostenstruktur und synthesiert die Kosten-Nutzen-Verhältnisse aller beteiligten Akteure."
+  bullets={[
+    'Wie wird unser Angebot monetarisiert?',
+    'Welche Zahlungsmodelle sind für die Zielgruppe geeignet?',
+    'Welche Kostenstruktur steht den Erlösen gegenüber?',
+    'Wer zahlt was im Ökosystem – direkt oder indirekt?',
+  ]}
+  goalText="Das Ergebnis: <strong>Hybrides Preismodell</strong> (Subscription + Variable + Setup Fee), Unit Economics mit Break-even-Analyse und eine <strong>Kosten-Nutzen-Synthese für alle 4 Akteure</strong>."
+/>
+
+---
+
+<Tabs>
+<TabItem value="wertquellen" label="Wertquellen & Zahlungsbereitschaft" default>
+
+## Wertquellen & Zahlungsbereitschaft
+
+Die Wertquellen leiten sich direkt aus der Match Matrix (Roter Raum) ab. Jeder Kundennutzen wird in einen messbaren KPI und eine Wertbeitragsberechnung übersetzt.
+
+| Value (aus Match Matrix) | KPI | Wertbeitragsberechnung | Wertbeitrag | Plausibilitätscheck | Offensichtlicher Kundenmehrwert |
+|---|---|---|---|---|---|
+| Reduktion ungeplanter Stillstände | Ungeplante Stillstandzeit (h/Monat) | Reduzierte Stillstandszeit × Kosten pro Stillstandsstunde | Modellhaft positiv – **größter Hebel** | Hoch – branchenüblich, Management-relevant | **Hoch** |
+| Erhöhung Maschinenverfügbarkeit | Verfügbarkeit (%) | Veränderung Verfügbarkeit × Output-/Deckungsbeitrag | Modellhaft positiv | Hoch – direkt aus KPI ableitbar | **Hoch** |
+| Reduktion Wartungs- & Servicekosten | Wartungskosten €/Jahr | Weniger Einsätze × Kosten pro Einsatz | Mittel bis hoch | Mittel – stark abhängig vom Case | **Mittel** |
+| Verkürzung MTTR | MTTR (h) | Schnellere Reparatur × Stillstandskosten | Ergänzender Effekt | Hoch – Erfahrungswerte | **Mittel** |
+| Höhere Planbarkeit & Transparenz | Qualitativ | Nicht direkt monetarisiert | Qualitativ | Hoch – Entscheidungsrelevant | **Qualitativ** |
+| Erhöhte Datenhistorie (lange Retention) | Monate Datenhaltung | Nur indirekter Nutzen, hoher Speicheraufwand | Gering | Hoch – Nutzen nur für Spezialanalysen | **Niedrig** |
+
+<Admonition type="tip" title="Top-Werttreiber">
+Die drei wichtigsten Hebel für die Preisargumentation gegenüber dem Kunden:
+1. **Stillstandsreduktion** – direkt monetarisierbar (Stunden × Kosten/h)
+2. **Wartungskostenreduktion** – gut verständlich, gut dokumentierbar
+3. **Transparenz & Planbarkeit** – qualitativ, aber Management-relevant für Christian
+
+**Wichtig:** Der Preis wird immer gegen **Stillstandskosten/Risiko argumentiert**, nicht gegen „Softwarepreis". Das ist der entscheidende Unterschied in der Vertriebsargumentation.
+</Admonition>
+
+</TabItem>
+<TabItem value="preismodell" label="Preismodell (Hybrid)">
+
+## Erlösmechanik & Preismodell
+
+Das CMLS nutzt ein **hybrides Preismodell** aus drei Bausteinen, das einen pilotfähigen Einstieg ermöglicht und bei wachsendem Nutzen skalierbar wird.
+
+### Preisbausteine
+
+| Service-Baustein | Geschäftsmodell-Pattern | Preisbausteine | Wer zahlt | Wer liefert | Skalierung | Quantifizierung |
+|---|---|---|---|---|---|---|
+| **Monitoring & Basis-Analytics** | Subscription | Fixpreis pro Maschine / Monat | Betreiber zahlt | Anbieter liefert | Wiederkehrend, skaliert mit Maschinenanzahl | 800 €/Maschine/Monat (modellhaft) |
+| **Erweiterte Analytics** | Pay-per-Feature / Tiered Pricing | Aufpreis je Funktionsumfang | Betreiber zahlt | Anbieter liefert | Variabel, skaliert mit Nutzungsintensität | +300 €/Maschine/Monat (modellhaft) |
+| **SLA / Reaktionszeit** | SLA-based Pricing | Zuschlag je Service-Level | Betreiber zahlt | Anbieter liefert | Wiederkehrend, wertbasiert | Je nach SLA-Stufe |
+| **Setup & Integration** | One-time Fee | Einmaliger Integrationspreis | Betreiber zahlt | Anbieter liefert | Nicht skalierend | 5.000 € einmalig (modellhaft) |
+
+### Unit Economics – Referenzmodell
+
+<Admonition type="tip" title="Unit Economics – Beispiel mit 10 Maschinen (modellhaft)">
+
+| Kennzahl | Wert |
+|---|---|
+| Erlös/Maschine/Monat | 1.100 € (800 € Basis + 300 € Advanced Analytics) |
+| Fixkosten/Monat (gesamt) | 4.000 € (Plattform/Support/Dev/Overhead) |
+| Variable Kosten/Maschine/Monat | 220 € |
+| **Erlös/Monat (10 Maschinen)** | **11.000 €** |
+| **Gesamtkosten/Monat (10 Maschinen)** | **6.200 €** (4.000 € fix + 2.200 € variabel) |
+| **Deckungsbeitrag/Monat** | **4.800 € (~44 %)** |
+| **Break-even** | **~5 Maschinen** |
+| Setup Fee (einmalig) | 5.000 € |
+
+*Alle Zahlen sind Modellannahmen, keine Ist-Kosten.*
+
+</Admonition>
+
+### Skalierungsszenarien
+
+| Szenario | Maschinen | Erlös/Monat | Kosten/Monat | Deckungsbeitrag |
+|---|---|---|---|---|
+| Pilot | 1–3 | 1.100–3.300 € | ~4.220–4.660 € | Negativ bis break-even |
+| Wachstum | **5** | 5.500 € | 5.100 € | **~400 € (Break-even)** |
+| Standard | 10 | 11.000 € | 6.200 € | 4.800 € (~44 %) |
+| Skalierung | 20 | 22.000 € | 8.400 € | 13.600 € (~62 %) |
+| Ausgebaut | 30+ | 33.000 € | 10.600 € | 22.400 € (~68 %) |
+
+### Preisstrategie & Positionierung
+
+| Aspekt | Empfehlung |
+|---|---|
+| **Einstieg** | Marktüblich, pilot-fähig (geringe Einstiegshürde für ersten Kunden) |
+| **Skalierung** | Premium/wertbasiert (SLA und Advanced Analytics als Hebel) |
+| **Argumentation** | Preis vs. Stillstandskosten/Risiko – nicht vs. „Softwarepreis" |
+| **Strategie** | B → C „Value Ladder": Basis-Einstieg → Mehrwert durch Erweiterungen |
+
+</TabItem>
+<TabItem value="kosten" label="Kostenstruktur">
+
+## Kostenstruktur
+
+### Kostenkategorien des Anbieters (Maschinenbauer)
+
+| Service-Baustein | Kosten (Typ) | Kostenträger | Plausibilität | Kostentreiber / Skalierung | Quantifizierung |
+|---|---|---|---|---|---|
+| **Plattformbetrieb** | Cloud, Betrieb, Wartung | Anbieter | Hoch | Fixkosten, geringe Grenzkosten | Modellhaft: ~2.000 €/Monat fix |
+| **Analytics-Entwicklung** | Entwicklung, Pflege der Modelle | Anbieter | Hoch | Fixkosten, amortisiert über Volumen | Modellhaft: ~1.000 €/Monat fix |
+| **Datenverarbeitung** | Compute, Storage | Anbieter | Hoch | Variabel, unterproportional skalierend | Modellhaft: ~100–200 €/Maschine/Monat |
+| **Service & Support** | Personal, Tools, Helpdesk | Anbieter | Mittel | Teilweise variabel (je Supportbedarf) | Modellhaft: ~500 €/Monat + variabel |
+| **Integration / Setup** | Projektaufwand je Neukunde | Anbieter | Hoch | Einmalig pro Kunde | Modellhaft: 5.000 € einmalig |
+
+<Admonition type="info" title="Kostentreiber-Analyse">
+**Stärkster Kostenhebel:** Der Plattformbetrieb und die Analytics-Entwicklung sind primär Fixkosten. Bei steigender Maschinenanzahl werden diese über mehr Erlöse verteilt → **stark verbesserte Marge bei Skalierung**.
+
+**Variable Kosten** (Datenverarbeitung, Support) skalieren unterproportional zur Maschinenanzahl → Skaleneffekte sind real und belastbar.
+</Admonition>
+
+### Robustheitsanalyse
+
+| Szenario | Auswirkung bei 10 Maschinen | Bewertung |
+|---|---|---|
+| Preis -20 % (von 1.100 € auf 880 €) | Deckungsbeitrag sinkt von 4.800 € auf ~2.600 € | Modell bleibt positiv ✅ |
+| Preis +20 % (von 1.100 € auf 1.320 €) | Deckungsbeitrag steigt auf ~7.000 € | Deutlich besser ✅ |
+| Kosten +30 % (von 6.200 € auf 8.060 €) | Deckungsbeitrag sinkt von 4.800 € auf ~2.940 € | Modell bleibt positiv ✅ |
+| Nur 5 Maschinen | Break-even, kaum Puffer | Kritischer Schwellenwert ⚠️ |
+
+</TabItem>
+<TabItem value="synthese" label="Kosten-Nutzen-Synthese">
+
+## Synthese: Kosten-Nutzen-Betrachtung für alle Akteure
+
+### Qualitative Bewertung
+
+| | **Akteur 1: Fabrikbetreiber (Kunde)** | **Akteur 2: Maschinenbauer (Anbieter)** | **Akteur 3: Analytics-/Plattform-Partner** | **Akteur 4: Datenraum-/Ökosystem-Operator** |
+|---|---|---|---|---|
+| **Nutzen / Erlöse** | Weniger Stillstände, bessere Planbarkeit, geringeres Risiko | Wiederkehrende Erlöse, Skalierung, Kundenbindung | Plattformnutzung, Analytics-Lizenzen, Skalierung über mehrere Kunden | Ökosystem-Effekte, Teilnahmegebühren, Datenraum-Nutzung |
+| **Kosten / Aufwände** | Servicegebühr, Integrationsaufwand | Plattform-, Betriebs- & Supportkosten | Betrieb der Analytics-Umgebung, Compute, Modellpflege | Governance, Betrieb der Infrastruktur, Compliance & Zertifizierung |
+
+### Quantitative Bewertung
+
+| | **Akteur 1: Fabrikbetreiber** | **Akteur 2: Maschinenbauer** | **Akteur 3: Partner** | **Akteur 4: Operator** |
+|---|---|---|---|---|
+| **Nutzen / Erlöse (€)** | Modellhaft hoch (Stillstandsvermeidung) | Modellhaft skalierend (Subscription + Add-ons) | – | – |
+| **Kosten / Aufwände (€)** | Modellhaft mittel | Modellhaft fix + variabel | – | – |
+| **Break-even?** | – | **Ja, modellhaft ab ~5 Maschinen** | – | – |
+| **Robust?** | – | Ja, volumengetrieben | – | – |
+| **Fazit: Nutzen > Kosten?** | ✅ Ja | ✅ Ja | ✅ Ja (ab ausreichender Skalierung) | ✅ Ja (bei kritischer Masse im Ökosystem) |
+
+<Admonition type="tip" title="Bewertung: GO">
+Das Hybridmodell ist **marktfähig und skalierbar**. Der Break-even ist früh erreichbar (~5 Maschinen). Die Wirtschaftlichkeit hängt an drei Faktoren:
+1. **Stabile Datenqualität & verlässliche Integration** (technisch)
+2. **Messbarer Nutzen über Baseline-Vergleich & KPI-Tracking** (nachweisbar)
+3. **Skalierung über die Anzahl angebundener Maschinen pro Kunde** (wirtschaftlich)
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---
+
+<QualityGate items={[
+  'Ich kann die drei Preisbausteine des CMLS-Preismodells (Subscription, Variable, Setup Fee) benennen und erklären',
+  'Ich kenne den modellhaften Break-even (~5 Maschinen) und verstehe, warum die Maschinenanzahl der stärkste Hebel ist',
+  'Ich kann die Unit Economics (Erlös, Kosten, Deckungsbeitrag) für das 10-Maschinen-Szenario wiedergeben',
+  'Ich verstehe die Preisstrategie: Argumentation über Stillstandskosten, nicht über Softwarepreis',
+  'Ich kann das Kosten-Nutzen-Fazit für alle vier Akteure (Betreiber, Maschinenbauer, Partner, Operator) zusammenfassen',
+]} />
