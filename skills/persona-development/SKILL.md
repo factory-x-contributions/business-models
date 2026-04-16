@@ -2,6 +2,8 @@
 name: persona-development
 description: Creates detailed persona profiles with CORE (name, role, problems, demographics, goals) and ENVIRONMENT (responsibilities, barriers, triggers, emotions, motivation) sections for prioritized stakeholders.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Persona Development

@@ -2,6 +2,8 @@
 name: cost-structure-analysis
 description: Maps the complete cost structure across value creation steps including fixed/variable, one-time/recurring, partner costs, scalability analysis, and controllability measures.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Cost Structure Analysis

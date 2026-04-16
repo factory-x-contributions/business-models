@@ -2,6 +2,8 @@
 name: vpc-customer-side
 description: Develops the customer side of the Value Proposition Canvas - Customer Jobs (functional, emotional, social), Pains (categorized and prioritized), and Gains (required, expected, desired, unexpected). Produces a prioritized VPC customer profile ready for solution mapping.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Value Proposition Canvas - Customer Side

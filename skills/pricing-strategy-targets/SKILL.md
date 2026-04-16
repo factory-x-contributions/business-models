@@ -2,6 +2,8 @@
 name: pricing-strategy-targets
 description: Defines the pricing strategy, price positioning, architecture, discount rules, KPI guardrails, and go-to-market test plan. Includes a closing checklist to verify all viability elements are complete and consistent.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Pricing Strategy & Targets

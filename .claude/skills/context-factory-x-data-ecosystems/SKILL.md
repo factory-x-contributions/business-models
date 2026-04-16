@@ -2,6 +2,8 @@
 name: context-factory-x-data-ecosystems
 description: Reference context for Factory-X, data ecosystems, ecosystem roles, and the House Building Logic metaphor. This skill is not user-invocable - it is consumed by other skills for domain context and terminology.
 user-invocable: false
+metadata:
+  internal: true
 ---
 
 # Context: Factory-X & Data Ecosystems

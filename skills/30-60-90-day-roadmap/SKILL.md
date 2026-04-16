@@ -2,6 +2,8 @@
 name: 30-60-90-day-roadmap
 description: Assigns all measures from the Action Plan to 30/60/90-day phases, maps dependencies, defines outcome-based KPIs, identifies resource and decision needs, and establishes tracking governance.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # 30/60/90-Day Roadmap

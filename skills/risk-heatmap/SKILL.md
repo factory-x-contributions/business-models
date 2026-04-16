@@ -2,6 +2,8 @@
 name: risk-heatmap
 description: Identifies, classifies, and visualizes business model risks across all four perspectives (Desirability, Value Proposition, Feasibility, Viability) using a probability-severity heatmap with color-coded zones and prioritized next steps.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Risk Heatmap

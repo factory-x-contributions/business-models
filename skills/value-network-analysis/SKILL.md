@@ -2,6 +2,8 @@
 name: value-network-analysis
 description: Maps all exchange flows between ecosystem actors - goods/services, data, finances, infrastructure, and governance. Use for value network design, data flow mapping, or ecosystem architecture planning.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Value Network Analysis

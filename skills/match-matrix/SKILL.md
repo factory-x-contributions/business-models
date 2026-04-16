@@ -2,6 +2,8 @@
 name: match-matrix
 description: Creates a Match Matrix that systematically maps customer Pains and Gains to Solution Levers, derives value, prioritizes, and clusters into Essentials vs. Nice-to-Haves. Use for pain-gain-solution mapping, feature prioritization, or when transitioning from customer understanding to value proposition design.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Match Matrix

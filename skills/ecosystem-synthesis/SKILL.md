@@ -2,6 +2,8 @@
 name: ecosystem-synthesis
 description: Synthesizes and evaluates the entire value creation design - monetizable contributions, costs, governance maturity, risks, and Go/Review/Stop recommendation. Use for ecosystem feasibility assessment or when completing value creation analysis.
 user-invocable: true
+metadata:
+  internal: true
 ---
 
 # Ecosystem Synthesis
