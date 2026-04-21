@@ -1,0 +1,10 @@
+{
+  "label": "Tag 1 - Blauer Raum",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "workshop_blauer_raum"
+  }
+}

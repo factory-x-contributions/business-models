@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const organizationSchema = {
   '@context': 'https://schema.org',
@@ -28,3 +29,7 @@ export default function Root({ children }) {
     </>
   );
 }
+
+Root.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -5,46 +5,24 @@ description: 🏁 Ergebnisse konsolidieren, Risiken identifizieren und Entscheid
 sidebar_position: 7
 ---
 import Admonition from '@theme/Admonition';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+import { DayProvider, DayBreak, DaySection, AiSection, VorlageLink } from '@site/src/components/DaySection';
 
-<div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem'}}>🏁</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Ausleitung - Konsolidierung & Entscheidung</span>
-  </div>
-  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Wie geht es weiter?</h2>
-  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
-    Die Ergebnisse der vier Räume kompakt zusammenführen, kritische Risiken identifizieren und eine belastbare Entscheidungsgrundlage schaffen.
-  </p>
-  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(107, 114, 128, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 114, 128, 0.2)'}}>
-    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <span style={{fontSize: '1.1rem'}}>🎯</span>
-      <strong style={{color: '#6B7280', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
-    </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Executive Summary, eine Risiko-Heatmap, einen 30/60/90-Tage-Plan und eine Go/Prüfen/Stop-Empfehlung</strong> - alles für eine fundierte Management-Entscheidung.</p>
-  </div>
-</div>
+<RoomHero
+  icon="🏁"
+  label="Ausleitung - Konsolidierung & Entscheidung"
+  color="#6B7280"
+  heading="Wie geht es weiter?"
+  intro="Die Ergebnisse der vier Räume kompakt zusammenführen, kritische Risiken identifizieren und eine belastbare Entscheidungsgrundlage schaffen."
+  goalText="Am Ende des Tages haben wir eine <strong>Executive Summary, eine Risiko-Heatmap, einen 30/60/90-Tage-Plan und eine Go/Prüfen/Stop-Empfehlung</strong> – alles für eine fundierte Management-Entscheidung."
+/>
 
----
+<DayProvider color="#6B7280">
 
-## Tagesübersicht
+<DayBreak time="09:00 - 09:30" title="Warm-up & Recap" />
 
-| Zeit | Thema | Beschreibung |
-|------|-------|--------------|
-| 09:00 - 09:30 | Warm-up & Recap | Zusammenfassung der Woche, Ziele Tag 5 |
-| 09:30 - 10:30 | Ergebnis-Konsolidierung | Alle Artefakte prüfen, Konsistenz-Check |
-| 10:30 - 10:45 | Pause | |
-| 10:45 - 12:00 | Deep-Dive 1: Risiko-Heatmap | Risiken identifizieren und bewerten |
-| 12:00 - 13:00 | Mittagspause | |
-| 13:00 - 14:00 | Deep-Dive 2: Maßnahmenplan & RACI | Action-Plan mit Verantwortlichkeiten |
-| 14:00 - 14:45 | Deep-Dive 3: 30/60/90-Plan | Roadmap und Ressourcenbedarf |
-| 14:45 - 15:00 | Pause | |
-| 15:00 - 15:45 | Deep-Dive 4: Executive Summary | One-Pager erstellen |
-| 15:45 - 16:30 | Pitch-Simulation & Gate-Review | Go/Prüfen/Stop-Entscheidung |
-| 16:30 - 17:00 | Abschluss & Feedback | Wrap-up, nächste Schritte |
-
----
-
-## Ergebnis-Konsolidierung (09:30 - 10:30)
+<DaySection id="consolidation" time="09:30 - 10:30" title="Ergebnis-Konsolidierung">
 
 ### Alle Artefakte auf einen Blick
 
@@ -80,9 +58,11 @@ Prüfe die logischen Verbindungen zwischen den Räumen:
 
 </div>
 
----
+</DaySection>
 
-## Deep-Dive 1: Risiko-Heatmap (10:45 - 12:00)
+<DayBreak time="10:30 - 10:45" title="Pause" />
+
+<DaySection id="dd1" time="10:45 - 12:00" title="Risiko-Heatmap">
 
 ### Risiken identifizieren (30 Min)
 
@@ -120,9 +100,13 @@ Bewertet jedes Risiko nach **Eintrittswahrscheinlichkeit** (Y-Achse) und **Schad
 | 🟡 **Mittel** | Regelmäßig überwachen, Frühwarnindikatoren definieren |
 | 🟢 **Gering** | Dokumentieren und bei Bedarf prüfen |
 
----
+<VorlageLink title="Risiko-Heatmap" href="./vorlage-risiko-heatmap" />
 
-## Deep-Dive 2: Maßnahmenplan & RACI (13:00 - 14:00)
+</DaySection>
+
+<DayBreak time="12:00 - 13:00" title="Mittagspause" />
+
+<DaySection id="dd2" time="13:00 - 14:00" title="Maßnahmenplan & RACI">
 
 ### Workstreams definieren
 
@@ -149,9 +133,13 @@ Jede Maßnahme als SMART-Satz: **Was** wird getan? → **Bis wann**? → Welches
 
 *Beispiel:* „IAM-Policy für PoC bis 31.01. implementiert, inkl. Audit-Log aktiviert."
 
----
+<VorlageLink title="Action-Plan" href="./vorlage-action-plan" />
 
-## Deep-Dive 3: 30/60/90-Tage-Plan (14:00 - 14:45)
+<VorlageLink title="RACI-Tabelle" href="./vorlage-raci" />
+
+</DaySection>
+
+<DaySection id="dd3" time="14:00 - 14:45" title="30/60/90-Tage-Plan">
 
 ### Zeitkorridore zuordnen
 
@@ -177,9 +165,15 @@ Jede Maßnahme als SMART-Satz: **Was** wird getan? → **Bis wann**? → Welches
 | Partner/Ökosystem | Welche externen Zusagen werden benötigt? |
 | Management-Entscheidungen | Budgetfreigabe, Go für Kundenkontakt, Vertragsfreigabe? |
 
----
+<VorlageLink title="30/60/90-Tage-Plan" href="./vorlage-30-60-90" />
 
-## Deep-Dive 4: Executive Summary (15:00 - 15:45)
+<VorlageLink title="Ressourcen- & Entscheidungsbedarf" href="./vorlage-ressourcen" />
+
+</DaySection>
+
+<DayBreak time="14:45 - 15:00" title="Pause" />
+
+<DaySection id="dd4" time="15:00 - 15:45" title="Executive Summary">
 
 ### One-Pager erstellen
 
@@ -198,15 +192,47 @@ Erstellt eine **einseitige Management-Zusammenfassung**:
 
 > Das entwickelte Geschäftsmodell ermöglicht **[Zielkunde]**, **[Problem]** durch **[Lösung]** zu adressieren und diesen Nutzen über ein **[Erlösmodell]** wirtschaftlich abzubilden.
 
+</DaySection>
+
+<DaySection id="pitch" time="15:45 - 16:30" title="Pitch-Simulation & Go/Prüfen/Stop">
+
+### Pitch üben (20 Min)
+
+- **5-Minuten-Pitch** der Executive Summary
+- Feedback aus der Gruppe
+- Schärfen der Kernargumente
+
+### Go/Prüfen/Stop-Entscheidung
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginTop: '1.5rem'}}>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(34, 197, 94, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#22c55e', fontSize: '1.25rem', fontWeight: '600'}}>✓</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>GO</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Business Case ist valide → MVP-Entwicklung starten</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(196, 160, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#C4A000', fontSize: '1.25rem', fontWeight: '600'}}>?</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>PRÜFEN</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Offene Punkte klären → Spezifische Fragen beantworten</p>
+</div>
+
+<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
+  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#B85450', fontSize: '1.25rem', fontWeight: '600'}}>✕</div>
+  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>STOP</h4>
+  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Nicht weiterverfolgen → Learnings dokumentieren</p>
+</div>
+
+</div>
+
+</DaySection>
+
+</DayProvider>
+
 ---
 
-## AI-Unterstützung (Hybrides Format)
-
-<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.25rem'}}>🤖</span>
-    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-gestützter Workshop</strong>
-  </div>
+<AiSection>
 
 Am Abschlusstag kann AI besonders bei der Konsolidierung und Dokumentation unterstützen:
 
@@ -239,41 +265,7 @@ Am Abschlusstag kann AI besonders bei der Konsolidierung und Dokumentation unter
 AI ist am Abschlusstag besonders wertvoll für die **schnelle Dokumentation**. Das Team konzentriert sich auf Inhalte und Entscheidungen, AI übernimmt die Strukturierung und Formulierung.
 </Admonition>
 
-</div>
-
----
-
-## Pitch-Simulation & Go/Prüfen/Stop (15:45 - 16:30)
-
-### Pitch üben (20 Min)
-
-- **5-Minuten-Pitch** der Executive Summary
-- Feedback aus der Gruppe
-- Schärfen der Kernargumente
-
-### Go/Prüfen/Stop-Entscheidung
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginTop: '1.5rem'}}>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
-  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(34, 197, 94, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#22c55e', fontSize: '1.25rem', fontWeight: '600'}}>✓</div>
-  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>GO</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Business Case ist valide → MVP-Entwicklung starten</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
-  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(196, 160, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#C4A000', fontSize: '1.25rem', fontWeight: '600'}}>?</div>
-  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>PRÜFEN</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Offene Punkte klären → Spezifische Fragen beantworten</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)', textAlign: 'center'}}>
-  <div style={{width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(184, 84, 80, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', color: '#B85450', fontSize: '1.25rem', fontWeight: '600'}}>✕</div>
-  <h4 style={{margin: '0 0 0.5rem 0', fontSize: '1rem', fontWeight: '600'}}>STOP</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Nicht weiterverfolgen → Learnings dokumentieren</p>
-</div>
-
-</div>
+</AiSection>
 
 ---
 

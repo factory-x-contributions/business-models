@@ -92,60 +92,112 @@ import Admonition from '@theme/Admonition';
 
 ## Was könnte zukünftig möglich sein?
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem', marginBottom: '2rem'}}>
+<p style={{fontSize: '0.975rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.75', marginTop: '1rem', marginBottom: '2rem', paddingLeft: '1.1rem', borderLeft: '3px solid var(--ifm-color-emphasis-300)'}}>
+  Die technische Grundlage ist bereits gelegt – die Agentic Skills sind heute pipeline-fähig. Was noch fehlt: robuste Orchestrierungs-Infrastruktur, ausgereifte Tool-Use-Integrationen und das nötige Vertrauen in autonome Entscheidungen. Diese drei Faktoren bestimmen das Tempo der folgenden Entwicklungsstufen.
+</p>
 
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '16px', overflow: 'hidden'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(175, 82, 222, 0.08)', borderBottom: '1px solid rgba(175, 82, 222, 0.15)'}}>
-    <span style={{fontSize: '1.35rem'}}>🤖</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#AF52DE', letterSpacing: '-0.01em'}}>Vollautomatische Agenten-Pipelines</span>
-  </div>
-  <div style={{padding: '1.1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.75rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      Ein Orchestrator-Agent koordiniert den Gesamtprozess selbstständig: Skills in Reihenfolge aufrufen, Ergebnisse übergeben, Dokument erstellen - mit minimalem menschlichem Input.
-    </p>
-    <span style={{fontSize: '0.78rem', color: '#AF52DE', fontWeight: '500'}}>Alle 23 Skills als atomare Bausteine</span>
-  </div>
+<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
+  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#34C759', flexShrink: 0}}></div>
+  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#34C759'}}>Heute verfügbar</span>
+  <div style={{flex: 1, height: '1px', background: 'rgba(52,199,89,0.3)'}}></div>
 </div>
 
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '16px', overflow: 'hidden'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(0, 122, 255, 0.06)', borderBottom: '1px solid rgba(0, 122, 255, 0.12)'}}>
-    <span style={{fontSize: '1.35rem'}}>🧩</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#007AFF', letterSpacing: '-0.01em'}}>Multi-Agent-Systeme</span>
-  </div>
-  <div style={{padding: '1.1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.75rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      Mehrere spezialisierte Agents arbeiten parallel: Einer analysiert Kunden, ein anderer das Wertversprechen, ein dritter die Wirtschaftlichkeit. Ein Syntheseagent führt die Ergebnisse zusammen.
-    </p>
-    <span style={{fontSize: '0.78rem', color: '#007AFF', fontWeight: '500'}}>Drastisch kürzere Durchlaufzeiten</span>
-  </div>
-</div>
-
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '16px', overflow: 'hidden'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(52, 199, 89, 0.06)', borderBottom: '1px solid rgba(52, 199, 89, 0.15)'}}>
+<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(52,199,89,0.25)', borderLeft: '3px solid #34C759', borderRadius: '12px', overflow: 'hidden', marginBottom: '0.5rem'}}>
+  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(52,199,89,0.05)', borderBottom: '1px solid rgba(52,199,89,0.1)'}}>
     <span style={{fontSize: '1.35rem'}}>🏢</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#34C759', letterSpacing: '-0.01em'}}>Integration in Unternehmenstools</span>
+    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#34C759', letterSpacing: '-0.01em', flex: 1}}>Integration in Unternehmenstools</span>
+    <span style={{fontSize: '0.7rem', background: 'rgba(52,199,89,0.12)', color: '#34C759', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟢 Heute</span>
   </div>
-  <div style={{padding: '1.1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.75rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      CRM-Daten fließen direkt in die Marktsegmentierung, ERP-Daten in die Kostenstruktur. Ergebnisse landen automatisch in Teams, Confluence oder Notion.
+  <div style={{padding: '1rem 1.25rem'}}>
+    <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+      CRM-Daten fließen direkt in die Marktsegmentierung, ERP-Daten in die Kostenstruktur. Ergebnisse landen automatisch in Teams, Confluence oder Notion – kein manuelles Copy-Paste.
     </p>
     <span style={{fontSize: '0.78rem', color: '#34C759', fontWeight: '500'}}>Tool-Use-Unterstützung bereits verfügbar</span>
+    <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(52,199,89,0.15)', paddingTop: '0.8rem'}}>
+      <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#34C759'}}>💡 Konkretes Szenario</summary>
+      <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(52,199,89,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
+        Du rufst <code>/market-segmentation</code> in Cursor auf. Die Skill liest Kundendaten aus HubSpot, segmentiert sie nach der Hausbaulogik und schreibt das fertige Dokument direkt in Confluence – in unter 5 Minuten, ohne manuellen Transfer.
+      </p>
+    </details>
   </div>
 </div>
 
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '16px', overflow: 'hidden'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(255, 149, 0, 0.06)', borderBottom: '1px solid rgba(255, 149, 0, 0.15)'}}>
-    <span style={{fontSize: '1.35rem'}}>📡</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#FF9500', letterSpacing: '-0.01em'}}>Kontinuierliche Überwachung</span>
+<div style={{textAlign: 'center', padding: '0.5rem 0', fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-400)', userSelect: 'none', marginBottom: '0.5rem'}}>↓</div>
+
+<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
+  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#007AFF', flexShrink: 0}}></div>
+  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#007AFF'}}>12–18 Monate</span>
+  <div style={{flex: 1, height: '1px', background: 'rgba(0,122,255,0.25)'}}></div>
+</div>
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '0.5rem'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(175,82,222,0.2)', borderLeft: '3px solid #AF52DE', borderRadius: '12px', overflow: 'hidden'}}>
+    <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(175,82,222,0.05)', borderBottom: '1px solid rgba(175,82,222,0.1)'}}>
+      <span style={{fontSize: '1.35rem'}}>🤖</span>
+      <span style={{fontWeight: '600', fontSize: '0.85rem', color: '#AF52DE', letterSpacing: '-0.01em', flex: 1}}>Vollautomatische Agenten-Pipelines</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(175,82,222,0.1)', color: '#AF52DE', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟡 12–18 Mo</span>
+    </div>
+    <div style={{padding: '1rem 1.25rem'}}>
+      <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+        Ein Orchestrator-Agent koordiniert den Gesamtprozess: Skills in Reihenfolge aufrufen, Ergebnisse übergeben, Dokument erstellen – mit minimalem menschlichem Input.
+      </p>
+      <span style={{fontSize: '0.78rem', color: '#AF52DE', fontWeight: '500'}}>Alle 23 Skills als atomare Bausteine</span>
+      <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(175,82,222,0.12)', paddingTop: '0.8rem'}}>
+        <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#AF52DE'}}>💡 Konkretes Szenario</summary>
+        <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(175,82,222,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
+          Ein Produktmanager startet <code>/house-building-logic</code> in Claude Code. Der Orchestrator ruft nacheinander alle 23 Skills auf, übergibt Outputs als Kontext weiter und liefert in 45 Minuten ein vollständiges Geschäftsmodell-Dokument – ohne weitere Eingaben.
+        </p>
+      </details>
+    </div>
   </div>
-  <div style={{padding: '1.1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.75rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,122,255,0.2)', borderLeft: '3px solid #007AFF', borderRadius: '12px', overflow: 'hidden'}}>
+    <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(0,122,255,0.04)', borderBottom: '1px solid rgba(0,122,255,0.1)'}}>
+      <span style={{fontSize: '1.35rem'}}>🧩</span>
+      <span style={{fontWeight: '600', fontSize: '0.85rem', color: '#007AFF', letterSpacing: '-0.01em', flex: 1}}>Multi-Agent-Systeme</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,122,255,0.08)', color: '#007AFF', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟡 12–18 Mo</span>
+    </div>
+    <div style={{padding: '1rem 1.25rem'}}>
+      <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+        Mehrere spezialisierte Agents arbeiten parallel: Einer analysiert Kunden, ein anderer das Wertversprechen, ein dritter die Wirtschaftlichkeit. Ein Syntheseagent führt die Ergebnisse zusammen.
+      </p>
+      <span style={{fontSize: '0.78rem', color: '#007AFF', fontWeight: '500'}}>Drastisch kürzere Durchlaufzeiten</span>
+      <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(0,122,255,0.12)', paddingTop: '0.8rem'}}>
+        <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#007AFF'}}>💡 Konkretes Szenario</summary>
+        <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(0,122,255,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
+          Drei parallel laufende Agents bearbeiten gleichzeitig Markt-, Wert- und Wirtschaftlichkeitsanalyse. Ein vierter Agent prüft Konsistenz zwischen den Ergebnissen und meldet Widersprüche – der Gesamtprozess läuft in einem Bruchteil der Zeit.
+        </p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<div style={{textAlign: 'center', padding: '0.5rem 0', fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-400)', userSelect: 'none', marginBottom: '0.5rem'}}>↓</div>
+
+<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
+  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#FF9500', flexShrink: 0}}></div>
+  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#FF9500'}}>2–3 Jahre</span>
+  <div style={{flex: 1, height: '1px', background: 'rgba(255,149,0,0.25)'}}></div>
+</div>
+
+<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(255,149,0,0.2)', borderLeft: '3px solid #FF9500', borderRadius: '12px', overflow: 'hidden', marginBottom: '2rem'}}>
+  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(255,149,0,0.04)', borderBottom: '1px solid rgba(255,149,0,0.1)'}}>
+    <span style={{fontSize: '1.35rem'}}>📡</span>
+    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#FF9500', letterSpacing: '-0.01em', flex: 1}}>Kontinuierliche Überwachung</span>
+    <span style={{fontSize: '0.7rem', background: 'rgba(255,149,0,0.1)', color: '#FF9500', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🔴 2–3 Jahre</span>
+  </div>
+  <div style={{padding: '1rem 1.25rem'}}>
+    <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
       Ein dauerhaft laufender Agent erkennt, wenn Annahmen des Geschäftsmodells nicht mehr zutreffen, und initiiert gezielt einzelne Skills zur Aktualisierung.
     </p>
     <span style={{fontSize: '0.78rem', color: '#FF9500', fontWeight: '500'}}>Geschäftsmodell immer aktuell</span>
+    <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(255,149,0,0.12)', paddingTop: '0.8rem'}}>
+      <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#FF9500'}}>💡 Konkretes Szenario</summary>
+      <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(255,149,0,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
+        Ein Agent läuft im Hintergrund und vergleicht wöchentlich aktuelle Marktdaten mit den Annahmen im Geschäftsmodell. Weicht der TAM um mehr als 20 % ab oder erscheint ein neuer Wettbewerber, löst er automatisch <code>/market-segmentation</code> und <code>/risk-heatmap</code> aus – und informiert das Team per Slack.
+      </p>
+    </details>
   </div>
-</div>
-
 </div>
 
 ---

@@ -1,0 +1,10 @@
+{
+  "label": "Tag 2 - Roter Raum",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "workshop_roter_raum"
+  }
+}

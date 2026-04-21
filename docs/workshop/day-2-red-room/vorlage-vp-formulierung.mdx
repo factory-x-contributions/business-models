@@ -1,0 +1,32 @@
+---
+id: vorlage-vp-formulierung
+title: Vorlage – Value Proposition Formulierungshilfe
+sidebar_position: 2
+sidebar_label: VP Formulierung
+---
+import { DayProvider } from '@site/src/components/DaySection';
+
+[← Tag 2 - Roter Raum](./)
+
+<DayProvider color="#B85450">
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
+  {[
+    ['Unser', 'Produkt / Dienstleistung benennen'],
+    ['hilft', 'Kundensegment / Persona eintragen'],
+    ['die/der', 'Job des Kunden beschreiben'],
+    ['indem es/er', 'Wie das Problem gelöst / der Gain erzeugt wird'],
+    ['und damit', 'Messbarer Kundennutzen'],
+    ['im Gegensatz zu', 'Aktuelle Alternative des Kunden'],
+  ].map(([label, hint], i) => (
+    <div key={i} style={{display: 'grid', gridTemplateColumns: 'minmax(100px, 130px) 1fr', gap: '0.5rem', alignItems: 'center'}}>
+      <div style={{fontWeight: '600', fontSize: '0.9rem', color: '#B85450'}}>{label}</div>
+      <div style={{border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.4rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic', minHeight: '2rem'}}>{hint} …</div>
+    </div>
+  ))}
+</div>
+<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
+  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
+</div>
+
+</DayProvider>

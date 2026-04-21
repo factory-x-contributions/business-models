@@ -1,0 +1,10 @@
+{
+  "label": "Tag 4 - Gelber Raum",
+  "position": 6,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "workshop_gelber_raum"
+  }
+}

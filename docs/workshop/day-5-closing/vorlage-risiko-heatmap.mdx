@@ -1,0 +1,31 @@
+---
+id: vorlage-risiko-heatmap
+title: Vorlage – Risiko-Heatmap
+sidebar_position: 1
+sidebar_label: Risiko-Heatmap
+---
+import { DayProvider } from '@site/src/components/DaySection';
+
+[← Tag 5 - Abschluss](./)
+
+<DayProvider color="#6B7280">
+
+<div style={{overflowX: 'auto'}}>
+
+| | **Unbedeutend** | **Geringfügig** | **Wichtig** | **Besorgniserregend** | **Extrem** |
+|---|:-:|:-:|:-:|:-:|:-:|
+| **Fast sicher** | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fed7aa',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟠</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> |
+| **Wahrscheinlich** | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fed7aa',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟠</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> |
+| **Möglich** | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fed7aa',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟠</span> | <span style={{background:'#fecaca',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🔴</span> |
+| **Unwahrscheinlich** | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fed7aa',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟠</span> |
+| **Selten** | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#dcfce7',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟢</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> | <span style={{background:'#fef9c3',padding:'0.2rem 0.5rem',borderRadius:'4px'}}>🟡</span> |
+
+<div style={{marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
+  🔴 Kritisch · 🟠 Hoch · 🟡 Mittel · 🟢 Gering — Risiko in der passenden Zelle eintragen
+</div>
+<div style={{marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
+  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
+</div>
+</div>
+
+</DayProvider>

@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function CopyButton({ text, copyText = 'Prompt kopieren', copiedText = 'Kopiert!' }) {
   const [copied, setCopied] = useState(false);
@@ -37,7 +38,67 @@ function CopyButton({ text, copyText = 'Prompt kopieren', copiedText = 'Kopiert!
   );
 }
 
-export default function SkillCard({ name, title, description, prompt, output, duration, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt' }) {
+CopyButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  copyText: PropTypes.string,
+  copiedText: PropTypes.string,
+};
+
+function DownloadButton({ url, filename }) {
+  const [status, setStatus] = useState('idle');
+
+  const handleDownload = (e) => {
+    e.stopPropagation();
+    setStatus('loading');
+    fetch(url)
+      .then((res) => {
+        if (!res.ok) throw new Error('Download failed');
+        return res.blob();
+      })
+      .then((blob) => {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        setStatus('idle');
+      })
+      .catch(() => setStatus('error'));
+  };
+
+  let buttonLabel = '↓ Skill herunterladen';
+  if (status === 'loading') buttonLabel = '...';
+  if (status === 'error') buttonLabel = 'Fehler';
+
+  return (
+    <button
+      onClick={handleDownload}
+      disabled={status === 'loading'}
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '0.35rem',
+        padding: '0.35rem 0.7rem',
+        fontSize: '0.78rem',
+        fontWeight: 500,
+        border: '1px solid var(--ifm-color-emphasis-300)',
+        borderRadius: '6px',
+        background: status === 'error' ? '#c62828' : 'var(--ifm-card-background-color)',
+        color: status === 'error' ? '#fff' : 'var(--ifm-font-color-secondary)',
+        cursor: status === 'loading' ? 'wait' : 'pointer',
+      }}
+    >
+      {buttonLabel}
+    </button>
+  );
+}
+
+DownloadButton.propTypes = {
+  url: PropTypes.string.isRequired,
+  filename: PropTypes.string.isRequired,
+};
+
+export default function SkillCard({ name, title, description, prompt, output, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt' }) {
   const [open, setOpen] = useState(false);
 
   const githubUrl = `https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${name}/SKILL.md`;
@@ -54,9 +115,14 @@ export default function SkillCard({ name, title, description, prompt, output, du
         overflow: 'hidden',
       }}
     >
-      <div
+      <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
         style={{
+          width: '100%',
+          background: 'none',
+          border: 'none',
+          textAlign: 'left',
           padding: '1rem 1.15rem',
           cursor: 'pointer',
           display: 'flex',
@@ -81,7 +147,7 @@ export default function SkillCard({ name, title, description, prompt, output, du
             {description}
           </div>
         </div>
-      </div>
+      </button>
 
       {open && (
         <div
@@ -133,30 +199,22 @@ export default function SkillCard({ name, title, description, prompt, output, du
                 <code style={{ color: 'var(--ifm-color-primary)' }}>{name}</code>
               </a>
             </div>
-            <a
-              href={downloadUrl}
-              download={`${name}.md`}
-              onClick={(e) => e.stopPropagation()}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.35rem',
-                padding: '0.35rem 0.7rem',
-                fontSize: '0.78rem',
-                fontWeight: 500,
-                border: '1px solid var(--ifm-color-emphasis-300)',
-                borderRadius: '6px',
-                background: 'var(--ifm-card-background-color)',
-                color: 'var(--ifm-font-color-secondary)',
-                textDecoration: 'none',
-                cursor: 'pointer',
-              }}
-            >
-              ↓ Skill herunterladen
-            </a>
+            <DownloadButton url={downloadUrl} filename={`${name}.md`} />
           </div>
         </div>
       )}
     </div>
   );
 }
+
+SkillCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  prompt: PropTypes.string.isRequired,
+  output: PropTypes.string,
+  copyLabel: PropTypes.string,
+  copiedLabel: PropTypes.string,
+  resultLabel: PropTypes.string,
+  exampleLabel: PropTypes.string,
+};

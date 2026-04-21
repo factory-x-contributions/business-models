@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const defaultPhases = [
   {
@@ -48,7 +49,7 @@ export default function ProcessFlow({ phases: customPhases }) {
 
   return (
     <div style={{ overflowX: 'auto', padding: '0.5rem 0' }}>
-      <div style={{ display: 'flex', gap: '0.35rem', minWidth: '900px', alignItems: 'flex-start' }}>
+      <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'flex-start' }}>
         {phases.map((phase, pi) => (
           <React.Fragment key={phase.label}>
             <div style={{ flex: 1, minWidth: 0 }}>
@@ -134,3 +135,14 @@ export default function ProcessFlow({ phases: customPhases }) {
     </div>
   );
 }
+
+ProcessFlow.propTypes = {
+  phases: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      skills: PropTypes.arrayOf(PropTypes.string).isRequired,
+      shortLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ),
+};

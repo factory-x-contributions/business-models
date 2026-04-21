@@ -175,7 +175,7 @@ details > summary::before {
   transition: opacity 0.15s ease;
   z-index: 100;
   width: max-content;
-  max-width: 200px;
+  max-width: min(200px, 90vw);
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -192,4 +192,117 @@ details > summary::before {
 
 .room-tooltip-anchor:hover .room-tooltip {
   opacity: 1;
+}
+
+/* Mobile responsive: RoomIO grid */
+.room-io-grid {
+  display: grid;
+  grid-template-columns: 1fr 32px 1fr;
+  gap: 0;
+}
+
+@media (max-width: 600px) {
+  .room-io-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .room-io-arrow {
+    display: none;
+  }
+}
+
+/* Mobile responsive: FlowBridge grid */
+.flow-bridge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .flow-bridge-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Markdown tables: horizontal scroll on mobile */
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* DaySection collapsible tiles */
+.day-section-tile {
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.day-section-tile:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme='dark'] .day-section-tile:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+}
+
+/* Smooth height animation via grid-template-rows trick */
+.day-section-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.day-section-body--open {
+  grid-template-rows: 1fr;
+}
+
+.day-section-body__inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+@keyframes day-section-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.day-section-body--open .day-section-body__inner > div {
+  animation: day-section-fade-in 0.2s ease 0.1s both;
+}
+
+/* DayBreak info tile (non-interactive schedule items) */
+.day-break-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1.15rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-left: 3px dashed var(--ifm-color-emphasis-300);
+  background: transparent;
+}
+
+.day-break-tile__title {
+  font-size: 0.88rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+@media (max-width: 480px) {
+  .day-break-tile {
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+.vorlage-link-tile {
+  transition: border-left-color 0.15s, box-shadow 0.15s;
+}
+
+.vorlage-link-tile:hover {
+  border-left-color: var(--vorlage-link-border-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
 }

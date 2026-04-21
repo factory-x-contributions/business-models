@@ -1,0 +1,10 @@
+{
+  "label": "Tag 3 - Grüner Raum",
+  "position": 5,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "workshop_gruener_raum"
+  }
+}

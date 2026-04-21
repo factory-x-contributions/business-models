@@ -1,0 +1,35 @@
+---
+id: vorlage-serviceidee
+title: Vorlage – Produkt-/Serviceidee Canvas
+sidebar_position: 3
+sidebar_label: Serviceidee Canvas
+---
+import { DayProvider } from '@site/src/components/DaySection';
+
+[← Tag 2 - Roter Raum](./)
+
+<DayProvider color="#B85450">
+
+<div style={{overflowX: 'auto'}}>
+<div style={{marginBottom: '0.75rem', border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.5rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic'}}>
+  Name &amp; Kurzbeschreibung (1 Satz) …
+</div>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem'}}>
+  {[
+    ['Bestandteile des Produkts / Services', 'Was gehört alles dazu? Komponenten, Module, Schnittstellen …'],
+    ['Leistungsmerkmale & Differenzierung', 'Was macht es besonders? Technische Alleinstellungsmerkmale …'],
+    ['Kundennutzen & Value View', 'Was hat der Kunde davon? Messbare und qualitative Vorteile …'],
+    ['Unternehmenssicht & strategischer Fit', 'Warum machen wir das? Strategischer Vorteil, Skalierung …'],
+  ].map(([title, hint]) => (
+    <div key={title} style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', padding: '0.75rem'}}>
+      <div style={{fontWeight: '600', fontSize: '0.85rem', marginBottom: '0.4rem'}}>{title}</div>
+      <div style={{fontSize: '0.82rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic'}}>{hint}</div>
+    </div>
+  ))}
+</div>
+<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
+  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
+</div>
+</div>
+
+</DayProvider>

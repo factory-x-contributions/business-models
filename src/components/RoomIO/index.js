@@ -16,11 +16,8 @@ export default function RoomIO({ from, to, outputs }) {
   const aTo = hexAlpha(to.color);
 
   return (
-    <div
+    <div className="room-io-grid"
       style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 32px 1fr',
-        gap: 0,
         marginTop: '1.5rem',
         paddingTop: '1.25rem',
         borderTop: '1px solid rgba(0,0,0,0.08)',
@@ -66,6 +63,7 @@ export default function RoomIO({ from, to, outputs }) {
       {/* Arrow */}
       <div
         aria-hidden="true"
+        className="room-io-arrow"
         style={{
           display: 'flex',
           alignItems: 'center',

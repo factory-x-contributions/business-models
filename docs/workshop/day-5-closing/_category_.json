@@ -1,0 +1,10 @@
+{
+  "label": "Tag 5 - Abschluss",
+  "position": 7,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "workshop_abschluss"
+  }
+}

@@ -5,44 +5,24 @@ description: 🟢 Ökosystem-Rollen definieren und operative Wertschöpfung gest
 sidebar_position: 5
 ---
 import Admonition from '@theme/Admonition';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+import { DayProvider, DayBreak, DaySection, AiSection, VorlageLink } from '@site/src/components/DaySection';
 
-<div style={{background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.08) 0%, rgba(107, 142, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem'}}>🟢</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B8E50', fontWeight: '600'}}>Value Creation</span>
-  </div>
-  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Wie erzeugen wir den Wert?</h2>
-  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
-    Verstehen, wer im Ökosystem was beiträgt und wie der Wert operativ erzeugt wird
-  </p>
-  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.12) 0%, rgba(107, 142, 80, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 142, 80, 0.2)'}}>
-    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <span style={{fontSize: '1.1rem'}}>🎯</span>
-      <strong style={{color: '#6B8E50', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Tagesziel</strong>
-    </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>Am Ende des Tages haben wir eine <strong>Rollen-Akteure-Matrix, ein Wertschöpfungsnetzwerk und einen dokumentierten End-to-End-Prozess</strong> - das „Wie" hinter dem Wertversprechen.</p>
-  </div>
-</div>
+<RoomHero
+  icon="🟢"
+  label="Value Creation"
+  color="#6B8E50"
+  heading="Wie erzeugen wir den Wert?"
+  intro="Verstehen, wer im Ökosystem was beiträgt und wie der Wert operativ erzeugt wird"
+  goalText={'Am Ende des Tages haben wir eine <strong>Rollen-Akteure-Matrix, ein Wertschöpfungsnetzwerk und einen dokumentierten End-to-End-Prozess</strong> \u2013 das \u201eWie\u201c hinter dem Wertversprechen.'}
+/>
 
----
+<DayProvider color="#6B8E50">
 
-## Tagesübersicht
+<DayBreak time="09:00 - 09:30" title="Begrüßung & Rückblick" />
 
-| Zeit | Thema | Beschreibung |
-|------|-------|--------------|
-| 09:00 - 09:30 | Begrüßung & Rückblick | Zusammenfassung Tag 2, Ziele Tag 3 |
-| 09:30 - 10:45 | Deep-Dive 1: Rollen & Akteure | Matrix erarbeiten, eigene Rolle klären |
-| 10:45 - 11:00 | Pause | |
-| 11:00 - 12:30 | Deep-Dive 2: Wertschöpfungsnetzwerk | Value Network Diagramm erstellen |
-| 12:30 - 13:30 | Mittagspause | |
-| 13:30 - 15:00 | Deep-Dive 3: Wertschöpfungsprozess | Prozessbeschreibung mit Verantwortlichkeiten |
-| 15:00 - 15:15 | Pause | |
-| 15:15 - 16:00 | Skalierbarkeit & Engpässe | Wachstumspotenzial prüfen |
-| 16:00 - 17:00 | Gate-Review & Daily-Log | Quality Check, Artefakte sichern |
-
----
-
-## Deep-Dive 1: Rollen & Akteure (09:30 - 10:45)
+<DaySection id="dd1" time="09:30 - 10:45" title="Rollen & Akteure">
 
 ### Ziel
 
@@ -90,9 +70,13 @@ Kläre explizit: **Welche Rolle(n) übernehmen wir?**
 - „Welchen Beitrag leistet jeder Akteur?"
 - „Welche Rolle(n) übernehmen wir selbst?"
 
----
+<VorlageLink title="Rollen & Akteure Matrix" href="./vorlage-rollen-akteure" />
 
-## Deep-Dive 2: Wertschöpfungsnetzwerk (11:00 - 12:30)
+</DaySection>
+
+<DayBreak time="10:45 - 11:00" title="Pause" />
+
+<DaySection id="dd2" time="11:00 - 12:30" title="Wertschöpfungsnetzwerk">
 
 ### Ziel
 
@@ -123,9 +107,13 @@ Beschreiben, **wie zwischen den Akteuren Güter, Services, Daten und Geld fließ
 - „Welche Abhängigkeiten bestehen?"
 - „Wo sind kritische Übergaben?"
 
----
+<VorlageLink title="Value Network" href="./vorlage-value-network" />
 
-## Deep-Dive 3: Wertschöpfungsprozess (13:30 - 15:00)
+</DaySection>
+
+<DayBreak time="12:30 - 13:30" title="Mittagspause" />
+
+<DaySection id="dd3" time="13:30 - 15:00" title="Wertschöpfungsprozess">
 
 ### Ziel
 
@@ -159,9 +147,11 @@ Das Ganze in eine **zeitliche Reihenfolge** bringen: Was passiert, wenn ein Kund
 - „Wo sind kritische Übergaben?"
 - „Was passiert bei Fehlern in Schritt X?"
 
----
+</DaySection>
 
-## Skalierbarkeit & Engpässe (15:15 - 16:00)
+<DayBreak time="15:00 - 15:15" title="Pause" />
+
+<DaySection id="dd4" time="15:15 - 16:00" title="Skalierbarkeit & Engpässe">
 
 ### Skalierungsfragen
 
@@ -181,15 +171,15 @@ Das Ganze in eine **zeitliche Reihenfolge** bringen: Was passiert, wenn ein Kund
 | Datenqualität | Heterogene Datenquellen | Validation, Normalisierung |
 | Partner | Abhängigkeit von Einzelnen | Redundanz, Standards |
 
+</DaySection>
+
+<DayBreak time="16:00 - 17:00" title="Gate-Review & Daily-Log" />
+
+</DayProvider>
+
 ---
 
-## AI-Unterstützung (Hybrides Format)
-
-<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.25rem'}}>🤖</span>
-    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-gestützter Workshop</strong>
-  </div>
+<AiSection>
 
 Im hybriden Format kann AI bei der Wertschöpfungsgestaltung unterstützen:
 
@@ -218,54 +208,23 @@ Im hybriden Format kann AI bei der Wertschöpfungsgestaltung unterstützen:
 AI kann komplexe **Prozessdiagramme als Text** beschreiben und später in BPMN oder Miro übertragen werden. Nutze AI für den ersten Entwurf, das Team verfeinert.
 </Admonition>
 
-</div>
+</AiSection>
 
 ---
 
-## Gate-Review
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
-
-<h4 style={{fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', fontWeight: '500'}}>Quality Check</h4>
-
-##### Rollen & Akteure
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind alle relevanten Akteure im Ökosystem identifiziert?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind die Rollen klar definiert und voneinander abgegrenzt?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Ist klar, welchen Beitrag jeder Akteur leistet?</span>
-</label>
-
-##### Wertschöpfungsnetzwerk
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind alle vier Ströme (Goods, Services, Data, Financial) dokumentiert?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind die Datenflüsse mit Bedingungen versehen (wann, wie)?</span>
-</label>
-
-##### Wertschöpfungsprozess
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Deckt der Prozess den gesamten Weg von Datenentstehung bis Kundennutzen ab?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Sind kritische Übergaben/Schnittstellen identifiziert?</span>
-</label>
-
-</div>
+<QualityGate
+  color="#6B8E50"
+  title="Gate-Review"
+  items={[
+    'Sind alle relevanten Akteure im Ökosystem identifiziert?',
+    'Sind die Rollen klar definiert und voneinander abgegrenzt?',
+    'Ist klar, welchen Beitrag jeder Akteur leistet?',
+    'Sind alle vier Ströme (Goods, Services, Data, Financial) dokumentiert?',
+    'Sind die Datenflüsse mit Bedingungen versehen (wann, wie)?',
+    'Deckt der Prozess den gesamten Weg von Datenentstehung bis Kundennutzen ab?',
+    'Sind kritische Übergaben/Schnittstellen identifiziert?',
+  ]}
+/>
 
 ---
 
