@@ -1,0 +1,152 @@
+---
+id: green-room
+title: Green Room – CMLS Value Creation
+description: 🟢 CMLS – Roles & Actors, Value Network and Value Creation Process
+sidebar_position: 4
+keywords: [CMLS, Green Room, Value Creation, Roles, Actors, Value Network, Value Creation Process, Data Space]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🟢"
+  label="Green Room – CMLS"
+  color="#10b981"
+  heading="CMLS – Value Creation"
+  intro="The Green Room describes <strong>who takes which role</strong> and how the service is delivered operationally. Who provides which data? Who delivers which services? Who bears which costs? The result is a complete picture of the value network and the end-to-end process."
+  bullets={[
+    'Which actors are involved in the ecosystem?',
+    'How do data, services, and payments flow between actors?',
+    'How does the process run from setup to ongoing operations?',
+  ]}
+  goalText="The result: A <strong>Roles & Actors Matrix</strong>, two value network views (simplified + complete), and a <strong>detailed value creation process</strong> with setup and lifecycle phases."
+/>
+
+---
+
+<Tabs>
+<TabItem value="rollen" label="Roles & Actors" default>
+
+## Roles & Actors Matrix
+
+The CMLS ecosystem comprises four main actors, each taking different roles in the data ecosystem.
+
+### Key Actors
+
+| Actor | Comment | Data Provider | Data Consumer | Service Provider | Infrastructure Provider | Equipment Provider | User |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Factory Operator** | = User | ✅ Usage data | – | – | – | – | ✅ |
+| **Machine Builder** | = Provider and designer of the new business model | ✅ Usage data | ✅ Recommendations based on data | – | – | ✅ Machine | ✅ |
+
+### Others
+
+| Actor | Comment | Data Provider | Data Consumer | Service Provider | Infrastructure Provider | Equipment Provider | User |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Component Manufacturer** | Optional, subcontracted by machine builder | ✅ Specification data in design + usage data | ✅ Recommendations based on data | – | – | ✅ Component | – |
+| **Software Provider** | – | – | – | – | ✅ Data infrastructure & maintenance system | – | – |
+| Supplier | – | – | – | – | – | – | – |
+| Service Provider | – | – | – | – | – | – | – |
+
+<Admonition type="info" title="Two Key Actors">
+The CMLS is primarily a **bilateral business relationship** between machine builder and factory operator. The machine builder takes on multiple roles simultaneously: Equipment Provider (machine), Data Consumer (receives condition data), Service Provider (maintenance recommendations), and Data Broker (coordinates access permissions for subcontractors).
+</Admonition>
+
+</TabItem>
+<TabItem value="netzwerk" label="Value Network">
+
+## Value Network
+
+### Simplified Picture (Main Actors)
+
+The simplified value network shows the main flows between the two key actors:
+
+| From | To | Flow | Type |
+|---|---|---|---|
+| Machine Builder | Factory Operator | Smart Machine | Goods (physical) |
+| Machine Builder | Factory Operator | Monitoring 2.0 App | Services (software) |
+| Machine Builder | Factory Operator | Analysis & Recommendation | Services (data-based) |
+| Factory Operator | Machine Builder | Machine Status Report | Data |
+| Factory Operator | Machine Builder | Service fee / Subscription | Financial |
+
+**Roles in the simplified picture:**
+- **Machine Builder:** Equipment Provider + Data Consumer + Service Provider + Data Broker (focus: authorization of subcontractors)
+- **Factory Operator:** End User + Data Provider
+
+### Complete Picture (All Actors)
+
+In the complete picture, additional actors are included:
+
+| Additional Actor | Role | Flows |
+|---|---|---|
+| **Software Provider (Machine Builder side)** | Infrastructure Provider (data space connector) + Technical Enabler (Asset Data Management) | SW licenses → Machine Builder |
+| **Software Provider (Factory Operator side)** | Infrastructure Provider (shopfloor data) + Infrastructure Provider (data space connector) + Technical Enabler (Asset Data Management) | SW licenses → Factory Operator |
+| **Component Manufacturer** | Equipment Provider + Service Provider + Data Consumer | Components → Machine Builder; Component Status Report ← Machine Builder; Analysis & Recommendations → Machine Builder |
+| **Software Provider (central)** | Data Space Operator + Central Service Provider | SW/Service → Machine Builder & Factory Operator |
+
+<Admonition type="tip" label="Recommendation: From Simple to Complete Picture">
+Always start with the simplified picture (only key actors). The complete picture only becomes relevant when partner contracts, data space governance, and software licenses are being concretely negotiated.
+</Admonition>
+
+</TabItem>
+<TabItem value="prozess" label="Value Creation Process">
+
+## Value Creation Process
+
+The CMLS process is divided into two phases: a one-time **Setup Phase** and a permanent **Lifecycle Phase**.
+
+### Setup Phase (one-time per customer)
+
+The setup phase ensures all technical and organizational prerequisites for the ongoing service are met.
+
+| Step | Actor | System/Tool | Action |
+|---|---|---|---|
+| 1 | **Maintenance Team (Factory Operator)** | – | Conclude service contract, define scope (1–3 machines), define KPI baseline |
+| 2 | **Service Team (Machine Builder)** | Asset Data Management System | Conduct risk analysis (FMECA, criticalities) |
+| 3 | **Factory Operator** | Asset Data Management System | Establish IT/OT data connection (REST API / MQTT gateway) |
+| 4 | **Factory Operator** | Asset Data Management System | Configure system |
+| 5 | **Factory Operator** | Monitoring 2.0 App | Install Monitoring App |
+| 6 | **Factory Operator** | Monitoring 2.0 App | Configure Monitoring App (thresholds, alerts, dashboards) |
+| 7 | **Machine Builder** | Asset Data Management System | Configure system (counterpart: data receipt, analytics pipeline) |
+
+**Deliverables from the Setup Phase:**
+- Live data connection of pilot machines
+- KPI baseline & measurement plan (before-values)
+- Configured monitoring + alerting
+- Acceptance/go-live checklist
+
+### Lifecycle Phase (continuous)
+
+The lifecycle phase is the actual ongoing service. It runs 365 days a year.
+
+| Step | Actor | System/Tool | Action |
+|---|---|---|---|
+| 1 | **Factory Operator** | Asset Data Management System | **365d Asset Monitoring** – continuous data collection |
+| 2 | **Factory Operator** | Monitoring 2.0 App | Action required detected ("Orange light") → view asset details and next steps |
+| 3 | **Maintenance Team (Factory Operator)** | – | Conduct inspection |
+| 4 | **Factory Operator** | Monitoring 2.0 App | Create machine condition report |
+| 5 | **Factory Operator** | Asset Data Management System | Provide condition report (via data space) |
+| 6 | **Machine Builder** | Asset Data Management System | Receive condition report |
+| 7 | **Service Team (Machine Builder)** | – | Analyze machine data |
+| 8 | **Service Team (Machine Builder)** | – | Generate maintenance recommendations |
+| 9 | **Machine Builder** | – | Transmit maintenance recommendations |
+| 10 | **Maintenance Team (Factory Operator)** | – | Receive and implement maintenance recommendations |
+
+**Optional – Component Manufacturer Loop:**
+
+| Step | Actor | Action |
+|---|---|---|
+| A | **Component Manufacturer** | Receive component data (from machine builder via data space) |
+| B | **Service Team (Component Manufacturer)** | Analyze component data, generate maintenance recommendations |
+| C | **Component Manufacturer** | Transmit maintenance recommendations to machine builder |
+
+<Admonition type="info" title="End-to-End Process Logic">
+The complete CMLS process goes from **data collection at the factory operator** through **analysis at the machine builder** to **maintenance recommendations back** to the factory operator. The data space acts as a sovereign, purpose-bound handover layer – no uncontrolled data sharing.
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---

@@ -1,0 +1,145 @@
+---
+id: overview
+title: Business Idea & Executive Summary
+description: 🏭 CMLS – Condition Monitoring & Lifecycle Service – Business Idea and Overview
+sidebar_position: 1
+keywords: [CMLS, Condition Monitoring, mechanical engineering, business idea, executive summary, Factory-X, House Building Logic]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🏭"
+  label="CMLS – Application Example"
+  color="#6b7280"
+  heading="Condition Monitoring & Lifecycle Service"
+  intro="This example shows the complete run-through of the <strong>House Building Logic</strong> applied to a concrete business idea: a data-driven condition monitoring service offered by a machine builder to its customers (factory operators). The results stem from a real application of the methodology within the Factory-X project (TP2.4 / TP3)."
+  bullets={[
+    'Complete HBL run-through: Blue → Red → Green → Yellow Room',
+    'Real results from the Factory-X project (TP2.4 CMLS)',
+    'Business model name: Value-Oriented Service Business Model (VSBM)',
+  ]}
+  goalText="This page provides an <strong>overview of the business idea and the Executive Summary</strong>. All four rooms are elaborated as individual sub-pages."
+/>
+
+---
+
+## Business Idea at a Glance
+
+A **machine builder** wants to build a service-based business model beyond pure machine sales. The goal is the **preventive and reliable maintenance** of their machines at customer sites – through systematic analysis of machine components, assessment of failure probability, and definition of preventive measures.
+
+<Tabs>
+<TabItem value="canvas" label="Business Idea Canvas" default>
+
+| Dimension | Content |
+|---|---|
+| **Customer & Need** | Small and medium-sized manufacturing companies (SMEs) in Europe, individual and small-batch production. Core problems: unplanned downtime, reactive maintenance, lack of data transparency, skills shortage |
+| **Value Proposition** | Data-driven Condition Monitoring Service: continuous machine monitoring, risk assessment, automated recommendations for preventive maintenance |
+| **Value Creation** | Data collection (sensor & operational data) → Data integration via data space → Analysis (condition assessment, wear prognosis) → Visualization & communication → Spare parts & service logistics |
+| **Monetization** | Subscription-based service packages (Basic Monitoring, Advanced Analytics, Spare Parts Service), Pay-per-Use for special analyses, follow-on revenue from spare parts sales and field services |
+| **Data Space Usage** | Secure, transparent, and cost-efficient infrastructure for standardized data exchange. Purpose-bound data usage, scalability across many customers. REST APIs/MQTT gateways, connectors to analytics & BI tools |
+| **Starting Point** | Growing requirements for digitalization and efficiency in manufacturing. Competitive advantage through high-margin service business and lifecycle-based customer retention |
+
+</TabItem>
+<TabItem value="roadmap" label="Room Overview">
+
+| Room | Focus | Key Result |
+|---|---|---|
+| 🔵 [Blue Room](./blue-room) | Customer & Need | 3 Personas (Ulrich, Dora, Christian), Stakeholder Matrix, Pains & Gains |
+| 🔴 [Red Room](./red-room) | Value Proposition | Match Matrix (11 Pain-Lever-Value rows), Value Proposition Statement, Product Description |
+| 🟢 [Green Room](./green-room) | Value Creation | Roles & Actors, Value Network, Value Creation Process (Setup + Lifecycle) |
+| 🟡 [Yellow Room](./yellow-room) | Monetization | Hybrid Pricing Model, Unit Economics, Cost-Benefit Synthesis |
+| 🔷 [Blueprint](./blueprint) | Full Picture | Business Model Blueprint, Roadmap Pilot → Scaling → Industrialization |
+
+</TabItem>
+</Tabs>
+
+---
+
+## Executive Summary
+
+<Admonition type="info" title="Business Model Blueprint – Executive Summary">
+
+In the considered business model, a **machine building company** as a manufacturer of machine tools pursues the goal of offering data-based services to users of its machines and thereby generating additional business through an extended value proposition. The aim is to **reduce unplanned downtime** and make plant operations more economically transparent.
+
+**Target customers** are factory operators of small to medium size (SMEs) with production sites in high-wage countries (Germany / Europe), a mid-range parts spectrum, and significant small-batch and single-unit production. Their central challenges lie in unplanned downtime, expensive ad-hoc maintenance, and a lack of condition/cause transparency – exacerbated by **skills shortage**, heterogeneous IT/OT landscapes, and the volatility of small-batch and single-unit production.
+
+The data-based service delivers end-to-end **Condition Monitoring with Analytics**, clear alerts and guided diagnostics, measurably reduces unplanned downtime, and makes decisions controllable via KPIs (including downtime, availability, MTTR, maintenance effort).
+
+</Admonition>
+
+### Service Offering Overview
+
+The concrete service offering is structured as a clear **service modular system**:
+
+<details>
+<summary>One-time services: Setup & Enablement</summary>
+<div>
+
+1. **Scope definition & KPI measurement concept** – 1–3 machines, KPI definition (unplanned downtime as primary KPI), baseline measurement
+2. **Data connection & technical commissioning** – Machine connection, configuration of data flows, data quality check as go-live gate
+3. **Monitoring & alerting configuration** – Dashboards for pilot machines, initial thresholds/rules for alerts
+4. **Process & role enablement** – Escalation logic (alert → diagnosis → decision → action), training
+
+</div>
+</details>
+
+<details>
+<summary>Recurring services: Operation of the digital service</summary>
+<div>
+
+5. **Continuous condition monitoring** – Ongoing condition monitoring, transparency over condition histories and events
+6. **Analytics & diagnostic support** – Anomaly detection, trend and pattern recognition for wear/failure patterns
+7. **Recommendations & maintenance support** – Action proposals, shift from reactive to condition-based maintenance
+8. **Service/support assistance** – Remote-support capable, structured support process, MTTR reduction
+9. **Reporting & value proof** – Monthly/quarterly KPI reports, before/after comparison (Proof of Value)
+
+</div>
+</details>
+
+<details>
+<summary>Optional extensions: Scaling & Ecosystem</summary>
+<div>
+
+10. **Integration into service and spare parts logistics** – Interface to scheduling/ordering support (Insight → Action without media breaks)
+11. **Ecosystem/partner capability** – White-label logic, data space/ecosystem conformity
+12. **Scaling package** – Standardized rollout packages (1–3 → 5–10 → 20+ machines)
+
+</div>
+</details>
+
+---
+
+## Economics at a Glance
+
+<Admonition type="tip" title="Unit Economics – Reference Model (10 machines, model-based)">
+
+| KPI | Value |
+|---|---|
+| Revenue/month | €11,000 (€800 Basic + €300 Advanced Analytics × 10 machines) |
+| Fixed costs/month | €4,000 (platform, support, dev, overhead) |
+| Variable costs/month | €2,200 (€220 × 10 machines) |
+| **Contribution margin/month** | **€4,800 (~44%)** |
+| Break-even | ~5 machines (model-based) |
+| Strongest scaling lever | Number of machines per customer |
+
+*All figures are model assumptions, not actual costs. Price variations ±20% and cost increases +30% keep the model positive at 10 machines.*
+
+</Admonition>
+
+---
+
+## Further Reading
+
+All four rooms are elaborated as individual sub-pages – with complete tables, personas, process diagrams, and models from the Factory-X project:
+
+| | Page | Content |
+|---|---|---|
+| 🔵 | [Blue Room – Customer & Need](./blue-room) | Market segmentation, Stakeholder Matrix, 3 Personas, Pains & Gains |
+| 🔴 | [Red Room – Value Proposition](./red-room) | Match Matrix (complete), Value Proposition, Product Description |
+| 🟢 | [Green Room – Value Creation](./green-room) | Roles & Actors, Value Network, Value Creation Process |
+| 🟡 | [Yellow Room – Monetization](./yellow-room) | Value Sources, Pricing Model, Cost Structure, Cost-Benefit Synthesis |
+| 🔷 | [Business Model Blueprint](./blueprint) | Complete Blueprint, Roadmap, Learnings & Key Insights |

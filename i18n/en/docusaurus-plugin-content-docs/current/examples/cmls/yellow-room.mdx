@@ -1,0 +1,172 @@
+---
+id: yellow-room
+title: Yellow Room – CMLS Monetization
+description: 🟡 CMLS – Value Sources, Pricing Model, Cost Structure and Cost-Benefit Synthesis
+sidebar_position: 5
+keywords: [CMLS, Yellow Room, Monetization, Viability, Pricing Model, Subscription, Unit Economics, Cost Structure, Break-even]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🟡"
+  label="Yellow Room – CMLS"
+  color="#f59e0b"
+  heading="CMLS – Monetization"
+  intro="The Yellow Room answers the central economic question: <strong>How does the business model become financially viable?</strong> It derives measurable value sources from customer benefits, defines the pricing model, analyzes the cost structure, and synthesizes the cost-benefit ratios of all involved actors."
+  bullets={[
+    'How is our offering monetized?',
+    'Which payment models suit the target group?',
+    'What cost structure faces the revenues?',
+    'Who pays what in the ecosystem – directly or indirectly?',
+  ]}
+  goalText="The result: <strong>Hybrid pricing model</strong> (Subscription + Variable + Setup Fee), Unit Economics with break-even analysis, and a <strong>cost-benefit synthesis for all 4 actors</strong>."
+/>
+
+---
+
+<Tabs>
+<TabItem value="wertquellen" label="Value Sources & Willingness to Pay" default>
+
+## Value Sources & Willingness to Pay
+
+The value sources are derived directly from the Match Matrix (Red Room). Each customer benefit is translated into a measurable KPI and a value contribution calculation.
+
+| Value (from Match Matrix) | KPI | Value Contribution Calculation | Value Contribution | Plausibility Check | Obvious Customer Benefit |
+|---|---|---|---|---|---|
+| Reduction of unplanned downtime | Unplanned downtime (h/month) | Reduced downtime × cost per downtime hour | Model-based positive – **biggest lever** | High – industry-standard, management-relevant | **High** |
+| Increase in machine availability | Availability (%) | Change in availability × output/contribution margin | Model-based positive | High – directly derivable from KPI | **High** |
+| Reduction of maintenance & service costs | Maintenance costs €/year | Fewer deployments × cost per deployment | Medium to high | Medium – highly dependent on case | **Medium** |
+| Reduction of MTTR | MTTR (h) | Faster repair × downtime costs | Supplementary effect | High – based on experience values | **Medium** |
+| Higher planning reliability & transparency | Qualitative | Not directly monetized | Qualitative | High – decision-relevant | **Qualitative** |
+| Increased data history (long retention) | Months of data retention | Only indirect benefit, high storage effort | Low | High – benefit only for special analyses | **Low** |
+
+<Admonition type="tip" title="Top Value Drivers">
+The three most important levers for price argumentation vis-à-vis the customer:
+1. **Downtime reduction** – directly monetizable (hours × cost/h)
+2. **Maintenance cost reduction** – well understood, well documentable
+3. **Transparency & planning reliability** – qualitative, but management-relevant for Christian
+
+**Important:** The price is always argued against **downtime costs/risk**, not against "software price". This is the decisive difference in the sales pitch.
+</Admonition>
+
+</TabItem>
+<TabItem value="preismodell" label="Pricing Model (Hybrid)">
+
+## Revenue Mechanics & Pricing Model
+
+CMLS uses a **hybrid pricing model** comprising three components, enabling a pilot-capable entry that scales as value grows.
+
+### Pricing Components
+
+| Service Component | Business Model Pattern | Price Components | Who Pays | Who Delivers | Scaling | Quantification |
+|---|---|---|---|---|---|---|
+| **Monitoring & Basic Analytics** | Subscription | Fixed price per machine/month | Operator pays | Provider delivers | Recurring, scales with machine count | €800/machine/month (model-based) |
+| **Advanced Analytics** | Pay-per-Feature / Tiered Pricing | Add-on per feature scope | Operator pays | Provider delivers | Variable, scales with usage intensity | +€300/machine/month (model-based) |
+| **SLA / Response Time** | SLA-based Pricing | Surcharge per service level | Operator pays | Provider delivers | Recurring, value-based | Depending on SLA tier |
+| **Setup & Integration** | One-time Fee | One-time integration fee | Operator pays | Provider delivers | Non-scaling | €5,000 one-time (model-based) |
+
+### Unit Economics – Reference Model
+
+<Admonition type="tip" title="Unit Economics – Example with 10 machines (model-based)">
+
+| KPI | Value |
+|---|---|
+| Revenue/machine/month | €1,100 (€800 Basic + €300 Advanced Analytics) |
+| Fixed costs/month (total) | €4,000 (platform/support/dev/overhead) |
+| Variable costs/machine/month | €220 |
+| **Revenue/month (10 machines)** | **€11,000** |
+| **Total costs/month (10 machines)** | **€6,200** (€4,000 fixed + €2,200 variable) |
+| **Contribution margin/month** | **€4,800 (~44%)** |
+| **Break-even** | **~5 machines** |
+| Setup fee (one-time) | €5,000 |
+
+*All figures are model assumptions, not actual costs.*
+
+</Admonition>
+
+### Scaling Scenarios
+
+| Scenario | Machines | Revenue/month | Costs/month | Contribution Margin |
+|---|---|---|---|---|
+| Pilot | 1–3 | €1,100–3,300 | ~€4,220–4,660 | Negative to break-even |
+| Growth | **5** | €5,500 | €5,100 | **~€400 (break-even)** |
+| Standard | 10 | €11,000 | €6,200 | €4,800 (~44%) |
+| Scaling | 20 | €22,000 | €8,400 | €13,600 (~62%) |
+| Expanded | 30+ | €33,000 | €10,600 | €22,400 (~68%) |
+
+### Pricing Strategy & Positioning
+
+| Aspect | Recommendation |
+|---|---|
+| **Entry** | Market-standard, pilot-capable (low entry barrier for first customer) |
+| **Scaling** | Premium/value-based (SLA and Advanced Analytics as levers) |
+| **Argumentation** | Price vs. downtime costs/risk – not vs. "software price" |
+| **Strategy** | B → C "Value Ladder": basic entry → added value through extensions |
+
+</TabItem>
+<TabItem value="kosten" label="Cost Structure">
+
+## Cost Structure
+
+### Cost Categories of the Provider (Machine Builder)
+
+| Service Component | Cost (Type) | Cost Bearer | Plausibility | Cost Driver / Scaling | Quantification |
+|---|---|---|---|---|---|
+| **Platform Operations** | Cloud, operations, maintenance | Provider | High | Fixed costs, low marginal costs | Model-based: ~€2,000/month fixed |
+| **Analytics Development** | Development, maintenance of models | Provider | High | Fixed costs, amortized over volume | Model-based: ~€1,000/month fixed |
+| **Data Processing** | Compute, storage | Provider | High | Variable, scaling sub-proportionally | Model-based: ~€100–200/machine/month |
+| **Service & Support** | Personnel, tools, helpdesk | Provider | Medium | Partially variable (per support demand) | Model-based: ~€500/month + variable |
+| **Integration / Setup** | Project effort per new customer | Provider | High | One-time per customer | Model-based: €5,000 one-time |
+
+<Admonition type="info" title="Cost Driver Analysis">
+**Strongest cost lever:** Platform operations and analytics development are primarily fixed costs. As machine count increases, these are spread across more revenues → **strongly improved margin at scale**.
+
+**Variable costs** (data processing, support) scale sub-proportionally to machine count → scale effects are real and robust.
+</Admonition>
+
+### Robustness Analysis
+
+| Scenario | Impact at 10 Machines | Assessment |
+|---|---|---|
+| Price -20% (from €1,100 to €880) | Contribution margin drops from €4,800 to ~€2,600 | Model remains positive ✅ |
+| Price +20% (from €1,100 to €1,320) | Contribution margin rises to ~€7,000 | Significantly better ✅ |
+| Costs +30% (from €6,200 to €8,060) | Contribution margin drops from €4,800 to ~€2,940 | Model remains positive ✅ |
+| Only 5 machines | Break-even, little buffer | Critical threshold ⚠️ |
+
+</TabItem>
+<TabItem value="synthese" label="Cost-Benefit Synthesis">
+
+## Synthesis: Cost-Benefit Assessment for All Actors
+
+### Qualitative Assessment
+
+| | **Actor 1: Factory Operator (Customer)** | **Actor 2: Machine Builder (Provider)** | **Actor 3: Analytics/Platform Partner** | **Actor 4: Data Space/Ecosystem Operator** |
+|---|---|---|---|---|
+| **Benefits / Revenues** | Fewer downtimes, better planning reliability, lower risk | Recurring revenues, scaling, customer retention | Platform usage, analytics licenses, scaling across multiple customers | Ecosystem effects, participation fees, data space usage |
+| **Costs / Efforts** | Service fee, integration effort | Platform, operations & support costs | Operation of analytics environment, compute, model maintenance | Governance, infrastructure operations, compliance & certification |
+
+### Quantitative Assessment
+
+| | **Actor 1: Factory Operator** | **Actor 2: Machine Builder** | **Actor 3: Partner** | **Actor 4: Operator** |
+|---|---|---|---|---|
+| **Benefits / Revenues (€)** | Model-based high (downtime avoidance) | Model-based scaling (subscription + add-ons) | – | – |
+| **Costs / Efforts (€)** | Model-based medium | Model-based fixed + variable | – | – |
+| **Break-even?** | – | **Yes, model-based from ~5 machines** | – | – |
+| **Robust?** | – | Yes, volume-driven | – | – |
+| **Conclusion: Benefits > Costs?** | ✅ Yes | ✅ Yes | ✅ Yes (from sufficient scale) | ✅ Yes (at critical mass in ecosystem) |
+
+<Admonition type="tip" title="Assessment: GO">
+The hybrid model is **market-ready and scalable**. Break-even is achievable early (~5 machines). Viability depends on three factors:
+1. **Stable data quality & reliable integration** (technical)
+2. **Measurable benefit via baseline comparison & KPI tracking** (provable)
+3. **Scaling via the number of connected machines per customer** (economic)
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---

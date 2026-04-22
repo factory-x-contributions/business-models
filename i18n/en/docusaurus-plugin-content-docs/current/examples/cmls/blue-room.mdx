@@ -1,0 +1,172 @@
+---
+id: blue-room
+title: Blue Room – CMLS Customer & Need
+description: 🔵 CMLS – Market Segmentation, Stakeholder Matrix, Personas and Pains & Gains
+sidebar_position: 2
+keywords: [CMLS, Blue Room, Persona, Market Segmentation, Stakeholder, Pains, Gains, Condition Monitoring]
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import RoomHero from '@site/src/components/RoomHero';
+
+<RoomHero
+  icon="🔵"
+  label="Blue Room – CMLS"
+  color="#386FB3"
+  heading="CMLS – Customer &amp; Need"
+  intro="The Blue Room clarifies: <strong>Who is the target customer – specifically?</strong> Not &ldquo;all factories&rdquo;, but precisely defined segments with real people, real problems, and real goals. This is where personas, stakeholder maps, and a deep understanding of Pains &amp; Gains take shape."
+  bullets={[
+    'Which customer segments are prioritized?',
+    'Who decides, who uses, who pays?',
+    'What really drives these people?',
+  ]}
+  goalText="The result: <strong>3 validated Personas (Ulrich, Dora, Christian)</strong>, a Stakeholder Matrix, and a clear picture of Pains & Gains as the foundation for the value proposition."
+/>
+
+---
+
+<Tabs>
+<TabItem value="segmentierung" label="Market Segmentation" default>
+
+## Market Segmentation
+
+The target group was assessed using five criteria. **Segment 1** (SMEs, Europe, complex products) was identified as the focus segment.
+
+| Criterion | Options | **Segment 1** (Focus) | Segment 2 | Segment 3 |
+|---|---|---|---|---|
+| **Company Size** | Small / Medium / Large | **Small to Medium** | Medium | Large |
+| **Product Type** | Complex / Simple | **Complex** | Simple | Complex |
+| **Location** | Europe / USA / Asia | **Europe** | USA | Asia |
+| **Strategic Fit** | High / Medium / Low | **High** | Medium | Low |
+| **Size of Need** | Small / Medium / Large | **Large** | Small | Medium |
+| **Summary / Relevance** | High / Medium / Low | **🎯 High** | Medium | Low |
+
+<Admonition type="tip" title="Focus Segment: SME Manufacturing Europe">
+Small to medium-sized manufacturing companies in Europe with a high parts mix, low quantities, and high strategic fit. This type suffers particularly from unplanned downtime and has clear ROI pressure.
+</Admonition>
+
+</TabItem>
+<TabItem value="stakeholder" label="Stakeholder Matrix">
+
+## Stakeholder Matrix
+
+Stakeholders are positioned in a 2×2 matrix by **influence** (y-axis) and **proximity to the problem** (x-axis).
+
+| Quadrant | Actors | Strategy |
+|---|---|---|
+| **Actively Engaged** (high influence + close to problem) | Production Manager / Production Responsible, Production Process Responsible (Lean & others) | Actively involve, co-design, regular updates |
+| **Keep Satisfied** (high influence + far from problem) | CEO, IT & Network Responsible | Keep informed, communicate ROI |
+| **Keep Informed** (low influence + close to problem) | Product Manager / Sales & Marketing, Shift Manager, Machine Operators | Regular updates, training |
+| **Monitor** (low influence + far from problem) | "Digital tinkerers" (employees with data analysis interest), Internal Service Technician | Monitor, deploy as champions if needed |
+
+<Admonition type="info" title="Primary Stakeholders">
+**Production Manager (Ulrich)** is the primary user and operational decision-maker. **CEO (Christian)** makes the economic purchase decision. Both must be addressed – with different arguments.
+</Admonition>
+
+</TabItem>
+<TabItem value="personas" label="Personas">
+
+## Personas
+
+Three personas were developed for the CMLS use case. They represent different roles and perspectives in the purchase decision process.
+
+<details>
+<summary>🧑‍🔧 Ulrich – Production Manager (Primary Persona)</summary>
+<div>
+
+**Description:** Long-term employee with deep practical knowledge in manufacturing. Responsible for production processes, quality, and efficiency. Technology-interested but cost-conscious. Knows production machines and their weaknesses in detail.
+
+**Demographics:** Male, mid-50s | Technician or master craftsman in mechanical engineering | 20+ years of experience | Management responsibility for approx. 70 employees
+
+| Category | Details |
+|---|---|
+| **Problems** | Outdated equipment, manual planning processes, skills shortage, insufficient IT competence in the team, limited investment budget |
+| **Goals** | Make maintenance more predictive, avoid production outages, increase transparency over machine conditions, improve planning reliability |
+| **Jobs-to-be-Done** | Analyze and reduce machine failures, stabilize production processes, optimize maintenance intervals, ensure spare parts availability |
+| **Daily Responsibility** | Daily monitoring of machine availability, coordination of maintenance and servicing, resolution of disruptions and bottlenecks, reports and KPIs |
+| **Purchase Emotions** | Uncertainty in investment decisions, concern about loss of control, risk assessment regarding ROI, hope for long-term relief |
+| **Usage Emotions** | Relief when disruptions are resolved, satisfaction through better planning, confidence in stable operations |
+| **Triggers** | Acute production outage, customer pressure due to delivery delays, successful pilot projects in the vicinity, digitalization funding programs |
+| **Barriers** | Costs of system introduction, resistance to change in the team, technological complexity, doubts about data and IT security |
+
+</div>
+</details>
+
+<details>
+<summary>👩‍💻 Dora – IT Manager</summary>
+<div>
+
+**Description:** IT Manager in a medium-sized manufacturing company. Responsible for system integration, network management, data management, and data security topics. Bridge between IT and production.
+
+**Demographics:** 35–45 years | Technical/IT background, possibly dual study | Works at manufacturing site in Southern Germany | Experience with older infrastructure (~10 years)
+
+| Category | Details |
+|---|---|
+| **Problems** | Lack of expert knowledge in the team, security concerns due to outdated systems, little IT support for production IT, high risk with system failures, limited investment willingness |
+| **Goals** | Reliable, integrable IT systems, reduction of downtime, secure data management, automation of IT processes |
+| **Jobs-to-be-Done** | Select and implement IT systems, create interfaces to production, ensure network security, optimize data management |
+| **Triggers** | System failures or security incidents, requirements of new projects, management demands, new legal requirements |
+| **Barriers** | Uncertainty with new technologies, insufficient budget, complex integration into existing systems, lack of time |
+
+</div>
+</details>
+
+<details>
+<summary>👔 Christian – CEO / Managing Director</summary>
+<div>
+
+**Description:** CEO of a medium-sized manufacturing company. Responsible for strategic and economic direction, compliance, and ensuring competitiveness. Sees digital solutions as an opportunity, but often struggles with implementation.
+
+**Demographics:** approx. 50 years | Long-standing industry experience | Executive with technical background | Produces in Southern Germany with focus on individual and small-batch production | Company with approx. 100 employees
+
+| Category | Details |
+|---|---|
+| **Problems** | Complexity of digital transformation, lack of IT competencies, outdated manufacturing equipment, missing smart factory infrastructure, security concerns with IT/OT integration |
+| **Goals** | Increase competitiveness through digitalization, raise productivity and flexibility, plan investments better, create future viability |
+| **Jobs-to-be-Done** | Evaluate and prioritize digital solutions, define maintenance strategies, make investment decisions, continuously improve process efficiency |
+| **Purchase Emotions** | Uncertainty whether investment is worthwhile, pressure to keep up with technological developments, doubts about feasibility |
+| **Triggers** | Increased customer requirements, technological trends in the market, funding programs, competitive pressure, recommendation by consultants |
+| **Barriers** | Internal resistance, complexity and lack of transparency of digital solutions, unclear cost-benefit ratios, lack of qualified personnel |
+
+</div>
+</details>
+
+</TabItem>
+<TabItem value="pains" label="Pains & Gains">
+
+## Pains & Gains
+
+### Ulrich (Production Manager) – Operational Perspective
+
+| Pains | Gains |
+|---|---|
+| Unplanned downtime | Minimization of unplanned downtime |
+| Low OEE (Overall Equipment Effectiveness) | Improved OEE |
+| Skills shortage | Short-term access to experts |
+| High spare parts inventory / high capital tie-up | Lower spare parts stock |
+| Long changeover times | Better predictability of downtime |
+| – | Transparency over conditions, stock, and spare parts |
+| – | Changeover time optimization (frequency and duration) |
+
+### Christian (CEO) – Business Perspective
+
+| Pains | Gains |
+|---|---|
+| High cost pressure | Longer machine runtime / higher residual machine value |
+| Unplanned delivery failures (contract penalties) | Fewer threatened contract penalties |
+| Regulation / documentation requirements | Lower need for skilled workers |
+| Skills shortage | Improvement in quality / less rework |
+| Quality assurance & rework | – |
+| Complex IT infrastructure | – |
+| Unclear ROI | – |
+
+<Admonition type="info" title="Insights">
+The pains of **Ulrich** (operational: downtime, OEE, spare parts) and **Christian** (strategic: costs, contract penalties, regulations) are complementary. A good value proposition must address both levels – with different language and different KPIs.
+</Admonition>
+
+</TabItem>
+</Tabs>
+
+---

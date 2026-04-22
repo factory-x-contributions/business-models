@@ -1,0 +1,32 @@
+---
+id: vorlage-value-network
+title: Template – Value Network
+sidebar_position: 2
+sidebar_label: Value Network
+---
+import { DayProvider } from '@site/src/components/DaySection';
+
+[← Day 3 - Green Room](./)
+
+<DayProvider color="#6B8E50">
+
+<div style={{display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
+  {[
+    ['🏭 Actors', 'Enter all involved units: operator, provider, cloud provider, data space operator …'],
+    ['🎭 Roles', 'Data Provider · Data Consumer · Service Provider · Platform Operator · Orchestrator'],
+    ['⬛ Goods Flows', 'Physical goods and maintenance services between actors'],
+    ['🔵 Service Flows', 'Digital services: software updates, reports, analyses'],
+    ['🟢 Data Flows', 'Raw data, processed data, insights – with direction and condition'],
+    ['🟠 Financial Flows', 'Payments, subscription fees, pay-per-use compensation'],
+  ].map(([label, hint], i) => (
+    <div key={i} style={{display: 'grid', gridTemplateColumns: 'minmax(120px, 200px) 1fr', gap: '0.5rem', alignItems: 'flex-start'}}>
+      <div style={{fontWeight: '600', fontSize: '0.9rem'}}>{label}</div>
+      <div style={{border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.4rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic', minHeight: '2rem'}}>{hint} …</div>
+    </div>
+  ))}
+</div>
+<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
+  The complete workshop deck is available for download on the <a href="../preparation">Preparation</a> page.
+</div>
+
+</DayProvider>
