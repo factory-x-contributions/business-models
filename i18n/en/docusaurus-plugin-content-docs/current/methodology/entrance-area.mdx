@@ -3,62 +3,35 @@ id: entrance-area
 title: Entrance Area
 description: Define business idea, market analysis, and strategic alignment
 sidebar_position: 2
+keywords: [Entrance Area, Business Idea, Market Analysis, Strategic Alignment, House-Building Logic, Factory-X]
 ---
 
-import GradientButton from '@site/src/components/buttons/GradientButton';
 import Admonition from '@theme/Admonition';
+import GradientButton from '@site/src/components/buttons/GradientButton';
+import QualityGate from '@site/src/components/QualityGate';
+import RoomHero from '@site/src/components/RoomHero';
 
-<div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem'}}>🚪</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Entrance Area</span>
-  </div>
-  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>The First Step into the Business Model House</h2>
-  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    The entrance area is the moment when you open the door to your business model house. Here you clarify the initial situation:
-  </p>
-  <ul style={{margin: '0.75rem 0 0 0', paddingLeft: '1.25rem', fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    <li>Where do you stand today?</li>
-    <li>Why do you want to develop a data-driven business model?</li>
-    <li>What initial ideas do you already have?</li>
-  </ul>
-  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(107, 114, 128, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 114, 128, 0.2)'}}>
-    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <span style={{fontSize: '1.1rem'}}>🎯</span>
-      <strong style={{color: '#6B7280', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Goal</strong>
-    </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>This section provides the <strong>shared understanding and strategic foundation</strong> for the upcoming rooms.</p>
-  </div>
-</div>
+<RoomHero
+  icon="🚪"
+  label="Entrance Area"
+  color="#6B7280"
+  heading="The First Step into the Business Model House"
+  intro="We produce technical data every day – but so far it mostly lies unused. At the same time, pure machine sales are no longer economically sufficient. The entrance area transforms the vague feeling 'we should do something' into a <strong>structured starting point</strong> for your data-driven business model."
+  bullets={[
+    'Where do you stand today?',
+    'Why do you want to develop a data-driven business model?',
+    'What initial ideas do you already have?',
+  ]}
+  goalText="This section provides the <strong>shared understanding and strategic foundation</strong> for the upcoming rooms."
+/>
 
 ---
 
-## Why the Entrance Area is Crucial
+## How to Proceed
 
-We have **enormous amounts of technical data** in our companies (quantities, temperature, pressure, etc.) that our machines produce daily. Until now, this data often lies unused. At the same time, we notice that pure machine sales are no longer economically sufficient.
-
-> **The central question:** How can we create real value from our data?
-
-The entrance area transforms this vague idea into a **concrete goal** – from "we should do something" to a structured starting point for business model development.
-
----
-
-## The 8 Building Blocks at a Glance
-
-| # | Building Block | Core Question |
-|---|----------------|---------------|
-| 1 | Current State Assessment | Who are you as a company? |
-| 2 | Revenue Model | How do you make money today? |
-| 3 | Initial Idea | What data-driven offering could emerge? |
-| 4 | Industry 4.0 Touchpoints | What digital touchpoints exist? |
-| 5 | Digital Maturity Level | How digitally capable are you today? |
-| 6 | Strategic Goals | Why are you investing time in this topic? |
-| 7 | Scope & Framework | What is in/out of scope? |
-| 8 | Role of the Data Space | How does Factory-X/Catena-X fit into the picture? |
-
----
-
-## 1. Current State Assessment
+<details>
+<summary>1. Current State Assessment – Who are you as a company?</summary>
+<div className="details-content">
 
 Before ideas can emerge, you need a **precise picture of your starting point**. This honest assessment is the foundation for everything that follows.
 
@@ -89,9 +62,12 @@ Assign yourself to one or more roles:
 - What differentiates you from the competition?
 - What strengths do you have that could be digitally leveraged?
 
----
+</div>
+</details>
 
-## 2. Revenue Model (Current State)
+<details>
+<summary>2. Revenue Model – How do you make money today?</summary>
+<div className="details-content">
 
 Here you clarify your **current** business model — not the future one.
 
@@ -99,9 +75,8 @@ Here you clarify your **current** business model — not the future one.
 
 Briefly document how you make money today (e.g., product sales, service contracts, spare parts, licenses, consulting).
 
-
 <Admonition type="tip" title="Future Revenue Models">
-The development of new revenue models (subscription, pay-per-use, outcome-based) takes place in the [Yellow Room](./yellow-room#2-revenue-mechanics--pricing-model).
+The development of new revenue models (subscription, pay-per-use, outcome-based) takes place in the [Yellow Room](./yellow-room).
 </Admonition>
 
 ### Customer Analysis
@@ -110,14 +85,16 @@ The development of new revenue models (subscription, pay-per-use, outcome-based)
 - **Potential Customers:** Which segments *could* you serve but don't yet?
 - **Data Potential:** What data is generated today that would be valuable for customers?
 
-
 <Admonition type="info" title="Recognizing Potential">
 This analysis often reveals untapped potential: e.g., data that "gathers dust" internally today but would be valuable to customers.
 </Admonition>
 
----
+</div>
+</details>
 
-## 3. Initial Idea for a Data-Driven Offering
+<details>
+<summary>3. Initial Idea – Which data-driven offering could emerge?</summary>
+<div className="details-content">
 
 This isn't about feasibility yet. A **thought** is enough: *"There could be potential here."*
 
@@ -143,9 +120,12 @@ Start with these prompting questions:
 
 > **Example:** *"We want to provide anonymized machine data in a data space to enable predictive maintenance services."*
 
----
+</div>
+</details>
 
-## 4. Industry 4.0 Touchpoints
+<details>
+<summary>4. Industry 4.0 Touchpoints – What digital touchpoints exist?</summary>
+<div className="details-content">
 
 Even if you're not deep into the topic yet, there are usually **touchpoints** with digital transformation:
 
@@ -168,12 +148,16 @@ Create an initial overview of your data:
 - **Transaction Data:** Orders, deliveries, invoices
 - **Product Data:** Bills of materials, CAD models, documentation
 
----
+</div>
+</details>
 
-## 5. Digital Maturity Level
+<details>
+<summary>5. Digital Maturity Level – How digitally capable are you today?</summary>
+<div className="details-content">
 
 The digital maturity level shows **how digitally capable you are today** – an honest assessment is more important than an optimistic one.
 To determine your digital maturity level, the VDMA Industry 4.0 Readiness Check can help - a free tool that guides you through the assessment and shows concrete action areas:
+
 <div style={{display: 'inline-block', marginTop: '1rem'}}>
 <GradientButton
   href="https://www.industrie40-readiness.de/?lang=en"
@@ -184,7 +168,6 @@ To determine your digital maturity level, the VDMA Industry 4.0 Readiness Check 
   minWidth="auto"
 />
 </div>
-
 
 ### Assessment Dimensions
 
@@ -197,11 +180,12 @@ To determine your digital maturity level, the VDMA Industry 4.0 Readiness Check 
 | **Digital Competence** | Little know-how | Building | Established |
 | **Infrastructure** | Legacy systems | Modernization ongoing | Cloud-ready |
 
+</div>
+</details>
 
-
----
-
-## 6. Strategic Intention & Goals
+<details>
+<summary>6. Strategic Goals – Why are you investing time in this topic?</summary>
+<div className="details-content">
 
 > **Why are we investing time in developing a data-driven business model?**
 
@@ -224,9 +208,12 @@ Good goals are:
 - **Realistic:** Achievable with available resources
 - **Measurable:** Backed by KPIs
 
----
+</div>
+</details>
 
-## 7. Scope & Framework Conditions
+<details>
+<summary>7. Scope – What is in/out of scope?</summary>
+<div className="details-content">
 
 To keep the process focused, you define the **framework** – what is considered and what is explicitly not.
 
@@ -246,9 +233,12 @@ To keep the process focused, you define the **framework** – what is considered
 - **Technical Requirements:** Which systems are fixed?
 - **Organizational Boundaries:** Which departments are involved?
 
----
+</div>
+</details>
 
-## 8. Role of the Data Space
+<details>
+<summary>8. Role of the Data Space – How does Factory-X/Catena-X fit in?</summary>
+<div className="details-content">
 
 A data space (Factory-X, Catena-X) is more than a data repository — it's a **collaboration space** for sovereign data exchange.
 
@@ -260,77 +250,24 @@ Consider now:
 - What data could you use or provide?
 - What partners do you need in the ecosystem?
 
-
 <Admonition type="tip" title="Detailed Role Clarification">
-The precise definition of your role in the data space (Data Provider, Data Consumer, Service Provider, Orchestrator) as well as technical integration takes place in the [Green Room](./green-room#1-roles--actors).
+The precise definition of your role in the data space (Data Provider, Data Consumer, Service Provider, Orchestrator) as well as technical integration takes place in the [Green Room](./green-room).
 </Admonition>
 
----
-
-## Output of the Entrance Area
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>📋</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Current State</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Company role, customers, revenue models, offering, maturity level, touchpoints</p>
 </div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>💡</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Initial Offering Idea</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Brief description, problem, data, hypotheses, role of the data space</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>🎯</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Framework & Goals</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Strategic intention, scope, KPIs, expected results</p>
-</div>
-
-</div>
+</details>
 
 ---
 
-## Quality Gate: Entrance Area
-
-Before moving to the Blue Room, check:
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Company role and current offering are clearly described</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Initial idea for a data-driven offering is formulated</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Strategic goals and motivation are documented</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Scope and framework conditions are defined</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Initial thoughts about the data space are reflected</span>
-</label>
-
-</div>
+<QualityGate
+  color="#6B7280"
+  items={[
+    'Company role and current offering are clearly described',
+    'Initial idea for a data-driven offering is formulated',
+    'Strategic goals and motivation are documented',
+    'Scope and framework conditions are defined',
+    'Initial thoughts about the data space are reflected',
+  ]}
+/>
 
 ---
-
-
-<Admonition type="info" title="Remember">
-**The entrance area is the foundation of your house.** The clearer this section is elaborated, the more stable everything that follows will be. An honest assessment is more important than an optimistic presentation – radical honesty pays off in all subsequent rooms.
-</Admonition>

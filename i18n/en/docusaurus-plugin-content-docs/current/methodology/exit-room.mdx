@@ -3,59 +3,36 @@ id: exit-room
 title: Exit Area
 description: Consolidate results, assess risks, and prepare decision document
 sidebar_position: 7
+keywords: [Exit Area, Decision Document, Risk Analysis, Go No-Go, Executive Summary, House-Building Logic, Factory-X]
 ---
 
 import Admonition from '@theme/Admonition';
+import QualityGate from '@site/src/components/QualityGate';
+import RoomHero from '@site/src/components/RoomHero';
 
-<div style={{background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(107, 114, 128, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem'}}>🚪</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B7280', fontWeight: '600'}}>Exit Area</span>
-  </div>
-  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>Consolidation & Decision</h2>
-  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7'}}>
-    At the end, everything comes together. You go to management – but not with a vague idea, but with a <strong>solid decision document</strong>.
-  </p>
-  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(107, 114, 128, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 114, 128, 0.2)'}}>
-    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <span style={{fontSize: '1.1rem'}}>🎯</span>
-      <strong style={{color: '#6B7280', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Goals</strong>
-    </div>
-    <ul style={{margin: 0, paddingLeft: '1.25rem', fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>
-      <li><strong>Consolidate</strong> results from all rooms and check for consistency</li>
-      <li><strong>Identify critical risks</strong> and define risk mitigation measures</li>
-      <li>Create a <strong>realistic 30/60/90-day plan</strong></li>
-      <li>Prepare a <strong>Go / Review / Stop decision</strong></li>
-    </ul>
-  </div>
-</div>
+<RoomHero
+  icon="🚪"
+  label="Exit Area"
+  color="#6B7280"
+  heading="Consolidation & Decision"
+  intro="At the end, everything comes together – not as a mere summary, but as a <strong>solid decision document</strong>: facts consolidated, risks transparent, measures defined, recommendation justified."
+  bullets={[
+    'Consolidate results from all rooms and check for consistency',
+    'Identify critical risks and define risk mitigation measures',
+    'Create a realistic 30/60/90-day plan',
+    'Prepare a Go / Review / Stop decision',
+  ]}
+  goalText="This section delivers a <strong>decision-ready document</strong> with consolidated facts, transparent risks, and clear next steps."
+/>
+
 
 ---
 
-## Why the Exit Area is Crucial
+## How to Proceed
 
-The exit area is more than just a summary. Here the developed business model becomes a **decision-ready document**:
-
-- All facts consolidated
-- Risks transparent
-- Next steps clear
-- Recommendation justified
-
----
-
-## The 5 Building Blocks at a Glance
-
-| # | Building Block | Core Question |
-|---|----------------|---------------|
-| 1 | Result Consolidation | Are all artifacts complete and consistent? |
-| 2 | Executive Summary | Can we summarize the business model in 1 page? |
-| 3 | Assumption & Risk Log | What assumptions and risks exist? |
-| 4 | Action Plan & Roadmap | What are the next 90 days? |
-| 5 | Go/Review/Stop Decision | Are we ready for implementation? |
-
----
-
-## 1. Result Consolidation
+<details>
+<summary>1. Result Consolidation – Are all artifacts complete and consistent?</summary>
+<div className="details-content">
 
 Bring together all **artifacts from the rooms** and check consistency.
 
@@ -73,30 +50,23 @@ Bring together all **artifacts from the rooms** and check consistency.
 
 Check the logical connections between rooms:
 
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span><strong>Persona → Value Proposition:</strong> Does the VP address the persona's most important pains?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span><strong>Value Proposition → Process:</strong> Does the process cover all promised features?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span><strong>Process → Costs:</strong> Are all process steps considered in the cost structure?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span><strong>Costs → Price:</strong> Does the pricing model enable a healthy margin?</span>
-</label>
+<QualityGate
+  color="#6B7280"
+  title="Consistency Check"
+  items={[
+    'Persona → Value Proposition: Does the VP address the persona\'s most important pains?',
+    'Value Proposition → Process: Does the process cover all promised features?',
+    'Process → Costs: Are all process steps considered in the cost structure?',
+    'Costs → Price: Does the pricing model enable a healthy margin?',
+  ]}
+/>
 
 </div>
+</details>
 
----
-
-## 2. Executive Summary
+<details>
+<summary>2. Executive Summary – The business model on one page</summary>
+<div className="details-content">
 
 Create a **management-ready summary** on one page. The **Executive Summary** condenses all results so that decision-makers can grasp the key points in a few minutes.
 
@@ -132,9 +102,12 @@ Formulate five statements that support your model:
 | 4 | **High robustness** | Stable under price fluctuations |
 | 5 | **Clear scaling logic** | Volume as main lever |
 
----
+</div>
+</details>
 
-## 3. Assumption & Risk Log
+<details>
+<summary>3. Assumption & Risk Log – What assumptions and risks exist?</summary>
+<div className="details-content">
 
 Make **implicit assumptions explicit** and systematically identify risks. The **Risk Heatmap** assesses each risk by probability of occurrence and damage magnitude, making it clear where immediate action is needed.
 
@@ -178,9 +151,12 @@ Assess each risk by **probability of occurrence** and **damage magnitude**:
 | 🟡 **Medium** | Monitor regularly, early warning indicators |
 | 🟢 **Low** | Document, check as needed |
 
----
+</div>
+</details>
 
-## 4. Action Plan & 30/60/90-Day Roadmap
+<details>
+<summary>4. Action Plan – What are the next 90 days?</summary>
+<div className="details-content">
 
 Define **concrete measures** with clear responsibilities. The **30/60/90-day plan** structures the next steps into validation (30 days), MVP definition (60 days), and pilot preparation (90 days). The **RACI matrix** clarifies for each measure who is responsible.
 
@@ -219,9 +195,12 @@ Define **concrete measures** with clear responsibilities. The **30/60/90-day pla
 | **Scaling** | 6-18 months | Stable operational mode | Repeatable model |
 | **Industrialization** | >18 months | Permanent business model | Platform capability |
 
----
+</div>
+</details>
 
-## 5. Go/Review/Stop Decision
+<details>
+<summary>5. Go/Review/Stop – Are we ready for implementation?</summary>
+<div className="details-content">
 
 Provide management with a **solid decision basis**.
 
@@ -257,102 +236,20 @@ Provide management with a **solid decision basis**.
 | Risks manageable | ✓ | With measures | ✗ |
 | Resources available | ✓ | Partially | ✗ |
 
----
-
-## What Does the House-Building Logic Deliver?
-
-With the HBL, we built a **concrete business model** from raw data and a vague idea:
-
-| Result | Description |
-|--------|-------------|
-| **Target Segment** | Clearly defined with stakeholder map |
-| **Value Proposition** | Sharply formulated, based on real pains |
-| **Value Creation** | Realistic picture with roles and partners |
-| **Revenue Model** | Justifiable and suitable for business cases |
-| **Documentation** | Set of documents and pitches for internal work |
-
-### The Three Principles of the HBL
-
-| Principle | Meaning |
-|-----------|---------|
-| **Customer benefit before technology** | Not "what can we do?" but "what does the customer need?" |
-| **Role clarity before autarky** | Not "we do everything ourselves" but "what is our role?" |
-| **Implementable business logic before vision** | Not "would be nice" but "does it work?" |
+</div>
+</details>
 
 ---
 
-## Output of the Exit Area
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginTop: '1.5rem'}}>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>📄</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Executive Summary</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>One-page management summary</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>⚠️</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Assumption & Risk Log</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Assessed risks with measures</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>📅</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Action Plan</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>30/60/90-day roadmap with RACI</p>
-</div>
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
-  <div style={{width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(107, 114, 128, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem'}}>
-    <span style={{fontSize: '1rem'}}>✅</span>
-  </div>
-  <h4 style={{margin: '0 0 0.25rem 0', fontSize: '0.95rem', fontWeight: '600'}}>Decision Document</h4>
-  <p style={{margin: 0, fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)'}}>Go/Review/Stop with justification</p>
-</div>
-
-</div>
+<QualityGate
+  color="#6B7280"
+  items={[
+    'All artifacts from the rooms are consolidated and consistent',
+    'Executive summary is created and understandable',
+    'Assumptions are explicit and risks assessed',
+    '30/60/90-day plan is defined with responsibilities',
+    'Go/Review/Stop recommendation is justified',
+  ]}
+/>
 
 ---
-
-## Quality Gate: Exit Area
-
-Before you leave the house, check:
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>All artifacts from the rooms are consolidated and consistent</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Executive summary is created and understandable</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Assumptions are explicit and risks assessed</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>30/60/90-day plan is defined with responsibilities</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span>Go/Review/Stop recommendation is justified</span>
-</label>
-
-</div>
-
----
-
-
-<Admonition type="info" title="Remember">
-**The exit area is more than just a summary.** It identifies critical risks, defines concrete measures, and creates the foundation for a well-founded decision. With the HBL, you haven't just filled out "yet another canvas," but built a business model that has **real substance** in the context of data spaces like Factory-X.
-</Admonition>

@@ -3,34 +3,50 @@ id: overview
 title: Introduction to House-Building Logic
 description: A structured approach to developing data-driven business models in an industrial context
 sidebar_position: 1
+keywords: [House-Building Logic, Business Model, Factory-X, data-driven business models, Business Model Canvas, Industry, Mechanical Engineering, Manufacturing-X]
 ---
 
 import GradientButton from '@site/src/components/buttons/GradientButton';
+import RoomHero from '@site/src/components/RoomHero';
 
-## What is the House-Building Logic?
+export const RoomButton = ({ href, text, gradient, shadowColor, shadowColorHover, tooltip }) => (
+  <div style={{ position: 'relative', display: 'contents' }} className="room-button-wrapper">
+    <div style={{ position: 'relative' }} className="room-tooltip-anchor">
+      <GradientButton
+        href={href}
+        text={text}
+        gradient={gradient}
+        shadowColor={shadowColor}
+        shadowColorHover={shadowColorHover}
+        external={false}
+        minWidth="auto"
+      />
+      <div className="room-tooltip">{tooltip}</div>
+    </div>
+  </div>
+);
 
-The **House-Building Logic (HBL)** is a structured approach to developing data-driven business models – specifically designed for industrial contexts such as mechanical and plant engineering.
-
-Classic frameworks like the Business Model Canvas are often too abstract: They show which building blocks a business model has, but not how to develop them. Teams face an empty canvas and don't know where to start. The HBL solves this problem by providing a **clear process with concrete methods**.
-
-### Why a House?
-
-The framework uses the metaphor of a **house** because it's intuitively understandable:
-
-- **You enter the house through the entrance** – here you clarify the initial situation and define your business idea
-- **You pass through different rooms** – each room addresses a central question of your business model
-- **You exit the house through the exit** – with a completed, validated business model
-
-The rooms are color-coded and are traversed in a fixed sequence. Each room builds on the results of the previous one – creating a consistent overall picture.
-
----
+<RoomHero
+  icon="🏠"
+  label="Introduction"
+  color="#386FB3"
+  heading="Introduction to House-Building Logic"
+  intro="The <strong>House-Building Logic (HBL)</strong> is a structured approach to developing data-driven business models – specifically designed for industrial contexts such as mechanical and plant engineering. Classic frameworks like the Business Model Canvas are often too abstract: They show which building blocks a business model has, but not how to develop them. The HBL solves this problem by providing a <strong>clear process with concrete methods</strong>."
+  bullets={[
+    'You enter the house through the entrance – here you clarify the initial situation and define your business idea',
+    'You pass through different rooms – each room addresses a central question of your business model',
+    'You exit the house through the exit – with a completed, validated business model',
+  ]}
+/>
 
 ## Overview of the Rooms
 
+The rooms are color-coded and are traversed in a fixed sequence. Each room builds on the results of the previous one – at the end of each room is a **Quality Gate** that ensures all important questions are answered before moving on.
+
 Click on a room to see the details:
 
-{/* House Visualization - Modern with Details */}
-<div style={{ width: '100%', maxWidth: '480px', marginTop: '1.5rem', marginBottom: '2rem' }}>
+{/* House Visualization - centered */}
+<div style={{ width: '100%', maxWidth: '480px', marginTop: '1.5rem', marginBottom: '2rem', marginLeft: 'auto', marginRight: 'auto' }}>
 
   {/* Roof with SVG */}
   <svg viewBox="0 0 200 50" style={{ width: '100%', height: 'auto', display: 'block' }}>
@@ -75,41 +91,37 @@ Click on a room to see the details:
       borderRadius: '8px',
       border: '1px solid var(--ifm-color-emphasis-300)'
     }}>
-      <GradientButton
+      <RoomButton
         href='./blue-room'
         text="Blue Room"
         gradient="linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)"
         shadowColor="rgba(59, 130, 246, 0.15)"
         shadowColorHover="rgba(59, 130, 246, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Customer understanding: Who are they? What do they need?"
       />
-      <GradientButton
+      <RoomButton
         href='./red-room'
         text="Red Room"
         gradient="linear-gradient(135deg, #f87171 0%, #ef4444 100%)"
         shadowColor="rgba(239, 68, 68, 0.15)"
         shadowColorHover="rgba(239, 68, 68, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Develop value proposition: What value do we offer?"
       />
-      <GradientButton
+      <RoomButton
         href='./green-room'
         text="Green Room"
         gradient="linear-gradient(135deg, #34d399 0%, #10b981 100%)"
         shadowColor="rgba(16, 185, 129, 0.15)"
         shadowColorHover="rgba(16, 185, 129, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Plan value creation: How do we create the value?"
       />
-      <GradientButton
+      <RoomButton
         href='./yellow-room'
         text="Yellow Room"
         gradient="linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)"
         shadowColor="rgba(245, 158, 11, 0.15)"
         shadowColorHover="rgba(245, 158, 11, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Check profitability: How do we make money?"
       />
     </div>
 
@@ -134,23 +146,21 @@ Click on a room to see the details:
       borderRadius: '8px',
       border: '1px solid var(--ifm-color-emphasis-300)'
     }}>
-      <GradientButton
+      <RoomButton
         href='./entrance-area'
         text="Entrance"
         gradient="linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)"
         shadowColor="rgba(107, 114, 128, 0.15)"
         shadowColorHover="rgba(107, 114, 128, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Define business idea, set scope"
       />
-      <GradientButton
+      <RoomButton
         href='./exit-room'
         text="Exit"
         gradient="linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)"
         shadowColor="rgba(107, 114, 128, 0.15)"
         shadowColorHover="rgba(107, 114, 128, 0.3)"
-        external={false}
-        minWidth="auto"
+        tooltip="Synthesis and decision: Go, Review, or Stop?"
       />
     </div>
 
@@ -164,17 +174,6 @@ Click on a room to see the details:
 
   </div>
 </div>
-
-**The process in brief:**
-
-1. **Entrance Area** – Define business idea, set scope
-2. **Blue Room** – Understand customers: Who are they? What do they need?
-3. **Red Room** – Develop value proposition: What value do we offer?
-4. **Green Room** – Plan value creation: How do we create the value?
-5. **Yellow Room** – Check profitability: How do we make money?
-6. **Exit Area** – Synthesis and decision: Go, Review, or Stop?
-
-At the end of each room is a **Quality Gate** – a checklist that ensures all important questions are answered before moving on.
 
 ---
 
