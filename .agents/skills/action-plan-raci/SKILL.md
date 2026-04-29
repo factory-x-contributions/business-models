@@ -2,8 +2,6 @@
 name: action-plan-raci
 description: Translates risk heatmap findings into SMART measures organized by workstream with full RACI accountability assignments.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Action Plan & RACI

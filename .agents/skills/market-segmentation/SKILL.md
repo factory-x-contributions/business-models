@@ -2,8 +2,6 @@
 name: market-segmentation
 description: Conducts market and customer segmentation for the data ecosystem business model. Identifies segments, applies evaluation criteria, sizes the market (TAM/SAM/SOM), and prioritizes 2-3 focus segment-use-case combinations.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Market Segmentation

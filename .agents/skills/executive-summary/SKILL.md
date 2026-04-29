@@ -2,8 +2,6 @@
 name: executive-summary
 description: Consolidates all prior analysis results into a decision-ready one-pager for gate reviews and pitches, with full traceability from business idea through risks to next steps.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Executive Summary

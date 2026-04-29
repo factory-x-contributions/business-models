@@ -2,8 +2,6 @@
 name: value-creation-process
 description: Designs the end-to-end value creation process in BPMN-style logic with phases, actor interactions, swimlanes, and KPI measurement points. Use for process design, operational planning, or when detailing how value is created step by step.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Value Creation Process

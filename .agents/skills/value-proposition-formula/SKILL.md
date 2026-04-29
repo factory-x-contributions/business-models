@@ -2,8 +2,6 @@
 name: value-proposition-formula
 description: Crafts a compelling Value Proposition Statement using a 6-component formula and the Promise-Deliver-Proof framework. Use for formulating value propositions, pitch statements, or when translating customer needs into a clear value promise.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Value Proposition Formula

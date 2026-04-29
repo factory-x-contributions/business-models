@@ -2,8 +2,6 @@
 name: roles-actors-mapping
 description: Identifies all actors in the value creation ecosystem and maps their roles, contributions, and positioning. Use for ecosystem design, partner mapping, role clarification, or when designing who contributes what in a data-driven business model.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Roles & Actors Mapping

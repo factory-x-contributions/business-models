@@ -2,8 +2,6 @@
 name: stakeholder-matrix
 description: Identifies and maps all relevant stakeholders per prioritized market segment into a 2x2 influence-involvement matrix. Defines engagement strategies per quadrant and prioritizes key stakeholders.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Stakeholder Matrix

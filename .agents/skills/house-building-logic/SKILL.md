@@ -67,29 +67,29 @@ When asked about input, display EXACTLY these options:
 
 ## Method Dispatch Table
 
-| Step | Room | Method | Skill | Duration |
-|------|------|--------|-------|----------|
-| 1 | Entrance | Company Assessment | `company-assessment` | 30-45 min |
-| 2 | Entrance | Business Idea Canvas | `business-idea-canvas` | 30-45 min |
-| 3 | Blue | Market Segmentation | `market-segmentation` | 30 min |
-| 4 | Blue | Stakeholder Matrix | `stakeholder-matrix` | 20 min |
-| 5 | Blue | Persona Development | `persona-development` | 30 min |
-| 6 | Blue | VPC Customer Side | `vpc-customer-side` | 30 min |
-| 7 | Red | Match Matrix | `match-matrix` | 30 min |
-| 8 | Red | Value Proposition Formula | `value-proposition-formula` | 20 min |
-| 9 | Red | Product/Service Idea | `product-service-idea` | 30 min |
-| 10 | Green | Roles & Actors Mapping | `roles-actors-mapping` | 30 min |
-| 11 | Green | Value Network Analysis | `value-network-analysis` | 30 min |
-| 12 | Green | Value Creation Process | `value-creation-process` | 30 min |
-| 13 | Green | Ecosystem Synthesis | `ecosystem-synthesis` | 30 min |
-| 14 | Yellow | Value Source & WTP | `value-source-wtp` | 30-45 min |
-| 15 | Yellow | Revenue Mechanics & Pricing | `revenue-mechanics-pricing` | 30-45 min |
-| 16 | Yellow | Cost Structure Analysis | `cost-structure-analysis` | 30-45 min |
-| 17 | Yellow | Pricing Strategy & Targets | `pricing-strategy-targets` | 30-45 min |
-| 18 | Exit | Risk Heatmap | `risk-heatmap` | 30 min |
-| 19 | Exit | Action Plan & RACI | `action-plan-raci` | 25 min |
-| 20 | Exit | 30/60/90-Day Roadmap | `30-60-90-day-roadmap` | 30 min |
-| 21 | Exit | Executive Summary | `executive-summary` | 30 min |
+| Step | Room | Method | Skill |
+|------|------|--------|-------|
+| 1 | Entrance | Company Assessment | `company-assessment` |
+| 2 | Entrance | Business Idea Canvas | `business-idea-canvas` |
+| 3 | Blue | Market Segmentation | `market-segmentation` |
+| 4 | Blue | Stakeholder Matrix | `stakeholder-matrix` |
+| 5 | Blue | Persona Development | `persona-development` |
+| 6 | Blue | VPC Customer Side | `vpc-customer-side` |
+| 7 | Red | Match Matrix | `match-matrix` |
+| 8 | Red | Value Proposition Formula | `value-proposition-formula` |
+| 9 | Red | Product/Service Idea | `product-service-idea` |
+| 10 | Green | Roles & Actors Mapping | `roles-actors-mapping` |
+| 11 | Green | Value Network Analysis | `value-network-analysis` |
+| 12 | Green | Value Creation Process | `value-creation-process` |
+| 13 | Green | Ecosystem Synthesis | `ecosystem-synthesis` |
+| 14 | Yellow | Value Source & WTP | `value-source-wtp` |
+| 15 | Yellow | Revenue Mechanics & Pricing | `revenue-mechanics-pricing` |
+| 16 | Yellow | Cost Structure Analysis | `cost-structure-analysis` |
+| 17 | Yellow | Pricing Strategy & Targets | `pricing-strategy-targets` |
+| 18 | Exit | Risk Heatmap | `risk-heatmap` |
+| 19 | Exit | Action Plan & RACI | `action-plan-raci` |
+| 20 | Exit | 30/60/90-Day Roadmap | `30-60-90-day-roadmap` |
+| 21 | Exit | Executive Summary | `executive-summary` |
 
 ## Transition Conditions
 

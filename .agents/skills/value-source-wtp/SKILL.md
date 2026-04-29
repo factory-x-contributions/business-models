@@ -2,8 +2,6 @@
 name: value-source-wtp
 description: Identifies and quantifies value sources per segment/use case, derives value formulas (EUR/year), tests willingness to pay with evidence, and produces monetizable benefit arguments.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Value Source & Willingness to Pay

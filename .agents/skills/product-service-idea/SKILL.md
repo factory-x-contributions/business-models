@@ -2,8 +2,6 @@
 name: product-service-idea
 description: Defines the concrete product or service idea with a 4-part matrix covering components, differentiating features, customer benefits, and strategic fit. Use for product definition, service design, or when finalizing a value proposition into a tangible offering.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Product/Service Idea

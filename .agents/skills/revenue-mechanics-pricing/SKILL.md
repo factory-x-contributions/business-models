@@ -2,8 +2,6 @@
 name: revenue-mechanics-pricing
 description: Designs the revenue model and pricing mechanics including price bases, model types, price components, scaling logic, unit economics simulation, and sales-ready calculation examples.
 user-invocable: true
-metadata:
-  internal: true
 ---
 
 # Revenue Mechanics & Pricing Model
