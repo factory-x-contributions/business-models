@@ -15,6 +15,18 @@
     "message": "This section explains the methodology behind the House-Building Logic.",
     "description": "The generated-index page description for category 'Methodik' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Anwendungsbeispiele": {
+    "message": "Application Examples",
+    "description": "The label for category 'Anwendungsbeispiele' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Anwendungsbeispiele.link.generated-index.title": {
+    "message": "Application Examples",
+    "description": "The generated-index page title for category 'Anwendungsbeispiele' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Anwendungsbeispiele.link.generated-index.description": {
+    "message": "Concrete applications of the House-Building Logic to real business ideas.",
+    "description": "The generated-index page description for category 'Anwendungsbeispiele' in sidebar 'docs'"
+  },
   "sidebar.docs.category.AI-Assistent": {
     "message": "AI Assistant",
     "description": "The label for category 'AI-Assistent' in sidebar 'docs'"
