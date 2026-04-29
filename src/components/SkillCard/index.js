@@ -3,209 +3,271 @@
 
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CheckIcon from '@mui/icons-material/Check';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-function CopyButton({ text, copyText = 'Prompt kopieren', copiedText = 'Kopiert!' }) {
-  const [copied, setCopied] = useState(false);
+const btnSx = {
+  textTransform: 'none',
+  fontSize: '0.78rem',
+  fontWeight: 500,
+  borderRadius: '6px',
+  color: 'var(--ifm-font-color-secondary)',
+  borderColor: 'var(--ifm-color-emphasis-300)',
+  background: 'var(--ifm-card-background-color)',
+  '&:hover': {
+    borderColor: 'var(--ifm-color-primary)',
+    color: 'var(--ifm-color-primary)',
+    background: 'rgba(56, 111, 179, 0.06)',
+  },
+};
 
-  const handleCopy = (e) => {
-    e.stopPropagation();
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+const labelSx = {
+  fontSize: '0.7rem',
+  fontWeight: 700,
+  textTransform: 'uppercase',
+  letterSpacing: '0.08em',
+  color: 'var(--ifm-font-color-secondary)',
+  mb: 0.5,
+};
+
+export default function SkillCard({
+  name,
+  title,
+  description,
+  prompt,
+  output,
+  copyLabel = 'Prompt kopieren',
+  copiedLabel = 'Kopiert!',
+  resultLabel = 'Ergebnis',
+  exampleLabel = 'Beispiel-Prompt',
+  downloadLabel = 'Skill herunterladen',
+  errorLabel = 'Fehler',
+  cliCopiedLabel = 'Kopiert!',
+}) {
+  const [promptCopied, setPromptCopied] = useState(false);
+  const [downloadStatus, setDownloadStatus] = useState('idle');
+  const [cliCopied, setCliCopied] = useState(false);
+
+  const githubUrl = `https://github.com/factory-x-contributions/business-models/blob/main/.agents/skills/${name}/SKILL.md`;
+  const downloadUrl = `https://raw.githubusercontent.com/factory-x-contributions/business-models/main/.agents/skills/${name}/SKILL.md`;
+  const cliCommand = 'npx skills add factory-x-contributions/business-models';
+
+  const handleCopyPrompt = () => {
+    navigator.clipboard.writeText(prompt).then(() => {
+      setPromptCopied(true);
+      setTimeout(() => setPromptCopied(false), 2000);
     });
   };
 
-  return (
-    <button
-      onClick={handleCopy}
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: '0.35rem',
-        padding: '0.35rem 0.7rem',
-        fontSize: '0.78rem',
-        fontWeight: 500,
-        border: '1px solid var(--ifm-color-emphasis-300)',
-        borderRadius: '6px',
-        background: copied ? '#2E7D32' : 'var(--ifm-card-background-color)',
-        color: copied ? '#fff' : 'var(--ifm-font-color-secondary)',
-        cursor: 'pointer',
-        transition: 'all 0.2s',
-      }}
-    >
-      {copied ? copiedText : copyText}
-    </button>
-  );
-}
-
-CopyButton.propTypes = {
-  text: PropTypes.string.isRequired,
-  copyText: PropTypes.string,
-  copiedText: PropTypes.string,
-};
-
-function DownloadButton({ url, filename, downloadLabel = '↓ Skill herunterladen', errorLabel = 'Fehler' }) {
-  const [status, setStatus] = useState('idle');
-
-  const handleDownload = (e) => {
-    e.stopPropagation();
-    setStatus('loading');
-    fetch(url)
+  const handleDownload = () => {
+    setDownloadStatus('loading');
+    fetch(downloadUrl)
       .then((res) => {
-        if (!res.ok) throw new Error('Download failed');
+        if (!res.ok) throw new Error();
         return res.blob();
       })
       .then((blob) => {
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = filename;
+        a.download = `${name}.md`;
         a.click();
         URL.revokeObjectURL(a.href);
-        setStatus('idle');
+        setDownloadStatus('idle');
       })
-      .catch(() => setStatus('error'));
+      .catch(() => setDownloadStatus('error'));
   };
 
-  let buttonLabel = downloadLabel;
-  if (status === 'loading') buttonLabel = '...';
-  if (status === 'error') buttonLabel = errorLabel;
+  const handleCliCopy = () => {
+    navigator.clipboard.writeText(cliCommand).then(() => {
+      setCliCopied(true);
+      setTimeout(() => setCliCopied(false), 2000);
+    });
+  };
 
   return (
-    <button
-      onClick={handleDownload}
-      disabled={status === 'loading'}
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: '0.35rem',
-        padding: '0.35rem 0.7rem',
-        fontSize: '0.78rem',
-        fontWeight: 500,
-        border: '1px solid var(--ifm-color-emphasis-300)',
-        borderRadius: '6px',
-        background: status === 'error' ? '#c62828' : 'var(--ifm-card-background-color)',
-        color: status === 'error' ? '#fff' : 'var(--ifm-font-color-secondary)',
-        cursor: status === 'loading' ? 'wait' : 'pointer',
-      }}
-    >
-      {buttonLabel}
-    </button>
-  );
-}
-
-DownloadButton.propTypes = {
-  url: PropTypes.string.isRequired,
-  filename: PropTypes.string.isRequired,
-  downloadLabel: PropTypes.string,
-  errorLabel: PropTypes.string,
-};
-
-export default function SkillCard({ name, title, description, prompt, output, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt', downloadLabel = '↓ Skill herunterladen', errorLabel = 'Fehler' }) {
-  const [open, setOpen] = useState(false);
-
-  const githubUrl = `https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${name}/SKILL.md`;
-  const downloadUrl = `https://raw.githubusercontent.com/factory-x-contributions/business-models/main/.claude/skills/${name}/SKILL.md`;
-
-  return (
-    <div
-      style={{
+    <Accordion
+      id={name}
+      disableGutters
+      square
+      elevation={0}
+      sx={{
         background: 'var(--ifm-card-background-color)',
-        border: `1px solid ${open ? 'var(--ifm-color-primary)' : 'var(--ifm-color-emphasis-200)'}`,
-        borderRadius: '8px',
-        transition: 'border-color 0.2s, box-shadow 0.2s',
-        boxShadow: open ? '0 2px 12px rgba(56, 111, 179, 0.08)' : 'none',
-        overflow: 'hidden',
+        border: '1px solid var(--ifm-color-emphasis-200)',
+        borderRadius: '8px !important',
+        '&:before': { display: 'none' },
+        '&.Mui-expanded': {
+          borderColor: 'var(--ifm-color-primary)',
+          boxShadow: '0 2px 12px rgba(56, 111, 179, 0.08)',
+        },
       }}
     >
-      <button
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        style={{
-          width: '100%',
-          background: 'none',
-          border: 'none',
-          textAlign: 'left',
-          padding: '1rem 1.15rem',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.75rem',
-          userSelect: 'none',
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon sx={{ color: 'var(--ifm-font-color-secondary)', fontSize: '1.1rem' }} />}
+        sx={{
+          px: '1.15rem',
+          py: '0.25rem',
+          minHeight: 0,
+          '& .MuiAccordionSummary-content': { my: '0.75rem', flexDirection: 'column', gap: 0 },
         }}
       >
-        <span
-          style={{
-            fontSize: '0.7rem',
-            transition: 'transform 0.2s',
-            transform: open ? 'rotate(90deg)' : 'rotate(0deg)',
-            color: 'var(--ifm-font-color-secondary)',
-          }}
-        >
-          &#9654;
-        </span>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontWeight: 600, fontSize: '0.95rem' }}>{title}</div>
-          <div style={{ fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', marginTop: '0.15rem' }}>
+        <Typography sx={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--ifm-font-color-base)', lineHeight: 1.3 }}>
+          {title}
+        </Typography>
+        {description && (
+          <Typography sx={{ fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', mt: 0.25, lineHeight: 1.4 }}>
             {description}
-          </div>
-        </div>
-      </button>
+          </Typography>
+        )}
+      </AccordionSummary>
 
-      {open && (
-        <div
-          style={{
-            padding: '0 1.15rem 1.15rem',
-            borderTop: '1px solid var(--ifm-color-emphasis-100)',
-            paddingTop: '1rem',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '0.85rem',
-          }}
-        >
-          <div>
-            <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ifm-font-color-secondary)', fontWeight: 600, marginBottom: '0.35rem' }}>
-              {exampleLabel}
-            </div>
-            <div
-              style={{
+      <AccordionDetails sx={{ px: '1.15rem', pt: 0, pb: '1.15rem', borderTop: '1px solid var(--ifm-color-emphasis-100)' }}>
+        <Stack spacing={1.5} sx={{ mt: 1.5 }}>
+          <Box>
+            <Typography sx={labelSx}>{exampleLabel}</Typography>
+            <Box
+              sx={{
                 background: 'var(--ifm-color-emphasis-100)',
-                padding: '0.65rem 0.85rem',
                 borderRadius: '6px',
-                fontSize: '0.85rem',
+                p: '0.65rem 0.85rem',
                 fontFamily: 'var(--ifm-font-family-monospace)',
+                fontSize: '0.85rem',
                 lineHeight: 1.5,
+                color: 'var(--ifm-font-color-base)',
+                mb: 0.75,
               }}
             >
               {prompt}
-            </div>
-            <div style={{ marginTop: '0.5rem' }}>
-              <CopyButton text={prompt} copyText={copyLabel} copiedText={copiedLabel} />
-            </div>
-          </div>
+            </Box>
+            <Button
+              variant="outlined"
+              size="small"
+              startIcon={promptCopied ? <CheckIcon /> : <ContentCopyIcon />}
+              onClick={handleCopyPrompt}
+              sx={{
+                ...btnSx,
+                ...(promptCopied && {
+                  borderColor: '#2E7D32',
+                  color: '#2E7D32',
+                  background: 'rgba(46, 125, 50, 0.06)',
+                  '&:hover': { borderColor: '#2E7D32', color: '#2E7D32', background: 'rgba(46, 125, 50, 0.1)' },
+                }),
+              }}
+            >
+              {promptCopied ? copiedLabel : copyLabel}
+            </Button>
+          </Box>
 
           {output && (
-            <div>
-              <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ifm-font-color-secondary)', fontWeight: 600, marginBottom: '0.35rem' }}>
-                {resultLabel}
-              </div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5 }}>
+            <Box>
+              <Typography sx={labelSx}>{resultLabel}</Typography>
+              <Typography sx={{ fontSize: '0.85rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5 }}>
                 {output}
-              </div>
-            </div>
+              </Typography>
+            </Box>
           )}
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-secondary)', fontFamily: 'var(--ifm-font-family-monospace)' }}>
-              Skill:{' '}
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                <code style={{ color: 'var(--ifm-color-primary)' }}>{name}</code>
-              </a>
-            </div>
-            <DownloadButton url={downloadUrl} filename={`${name}.md`} downloadLabel={downloadLabel} errorLabel={errorLabel} />
-          </div>
-        </div>
-      )}
-    </div>
+          <Stack direction="row" spacing={1} alignItems="center" flexWrap="wrap" useFlexGap>
+            <Chip
+              label={name}
+              component="a"
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              clickable
+              size="small"
+              variant="outlined"
+              icon={<GitHubIcon sx={{ fontSize: '0.85rem !important' }} />}
+              sx={{
+                fontFamily: 'var(--ifm-font-family-monospace)',
+                fontSize: '0.75rem',
+                height: '28px',
+                color: 'var(--ifm-color-primary)',
+                borderColor: 'rgba(56, 111, 179, 0.4)',
+                background: 'rgba(56, 111, 179, 0.04)',
+                '&:hover': { background: 'rgba(56, 111, 179, 0.1)', borderColor: 'var(--ifm-color-primary)' },
+              }}
+            />
+            <Button
+              variant="outlined"
+              size="small"
+              startIcon={downloadStatus === 'idle' ? <FileDownloadOutlinedIcon /> : undefined}
+              disabled={downloadStatus === 'loading'}
+              onClick={handleDownload}
+              sx={{
+                ...btnSx,
+                ...(downloadStatus === 'error' && {
+                  borderColor: '#c62828',
+                  color: '#fff',
+                  background: '#c62828',
+                  '&:hover': { background: '#b71c1c', borderColor: '#b71c1c' },
+                }),
+              }}
+            >
+              {downloadStatus === 'loading' ? '…' : downloadStatus === 'error' ? errorLabel : downloadLabel}
+            </Button>
+            <Box
+              sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                border: '1px solid var(--ifm-color-emphasis-300)',
+                borderRadius: '6px',
+                overflow: 'hidden',
+                height: '30px',
+              }}
+            >
+              <Typography
+                component="code"
+                sx={{
+                  px: 1,
+                  fontSize: '0.75rem',
+                  fontFamily: 'var(--ifm-font-family-monospace)',
+                  color: 'var(--ifm-font-color-secondary)',
+                  background: 'var(--ifm-color-emphasis-100)',
+                  height: '100%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  borderRight: '1px solid var(--ifm-color-emphasis-300)',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                {cliCommand}
+              </Typography>
+              <Tooltip title={cliCopied ? cliCopiedLabel : 'CLI-Befehl kopieren'} arrow>
+                <IconButton
+                  size="small"
+                  onClick={handleCliCopy}
+                  sx={{
+                    borderRadius: 0,
+                    height: '100%',
+                    px: 0.75,
+                    color: cliCopied ? '#2E7D32' : 'var(--ifm-font-color-secondary)',
+                    background: 'var(--ifm-card-background-color)',
+                    '&:hover': { background: 'rgba(0,0,0,0.04)' },
+                  }}
+                >
+                  {cliCopied
+                    ? <CheckIcon sx={{ fontSize: '0.9rem' }} />
+                    : <ContentCopyIcon sx={{ fontSize: '0.9rem' }} />}
+                </IconButton>
+              </Tooltip>
+            </Box>
+          </Stack>
+        </Stack>
+      </AccordionDetails>
+    </Accordion>
   );
 }
 
@@ -221,4 +283,5 @@ SkillCard.propTypes = {
   exampleLabel: PropTypes.string,
   downloadLabel: PropTypes.string,
   errorLabel: PropTypes.string,
+  cliCopiedLabel: PropTypes.string,
 };

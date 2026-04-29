@@ -29,17 +29,48 @@ Skills follow the open [Agent Skills](https://agentskills.io) standard and work 
 
 ---
 
+## Install All 23 Skills
+
+Install all skills at once into your AI assistant (Claude Code, Cursor, Cline). Open a terminal in your project's root directory and run the following command:
+
+```bash
+npx skills add factory-x-contributions/business-models
+```
+
+Skills follow the open [Agent Skills](https://agentskills.io) standard and are placed under `.agents/skills/` in your project directory.
+
+---
+
+## Orchestrator: House Building Logic
+
+The **House Building Logic Orchestrator** is the entry point for the complete process. It automatically navigates through all 21 method skills across 6 phases, performs consistency checks, and manages room transitions.
+
+:::tip
+Simply start with a short description of your business idea — the orchestrator takes over and automatically selects the right methods.
+:::
+
+<SkillCard
+  name="house-building-logic"
+  title="House Building Logic – Orchestrator"
+  description="Orchestrates the complete business model process and automatically navigates through all 21 method skills in 6 phases — including consistency checks and transitions."
+  prompt="We are a mid-sized machine builder with access to sensor data from our installed machines at customer sites. I want to build a data-driven service business — probably around predictive maintenance. Start the House Building Logic process."
+  output="Guided interview process through all 6 phases (Entrance → Blue → Red → Green → Yellow → Exit) with consistency checks, automatic transitions, and a complete business model document."
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
+/>
+
+---
+
 ## Process Overview
 
-The complete process comprises 21 methods in 6 phases. Hover over individual steps to see the skill name:
+The complete process comprises 21 methods in 6 phases. Click a **skill** to jump directly to its detail card. Click a **phase name** to jump to that section:
 
 <ProcessFlow phases={[
-  { label: 'Baseline', color: '#607D8B', skills: ['company-assessment', 'business-idea-canvas'], shortLabels: ['Company Assessment', 'Business Idea Canvas'] },
-  { label: 'Customer', color: '#1565C0', skills: ['market-segmentation', 'stakeholder-matrix', 'persona-development', 'vpc-customer-side'], shortLabels: ['Market Segmentation', 'Stakeholder Matrix', 'Persona Development', 'VPC Customer Side'] },
-  { label: 'Value Prop.', color: '#C62828', skills: ['match-matrix', 'value-proposition-formula', 'product-service-idea'], shortLabels: ['Match Matrix', 'VP Formula', 'Product/Service Idea'] },
-  { label: 'Value Creation', color: '#2E7D32', skills: ['roles-actors-mapping', 'value-network-analysis', 'value-creation-process', 'ecosystem-synthesis'], shortLabels: ['Roles & Actors', 'Value Network', 'Creation Process', 'Ecosystem Synthesis'] },
-  { label: 'Viability', color: '#F9A825', skills: ['value-source-wtp', 'revenue-mechanics-pricing', 'cost-structure-analysis', 'pricing-strategy-targets'], shortLabels: ['Value Source & WTP', 'Revenue & Pricing', 'Cost Structure', 'Pricing Strategy'] },
-  { label: 'Consolidation', color: '#6A1B9A', skills: ['risk-heatmap', 'action-plan-raci', '30-60-90-day-roadmap', 'executive-summary'], shortLabels: ['Risk Heatmap', 'Action Plan & RACI', '30/60/90-Day Plan', 'Executive Summary'] },
+  { label: 'Baseline', color: '#607D8B', sectionAnchor: '#establish-baseline', skills: ['company-assessment', 'business-idea-canvas'], shortLabels: ['Company Assessment', 'Business Idea Canvas'] },
+  { label: 'Customer', color: '#1565C0', sectionAnchor: '#understand-customers', skills: ['market-segmentation', 'stakeholder-matrix', 'persona-development', 'vpc-customer-side'], shortLabels: ['Market Segmentation', 'Stakeholder Matrix', 'Persona Development', 'VPC Customer Side'] },
+  { label: 'Value Prop.', color: '#C62828', sectionAnchor: '#formulate-value-proposition', skills: ['match-matrix', 'value-proposition-formula', 'product-service-idea'], shortLabels: ['Match Matrix', 'VP Formula', 'Product/Service Idea'] },
+  { label: 'Value Creation', color: '#2E7D32', sectionAnchor: '#design-value-creation', skills: ['roles-actors-mapping', 'value-network-analysis', 'value-creation-process', 'ecosystem-synthesis'], shortLabels: ['Roles & Actors', 'Value Network', 'Creation Process', 'Ecosystem Synthesis'] },
+  { label: 'Viability', color: '#F9A825', sectionAnchor: '#validate-viability', skills: ['value-source-wtp', 'revenue-mechanics-pricing', 'cost-structure-analysis', 'pricing-strategy-targets'], shortLabels: ['Value Source & WTP', 'Revenue & Pricing', 'Cost Structure', 'Pricing Strategy'] },
+  { label: 'Consolidation', color: '#6A1B9A', sectionAnchor: '#consolidate-results', skills: ['risk-heatmap', 'action-plan-raci', '30-60-90-day-roadmap', 'executive-summary'], shortLabels: ['Risk Heatmap', 'Action Plan & RACI', '30/60/90-Day Plan', 'Executive Summary'] },
 ]} />
 
 ---
@@ -59,7 +90,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="We are a mid-sized machine builder with 500 employees looking to digitize our service business. Help me with a structured company assessment."
   output="Company Assessment Summary with current state, digital maturity, and ecosystem touchpoints."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -69,7 +100,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I have an idea for a predictive maintenance service based on machine data. Help me structure this idea."
   output="Business Idea Canvas (6 fields) and Elevator Pitch (max. 150 words)."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -85,7 +116,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me with a market segmentation for our IoT-based condition monitoring service for the manufacturing industry."
   output="Segment x Use Case Matrix with evaluation, prioritized shortlist (2-3 focus combinations)."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -95,7 +126,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I need a stakeholder analysis for our predictive maintenance offering targeting automotive suppliers."
   output="2x2 Stakeholder Matrix with engagement strategy per quadrant and key stakeholder shortlist."
   duration="20 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -105,7 +136,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Create a persona for the maintenance manager of a mid-sized automotive supplier."
   output="1-2 Persona profiles with CORE and ENVIRONMENT sections."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -115,7 +146,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me develop the customer side of the Value Proposition Canvas for our predictive maintenance service."
   output="VPC profile with prioritized Jobs, Pains and Gains including evaluation tables."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -131,7 +162,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I have prioritized customer pains and gains. Help me systematically link them to solution approaches."
   output="Match Matrix table (Pain/Gain -> Solution Lever -> Value -> Priority -> Cluster) and Top 5 Essentials."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -141,7 +172,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me craft a compelling value proposition for our data-driven service."
   output="Value Proposition Statement, Pitch Statement (1-2 sentences), Evidence Checklist, Competitor Comparison."
   duration="20 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -151,7 +182,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I want to define my predictive maintenance idea as a concrete product. Help me with the product definition."
   output="Product description (name, type, 4-part matrix), competitor comparison, evidence checklist."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -167,7 +198,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me identify all actors for our predictive maintenance service in the Factory-X ecosystem."
   output="Roles-Actors Matrix (actor, role, value contribution, internal/external, make/buy/partner)."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -177,7 +208,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I want to map the data, goods, and financial flows between all actors in our ecosystem."
   output="Value Network Diagram (color-coded: Blue=Data, Green=Goods, Orange=Finance), flow detail tables."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -187,7 +218,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me define the operational process of our service from onboarding to ongoing operations."
   output="Process diagram (BPMN style), RACI matrix per step, KPI dashboard, scalability analysis."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -197,7 +228,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Summarize the results of our value creation analysis and evaluate feasibility."
   output="Synthesis document with monetization, costs, governance scorecard, risks, and Go/Review/Stop."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -213,7 +244,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me quantify the monetary value of our predictive maintenance service for different customer segments."
   output="Value formulas (EUR/year), evidence status (A/B/C), WTP ranges, Go/Check/Stop per segment."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -223,7 +254,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="I need a pricing model for our data-driven service. Which revenue model fits best?"
   output="2-3 model variants with price basis, components, unit economics, and sample calculations."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -233,7 +264,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Help me map the cost structure of our service across its entire lifecycle."
   output="Lifecycle cost table, fixed/variable matrix (2x2), risks, and control mechanisms."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -243,7 +274,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Define a pricing strategy for our service with clear KPI guardrails and a GTM test plan."
   output="Synthesis one-pager with actor tables, break-even analysis, Go/Check/Stop per actor."
   duration="30-45 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -259,7 +290,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Create a risk heatmap for our business model with assessment from all perspectives."
   output="Risk Heatmap (2x2, color-coded), risk register with IDs, prioritization, and actions."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -269,7 +300,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Create an action plan with RACI assignment based on our risk heatmap."
   output="Measure list (SMART, linked to risk IDs), RACI matrix per measure."
   duration="25 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -279,7 +310,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Create a 30/60/90-day roadmap for implementing our business model."
   output="Roadmap with time bands, target path (PoC/MVP), KPIs, resource and decision needs."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 <SkillCard
@@ -289,7 +320,7 @@ Click on a skill to see the example prompt, expected output, and estimated durat
   prompt="Create an Executive Summary as a one-pager for the management decision on our business model."
   output="One-pager: idea, target group, value proposition, value network, business case, risks, next steps."
   duration="30 min"
-  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt"
+  copyLabel="Copy prompt" copiedLabel="Copied!" resultLabel="Output" exampleLabel="Example Prompt" cliCopiedLabel="Copied!"
 />
 
 </div>
@@ -336,6 +367,8 @@ user-invocable: true
 ## Quality       — Quality criteria and consistency checks
 ## Output        — What artifacts are produced
 ```
+
+The skill `context-factory-x-data-ecosystems` is an internal reference skill (`user-invocable: false`). It contains domain context on Factory-X, data ecosystems, and the House Building Logic metaphor. The orchestrator and other skills automatically draw on it as a knowledge source — no direct invocation needed.
 
 ## Further Resources
 

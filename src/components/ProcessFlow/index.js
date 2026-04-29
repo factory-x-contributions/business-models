@@ -8,36 +8,42 @@ const defaultPhases = [
   {
     label: 'Ausgangslage',
     color: '#607D8B',
+    sectionAnchor: '#ausgangslage-klären',
     skills: ['company-assessment', 'business-idea-canvas'],
     shortLabels: ['Unternehmens-analyse', 'Geschäftsidee-Canvas'],
   },
   {
     label: 'Kunden verstehen',
     color: '#1565C0',
+    sectionAnchor: '#kunden-verstehen',
     skills: ['market-segmentation', 'stakeholder-matrix', 'persona-development', 'vpc-customer-side'],
     shortLabels: ['Markt-segmentierung', 'Stakeholder-Matrix', 'Persona-Entwicklung', 'VPC Kundenseite'],
   },
   {
     label: 'Wertversprechen',
     color: '#C62828',
+    sectionAnchor: '#wertversprechen-formulieren',
     skills: ['match-matrix', 'value-proposition-formula', 'product-service-idea'],
     shortLabels: ['Match-Matrix', 'Value-Proposition-Formel', 'Produkt-/Serviceidee'],
   },
   {
     label: 'Wertschöpfung',
     color: '#2E7D32',
+    sectionAnchor: '#wertschöpfung-gestalten',
     skills: ['roles-actors-mapping', 'value-network-analysis', 'value-creation-process', 'ecosystem-synthesis'],
     shortLabels: ['Rollen & Akteure', 'Wertnetzwerk', 'Wertschöpfungs-prozess', 'Ökosystem-Synthese'],
   },
   {
     label: 'Wirtschaftlichkeit',
     color: '#F9A825',
+    sectionAnchor: '#wirtschaftlichkeit-prüfen',
     skills: ['value-source-wtp', 'revenue-mechanics-pricing', 'cost-structure-analysis', 'pricing-strategy-targets'],
     shortLabels: ['Wertquellen & WTP', 'Erlösmodell & Pricing', 'Kostenstruktur', 'Preisstrategie'],
   },
   {
     label: 'Konsolidierung',
     color: '#6A1B9A',
+    sectionAnchor: '#ergebnisse-konsolidieren',
     skills: ['risk-heatmap', 'action-plan-raci', '30-60-90-day-roadmap', 'executive-summary'],
     shortLabels: ['Risiko-Heatmap', 'Maßnahmenplan & RACI', '30/60/90-Tage-Plan', 'Executive Summary'],
   },
@@ -53,8 +59,10 @@ export default function ProcessFlow({ phases: customPhases }) {
         {phases.map((phase, pi) => (
           <React.Fragment key={phase.label}>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div
+              <a
+                href={phase.sectionAnchor}
                 style={{
+                  display: 'block',
                   background: phase.color,
                   color: '#fff',
                   padding: '0.4rem 0.6rem',
@@ -64,10 +72,11 @@ export default function ProcessFlow({ phases: customPhases }) {
                   textAlign: 'center',
                   textTransform: 'uppercase',
                   letterSpacing: '0.06em',
+                  textDecoration: 'none',
                 }}
               >
                 {phase.label}
-              </div>
+              </a>
               <div
                 style={{
                   border: `2px solid ${phase.color}`,
@@ -82,9 +91,7 @@ export default function ProcessFlow({ phases: customPhases }) {
                 {phase.skills.map((skill, si) => (
                   <a
                     key={skill}
-                    href={`https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${skill}/SKILL.md`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`#${skill}`}
                     onMouseEnter={() => setActiveSkill(skill)}
                     onMouseLeave={() => setActiveSkill(null)}
                     style={{
@@ -117,21 +124,6 @@ export default function ProcessFlow({ phases: customPhases }) {
           </React.Fragment>
         ))}
       </div>
-      {activeSkill && (
-        <div
-          style={{
-            marginTop: '0.75rem',
-            padding: '0.5rem 0.75rem',
-            background: 'var(--ifm-color-emphasis-100)',
-            borderRadius: '6px',
-            fontSize: '0.8rem',
-            fontFamily: 'var(--ifm-font-family-monospace)',
-            textAlign: 'center',
-          }}
-        >
-          Skill: <code>{activeSkill}</code>
-        </div>
-      )}
     </div>
   );
 }
@@ -141,6 +133,7 @@ ProcessFlow.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       color: PropTypes.string.isRequired,
+      sectionAnchor: PropTypes.string,
       skills: PropTypes.arrayOf(PropTypes.string).isRequired,
       shortLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
     })

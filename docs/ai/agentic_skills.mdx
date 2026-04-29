@@ -29,9 +29,39 @@ Skills folgen dem offenen [Agent Skills](https://agentskills.io)-Standard und fu
 
 ---
 
+## Alle 23 Skills installieren
+
+Installiere alle Skills auf einmal in deinen AI-Assistenten (Claude Code, Cursor, Cline). Öffne ein Terminal im Stammverzeichnis deines Projekts und führe den folgenden Befehl aus:
+
+```bash
+npx skills add factory-x-contributions/business-models
+```
+
+Die Skills folgen dem offenen [Agent Skills](https://agentskills.io)-Standard und landen unter `.agents/skills/` in deinem Projektverzeichnis.
+
+---
+
+## Orchestrator: Hausbaulogik
+
+Der **Hausbaulogik-Orchestrator** ist der Einstiegspunkt für den Gesamtprozess. Er navigiert automatisch durch alle 21 Methoden-Skills in 6 Phasen, führt Konsistenzprüfungen durch und steuert die Übergänge zwischen den Räumen.
+
+:::tip
+Starte einfach mit einer kurzen Beschreibung deiner Geschäftsidee — der Orchestrator übernimmt die Führung und wählt die passenden Methoden automatisch aus.
+:::
+
+<SkillCard
+  name="house-building-logic"
+  title="Hausbaulogik – Orchestrator"
+  description="Koordiniert den gesamten Geschäftsmodell-Prozess und navigiert automatisch durch alle 21 Methoden-Skills in 6 Phasen – inklusive Konsistenzprüfungen und Übergängen."
+  prompt="Wir sind ein mittelständischer Maschinenbauer und haben Zugang zu Sensordaten unserer installierten Maschinen beim Kunden. Ich möchte ein datenbasiertes Servicegeschäft aufbauen – wahrscheinlich Richtung Predictive Maintenance. Starte den Hausbaulogik-Prozess."
+  output="Geführter Interview-Prozess durch alle 6 Phasen (Entrance → Blau → Rot → Grün → Gelb → Exit) mit Konsistenzprüfungen, automatischen Übergängen und einem vollständigen Geschäftsmodell-Dokument."
+/>
+
+---
+
 ## Prozessübersicht
 
-Der Gesamtprozess umfasst 21 Methoden in 6 Phasen. Hover über die einzelnen Schritte, um den Skill-Namen zu sehen:
+Der Gesamtprozess umfasst 21 Methoden in 6 Phasen. Klicke auf einen **Skill**, um direkt zur Detail-Karte zu springen. Klicke auf einen **Phasennamen**, um zur jeweiligen Sektion zu springen:
 
 <ProcessFlow />
 
@@ -287,6 +317,8 @@ user-invocable: true
 ## Quality       - Qualitätskriterien und Konsistenzprüfungen
 ## Output        - Welche Artefakte produziert werden
 ```
+
+Der Skill `context-factory-x-data-ecosystems` ist ein interner Referenz-Skill (`user-invocable: false`). Er enthält den Fachkontext zu Factory-X, Datenökosystemen und der Hausbaulogik-Metapher und wird vom Orchestrator sowie anderen Skills automatisch als Wissensquelle eingebunden — ohne dass du ihn direkt aufrufen musst.
 
 ## Weiterführende Ressourcen
 
