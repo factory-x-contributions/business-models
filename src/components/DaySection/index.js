@@ -143,7 +143,7 @@ DaySection.propTypes = {
 const AI_COLOR = '#6B7280';
 const AI_RGB = '107, 114, 128';
 
-export function AiSection({ children }) {
+export function AiSection({ title = 'AI-Unterstützung (Hybrides Format)', children }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -187,7 +187,7 @@ export function AiSection({ children }) {
           🤖 AI
         </span>
         <span style={{ fontWeight: 600, fontSize: '0.95rem', flex: 1 }}>
-          AI-Unterstützung (Hybrides Format)
+          {title}
         </span>
         <span
           style={{
@@ -220,10 +220,11 @@ export function AiSection({ children }) {
 }
 
 AiSection.propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
-export function DayTemplate({ title, children }) {
+export function DayTemplate({ title, templateLabel = '📋 Vorlage', children }) {
   const [open, setOpen] = useState(false);
   const { color } = useContext(DayContext);
   const rgb = hexToRgb(color);
@@ -266,7 +267,7 @@ export function DayTemplate({ title, children }) {
             flexShrink: 0,
           }}
         >
-          📋 Vorlage
+          {templateLabel}
         </span>
         <span style={{ fontWeight: 500, fontSize: '0.88rem', flex: 1 }}>{title}</span>
         <span
@@ -301,10 +302,11 @@ export function DayTemplate({ title, children }) {
 
 DayTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  templateLabel: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
-export function VorlageLink({ title, href }) {
+export function VorlageLink({ title, href, templateLabel = '📋 Vorlage' }) {
   const { color } = useContext(DayContext);
   const rgb = hexToRgb(color);
 
@@ -336,7 +338,7 @@ export function VorlageLink({ title, href }) {
           flexShrink: 0,
         }}
       >
-        📋 Vorlage
+        {templateLabel}
       </span>
       <span style={{ fontWeight: 500, fontSize: '0.88rem', flex: 1, color: 'var(--ifm-font-color-base)' }}>
         {title}
@@ -349,4 +351,5 @@ export function VorlageLink({ title, href }) {
 VorlageLink.propTypes = {
   title: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
+  templateLabel: PropTypes.string,
 };

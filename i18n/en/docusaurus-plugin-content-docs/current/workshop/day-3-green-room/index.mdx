@@ -4,46 +4,26 @@ title: Day 3 - Green Room
 description: Define ecosystem roles and design operational value creation
 sidebar_position: 5
 ---
-
 import Admonition from '@theme/Admonition';
+import RoomHero from '@site/src/components/RoomHero';
+import QualityGate from '@site/src/components/QualityGate';
+import { DayProvider, DayBreak, DaySection, AiSection, VorlageLink } from '@site/src/components/DaySection';
 
-<div style={{background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.08) 0%, rgba(107, 142, 80, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.5rem'}}>🟢</span>
-    <span style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6B8E50', fontWeight: '600'}}>Value Creation</span>
-  </div>
-  <h2 style={{margin: '0 0 1rem 0', fontSize: '1.75rem', fontWeight: '600', color: 'var(--ifm-heading-color)'}}>How do we create the value?</h2>
-  <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.7', maxWidth: '640px'}}>
-    Understand who contributes what in the ecosystem and how value is operationally created
-  </p>
-  <div style={{marginTop: '1.25rem', padding: '1rem 1.25rem', background: 'linear-gradient(135deg, rgba(107, 142, 80, 0.12) 0%, rgba(107, 142, 80, 0.04) 100%)', borderRadius: '8px', border: '1px solid rgba(107, 142, 80, 0.2)'}}>
-    <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <span style={{fontSize: '1.1rem'}}>🎯</span>
-      <strong style={{color: '#6B8E50', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Daily Goal</strong>
-    </div>
-    <p style={{margin: 0, fontSize: '1rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.6'}}>By the end of the day we have a <strong>roles-actors matrix, a value creation network and a documented end-to-end process</strong> - the "how" behind the value proposition.</p>
-  </div>
-</div>
+<RoomHero
+  icon="🟢"
+  label="Value Creation"
+  color="#6B8E50"
+  goalLabel="Goal"
+  heading="How do we create the value?"
+  intro="Understand who contributes what in the ecosystem and how value is operationally created"
+  goalText={'By the end of the day we have a <strong>roles-actors matrix, a value creation network and a documented end-to-end process</strong> – the “how” behind the value proposition.'}
+/>
 
----
+<DayProvider color="#6B8E50">
 
-## Daily Overview
+<DayBreak time="09:00 - 09:30" title="Welcome & Recap" />
 
-| Time | Topic | Description |
-|------|-------|-------------|
-| 09:00 - 09:30 | Welcome & Recap | Summary Day 2, Goals Day 3 |
-| 09:30 - 10:45 | Deep-Dive 1: Roles & Actors | Develop matrix, clarify own role |
-| 10:45 - 11:00 | Break | |
-| 11:00 - 12:30 | Deep-Dive 2: Value Creation Network | Create value network diagram |
-| 12:30 - 13:30 | Lunch Break | |
-| 13:30 - 15:00 | Deep-Dive 3: Value Creation Process | Process description with responsibilities |
-| 15:00 - 15:15 | Break | |
-| 15:15 - 16:00 | Scalability & Bottlenecks | Check growth potential |
-| 16:00 - 17:00 | Gate Review & Daily Log | Quality check, save artifacts |
-
----
-
-## Deep-Dive 1: Roles & Actors (09:30 - 10:45)
+<DaySection id="dd1" time="09:30 - 10:45" title="Roles & Actors">
 
 ### Goal
 
@@ -91,9 +71,13 @@ Explicitly clarify: **Which role(s) do we take on?**
 - "What contribution does each actor make?"
 - "Which role(s) do we take on ourselves?"
 
----
+<VorlageLink templateLabel="📋 Template" title="Roles & Actors Matrix" href="./vorlage-rollen-akteure" />
 
-## Deep-Dive 2: Value Creation Network (11:00 - 12:30)
+</DaySection>
+
+<DayBreak time="10:45 - 11:00" title="Break" />
+
+<DaySection id="dd2" time="11:00 - 12:30" title="Value Creation Network">
 
 ### Goal
 
@@ -124,9 +108,13 @@ Describe **how goods, services, data and money flow between actors**.
 - "What dependencies exist?"
 - "Where are critical handovers?"
 
----
+<VorlageLink templateLabel="📋 Template" title="Value Network" href="./vorlage-value-network" />
 
-## Deep-Dive 3: Value Creation Process (13:30 - 15:00)
+</DaySection>
+
+<DayBreak time="12:30 - 13:30" title="Lunch Break" />
+
+<DaySection id="dd3" time="13:30 - 15:00" title="Value Creation Process">
 
 ### Goal
 
@@ -160,9 +148,11 @@ Put everything into a **chronological order**: What happens when a customer uses
 - "Where are critical handovers?"
 - "What happens if there's an error in step X?"
 
----
+</DaySection>
 
-## Scalability & Bottlenecks (15:15 - 16:00)
+<DayBreak time="15:00 - 15:15" title="Break" />
+
+<DaySection id="dd4" time="15:15 - 16:00" title="Scalability & Bottlenecks">
 
 ### Scaling Questions
 
@@ -182,15 +172,15 @@ Put everything into a **chronological order**: What happens when a customer uses
 | Data Quality | Heterogeneous data sources | Validation, normalization |
 | Partners | Dependency on individuals | Redundancy, standards |
 
+</DaySection>
+
+<DayBreak time="16:00 - 17:00" title="Gate Review & Daily Log" />
+
+</DayProvider>
+
 ---
 
-## AI Support (Hybrid Format)
-
-<div style={{background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%)', borderRadius: '8px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(139, 92, 246, 0.2)'}}>
-  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem'}}>
-    <span style={{fontSize: '1.25rem'}}>🤖</span>
-    <strong style={{color: '#8B5CF6', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI-Assisted Workshop</strong>
-  </div>
+<AiSection title="AI Support (Hybrid Format)">
 
 In the hybrid format, AI can support value creation design:
 
@@ -219,54 +209,25 @@ In the hybrid format, AI can support value creation design:
 AI can describe complex **process diagrams as text** and later transfer to BPMN or Miro. Use AI for the first draft, the team refines.
 </Admonition>
 
-</div>
+</AiSection>
 
 ---
 
-## Gate Review
-
-<div style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', padding: '1.5rem', marginTop: '1rem', background: 'var(--ifm-background-surface-color)'}}>
-
-<h4 style={{fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--ifm-font-color-secondary)', marginBottom: '1rem', fontWeight: '500'}}>Quality Check</h4>
-
-##### Roles & Actors
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Are all relevant actors in the ecosystem identified?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Are the roles clearly defined and distinguished from each other?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Is it clear what contribution each actor makes?</span>
-</label>
-
-##### Value Creation Network
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Are all four flows (Goods, Services, Data, Financial) documented?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Are the data flows provided with conditions (when, how)?</span>
-</label>
-
-##### Value Creation Process
-
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '0.5rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Does the process cover the entire path from data creation to customer benefit?</span>
-</label>
-<label style={{display: 'flex', alignItems: 'flex-start', gap: '0.75rem', cursor: 'pointer'}}>
-  <input type="checkbox" style={{marginTop: '0.25rem', width: '16px', height: '16px'}} />
-  <span style={{color: 'var(--ifm-font-color-base)'}}>Are critical handovers/interfaces identified?</span>
-</label>
-
-</div>
+<QualityGate
+  color="#6B8E50"
+  title="Gate-Review"
+  progressText={(c, t) => `${c} of ${t} completed`}
+  successText="All criteria met — ready for the next room!"
+  items={[
+    'Are all relevant actors in the ecosystem identified?',
+    'Are the roles clearly defined and distinguished from each other?',
+    'Is it clear what contribution each actor makes?',
+    'Are all four flows (Goods, Services, Data, Financial) documented?',
+    'Are the data flows provided with conditions (when, how)?',
+    'Does the process cover the entire path from data creation to customer benefit?',
+    'Are critical handovers/interfaces identified?',
+  ]}
+/>
 
 ---
 

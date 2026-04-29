@@ -44,7 +44,7 @@ CopyButton.propTypes = {
   copiedText: PropTypes.string,
 };
 
-function DownloadButton({ url, filename }) {
+function DownloadButton({ url, filename, downloadLabel = '↓ Skill herunterladen', errorLabel = 'Fehler' }) {
   const [status, setStatus] = useState('idle');
 
   const handleDownload = (e) => {
@@ -66,9 +66,9 @@ function DownloadButton({ url, filename }) {
       .catch(() => setStatus('error'));
   };
 
-  let buttonLabel = '↓ Skill herunterladen';
+  let buttonLabel = downloadLabel;
   if (status === 'loading') buttonLabel = '...';
-  if (status === 'error') buttonLabel = 'Fehler';
+  if (status === 'error') buttonLabel = errorLabel;
 
   return (
     <button
@@ -96,9 +96,11 @@ function DownloadButton({ url, filename }) {
 DownloadButton.propTypes = {
   url: PropTypes.string.isRequired,
   filename: PropTypes.string.isRequired,
+  downloadLabel: PropTypes.string,
+  errorLabel: PropTypes.string,
 };
 
-export default function SkillCard({ name, title, description, prompt, output, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt' }) {
+export default function SkillCard({ name, title, description, prompt, output, copyLabel = 'Prompt kopieren', copiedLabel = 'Kopiert!', resultLabel = 'Ergebnis', exampleLabel = 'Beispiel-Prompt', downloadLabel = '↓ Skill herunterladen', errorLabel = 'Fehler' }) {
   const [open, setOpen] = useState(false);
 
   const githubUrl = `https://github.com/factory-x-contributions/business-models/blob/main/.claude/skills/${name}/SKILL.md`;
@@ -199,7 +201,7 @@ export default function SkillCard({ name, title, description, prompt, output, co
                 <code style={{ color: 'var(--ifm-color-primary)' }}>{name}</code>
               </a>
             </div>
-            <DownloadButton url={downloadUrl} filename={`${name}.md`} />
+            <DownloadButton url={downloadUrl} filename={`${name}.md`} downloadLabel={downloadLabel} errorLabel={errorLabel} />
           </div>
         </div>
       )}
@@ -217,4 +219,6 @@ SkillCard.propTypes = {
   copiedLabel: PropTypes.string,
   resultLabel: PropTypes.string,
   exampleLabel: PropTypes.string,
+  downloadLabel: PropTypes.string,
+  errorLabel: PropTypes.string,
 };

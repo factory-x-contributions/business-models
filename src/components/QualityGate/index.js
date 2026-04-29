@@ -2,16 +2,25 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * QualityGate — interactive checklist with progress counter.
  *
  * Props:
- *   items   — string[]   checklist items
- *   color   — string     room accent color (hex), e.g. '#386FB3'
- *   title   — string     section heading (optional, default 'Quality Gate')
+ *   items        — string[]   checklist items
+ *   color        — string     room accent color (hex), e.g. '#386FB3'
+ *   title        — string     section heading (optional, default 'Quality Gate')
+ *   progressText — function   (count, total) => string for the progress badge
+ *   successText  — string     message shown when all items are checked
  */
-export default function QualityGate({ items = [], color = '#386FB3', title = 'Quality Gate' }) {
+export default function QualityGate({
+  items = [],
+  color = '#386FB3',
+  title = 'Quality Gate',
+  progressText = (count, total) => `${count} von ${total} erledigt`,
+  successText = 'Alle Kriterien erfüllt — bereit für den nächsten Raum!',
+}) {
   const [checked, setChecked] = useState(() => new Array(items.length).fill(false));
 
   const toggle = (index) => {
@@ -68,7 +77,7 @@ export default function QualityGate({ items = [], color = '#386FB3', title = 'Qu
             transition: 'all 0.3s ease',
           }}
         >
-          {count} von {total} erledigt
+          {progressText(count, total)}
         </span>
       </div>
 
@@ -96,7 +105,7 @@ export default function QualityGate({ items = [], color = '#386FB3', title = 'Qu
       {/* Checklist items */}
       {items.map((item, i) => (
         <label
-          key={i}
+          key={i} // eslint-disable-line react/no-array-index-key
           style={{
             display: 'flex',
             alignItems: 'flex-start',
@@ -106,7 +115,6 @@ export default function QualityGate({ items = [], color = '#386FB3', title = 'Qu
             opacity: checked[i] ? 0.6 : 1,
             transition: 'opacity 0.2s ease',
           }}
-          onClick={() => toggle(i)}
         >
           <input
             type="checkbox"
@@ -138,9 +146,17 @@ export default function QualityGate({ items = [], color = '#386FB3', title = 'Qu
           }}
         >
           <span>🎉</span>
-          <span>Alle Kriterien erfüllt — bereit für den nächsten Raum!</span>
+          <span>{successText}</span>
         </div>
       )}
     </div>
   );
 }
+
+QualityGate.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.string),
+  color: PropTypes.string,
+  title: PropTypes.string,
+  progressText: PropTypes.func,
+  successText: PropTypes.string,
+};

@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
  *   bullets   — string[] bullet points (optional)
  *   goalText  — string   text inside the "Ziel" box (HTML allowed)
  */
-export default function RoomHero({ icon, label, color = '#386FB3', heading, intro, bullets = [], goalText }) {
+export default function RoomHero({ icon, label, color = '#386FB3', heading, intro, bullets = [], goalText, goalLabel = 'Ziel' }) {
   const alpha = (opacity) => {
     const r = Number.parseInt(color.slice(1, 3), 16);
     const g = Number.parseInt(color.slice(3, 5), 16);
@@ -105,7 +105,7 @@ export default function RoomHero({ icon, label, color = '#386FB3', heading, intr
                 letterSpacing: '0.05em',
               }}
             >
-              Ziel
+              {goalLabel}
             </strong>
           </div>
           <p
@@ -131,4 +131,5 @@ RoomHero.propTypes = {
   intro: PropTypes.string,
   bullets: PropTypes.arrayOf(PropTypes.string),
   goalText: PropTypes.string,
+  goalLabel: PropTypes.string,
 };
