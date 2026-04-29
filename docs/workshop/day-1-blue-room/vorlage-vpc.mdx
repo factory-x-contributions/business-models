@@ -1,34 +1,18 @@
 ---
 id: vorlage-vpc
-title: Vorlage – Value Proposition Canvas (Kundenseite)
+title: Vorlage – Value Proposition Canvas
 sidebar_position: 4
-sidebar_label: VPC Kundenseite
+sidebar_label: Value Proposition Canvas
 ---
 import { DayProvider } from '@site/src/components/DaySection';
-
-[← Tag 1 - Blauer Raum](./)
+import ValuePropositionCanvas from '@site/src/components/ValuePropositionCanvas';
 
 <DayProvider color="#386FB3">
 
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem'}}>
-  <div style={{background: 'rgba(56,111,179,0.06)', border: '1px solid rgba(56,111,179,0.2)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#386FB3', marginBottom: '0.5rem'}}>Customer Jobs</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)', marginBottom: '0.5rem'}}>Welche Aufgaben möchte der Kunde erledigen?</div>
-    <div style={{fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>— Funktionale Jobs<br/>— Emotionale Jobs<br/>— Soziale Jobs</div>
-  </div>
-  <div style={{background: 'rgba(184,84,80,0.06)', border: '1px solid rgba(184,84,80,0.2)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#B85450', marginBottom: '0.5rem'}}>Pains</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)', marginBottom: '0.5rem'}}>Was hindert oder frustriert den Kunden?</div>
-    <div style={{fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>— Kritischer Pain<br/>— Moderater Pain<br/>— Leichter Pain</div>
-  </div>
-  <div style={{background: 'rgba(132,204,22,0.06)', border: '1px solid rgba(132,204,22,0.3)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#4a7c00', marginBottom: '0.5rem'}}>Gains</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)', marginBottom: '0.5rem'}}>Was erhofft sich der Kunde?</div>
-    <div style={{fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>— Erforderlich<br/>— Erwartet<br/>— Gewünscht<br/>— Unerwartet</div>
-  </div>
-</div>
-<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
-  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
-</div>
+:::info[Workshop-Deck · Folie 20]
+Diese Vorlage entspricht **Folie 20** im Workshop-Deck (FX-0110) — verfügbar auf der [Vorbereitung](../workshop_preparation)-Seite.
+:::
+
+<ValuePropositionCanvas color="#386FB3" />
 
 </DayProvider>

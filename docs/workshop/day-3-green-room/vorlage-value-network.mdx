@@ -5,28 +5,14 @@ sidebar_position: 2
 sidebar_label: Value Network
 ---
 import { DayProvider } from '@site/src/components/DaySection';
-
-[← Tag 3 - Grüner Raum](./)
+import ValueNetwork from '@site/src/components/ValueNetwork';
 
 <DayProvider color="#6B8E50">
 
-<div style={{display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
-  {[
-    ['🏭 Akteure (Actors)', 'Alle beteiligten Einheiten eintragen: Betreiber, Anbieter, Cloud-Provider, Datenraum-Operator …'],
-    ['🎭 Rollen (Roles)', 'Data Provider · Data Consumer · Service Provider · Platform Operator · Orchestrator'],
-    ['⬛ Güterströme (Goods)', 'Physische Güter und Wartungsleistungen zwischen den Akteuren'],
-    ['🔵 Serviceströme (Services)', 'Digitale Leistungen: Software-Updates, Reports, Analysen'],
-    ['🟢 Datenströme (Data)', 'Rohdaten, aufbereitete Daten, Insights – mit Richtung und Bedingung'],
-    ['🟠 Finanzströme (Financial)', 'Zahlungen, Subscription-Gebühren, Pay-per-Use-Vergütungen'],
-  ].map(([label, hint], i) => (
-    <div key={i} style={{display: 'grid', gridTemplateColumns: 'minmax(120px, 200px) 1fr', gap: '0.5rem', alignItems: 'flex-start'}}>
-      <div style={{fontWeight: '600', fontSize: '0.9rem'}}>{label}</div>
-      <div style={{border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.4rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic', minHeight: '2rem'}}>{hint} …</div>
-    </div>
-  ))}
-</div>
-<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
-  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
-</div>
+:::info[Workshop-Deck · Folie 39]
+Diese Vorlage entspricht **Folie 39** im Workshop-Deck (FX-0110) — verfügbar auf der [Vorbereitung](../workshop_preparation)-Seite.
+:::
+
+<ValueNetwork color="#6B8E50" />
 
 </DayProvider>

@@ -1,32 +1,18 @@
 ---
 id: vorlage-vp-formulierung
-title: Template – Value Proposition Formulation Guide
+title: Template – VP Formulation
 sidebar_position: 2
 sidebar_label: VP Formulation
 ---
 import { DayProvider } from '@site/src/components/DaySection';
-
-[← Day 2 - Red Room](./)
+import ValuePropositionFormulierung from '@site/src/components/ValuePropositionFormulierung';
 
 <DayProvider color="#B85450">
 
-<div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
-  {[
-    ['Our', 'Name the product / service'],
-    ['helps', 'Enter customer segment / persona'],
-    ['who', 'Describe the customer\'s job'],
-    ['by', 'How the problem is solved / the gain is created'],
-    ['and thereby', 'Measurable customer benefit'],
-    ['in contrast to', 'Current alternative of the customer'],
-  ].map(([label, hint], i) => (
-    <div key={i} style={{display: 'grid', gridTemplateColumns: 'minmax(100px, 130px) 1fr', gap: '0.5rem', alignItems: 'center'}}>
-      <div style={{fontWeight: '600', fontSize: '0.9rem', color: '#B85450'}}>{label}</div>
-      <div style={{border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.4rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic', minHeight: '2rem'}}>{hint} …</div>
-    </div>
-  ))}
-</div>
-<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
-  The complete workshop deck is available for download on the <a href="../preparation">Preparation</a> page.
-</div>
+:::info[Workshop Deck · Slide 28]
+This template corresponds to **Slide 28** in the Workshop Deck (FX-0110) — available for download on the [Preparation](../workshop_preparation) page.
+:::
+
+<ValuePropositionFormulierung color="#B85450" lang="en" />
 
 </DayProvider>

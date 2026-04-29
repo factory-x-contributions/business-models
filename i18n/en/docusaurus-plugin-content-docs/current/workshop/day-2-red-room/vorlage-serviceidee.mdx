@@ -1,35 +1,18 @@
 ---
 id: vorlage-serviceidee
-title: Template – Product/Service Idea Canvas
+title: Template – Service Idea Canvas
 sidebar_position: 3
 sidebar_label: Service Idea Canvas
 ---
 import { DayProvider } from '@site/src/components/DaySection';
-
-[← Day 2 - Red Room](./)
+import ServiceideaCanvas from '@site/src/components/ServiceideaCanvas';
 
 <DayProvider color="#B85450">
 
-<div style={{overflowX: 'auto'}}>
-<div style={{marginBottom: '0.75rem', border: '1px dashed var(--ifm-color-emphasis-300)', borderRadius: '6px', padding: '0.5rem 0.75rem', fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic'}}>
-  Name &amp; short description (1 sentence) …
-</div>
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem'}}>
-  {[
-    ['Product / Service Components', 'What does it include? Components, modules, interfaces …'],
-    ['Features & Differentiation', 'What makes it special? Technical unique selling points …'],
-    ['Customer Benefits & Value View', 'What does the customer gain? Measurable and qualitative benefits …'],
-    ['Business Perspective & Strategic Fit', 'Why are we doing this? Strategic advantage, scaling …'],
-  ].map(([title, hint]) => (
-    <div key={title} style={{border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', padding: '0.75rem'}}>
-      <div style={{fontWeight: '600', fontSize: '0.85rem', marginBottom: '0.4rem'}}>{title}</div>
-      <div style={{fontSize: '0.82rem', color: 'var(--ifm-color-emphasis-500)', fontStyle: 'italic'}}>{hint}</div>
-    </div>
-  ))}
-</div>
-<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
-  The complete workshop deck is available for download on the <a href="../preparation">Preparation</a> page.
-</div>
-</div>
+:::info[Workshop Deck · Slide 30]
+This template corresponds to **Slide 30** in the Workshop Deck (FX-0110) — available for download on the [Preparation](../workshop_preparation) page.
+:::
+
+<ServiceideaCanvas color="#B85450" lang="en" />
 
 </DayProvider>

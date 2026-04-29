@@ -1,39 +1,18 @@
 ---
 id: vorlage-stakeholder-matrix
-title: Vorlage – Stakeholder-Matrix 2×2
+title: Vorlage – Stakeholder-Matrix
 sidebar_position: 2
 sidebar_label: Stakeholder-Matrix
 ---
 import { DayProvider } from '@site/src/components/DaySection';
-
-[← Tag 1 - Blauer Raum](./)
+import StakeholderMatrix from '@site/src/components/StakeholderMatrix';
 
 <DayProvider color="#386FB3">
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem'}}>
-  <div style={{background: 'rgba(56,111,179,0.06)', border: '1px solid rgba(56,111,179,0.2)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: '#386FB3'}}>Keep Satisfied</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Hoher Einfluss · Fern vom Problem</div>
-    <div style={{marginTop: '0.5rem', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>Stakeholder eintragen …</div>
-  </div>
-  <div style={{background: 'rgba(56,111,179,0.12)', border: '1px solid rgba(56,111,179,0.3)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: '#386FB3'}}>Actively Engaged</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Hoher Einfluss · Nah am Problem</div>
-    <div style={{marginTop: '0.5rem', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>Kern-Stakeholder eintragen …</div>
-  </div>
-  <div style={{background: 'rgba(234,179,8,0.06)', border: '1px solid rgba(234,179,8,0.2)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: '#92700a'}}>Monitor</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Niedriger Einfluss · Fern vom Problem</div>
-    <div style={{marginTop: '0.5rem', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>Stakeholder eintragen …</div>
-  </div>
-  <div style={{background: 'rgba(234,179,8,0.1)', border: '1px solid rgba(234,179,8,0.25)', borderRadius: '8px', padding: '1rem'}}>
-    <div style={{fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: '#92700a'}}>Keep Informed</div>
-    <div style={{fontSize: '0.85rem', color: 'var(--ifm-color-emphasis-600)'}}>Niedriger Einfluss · Nah am Problem</div>
-    <div style={{marginTop: '0.5rem', fontSize: '0.85rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-500)'}}>Stakeholder eintragen …</div>
-  </div>
-</div>
-<div style={{marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--ifm-color-emphasis-600)'}}>
-  Das vollständige Workshop-Deck steht auf der <a href="../preparation">Vorbereitung</a>-Seite zum Download bereit.
-</div>
+:::info[Workshop-Deck · Folie 15]
+Diese Vorlage entspricht **Folie 15** im Workshop-Deck (FX-0110) — verfügbar auf der [Vorbereitung](../workshop_preparation)-Seite.
+:::
+
+<StakeholderMatrix color="#386FB3" />
 
 </DayProvider>
