@@ -1,1 +1,0 @@
-../../../skills/revenue-mechanics-pricing/SKILL.md

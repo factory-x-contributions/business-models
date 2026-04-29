@@ -1,1 +1,0 @@
-../../../skills/company-assessment/SKILL.md

@@ -1,1 +1,0 @@
-../../../skills/value-network-analysis/SKILL.md

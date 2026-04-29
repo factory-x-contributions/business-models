@@ -1,1 +1,0 @@
-../../../skills/ecosystem-synthesis/SKILL.md

@@ -1,1 +1,0 @@
-../../../skills/30-60-90-day-roadmap/SKILL.md

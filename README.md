@@ -152,10 +152,11 @@ business-models/
 │       ├── single_prompt_best_practices.mdx
 │       ├── agentic_skills.mdx
 │       └── present_and_future.mdx
-├── skills/                      # Agentic Skills (Agent Skills standard)
-│   ├── business-idea-canvas/SKILL.md
-│   ├── house-building-logic/SKILL.md
-│   └── ...                      # 22 skills total
+├── .agents/
+│   └── skills/                  # Agentic Skills (Agent Skills standard)
+│       ├── business-idea-canvas/SKILL.md
+│       ├── house-building-logic/SKILL.md
+│       └── ...                  # 23 skills total
 ├── i18n/                        # Internationalization
 │   └── en/                      # English translations
 │       ├── docusaurus-theme-classic/

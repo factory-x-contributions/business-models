@@ -1,1 +1,0 @@
-../../../skills/vpc-customer-side/SKILL.md

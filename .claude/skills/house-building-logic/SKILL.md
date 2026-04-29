@@ -1,1 +1,0 @@
-../../../skills/house-building-logic/SKILL.md

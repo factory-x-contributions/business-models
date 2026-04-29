@@ -1,1 +1,0 @@
-../../../skills/value-proposition-formula/SKILL.md

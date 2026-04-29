@@ -1,1 +1,0 @@
-../../../skills/stakeholder-matrix/SKILL.md

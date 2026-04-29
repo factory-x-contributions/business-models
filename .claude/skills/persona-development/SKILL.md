@@ -1,1 +1,0 @@
-../../../skills/persona-development/SKILL.md

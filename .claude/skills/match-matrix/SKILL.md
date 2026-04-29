@@ -1,1 +1,0 @@
-../../../skills/match-matrix/SKILL.md

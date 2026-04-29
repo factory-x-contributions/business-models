@@ -1,1 +1,0 @@
-../../../skills/product-service-idea/SKILL.md

@@ -1,1 +1,0 @@
-../../../skills/value-creation-process/SKILL.md

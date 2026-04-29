@@ -1,1 +1,0 @@
-../../../skills/action-plan-raci/SKILL.md

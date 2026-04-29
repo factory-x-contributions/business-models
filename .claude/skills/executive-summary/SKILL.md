@@ -1,1 +1,0 @@
-../../../skills/executive-summary/SKILL.md

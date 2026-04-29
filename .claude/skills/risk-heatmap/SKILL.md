@@ -1,1 +1,0 @@
-../../../skills/risk-heatmap/SKILL.md

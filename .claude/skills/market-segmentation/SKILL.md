@@ -1,1 +1,0 @@
-../../../skills/market-segmentation/SKILL.md
