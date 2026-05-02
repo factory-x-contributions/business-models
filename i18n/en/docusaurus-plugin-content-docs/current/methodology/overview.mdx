@@ -9,16 +9,18 @@ keywords: [House-Building Logic, Business Model, Factory-X, data-driven business
 import GradientButton from '@site/src/components/buttons/GradientButton';
 import RoomHero from '@site/src/components/RoomHero';
 
-export const RoomButton = ({ href, title, subtitle, gradient, shadowColor, shadowColorHover, tooltip }) => (
+export const RoomButton = ({ href, title, subtitle, text, gradient, shadowColor, shadowColorHover, tooltip }) => (
   <div style={{ position: 'relative', display: 'contents' }} className="room-button-wrapper">
     <div style={{ position: 'relative' }} className="room-tooltip-anchor">
       <GradientButton
         href={href}
         text={
-          <span style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
-            <span>{title}</span>
-            <span style={{ fontSize: '11px', fontWeight: '400', opacity: '0.85', letterSpacing: '0.02em' }}>{subtitle}</span>
-          </span>
+          subtitle ? (
+            <span style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+              <span>{title || text}</span>
+              <span style={{ fontSize: '11px', fontWeight: '400', opacity: '0.85', letterSpacing: '0.02em' }}>{subtitle}</span>
+            </span>
+          ) : (title || text)
         }
         gradient={gradient}
         shadowColor={shadowColor}
