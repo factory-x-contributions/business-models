@@ -17,226 +17,224 @@ import Admonition from '@theme/Admonition';
   </div>
   <h2 style={{margin: '0 0 0.75rem 0', fontSize: '1.75rem', fontWeight: '700', letterSpacing: '-0.02em', color: 'var(--ifm-heading-color)'}}>What works today – and what will be possible tomorrow?</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.65', maxWidth: '600px'}}>
-    AI-assisted business model development is already productively usable today. At the same time, the technology is evolving rapidly – new use cases will become reality in the coming years.
+    AI-assisted business model development is already productively usable today – with the software companies already have licensed. This page shows how the House Building Logic is concretely implemented with existing platforms and where the journey is headed.
   </p>
 </div>
 
 ---
 
-## What works today?
+## Assessment: Software support for the House Building Logic
 
-<Tabs>
-  <TabItem value="single" label="📄 Single Prompt File" default>
+The decisive advantage: the [Agentic Skills](./agentic_skills) and the [Single Prompt File](./single_prompt_guide) work with any AI platform – no proprietary infrastructure required. The following tools differ in **how deeply they integrate with existing company data**.
 
-<div style={{padding: '1.25rem 0'}}>
+### SAP Ecosystem
 
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginBottom: '1rem'}}>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>🤖</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Guided Dialogue</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Estelle acts as a structured moderator guiding you through all rooms</div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>✅</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Quality Checks</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Consistency checks and critical questioning by the assistant</div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>📑</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Structured Outputs</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Ready-to-use documents per room – directly applicable</div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>🌐</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Platform-independent</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>ChatGPT, Claude, Copilot – any chatbot works</div>
-  </div>
-</div>
+Companies with an SAP license already have AI functions available today that access ERP and CRM data directly. This eliminates manual data transfer between systems and the methodology.
 
-</div>
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '0.85rem', marginBottom: '1.5rem', marginTop: '1rem'}}>
 
-  </TabItem>
-  <TabItem value="agentic" label="⚡ Agentic Skills">
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP Joule</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>Generative Copilot in S/4HANA, SAP CX, SuccessFactors</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Voice commands directly in the SAP context: prepare FI/CO data for <code>/cost-structure-analysis</code>, query SD data for <code>/market-segmentation</code> – without export.</div>
+    <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Blue Room</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Yellow Room</span>
+    </div>
+  </div>
 
-<div style={{padding: '1.25rem 0'}}>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP Analytics Cloud</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>AI-assisted planning, forecasting, simulation</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Smart Predict simulates pricing models and WTP scenarios directly based on historical transaction data – as a data-driven input for <code>/revenue-mechanics-pricing</code> and <code>/value-source-wtp</code>.</div>
+    <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Yellow Room</span>
+    </div>
+  </div>
 
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginBottom: '1rem'}}>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>🎯</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Individual Methods</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Each of the 23 methods callable selectively and independently</div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP AI Core & SAP Build</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>LLM hosting on BTP · Low-code automation</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Deploy the Agentic Skills as API endpoints on SAP BTP – EU-compliant data residency, SAP security policies. SAP Build models the flow through all five rooms as an automated process without coding.</div>
+    <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>All Rooms</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Enterprise Deployment</span>
+    </div>
   </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>🔄</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Iterative</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Repeat and refine steps as needed</div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>🔗</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Agent-compatible</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Already usable in agent setups and pipelines today</div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px'}}>
-    <div style={{fontSize: '1.4rem', marginBottom: '0.5rem'}}>⚙️</div>
-    <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Open Standard</div>
-    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Follows the Agent Skills standard – extensible and integrable</div>
-  </div>
-</div>
 
 </div>
 
-  </TabItem>
-</Tabs>
+<div style={{background: 'rgba(0,112,243,0.03)', border: '1px solid rgba(0,112,243,0.15)', borderRadius: '12px', padding: '1.25rem 1.5rem', marginBottom: '2rem'}}>
+  <div style={{fontWeight: '700', fontSize: '0.8rem', color: '#0070F3', marginBottom: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em'}}>💡 Concrete Scenario: Predictive Maintenance as a Service Business Model</div>
+  <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#0070F3', flexShrink: 0, minWidth: '90px'}}>Blue Room</span><span>SAP CX customer master + PM machine data → <code>/market-segmentation</code> clusters target customers by failure risk</span></div>
+    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#C0392B', flexShrink: 0, minWidth: '90px'}}>Red Room</span><span>Joule: "Which assets have the highest maintenance costs?" from S/4HANA → input for <code>/value-source-wtp</code></span></div>
+    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#27AE60', flexShrink: 0, minWidth: '90px'}}>Green Room</span><span>BTP Integration Suite connects OEM and sensor APIs → <code>/value-network-analysis</code> creates the ecosystem mapping</span></div>
+    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#F39C12', flexShrink: 0, minWidth: '90px'}}>Yellow Room</span><span>SAC simulates Subscription vs. Pay-per-Use → <code>/revenue-mechanics-pricing</code> structures the results</span></div>
+    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#8E44AD', flexShrink: 0, minWidth: '90px'}}>Exit Room</span><span>SAP Build orchestrates <code>/risk-heatmap</code> and <code>/30-60-90-day-roadmap</code> → output to SharePoint, notification via Teams</span></div>
+  </div>
+</div>
+
+### Alternatives by Platform
+
+The House Building Logic is not tied to SAP. Any platform can run the skills – the difference lies in the depth of data integration.
+
+<div style={{overflowX: 'auto', marginBottom: '2rem'}}>
+<table style={{width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '10px', overflow: 'hidden'}}>
+  <thead>
+    <tr style={{background: 'var(--ifm-color-emphasis-100)'}}>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Platform</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Run Skills</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Data Integration</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Entry Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'rgba(0,112,243,0.02)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#0070F3'}}>SAP (Joule / BTP)</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>AI Core, SAP Build</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>S/4HANA, SAP CX, SAC native</td>
+      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,112,243,0.1)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Medium</span></td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#0078D4'}}>Microsoft</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Copilot Studio, M365 Copilot, Azure OpenAI + Power Automate</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dynamics 365, SharePoint, Teams</td>
+      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,120,212,0.1)', color: '#0078D4', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Low–Medium</span></td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#00A1E0'}}>Salesforce</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Agentforce, Einstein Copilot</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Salesforce Data Cloud, CRM data</td>
+      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,161,224,0.1)', color: '#00A1E0', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Medium–High</span></td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#4285F4'}}>Google Cloud</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Vertex AI Agent Builder, Gemini for Workspace</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>BigQuery, Google Workspace</td>
+      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(66,133,244,0.1)', color: '#4285F4', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Medium–High</span></td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#34C759'}}>Platform-neutral</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dify, Flowise, n8n, LangChain – any LLM provider</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Any APIs, self-hosted possible</td>
+      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(52,199,89,0.1)', color: '#34C759', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Variable</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+### Which tool for which room?
+
+<div style={{overflowX: 'auto', marginBottom: '2rem'}}>
+<table style={{width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '10px', overflow: 'hidden'}}>
+  <thead>
+    <tr style={{background: 'var(--ifm-color-emphasis-100)'}}>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Room</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#0070F3'}}>SAP</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#0078D4'}}>Microsoft</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#34C759'}}>Platform-neutral</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🔵 Blue Room</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP CX, Joule</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dynamics + Copilot</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>LLM + CRM API</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🔴 Red Room</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Joule (PM/SD module)</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Copilot Studio</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Single Prompt File, Dify</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🟢 Green Room</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>BTP Integration Suite</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Power Automate</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>n8n, LangChain</td>
+    </tr>
+    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🟡 Yellow Room</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAC, SAP Revenue Accounting</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Power BI + Copilot</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Looker + LLM, Flowise</td>
+    </tr>
+    <tr>
+      <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🚪 Exit Room</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP Build, BTP</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Planner + Teams Copilot</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Confluence AI, Notion AI</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ---
 
-## What could be possible in the future?
+## Two paths to implementation
 
-<p style={{fontSize: '0.975rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.75', marginTop: '1rem', marginBottom: '2rem', paddingLeft: '1.1rem', borderLeft: '3px solid var(--ifm-color-emphasis-300)'}}>
-  The technical foundation is already in place – the Agentic Skills are pipeline-ready today. What is still missing: robust orchestration infrastructure, mature tool-use integrations, and the necessary trust in autonomous decisions. These three factors determine the pace of the following development stages.
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem'}}>
+
+<a href="/en/docs/ai/single_prompt_guide" style={{textDecoration: 'none', color: 'inherit', display: 'block', border: '1px solid rgba(149,165,50,0.3)', borderTop: '3px solid #95A532', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem'}}>
+    <span style={{fontSize: '1.2rem'}}>📄</span>
+    <span style={{fontWeight: '700', fontSize: '1rem', color: '#95A532'}}>Single Prompt File</span>
+  </div>
+  <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.75rem', lineHeight: '1.6'}}>
+    One file as a system prompt – AI assistant <strong>Estelle</strong> guides you through all five rooms. Works with any chatbot: ChatGPT, Joule, M365 Copilot, Claude.
+  </p>
+  <div style={{fontSize: '0.78rem', color: '#95A532', fontWeight: '600'}}>→ Start now – no setup</div>
+</a>
+
+<a href="/en/docs/ai/agentic_skills" style={{textDecoration: 'none', color: 'inherit', display: 'block', border: '1px solid rgba(56,111,179,0.3)', borderTop: '3px solid #386FB3', borderRadius: '12px', padding: '1.25rem', background: 'var(--ifm-background-surface-color)'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem'}}>
+    <span style={{fontSize: '1.2rem'}}>⚡</span>
+    <span style={{fontWeight: '700', fontSize: '1rem', color: '#386FB3'}}>Agentic Skills</span>
+  </div>
+  <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.75rem', lineHeight: '1.6'}}>
+    23 specialized skills – callable individually, integrable into pipelines. Directly usable with SAP BTP, Azure OpenAI, Vertex AI, or n8n.
+  </p>
+  <div style={{fontSize: '0.78rem', color: '#386FB3', fontWeight: '600'}}>→ For deep system integration</div>
+</a>
+
+</div>
+
+---
+
+## What will be possible in 1–3 years?
+
+<p style={{fontSize: '0.975rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.75', marginTop: '1rem', marginBottom: '1.5rem', paddingLeft: '1.1rem', borderLeft: '3px solid var(--ifm-color-emphasis-300)'}}>
+  The technical foundation is in place – the skills are pipeline-ready today. What is still missing: robust orchestration, mature tool-use integrations, and trust in autonomous decisions.
 </p>
 
-<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
-  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#34C759', flexShrink: 0}}></div>
-  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#34C759'}}>Available today</span>
-  <div style={{flex: 1, height: '1px', background: 'rgba(52,199,89,0.3)'}}></div>
-</div>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem'}}>
 
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(52,199,89,0.25)', borderLeft: '3px solid #34C759', borderRadius: '12px', overflow: 'hidden', marginBottom: '0.5rem'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(52,199,89,0.05)', borderBottom: '1px solid rgba(52,199,89,0.1)'}}>
-    <span style={{fontSize: '1.35rem'}}>🏢</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#34C759', letterSpacing: '-0.01em', flex: 1}}>Integration into Enterprise Tools</span>
-    <span style={{fontSize: '0.7rem', background: 'rgba(52,199,89,0.12)', color: '#34C759', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟢 Today</span>
-  </div>
-  <div style={{padding: '1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      CRM data flows directly into market segmentation, ERP data into cost structure. Results land automatically in Teams, Confluence, or Notion – no manual copy-paste.
-    </p>
-    <span style={{fontSize: '0.78rem', color: '#34C759', fontWeight: '500'}}>Tool-use support already available</span>
-    <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(52,199,89,0.15)', paddingTop: '0.8rem'}}>
-      <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#34C759'}}>💡 Concrete Scenario</summary>
-      <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(52,199,89,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
-        You call <code>/market-segmentation</code> in Cursor. The skill reads customer data from HubSpot, segments it according to the House Building Logic, and writes the finished document directly into Confluence – in under 5 minutes, without manual transfer.
-      </p>
-    </details>
-  </div>
-</div>
-
-<div style={{textAlign: 'center', padding: '0.5rem 0', fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-400)', userSelect: 'none', marginBottom: '0.5rem'}}>↓</div>
-
-<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
-  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#007AFF', flexShrink: 0}}></div>
-  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#007AFF'}}>12–18 Months</span>
-  <div style={{flex: 1, height: '1px', background: 'rgba(0,122,255,0.25)'}}></div>
-</div>
-
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '0.5rem'}}>
   <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(175,82,222,0.2)', borderLeft: '3px solid #AF52DE', borderRadius: '12px', overflow: 'hidden'}}>
-    <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(175,82,222,0.05)', borderBottom: '1px solid rgba(175,82,222,0.1)'}}>
-      <span style={{fontSize: '1.35rem'}}>🤖</span>
-      <span style={{fontWeight: '600', fontSize: '0.85rem', color: '#AF52DE', letterSpacing: '-0.01em', flex: 1}}>Fully Automated Agent Pipelines</span>
-      <span style={{fontSize: '0.7rem', background: 'rgba(175,82,222,0.1)', color: '#AF52DE', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟡 12–18 mo</span>
+    <div style={{padding: '0.9rem 1.1rem', display: 'flex', alignItems: 'center', gap: '0.6rem', background: 'rgba(175,82,222,0.04)', borderBottom: '1px solid rgba(175,82,222,0.1)'}}>
+      <span style={{fontSize: '1.2rem'}}>🤖</span>
+      <span style={{fontWeight: '600', fontSize: '0.875rem', color: '#AF52DE', flex: 1}}>Fully automated pipelines</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(175,82,222,0.1)', color: '#AF52DE', borderRadius: '20px', padding: '0.2rem 0.6rem', fontWeight: '600', flexShrink: 0}}>12–18 mo</span>
     </div>
-    <div style={{padding: '1rem 1.25rem'}}>
-      <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-        An orchestrator agent coordinates the entire process: calling skills in sequence, passing results, creating documents – with minimal human input.
-      </p>
-      <span style={{fontSize: '0.78rem', color: '#AF52DE', fontWeight: '500'}}>All 23 skills as atomic building blocks</span>
-      <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(175,82,222,0.12)', paddingTop: '0.8rem'}}>
-        <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#AF52DE'}}>💡 Concrete Scenario</summary>
-        <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(175,82,222,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
-          A product manager starts <code>/house-building-logic</code> in Claude Code. The orchestrator calls all 23 skills in sequence, passes outputs as context, and delivers a complete business model document in 45 minutes – without further input.
-        </p>
-      </details>
+    <div style={{padding: '0.9rem 1.1rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+      An orchestrator agent calls all 23 skills in sequence, passes outputs as context, and delivers a complete business model document in 45 minutes – on SAP BTP, Azure, or Vertex AI.
     </div>
   </div>
 
-  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,122,255,0.2)', borderLeft: '3px solid #007AFF', borderRadius: '12px', overflow: 'hidden'}}>
-    <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(0,122,255,0.04)', borderBottom: '1px solid rgba(0,122,255,0.1)'}}>
-      <span style={{fontSize: '1.35rem'}}>🧩</span>
-      <span style={{fontWeight: '600', fontSize: '0.85rem', color: '#007AFF', letterSpacing: '-0.01em', flex: 1}}>Multi-Agent Systems</span>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,122,255,0.08)', color: '#007AFF', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🟡 12–18 mo</span>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(255,149,0,0.2)', borderLeft: '3px solid #FF9500', borderRadius: '12px', overflow: 'hidden'}}>
+    <div style={{padding: '0.9rem 1.1rem', display: 'flex', alignItems: 'center', gap: '0.6rem', background: 'rgba(255,149,0,0.04)', borderBottom: '1px solid rgba(255,149,0,0.1)'}}>
+      <span style={{fontSize: '1.2rem'}}>📡</span>
+      <span style={{fontWeight: '600', fontSize: '0.875rem', color: '#FF9500', flex: 1}}>Continuous model maintenance</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(255,149,0,0.1)', color: '#FF9500', borderRadius: '20px', padding: '0.2rem 0.6rem', fontWeight: '600', flexShrink: 0}}>2–3 years</span>
     </div>
-    <div style={{padding: '1rem 1.25rem'}}>
-      <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-        Multiple specialized agents work in parallel: one analyzes customers, another the value proposition, a third the economics. A synthesis agent combines the results.
-      </p>
-      <span style={{fontSize: '0.78rem', color: '#007AFF', fontWeight: '500'}}>Dramatically shorter processing times</span>
-      <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(0,122,255,0.12)', paddingTop: '0.8rem'}}>
-        <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#007AFF'}}>💡 Concrete Scenario</summary>
-        <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(0,122,255,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
-          Three agents running in parallel simultaneously process market, value, and economics analysis. A fourth agent checks consistency between results and flags contradictions – the overall process runs in a fraction of the time.
-        </p>
-      </details>
+    <div style={{padding: '0.9rem 1.1rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+      A continuously running agent detects when model assumptions no longer hold – and automatically triggers <code>/market-segmentation</code> or <code>/risk-heatmap</code> for updates.
     </div>
   </div>
-</div>
 
-<div style={{textAlign: 'center', padding: '0.5rem 0', fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-400)', userSelect: 'none', marginBottom: '0.5rem'}}>↓</div>
-
-<div style={{display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.85rem'}}>
-  <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#FF9500', flexShrink: 0}}></div>
-  <span style={{fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#FF9500'}}>2–3 Years</span>
-  <div style={{flex: 1, height: '1px', background: 'rgba(255,149,0,0.25)'}}></div>
-</div>
-
-<div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(255,149,0,0.2)', borderLeft: '3px solid #FF9500', borderRadius: '12px', overflow: 'hidden', marginBottom: '2rem'}}>
-  <div style={{padding: '1rem 1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', background: 'rgba(255,149,0,0.04)', borderBottom: '1px solid rgba(255,149,0,0.1)'}}>
-    <span style={{fontSize: '1.35rem'}}>📡</span>
-    <span style={{fontWeight: '600', fontSize: '0.95rem', color: '#FF9500', letterSpacing: '-0.01em', flex: 1}}>Continuous Monitoring</span>
-    <span style={{fontSize: '0.7rem', background: 'rgba(255,149,0,0.1)', color: '#FF9500', borderRadius: '20px', padding: '0.2rem 0.65rem', fontWeight: '600', whiteSpace: 'nowrap', flexShrink: 0}}>🔴 2–3 Years</span>
-  </div>
-  <div style={{padding: '1rem 1.25rem'}}>
-    <p style={{margin: '0 0 0.6rem 0', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      A continuously running agent detects when business model assumptions no longer hold and selectively triggers individual skills for updates.
-    </p>
-    <span style={{fontSize: '0.78rem', color: '#FF9500', fontWeight: '500'}}>Business model always up to date</span>
-    <details style={{marginTop: '0.9rem', borderTop: '1px solid rgba(255,149,0,0.12)', paddingTop: '0.8rem'}}>
-      <summary style={{cursor: 'pointer', fontSize: '0.8rem', fontWeight: '600', color: '#FF9500'}}>💡 Concrete Scenario</summary>
-      <p style={{margin: '0.6rem 0 0 0', fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65, background: 'rgba(255,149,0,0.04)', borderRadius: '8px', padding: '0.75rem 1rem'}}>
-        An agent runs in the background and compares current market data with the assumptions in the business model weekly. If the TAM deviates by more than 20% or a new competitor appears, it automatically triggers <code>/market-segmentation</code> and <code>/risk-heatmap</code> – and notifies the team via Slack.
-      </p>
-    </details>
-  </div>
-</div>
-
----
-
-## Why are the Agentic Skills particularly well suited for this?
-
-The skills follow the open [Agent Skills](https://agentskills.io) standard and are designed from the ground up for use in agent environments:
-
-<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem', marginTop: '1rem', marginBottom: '1.5rem'}}>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', display: 'flex', gap: '0.75rem', alignItems: 'flex-start'}}>
-    <span style={{fontSize: '1.1rem', flexShrink: 0}}>🔌</span>
-    <div>
-      <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Defined Interfaces</div>
-      <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Clear inputs, outputs, and quality criteria – machine-readable and pipeline-ready</div>
-    </div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', display: 'flex', gap: '0.75rem', alignItems: 'flex-start'}}>
-    <span style={{fontSize: '1.1rem', flexShrink: 0}}>⚛️</span>
-    <div>
-      <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Atomic Structure</div>
-      <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Each skill is independently executable and freely combinable</div>
-    </div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', display: 'flex', gap: '0.75rem', alignItems: 'flex-start'}}>
-    <span style={{fontSize: '1.1rem', flexShrink: 0}}>📖</span>
-    <div>
-      <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Open Standard</div>
-      <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>Compatible with Claude Code and all Agent-Skills-compatible tools</div>
-    </div>
-  </div>
-  <div style={{padding: '1.1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '12px', display: 'flex', gap: '0.75rem', alignItems: 'flex-start'}}>
-    <span style={{fontSize: '1.1rem', flexShrink: 0}}>📈</span>
-    <div>
-      <div style={{fontWeight: '600', fontSize: '0.875rem', marginBottom: '0.25rem', letterSpacing: '-0.01em'}}>Scalable</div>
-      <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.5}}>From individual methods to a fully automated end-to-end process</div>
-    </div>
-  </div>
 </div>
 
 <Admonition type="tip" title="Get started now">
-The future starts today: The [Agentic Skills](./agentic_skills) are already usable in Claude Code and compatible tools – as a first step toward automated business model development.
+  The fastest entry point: load the [Single Prompt File](./single_prompt_guide) into your AI assistant – works today with SAP Joule, M365 Copilot, or ChatGPT. For deeper integration: embed the [Agentic Skills](./agentic_skills) directly in Claude Code, Copilot Studio, or SAP BTP.
 </Admonition>
