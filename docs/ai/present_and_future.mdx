@@ -17,7 +17,7 @@ import Admonition from '@theme/Admonition';
   </div>
   <h2 style={{margin: '0 0 0.75rem 0', fontSize: '1.75rem', fontWeight: '700', letterSpacing: '-0.02em', color: 'var(--ifm-heading-color)'}}>Was funktioniert heute – und was wird morgen möglich sein?</h2>
   <p style={{margin: 0, fontSize: '1.05rem', color: 'var(--ifm-font-color-secondary)', lineHeight: '1.65', maxWidth: '600px'}}>
-    AI-gestützte Geschäftsmodellentwicklung ist bereits heute produktiv einsetzbar – mit der Software, die Unternehmen bereits lizenziert haben. Diese Seite zeigt, wie die Hausbaulogik mit bestehenden Plattformen konkret umgesetzt wird und wohin die Reise geht.
+    AI-gestützte Geschäftsmodellentwicklung ist bereits heute produktiv einsetzbar – mit bestehenden Enterprise-Lizenzen oder vollständig selbst gehostet. Diese Seite zeigt, wie die Hausbaulogik mit verschiedenen Plattformen konkret umgesetzt wird und wohin die Reise geht.
   </p>
 </div>
 
@@ -25,103 +25,102 @@ import Admonition from '@theme/Admonition';
 
 ## Einschätzung: Softwareunterstützung für die Hausbaulogik
 
-Der entscheidende Vorteil: Die [Agentic Skills](./agentic_skills) und das [Single Prompt File](./single_prompt_guide) funktionieren mit jeder AI-Plattform – keine proprietäre Infrastruktur notwendig. Die folgenden Werkzeuge unterscheiden sich darin, **wie tief sie in bestehende Unternehmensdaten integriert** werden können.
+Der entscheidende Vorteil: Die [Agentic Skills](./agentic_skills) und das [Single Prompt File](./single_prompt_guide) funktionieren mit jeder AI-Plattform – keine proprietäre Infrastruktur notwendig. Die Wahl zwischen **Managed Cloud** und **Self-hosted** hängt von Datenschutzanforderungen, bestehenden Lizenzen und dem gewünschten Integrationsgrad ab.
 
-### SAP-Ökosystem
+### Managed Cloud Plattformen
 
-Unternehmen mit SAP-Lizenz haben heute AI-Funktionen verfügbar, die direkt auf ERP- und CRM-Daten zugreifen. Das eliminiert den manuellen Datentransfer zwischen Systemen und der Methodik.
+Bestehende Enterprise-Lizenzen bringen AI-Funktionen mit, die direkt auf ERP-, CRM- und Workspace-Daten zugreifen – ohne manuellen Datenexport.
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem', marginBottom: '1.5rem', marginTop: '1rem'}}>
+
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '0.9rem 1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP Joule · BTP</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.5rem'}}>S/4HANA, SAP CX, SAC, AI Core</div>
+    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6}}>Direktzugriff auf FI/CO-, SD- und PM-Module. Skills als API-Endpoints auf BTP deploybar, EU-konforme Datenhaltung.</div>
+  </div>
+
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,120,212,0.2)', borderLeft: '3px solid #0078D4', borderRadius: '10px', padding: '0.9rem 1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0078D4', marginBottom: '0.3rem'}}>Microsoft 365 · Azure</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.5rem'}}>M365 Copilot, Copilot Studio, Azure OpenAI</div>
+    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6}}>Skills in Power Automate einbinden, Dynamics 365 als Datenquelle, Teams und SharePoint als Ausgabekanal.</div>
+  </div>
+
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,161,224,0.2)', borderLeft: '3px solid #00A1E0', borderRadius: '10px', padding: '0.9rem 1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#00A1E0', marginBottom: '0.3rem'}}>Salesforce Agentforce</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.5rem'}}>Einstein Copilot, Data Cloud</div>
+    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6}}>CRM-Daten direkt für <code>/market-segmentation</code> und <code>/vpc-customer-side</code> nutzbar, Agentforce orchestriert Skill-Ketten.</div>
+  </div>
+
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(66,133,244,0.2)', borderLeft: '3px solid #4285F4', borderRadius: '10px', padding: '0.9rem 1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#4285F4', marginBottom: '0.3rem'}}>Google Cloud · Workspace</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.5rem'}}>Vertex AI Agent Builder, Gemini for Workspace</div>
+    <div style={{fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6}}>BigQuery als Datenquelle, Gemini-Agents für Skill-Orchestrierung, nahtlose Google Workspace-Integration.</div>
+  </div>
+
+</div>
+
+### Self-hosted & Open Source
+
+Vollständige Datenkontrolle – kein Cloud-Zwang. Geeignet für datenschutzkritische Umgebungen, Air-gapped-Infrastruktur und den Betrieb mit eigenen Modellen.
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '0.85rem', marginBottom: '1.5rem', marginTop: '1rem'}}>
 
-  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
-    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP Joule</div>
-    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>Generativer Copilot in S/4HANA, SAP CX, SuccessFactors</div>
-    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Sprachbefehle direkt im SAP-Kontext: FI/CO-Daten für <code>/cost-structure-analysis</code> aufbereiten, SD-Daten für <code>/market-segmentation</code> abfragen – ohne Export.</div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(5,150,105,0.25)', borderLeft: '3px solid #059669', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#059669', marginBottom: '0.3rem'}}>Dify</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>Open-source LLM-App-Plattform · selbst gehostet · Docker</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Skills als Chatflow oder Agent-Workflow deployen. RAG über interne Dokumente (Wartungsberichte, CRM-Exports) direkt einbinden – Input für <code>/value-source-wtp</code> und <code>/market-segmentation</code> ohne Datenweitergabe.</div>
     <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Blauer Raum</span>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Gelber Raum</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Blauer Raum</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Roter Raum</span>
     </div>
   </div>
 
-  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
-    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP Analytics Cloud</div>
-    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>AI-gestützte Planung, Forecasting, Simulation</div>
-    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Smart Predict simuliert Preismodelle und WTP-Szenarien direkt auf Basis historischer Transaktionsdaten – als datenbasierter Input für <code>/revenue-mechanics-pricing</code> und <code>/value-source-wtp</code>.</div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(5,150,105,0.25)', borderLeft: '3px solid #059669', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#059669', marginBottom: '0.3rem'}}>n8n · Flowise</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>Workflow-Automatisierung · visueller LLM-Builder · selbst gehostet</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>n8n orchestriert den Durchlauf durch alle fünf Räume als automatisierten Workflow und verbindet interne APIs ohne Cloud-Anbindung. Flowise modelliert Skill-Ketten visuell – ideal für <code>/value-network-analysis</code> und <code>/risk-heatmap</code>.</div>
     <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Gelber Raum</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Grüner Raum</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Alle Räume</span>
     </div>
   </div>
 
-  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(0,112,243,0.2)', borderLeft: '3px solid #0070F3', borderRadius: '10px', padding: '1rem 1.1rem'}}>
-    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#0070F3', marginBottom: '0.3rem'}}>SAP AI Core & SAP Build</div>
-    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>LLM-Hosting auf BTP · Low-Code-Automatisierung</div>
-    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Die Agentic Skills als API-Endpoints auf SAP BTP deployen – EU-konforme Datenhaltung, SAP-Sicherheitsrichtlinien. SAP Build modelliert den Durchlauf durch alle fünf Räume als automatisierten Prozess ohne Coding.</div>
+  <div style={{background: 'var(--ifm-background-surface-color)', border: '1px solid rgba(5,150,105,0.25)', borderLeft: '3px solid #059669', borderRadius: '10px', padding: '1rem 1.1rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.875rem', color: '#059669', marginBottom: '0.3rem'}}>Ollama · LocalAI</div>
+    <div style={{fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.6rem'}}>Lokale LLM-Ausführung · Air-gapped · OpenAI-kompatible API</div>
+    <div style={{fontSize: '0.84rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.6, marginBottom: '0.7rem'}}>Llama 3, Mistral oder Phi-4 vollständig lokal betreiben – keine Daten verlassen das Unternehmensnetz. LocalAI stellt eine OpenAI-kompatible API bereit, sodass alle Skills ohne Anpassung gegen lokale Modelle laufen.</div>
     <div style={{display: 'flex', gap: '0.35rem', flexWrap: 'wrap'}}>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Alle Räume</span>
-      <span style={{fontSize: '0.7rem', background: 'rgba(0,112,243,0.08)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Enterprise-Deployment</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Air-gapped</span>
+      <span style={{fontSize: '0.7rem', background: 'rgba(5,150,105,0.08)', color: '#059669', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Alle Räume</span>
     </div>
   </div>
 
 </div>
 
-<div style={{background: 'rgba(0,112,243,0.03)', border: '1px solid rgba(0,112,243,0.15)', borderRadius: '12px', padding: '1.25rem 1.5rem', marginBottom: '2rem'}}>
-  <div style={{fontWeight: '700', fontSize: '0.8rem', color: '#0070F3', marginBottom: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em'}}>💡 Konkretes Szenario: Predictive Maintenance als Service-Geschäftsmodell</div>
-  <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#0070F3', flexShrink: 0, minWidth: '90px'}}>Blauer Raum</span><span>SAP CX-Kundenstamm + PM-Maschinendaten → <code>/market-segmentation</code> clustert Zielkunden nach Ausfallrisiko</span></div>
-    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#C0392B', flexShrink: 0, minWidth: '90px'}}>Roter Raum</span><span>Joule: „Welche Assets haben die höchsten Wartungskosten?" aus S/4HANA → Input für <code>/value-source-wtp</code></span></div>
-    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#27AE60', flexShrink: 0, minWidth: '90px'}}>Grüner Raum</span><span>BTP Integration Suite verbindet OEM- und Sensor-APIs → <code>/value-network-analysis</code> erstellt das Ökosystem-Mapping</span></div>
-    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#F39C12', flexShrink: 0, minWidth: '90px'}}>Gelber Raum</span><span>SAC simuliert Subscription vs. Pay-per-Use → <code>/revenue-mechanics-pricing</code> strukturiert die Ergebnisse</span></div>
-    <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#8E44AD', flexShrink: 0, minWidth: '90px'}}>Exit-Raum</span><span>SAP Build orchestriert <code>/risk-heatmap</code> und <code>/30-60-90-day-roadmap</code> → Output in SharePoint, Benachrichtigung per Teams</span></div>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem'}}>
+
+  <div style={{background: 'rgba(0,112,243,0.03)', border: '1px solid rgba(0,112,243,0.15)', borderRadius: '12px', padding: '1.25rem 1.5rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.8rem', color: '#0070F3', marginBottom: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em'}}>☁️ Cloud-Szenario: Predictive Maintenance</div>
+    <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#0070F3', flexShrink: 0, minWidth: '90px'}}>Blauer Raum</span><span>SAP CX-Kundenstamm → <code>/market-segmentation</code> clustert nach Ausfallrisiko</span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#C0392B', flexShrink: 0, minWidth: '90px'}}>Roter Raum</span><span>Joule: S/4HANA-Wartungskosten → Input für <code>/value-source-wtp</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#27AE60', flexShrink: 0, minWidth: '90px'}}>Grüner Raum</span><span>BTP Integration Suite verbindet OEM-APIs → <code>/value-network-analysis</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#F39C12', flexShrink: 0, minWidth: '90px'}}>Gelber Raum</span><span>SAC simuliert Subscription vs. Pay-per-Use → <code>/revenue-mechanics-pricing</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#8E44AD', flexShrink: 0, minWidth: '90px'}}>Exit-Raum</span><span>SAP Build orchestriert → Output in SharePoint, Benachrichtigung per Teams</span></div>
+    </div>
   </div>
-</div>
 
-### Alternativen nach Plattform
+  <div style={{background: 'rgba(5,150,105,0.03)', border: '1px solid rgba(5,150,105,0.2)', borderRadius: '12px', padding: '1.25rem 1.5rem'}}>
+    <div style={{fontWeight: '700', fontSize: '0.8rem', color: '#059669', marginBottom: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em'}}>🏠 Self-hosted-Szenario: Predictive Maintenance</div>
+    <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#0070F3', flexShrink: 0, minWidth: '90px'}}>Blauer Raum</span><span>Dify + Ollama (Llama 3) auf CRM-CSV-Export → <code>/market-segmentation</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#C0392B', flexShrink: 0, minWidth: '90px'}}>Roter Raum</span><span>Dify-RAG auf lokalen Wartungsberichten → <code>/value-source-wtp</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#27AE60', flexShrink: 0, minWidth: '90px'}}>Grüner Raum</span><span>n8n verbindet interne Asset-APIs (kein Cloud-Zwang) → <code>/value-network-analysis</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#F39C12', flexShrink: 0, minWidth: '90px'}}>Gelber Raum</span><span>Flowise + lokale Transaktionsdaten → <code>/revenue-mechanics-pricing</code></span></div>
+      <div style={{display: 'flex', gap: '0.75rem'}}><span style={{fontWeight: '700', color: '#8E44AD', flexShrink: 0, minWidth: '90px'}}>Exit-Raum</span><span>n8n orchestriert → Export nach Confluence oder lokale Docs per Git</span></div>
+    </div>
+  </div>
 
-Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausführen – der Unterschied liegt in der Tiefe der Datenintegration.
-
-<div style={{overflowX: 'auto', marginBottom: '2rem'}}>
-<table style={{width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '10px', overflow: 'hidden'}}>
-  <thead>
-    <tr style={{background: 'var(--ifm-color-emphasis-100)'}}>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Plattform</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Skills ausführen</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Datenintegration</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Einstieg</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'rgba(0,112,243,0.02)'}}>
-      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#0070F3'}}>SAP (Joule / BTP)</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>AI Core, SAP Build</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>S/4HANA, SAP CX, SAC nativ</td>
-      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,112,243,0.1)', color: '#0070F3', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Mittel</span></td>
-    </tr>
-    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
-      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#0078D4'}}>Microsoft</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Copilot Studio, M365 Copilot, Azure OpenAI + Power Automate</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dynamics 365, SharePoint, Teams</td>
-      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,120,212,0.1)', color: '#0078D4', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Niedrig–Mittel</span></td>
-    </tr>
-    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
-      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#00A1E0'}}>Salesforce</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Agentforce, Einstein Copilot</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Salesforce Data Cloud, CRM-Daten</td>
-      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(0,161,224,0.1)', color: '#00A1E0', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Mittel–Hoch</span></td>
-    </tr>
-    <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
-      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#4285F4'}}>Google Cloud</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Vertex AI Agent Builder, Gemini for Workspace</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>BigQuery, Google Workspace</td>
-      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(66,133,244,0.1)', color: '#4285F4', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Mittel–Hoch</span></td>
-    </tr>
-    <tr>
-      <td style={{padding: '0.7rem 1rem', fontWeight: '600', color: '#34C759'}}>Plattformneutral</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dify, Flowise, n8n, LangChain – jeder LLM-Provider</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Beliebige APIs, Self-hosted möglich</td>
-      <td style={{padding: '0.7rem 1rem'}}><span style={{fontSize: '0.72rem', background: 'rgba(52,199,89,0.1)', color: '#34C759', borderRadius: '20px', padding: '0.15rem 0.55rem', fontWeight: '600'}}>Variabel</span></td>
-    </tr>
-  </tbody>
-</table>
 </div>
 
 ### Welches Tool für welchen Raum?
@@ -131,41 +130,35 @@ Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausf�
   <thead>
     <tr style={{background: 'var(--ifm-color-emphasis-100)'}}>
       <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)'}}>Raum</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#0070F3'}}>SAP</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#0078D4'}}>Microsoft</th>
-      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#34C759'}}>Plattformneutral</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#0070F3'}}>Managed Cloud</th>
+      <th style={{padding: '0.7rem 1rem', textAlign: 'left', fontWeight: '700', fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--ifm-color-emphasis-200)', color: '#059669'}}>Self-hosted / Open Source</th>
     </tr>
   </thead>
   <tbody>
     <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
       <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🔵 Blauer Raum</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP CX, Joule</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dynamics + Copilot</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>LLM + CRM-API</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP CX + Joule · Dynamics + Copilot · Salesforce Data Cloud · BigQuery</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dify + Ollama auf CRM-Export · AnythingLLM für Dokumente</td>
     </tr>
     <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
       <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🔴 Roter Raum</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Joule (PM/SD-Modul)</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Copilot Studio</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Single Prompt File, Dify</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Joule (PM/SD-Modul) · Copilot Studio · Einstein Copilot · Gemini</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Dify-RAG auf internen Berichten · Flowise + LocalAI</td>
     </tr>
     <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)'}}>
       <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🟢 Grüner Raum</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>BTP Integration Suite</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Power Automate</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>n8n, LangChain</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>BTP Integration Suite · Power Automate · Vertex AI Pipelines</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>n8n (API-Orchestrierung) · LangChain/LangGraph · Flowise</td>
     </tr>
     <tr style={{borderBottom: '1px solid var(--ifm-color-emphasis-200)', background: 'var(--ifm-color-emphasis-50)'}}>
       <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🟡 Gelber Raum</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAC, SAP Revenue Accounting</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Power BI + Copilot</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Looker + LLM, Flowise</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAC Smart Predict · Power BI + Copilot · Looker + Gemini</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Flowise + Tabellendaten · Metabase + Ollama · Observable</td>
     </tr>
     <tr>
       <td style={{padding: '0.7rem 1rem', fontWeight: '600', whiteSpace: 'nowrap'}}>🚪 Exit-Raum</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP Build, BTP</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Planner + Teams Copilot</td>
-      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>Confluence AI, Notion AI</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>SAP Build · Power Automate + Planner · Workspace Duet AI</td>
+      <td style={{padding: '0.7rem 1rem', color: 'var(--ifm-font-color-secondary)'}}>n8n → Confluence/Notion · Affine · lokales Markdown + Git</td>
     </tr>
   </tbody>
 </table>
@@ -183,7 +176,7 @@ Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausf�
     <span style={{fontWeight: '700', fontSize: '1rem', color: '#95A532'}}>Single Prompt File</span>
   </div>
   <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.75rem', lineHeight: '1.6'}}>
-    Eine Datei als System-Prompt – AI-Assistent <strong>Estelle</strong> führt durch alle fünf Räume. Funktioniert mit jedem Chatbot: ChatGPT, Joule, M365 Copilot, Claude.
+    Eine Datei als System-Prompt – AI-Assistent <strong>Estelle</strong> führt durch alle fünf Räume. Funktioniert mit jedem Chatbot: ChatGPT, Claude, M365 Copilot, Joule oder lokal mit Open WebUI.
   </p>
   <div style={{fontSize: '0.78rem', color: '#95A532', fontWeight: '600'}}>→ Jetzt starten – kein Setup</div>
 </a>
@@ -194,7 +187,7 @@ Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausf�
     <span style={{fontWeight: '700', fontSize: '1rem', color: '#386FB3'}}>Agentic Skills</span>
   </div>
   <p style={{fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.75rem', lineHeight: '1.6'}}>
-    23 spezialisierte Skills – einzeln aufrufbar, in Pipelines integrierbar. Direkt mit SAP BTP, Azure OpenAI, Vertex AI oder n8n einsetzbar.
+    23 spezialisierte Skills – einzeln aufrufbar, in Pipelines integrierbar. Einsetzbar mit SAP BTP, Azure OpenAI, Vertex AI oder vollständig self-hosted mit n8n, Dify und Ollama.
   </p>
   <div style={{fontSize: '0.78rem', color: '#386FB3', fontWeight: '600'}}>→ Für tiefe Systemintegration</div>
 </a>
@@ -218,7 +211,7 @@ Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausf�
       <span style={{fontSize: '0.7rem', background: 'rgba(175,82,222,0.1)', color: '#AF52DE', borderRadius: '20px', padding: '0.2rem 0.6rem', fontWeight: '600', flexShrink: 0}}>12–18 Mo</span>
     </div>
     <div style={{padding: '0.9rem 1.1rem', fontSize: '0.875rem', color: 'var(--ifm-font-color-secondary)', lineHeight: 1.65}}>
-      Ein Orchestrator-Agent ruft alle 23 Skills nacheinander auf, übergibt Outputs als Kontext und liefert in 45 Minuten ein vollständiges Geschäftsmodell-Dokument – auf SAP BTP, Azure oder Vertex AI.
+      Ein Orchestrator-Agent ruft alle 23 Skills nacheinander auf, übergibt Outputs als Kontext und liefert in 45 Minuten ein vollständiges Geschäftsmodell-Dokument – auf einer beliebigen Plattform oder vollständig self-hosted.
     </div>
   </div>
 
@@ -236,5 +229,5 @@ Die Hausbaulogik ist nicht an SAP gebunden. Jede Plattform kann die Skills ausf�
 </div>
 
 <Admonition type="tip" title="Jetzt starten">
-  Der schnellste Einstieg: [Single Prompt File](./single_prompt_guide) in den eigenen AI-Assistenten laden – funktioniert heute mit SAP Joule, M365 Copilot oder ChatGPT. Für tiefere Integration: [Agentic Skills](./agentic_skills) direkt in Claude Code, Copilot Studio oder SAP BTP einbinden.
+  Der schnellste Einstieg: [Single Prompt File](./single_prompt_guide) in den eigenen AI-Assistenten laden – funktioniert heute mit ChatGPT, Claude, M365 Copilot, SAP Joule oder lokal mit Ollama + Open WebUI. Für tiefere Integration: [Agentic Skills](./agentic_skills) in Dify, n8n, Copilot Studio oder SAP BTP einbinden.
 </Admonition>
