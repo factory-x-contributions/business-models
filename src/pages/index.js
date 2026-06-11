@@ -22,7 +22,7 @@ function HomepageHeader() {
 
         <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', alignItems: 'center', marginTop: '25px', marginBottom: '40px', flexWrap: 'wrap' }}>
           <GradientButton
-            href="docs/methodology/overview"
+            href="docs/landing"
             text={<Translate id="homepage.startButton">Start</Translate>}
             gradient="linear-gradient(135deg, #95A532 0%, #727B1E 100%)"
             shadowColor="rgba(149, 165, 50, 0.4)"

@@ -2,6 +2,153 @@
   "homepage.startButton": {
     "message": "Start"
   },
+  "landing.section1.title": {
+    "message": "Rethinking Business Models in the Data Space"
+  },
+  "landing.section1.p1": {
+    "message": "Data spaces are fundamentally changing the rules of industrial value creation. For the first time, they enable secure, sovereign, and scalable collaboration across company boundaries – and with it the long-awaited scaling of novel data-driven services, products, and cooperations."
+  },
+  "landing.section1.p2": {
+    "message": "But the real lever is not in the technology. It lies in the business model."
+  },
+  "landing.section2.title": {
+    "message": "Why Data Spaces Are Becoming Relevant Now"
+  },
+  "landing.section2.p1": {
+    "message": "Industrial value creation is under pressure: increasing complexity, growing competition, and new regulatory requirements. At the same time, classic digitalization approaches are reaching their limits – isolated solutions and proprietary platforms can hardly be scaled."
+  },
+  "landing.section2.p2": {
+    "message": "Data spaces address exactly this challenge: they create a shared infrastructure for multilateral data sharing without giving up control over your own data. This opens up new possibilities:"
+  },
+  "landing.section2.li1": {
+    "message": "Efficiency gains along the entire value chain"
+  },
+  "landing.section2.li2": {
+    "message": "Transparency and resilience in supply chains"
+  },
+  "landing.section2.li3": {
+    "message": "Data-driven services and digital add-on products"
+  },
+  "landing.section2.li4": {
+    "message": "New cooperations between previously separate market roles"
+  },
+  "landing.section2.p3": {
+    "message": "This places data itself at the center of value creation."
+  },
+  "landing.section3.title": {
+    "message": "The Opportunity: New Business Models Are Emerging"
+  },
+  "landing.section3.p1": {
+    "message": "New perspectives are opening up for companies:"
+  },
+  "landing.section3.li1": {
+    "message": "From bilateral relationships to ecosystems with many partners"
+  },
+  "landing.section3.p2": {
+    "message": "This is exemplified in mechanical and plant engineering: instead of only delivering machines, Condition Monitoring, Predictive Maintenance, or performance-based services are increasingly possible – based on operational data from the data space."
+  },
+  "landing.section3.p3": {
+    "message": "Data spaces thus enable what was previously hardly scalable: data-driven business models across company boundaries. In principle, three ways of unlocking new or additional revenue streams are conceivable:"
+  },
+  "landing.section3.li2": {
+    "message": "Expanding the USP of the core product (machines/components etc.) through data / data-based features to scale hardware revenues"
+  },
+  "landing.section3.li3": {
+    "message": "Using data to generate additional revenues through new / expanded services"
+  },
+  "landing.section3.li4": {
+    "message": "Additional revenues through the sale of data \"per se\""
+  },
+  "landing.section3.p4": {
+    "message": "At the same time, this opportunity exists not only for providers of new services. Companies that primarily want to use offerings in the data space also benefit – through more efficient processes, better transparency, and access to new services. However, to realize these potentials, they too must evolve their business models, for example in how they source, integrate, and evaluate services or how they shape collaboration and value contributions in the ecosystem."
+  },
+  "landing.section4.title": {
+    "message": "The Challenge: Business Model Innovation Is Not Automatic"
+  },
+  "landing.section4.p1": {
+    "message": "As great as the opportunity is – it is not trivial to realize."
+  },
+  "landing.section4.p2": {
+    "message": "Data space-based business models change not only products but the entire company – regardless of whether it acts as a provider or a user in the data space:"
+  },
+  "landing.section4.li1": {
+    "message": "New roles in the value creation network"
+  },
+  "landing.section4.li2": {
+    "message": "Changes in customer and supplier relationships"
+  },
+  "landing.section4.li3": {
+    "message": "New forms of service integration and accountability"
+  },
+  "landing.section4.p3": {
+    "message": "Many companies underestimate this dimension."
+  },
+  "landing.section4.p4": {
+    "message": "Even simply using data-based services in the data space is not a plug-and-play approach. It requires adjustments to your own business model – in the organization, in processes, or in the evaluation of external services and data."
+  },
+  "landing.section4.p5": {
+    "message": "Business models cannot simply be extended. They require a systematic rethinking of value creation, roles, and monetization – for both providers and users in the data space."
+  },
+  "landing.section5.title": {
+    "message": "Why a Dedicated Sub-Project \"Business Models\" in Factory-X"
+  },
+  "landing.section5.p1": {
+    "message": "Against this background, a dedicated sub-project for business models was deliberately initiated in the Factory-X project."
+  },
+  "landing.section5.p2": {
+    "message": "The central question is:"
+  },
+  "landing.section5.quote": {
+    "message": "\"How can companies systematically unlock the potential of data spaces and translate it into economically viable business models?\""
+  },
+  "landing.section5.p3": {
+    "message": "Because:"
+  },
+  "landing.section5.li1": {
+    "message": "Technological solutions alone fall short"
+  },
+  "landing.section5.li2": {
+    "message": "Successful use cases require suitable business logic"
+  },
+  "landing.section5.li3": {
+    "message": "Scaling in the data space only works when all participants benefit"
+  },
+  "landing.section5.p4": {
+    "message": "This is exactly where the sub-project comes in."
+  },
+  "landing.contrib.title": {
+    "message": "Our Contribution from Factory-X"
+  },
+  "landing.contrib.intro": {
+    "message": "In the Business Models sub-project, central building blocks were developed to facilitate companies' entry:"
+  },
+  "landing.contrib.button": {
+    "message": "Learn more"
+  },
+  "landing.contrib.1.title": {
+    "message": "Practical Methodology"
+  },
+  "landing.contrib.1.desc": {
+    "message": "A structured approach to developing data space-based business models – from the customer perspective to monetization."
+  },
+  "landing.contrib.2.title": {
+    "message": "Application to Concrete Use Cases"
+  },
+  "landing.contrib.2.desc": {
+    "message": "The methodology applied to real use cases from the Factory-X context."
+  },
+  "landing.contrib.3.title": {
+    "message": "AI-Based Business Model Assistant"
+  },
+  "landing.contrib.3.desc": {
+    "message": "A new approach to scaling business model development and actively supporting companies."
+  },
+  "landing.contrib.4.title": {
+    "message": "Workshop Concept for Systematic Business Model Design"
+  },
+  "landing.contrib.4.desc": {
+    "message": "Clear processes, guidelines, and templates for a 5-day workshop in which a viable, data-driven business model is developed step by step."
+  },
   "pdf.downloadButton": {
     "message": "PDF",
     "description": "Label for the PDF download button"

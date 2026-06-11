@@ -92,3 +92,102 @@
 .startButton:hover svg {
   transform: translateX(4px);
 }
+
+/* Landing page sections */
+.sectionLight {
+  padding: 4rem 2rem;
+  background-color: var(--ifm-background-color);
+}
+
+.sectionGray {
+  padding: 4rem 2rem;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.sectionContent {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.sectionContent h2 {
+  margin-bottom: 1.25rem;
+}
+
+.sectionContent p,
+.sectionContent ul {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.sectionContent ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sectionContent li {
+  margin-bottom: 0.4rem;
+}
+
+.keyQuestion {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: var(--ifm-color-primary-lightest, rgba(56, 111, 179, 0.06));
+  border-radius: 0 4px 4px 0;
+}
+
+/* Contribution cards */
+.contributionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contributionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contributionCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contributionCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.25rem;
+}
+
+.cardButton {
+  margin-top: auto;
+}
