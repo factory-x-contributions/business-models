@@ -8,6 +8,12 @@
   <strong>Subproject 3: Methodology and Tools for Developing Data-Driven Business Models</strong>
 </p>
 
+> **⚠️ Project End Notice / Hinweis zum Projektende**
+>
+> The Factory-X funded project is approaching its end. The website at [factory-x-contributions.github.io/business-models](https://factory-x-contributions.github.io/business-models/) will only remain available for a limited time after the project concludes. All content remains permanently accessible via this repository under the open-source licenses below.
+>
+> Das Förderprojekt Factory-X nähert sich seinem Ende. Die Website unter [factory-x-contributions.github.io/business-models](https://factory-x-contributions.github.io/business-models/) wird nach Abschluss der Projektlaufzeit nur noch zeitlich begrenzt verfügbar sein. Alle Inhalte bleiben dauerhaft über dieses Repository unter den unten genannten Open-Source-Lizenzen zugänglich.
+
 <p align="center">
   <a href="https://factory-x-contributions.github.io/business-models/">
     <img src="https://img.shields.io/badge/🌐 Live Website-factory--x--contributions.github.io-0066cc?style=for-the-badge" alt="Live Website"/>

@@ -67,6 +67,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'https://factory-x.org/wp-content/uploads//factory-x-logo.svg',
+      announcementBar: {
+        id: 'project_end_notice',
+        content:
+          '⚠️ Die Projektlaufzeit von Factory-X endet – diese Website ist nur noch zeitlich begrenzt verfügbar. | ⚠️ The Factory-X project is ending – this website will only be available for a limited time.',
+        backgroundColor: '#f5a623',
+        textColor: '#1a1a1a',
+        isCloseable: true,
+      },
       colorMode: {
         respectPrefersColorScheme: true,
       },

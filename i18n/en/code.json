@@ -2,6 +2,15 @@
   "homepage.startButton": {
     "message": "Start"
   },
+  "projectEnd.title": {
+    "message": "Factory-X Project Ending"
+  },
+  "projectEnd.body": {
+    "message": "The Factory-X funded project is approaching its end. As the project concludes, this website will only remain available for a limited period. All content – the House Building Logic, the AI Assistant, the Workshop format, and the Agentic Skills – is open source and will remain permanently accessible via the GitHub repository."
+  },
+  "projectEnd.githubButton": {
+    "message": "Repository on GitHub"
+  },
   "landing.section1.title": {
     "message": "Rethinking Business Models in the Data Space"
   },
