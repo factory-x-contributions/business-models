@@ -188,45 +188,6 @@
   margin-bottom: 1.25rem;
 }
 
-/* Project End Notice Block */
-.projectEndSection {
-  padding: 3rem 2rem;
-  background-color: #fff8e6;
-  border-top: 3px solid #f5a623;
-}
-
-[data-theme='dark'] .projectEndSection {
-  background-color: #2a2310;
-  border-top-color: #c47c00;
-}
-
-.projectEndContent {
-  max-width: 760px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.projectEndIcon {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1;
-}
-
-.projectEndContent h2 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-}
-
-.projectEndContent p {
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: var(--ifm-color-emphasis-800);
-  margin-bottom: 1.5rem;
-}
-
-.projectEndActions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+.cardButton {
+  margin-top: auto;
 }
