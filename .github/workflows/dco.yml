@@ -24,5 +24,5 @@ jobs:
           path-to-signatures: 'signatures/version1/cla.json'
           path-to-document: 'https://developercertificate.org/'
           branch: 'main'
-          allowlist: bot*
+          allowlist: bot*,dependabot*
           custom-pr-sign-comment: 'I have read the DCO Document and I hereby sign the DCO'
