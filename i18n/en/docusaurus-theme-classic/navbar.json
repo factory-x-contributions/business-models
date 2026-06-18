@@ -11,6 +11,10 @@
     "message": "Methodology",
     "description": "Navbar item with label Methodik"
   },
+  "item.label.Anwendungsbeispiele": {
+    "message": "Application Examples",
+    "description": "Navbar item with label Anwendungsbeispiele"
+  },
   "item.label.AI-Assistent": {
     "message": "AI Assistant",
     "description": "Navbar item with label AI-Assistent"
