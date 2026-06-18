@@ -6,12 +6,23 @@ import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import RestartAltOutlinedIcon from '@mui/icons-material/RestartAltOutlined';
+import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
+import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 
-const DEFAULT_COLOR = '#B85450';
+const SECTION_META = {
+  bestandteile: { color: '#4A7FA8', Icon: ExtensionOutlinedIcon },
+  leistung:     { color: '#7B5EA7', Icon: StarOutlinedIcon },
+  nutzen:       { color: '#6B8E50', Icon: EmojiEventsOutlinedIcon },
+  unternehmen:  { color: '#C07830', Icon: BusinessOutlinedIcon },
+};
 
 function hexToRgb(hex) {
   const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r ? `${parseInt(r[1], 16)}, ${parseInt(r[2], 16)}, ${parseInt(r[3], 16)}` : '184, 84, 80';
+  return r
+    ? `${Number.parseInt(r[1], 16)}, ${Number.parseInt(r[2], 16)}, ${Number.parseInt(r[3], 16)}`
+    : '184, 84, 80';
 }
 
 function actionSx(color, rgb, primary = false) {
@@ -49,7 +60,12 @@ function Cell({ value, placeholder, onChange, color }) {
     />
   );
 }
-Cell.propTypes = { value: PropTypes.string.isRequired, placeholder: PropTypes.string, onChange: PropTypes.func.isRequired, color: PropTypes.string.isRequired };
+Cell.propTypes = {
+  value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 const LABELS = {
   de: {
@@ -61,6 +77,7 @@ const LABELS = {
       { key: 'unternehmen', label: 'Unternehmenssicht & strategischer Fit', ph: 'Warum ist der Service strategisch relevant?…' },
     ],
     reset: 'Zurücksetzen', csv: 'CSV', pdf: 'PDF', filename: 'serviceidee-canvas',
+    progress: 'Felder ausgefüllt',
   },
   en: {
     nameLabel: 'Service Name / Title', namePh: 'Name of the service idea…',
@@ -71,12 +88,15 @@ const LABELS = {
       { key: 'unternehmen', label: 'Business View & Strategic Fit', ph: 'Why is the service strategically relevant?…' },
     ],
     reset: 'Reset', csv: 'CSV', pdf: 'PDF', filename: 'service-idea-canvas',
+    progress: 'fields filled',
   },
 };
 
+const TOTAL_FIELDS = 5;
+
 const makeInitialState = () => ({ name: '', bestandteile: '', leistung: '', nutzen: '', unternehmen: '' });
 
-export default function ServiceideaCanvas({ color = DEFAULT_COLOR, lang = 'de' }) {
+export default function ServiceideaCanvas({ color = '#B85450', lang = 'de' }) {
   const L = LABELS[lang] ?? LABELS.de;
   const rgb = hexToRgb(color);
   const [state, setState] = useState(makeInitialState);
@@ -89,12 +109,18 @@ export default function ServiceideaCanvas({ color = DEFAULT_COLOR, lang = 'de' }
       [L.nameLabel, state.name],
       ...L.sections.map(s => [s.label, state[s.key]]),
     ];
-    const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+    const csv = rows
+      .map(r => r.map(c => `"${String(c).replaceAll('"', '""')}"`).join(','))
+      .join('\r\n');
     const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `${L.filename}.csv`;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    a.href = url;
+    a.download = `${L.filename}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   };
 
   const downloadPdf = async () => {
@@ -107,40 +133,157 @@ export default function ServiceideaCanvas({ color = DEFAULT_COLOR, lang = 'de' }
     }).from(tableRef.current).save();
   };
 
-  const cellBorder = '1px solid var(--ifm-table-border-color, var(--ifm-color-emphasis-300))';
+  const filledCount = Object.values(state).filter(v => v.trim().length > 0).length;
 
-  const sectionCard = (sec) => (
-    <div key={sec.key} style={{ border: cellBorder, borderRadius: 6, overflow: 'hidden' }}>
-      <div style={{ padding: '0.5rem 0.75rem', background: `rgba(${rgb}, 0.08)`, borderBottom: `2px solid ${color}`, fontWeight: 700, fontSize: '0.85rem', color }}>
-        {sec.label}
+  const sectionCard = (sec) => {
+    const meta = SECTION_META[sec.key];
+    const secColor = meta.color;
+    const secRgb = hexToRgb(secColor);
+    const { Icon } = meta;
+    const isFilled = state[sec.key].trim().length > 0;
+
+    return (
+      <div
+        key={sec.key}
+        style={{
+          borderRadius: '6px',
+          border: '1px solid var(--ifm-color-emphasis-200)',
+          borderLeft: `4px solid ${secColor}`,
+          overflow: 'hidden',
+        }}
+      >
+        <div
+          style={{
+            padding: '0.5rem 0.75rem',
+            background: `rgba(${secRgb}, 0.08)`,
+            borderBottom: `1px solid rgba(${secRgb}, 0.2)`,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+          }}
+        >
+          <Icon style={{ fontSize: '1rem', color: secColor, flexShrink: 0 }} />
+          <span style={{ fontWeight: 700, fontSize: '0.82rem', color: secColor, flex: 1 }}>
+            {sec.label}
+          </span>
+          {isFilled && (
+            <span
+              style={{
+                width: '8px',
+                height: '8px',
+                borderRadius: '50%',
+                backgroundColor: secColor,
+                flexShrink: 0,
+              }}
+            />
+          )}
+        </div>
+        <Cell
+          value={state[sec.key]}
+          placeholder={sec.ph}
+          onChange={val => setState(s => ({ ...s, [sec.key]: val }))}
+          color={secColor}
+        />
       </div>
-      <Cell value={state[sec.key]} placeholder={sec.ph} onChange={val => setState(s => ({ ...s, [sec.key]: val }))} color={color} />
-    </div>
-  );
+    );
+  };
 
   return (
-    <div>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
+    <div
+      style={{
+        borderRadius: '8px',
+        border: '1px solid var(--ifm-color-emphasis-200)',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Toolbar */}
+      <div
+        style={{
+          display: 'flex',
+          gap: '0.5rem',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          padding: '0.6rem 0.75rem',
+          borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+          background: 'var(--ifm-card-background-color)',
+        }}
+      >
         <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadCsv} sx={actionSx(color, rgb, true)}>{L.csv}</Button>
         <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadPdf} sx={actionSx(color, rgb, true)}>{L.pdf}</Button>
         <Button variant="outlined" size="small" startIcon={<RestartAltOutlinedIcon />} onClick={reset} sx={actionSx(color, rgb, false)}>{L.reset}</Button>
+        <span
+          style={{
+            marginLeft: 'auto',
+            fontSize: '0.78rem',
+            color: 'var(--ifm-font-color-secondary)',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {filledCount}/{TOTAL_FIELDS} {L.progress}
+        </span>
       </div>
-      <div ref={tableRef}>
-        <div style={{ border: cellBorder, borderRadius: 6, overflow: 'hidden', marginBottom: '1rem' }}>
-          <div style={{ padding: '0.5rem 0.75rem', background: `rgba(${rgb}, 0.08)`, borderBottom: `2px solid ${color}`, fontWeight: 700, fontSize: '0.85rem', color }}>
-            {L.nameLabel}
+
+      {/* Canvas body */}
+      <div ref={tableRef} style={{ padding: '0.75rem' }}>
+        {/* Title / hero area */}
+        <div
+          style={{
+            borderRadius: '6px',
+            border: '1px solid var(--ifm-color-emphasis-200)',
+            borderLeft: `4px solid ${color}`,
+            overflow: 'hidden',
+            marginBottom: '0.75rem',
+          }}
+        >
+          <div
+            style={{
+              padding: '0.5rem 0.75rem',
+              background: `rgba(${rgb}, 0.08)`,
+              borderBottom: `1px solid rgba(${rgb}, 0.2)`,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+            }}
+          >
+            <span style={{ fontWeight: 700, fontSize: '0.82rem', color, flex: 1 }}>
+              {L.nameLabel}
+            </span>
+            {state.name.trim().length > 0 && (
+              <span
+                style={{
+                  width: '8px',
+                  height: '8px',
+                  borderRadius: '50%',
+                  backgroundColor: color,
+                  flexShrink: 0,
+                }}
+              />
+            )}
           </div>
           <textarea
             value={state.name}
             placeholder={L.namePh}
             rows={1}
-            onChange={e => { setState(s => ({ ...s, name: e.target.value })); e.target.style.height = 'auto'; e.target.style.height = `${e.target.scrollHeight}px`; }}
+            onChange={e => {
+              setState(s => ({ ...s, name: e.target.value }));
+              e.target.style.height = 'auto';
+              e.target.style.height = `${e.target.scrollHeight}px`;
+            }}
             onFocus={e => { e.target.style.background = `rgba(${rgb}, 0.05)`; }}
             onBlur={e => { e.target.style.background = 'transparent'; }}
-            style={{ width: '100%', resize: 'none', overflow: 'hidden', border: 'none', outline: 'none', background: 'transparent', padding: '0.6rem 0.75rem', fontSize: '1rem', fontWeight: 600, fontFamily: 'inherit', color: 'var(--ifm-font-color-base)', lineHeight: 1.45, minHeight: '2.8rem', boxSizing: 'border-box', transition: 'background 0.15s' }}
+            style={{
+              width: '100%', resize: 'none', overflow: 'hidden', border: 'none', outline: 'none',
+              background: 'transparent', padding: '0.6rem 0.75rem',
+              fontSize: '1.1rem', fontWeight: 700,
+              fontFamily: 'inherit', color: 'var(--ifm-font-color-base)', lineHeight: 1.45,
+              minHeight: '2.8rem', boxSizing: 'border-box', transition: 'background 0.15s',
+            }}
           />
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+
+        {/* 2x2 section grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
           {L.sections.map(sectionCard)}
         </div>
       </div>

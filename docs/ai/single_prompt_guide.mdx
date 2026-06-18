@@ -6,6 +6,7 @@ sidebar_position: 2
 keywords: [Estelle, AI-Assistent, System Prompt, Anleitung, ChatGPT, Claude, Geschäftsmodellentwicklung, Factory-X]
 ---
 import Admonition from '@theme/Admonition';
+import { CopyPromptBox } from '@site/src/components/CopyPromptBox';
 
 <br></br>
 
@@ -22,15 +23,19 @@ import Admonition from '@theme/Admonition';
 
 ---
 
-## Schritt 1: Dokument herunterladen
-
-Lade die AI-Prompt-Datei herunter, um diese später in deinem AI-Tool aktivieren zu können.
+<div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem'}}>
+  <div style={{flexShrink: 0, width: '2rem', height: '2rem', borderRadius: '50%', background: '#386FB3', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '700', fontSize: '1rem', marginTop: '0.15rem'}}>1</div>
+  <div>
+    <h2 style={{margin: '0 0 0.4rem 0'}}>Dokument herunterladen</h2>
+    <p style={{margin: 0, color: 'var(--ifm-font-color-secondary)', fontSize: '0.95rem'}}>Lade die AI-Prompt-Datei herunter, um diese später in deinem AI-Tool aktivieren zu können.</p>
+  </div>
+</div>
 
 import { GradientButton } from '@site/src/components/buttons/GradientButton';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<div style={{marginTop: '1rem', display: 'inline-block'}}>
+<div style={{marginTop: '1rem', marginLeft: '3rem', display: 'inline-block'}}>
   <GradientButton
     href={useBaseUrl('/files/ai/DE_BusinessModel_SinglePrompt.md')}
     download="DE_BusinessModel_SinglePrompt.md"
@@ -44,36 +49,71 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   />
 </div>
 
-
-
 ---
 
-## Schritt 2: Datei in AI-Tool einfügen
-
-Öffne dein bevorzugtes AI-Tool (z.B. ChatGPT, Claude, Copilot) und lade die heruntergeladene Datei hoch oder füge den Inhalt ein.
-
-<Admonition type="info" title="Datenschutz beachten">
-Die erarbeiteten Geschäftsmodell-Daten sind sensibel. Nutze bevorzugt unternehmensinterne Chatbots, die deine Daten vertraulich behandeln. Siehe [Best Practices](./single_prompt_best_practices).
-</Admonition>
-
----
-
-## Schritt 3: Estelle starten
-
-Schreibe in den Chat:
-
-<div style={{background: 'var(--ifm-color-emphasis-100)', borderRadius: '8px', padding: '1rem 1rem', marginTop: '1rem', marginBottom: '1rem', fontSize: '0.95rem', fontStyle: 'italic', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-  „Bitte führe dieses Dokument aus und starte mit der Willkommensnachricht."
+<div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem'}}>
+  <div style={{flexShrink: 0, width: '2rem', height: '2rem', borderRadius: '50%', background: '#386FB3', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '700', fontSize: '1rem', marginTop: '0.15rem'}}>2</div>
+  <div>
+    <h2 style={{margin: '0 0 0.4rem 0'}}>Datei in AI-Tool einfügen</h2>
+    <p style={{margin: 0, color: 'var(--ifm-font-color-secondary)', fontSize: '0.95rem'}}>Öffne dein bevorzugtes AI-Tool (z.B. ChatGPT, Claude, Copilot) und lade die heruntergeladene Datei hoch oder füge den Inhalt ein.</p>
+  </div>
 </div>
 
-<p style={{marginTop: '1rem', fontSize: '0.9rem', color: 'var(--ifm-font-color-secondary)'}}>
-  Der Bot übernimmt die Rolle <strong>Estelle</strong> und führt dich durch die Räume der Hausbaulogik.
-</p>
+<div style={{marginLeft: '3rem', marginTop: '0.75rem'}}>
+  <Admonition type="info" title="Datenschutz beachten">
+    Die erarbeiteten Geschäftsmodell-Daten sind sensibel. Nutze bevorzugt unternehmensinterne Chatbots, die deine Daten vertraulich behandeln. Siehe [Best Practices](./single_prompt_best_practices).
+  </Admonition>
+</div>
 
 ---
 
+<div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.5rem'}}>
+  <div style={{flexShrink: 0, width: '2rem', height: '2rem', borderRadius: '50%', background: '#386FB3', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '700', fontSize: '1rem', marginTop: '0.15rem'}}>3</div>
+  <div>
+    <h2 style={{margin: '0 0 0.4rem 0'}}>Estelle starten</h2>
+    <p style={{margin: 0, color: 'var(--ifm-font-color-secondary)', fontSize: '0.95rem'}}>Schreibe in den Chat:</p>
+  </div>
+</div>
 
-<br></br>
+<div style={{marginLeft: '3rem'}}>
+  <CopyPromptBox text="Bitte führe dieses Dokument aus und starte mit der Willkommensnachricht." />
+  <p style={{marginTop: '0.75rem', fontSize: '0.9rem', color: 'var(--ifm-font-color-secondary)'}}>
+    Der Bot übernimmt die Rolle <strong>Estelle</strong> und führt dich durch die Räume der Hausbaulogik.
+  </p>
+</div>
+
+---
+
+## Was dich erwartet
+
+Estelle führt dich Schritt für Schritt durch die fünf Bereiche der Hausbaulogik:
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0.75rem', marginTop: '1rem', marginBottom: '1.5rem'}}>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #888'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.3rem', fontWeight: '600'}}>Eingang</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Ausgangslage & Idee</div>
+  </div>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #386FB3'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#386FB3', marginBottom: '0.3rem', fontWeight: '600'}}>Blauer Raum</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Kunde & Markt</div>
+  </div>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #C0392B'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#C0392B', marginBottom: '0.3rem', fontWeight: '600'}}>Roter Raum</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Wertversprechen</div>
+  </div>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #27AE60'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#27AE60', marginBottom: '0.3rem', fontWeight: '600'}}>Grüner Raum</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Werterzeugung</div>
+  </div>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #F39C12'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: '#F39C12', marginBottom: '0.3rem', fontWeight: '600'}}>Gelber Raum</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Monetarisierung</div>
+  </div>
+  <div style={{padding: '0.875rem 1rem', background: 'var(--ifm-background-surface-color)', border: '1px solid var(--ifm-color-emphasis-200)', borderRadius: '8px', borderLeft: '3px solid #888'}}>
+    <div style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ifm-font-color-secondary)', marginBottom: '0.3rem', fontWeight: '600'}}>Ausgang</div>
+    <div style={{fontSize: '0.9rem', fontWeight: '500'}}>Chancen & nächste Schritte</div>
+  </div>
+</div>
 
 <Admonition type="tip" title="Navigation">
 Du kannst jederzeit direkt in einen Raum springen, indem du seinen Namen nennst (z.B. „Blauer Raum"). Jeder Raum führt dich Schritt für Schritt durch Fragen und erstellt passende Output-Dokumente.

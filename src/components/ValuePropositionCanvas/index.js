@@ -6,12 +6,23 @@ import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import RestartAltOutlinedIcon from '@mui/icons-material/RestartAltOutlined';
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
+import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
 
 const DEFAULT_COLOR = '#386FB3';
 
+const COL_META = {
+  jobs:  { color: '#4A7FA8', Icon: AssignmentOutlinedIcon },
+  pains: { color: '#B85450', Icon: ErrorOutlineOutlinedIcon },
+  gains: { color: '#6B8E50', Icon: EmojiEventsOutlinedIcon },
+};
+
 function hexToRgb(hex) {
   const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r ? `${parseInt(r[1], 16)}, ${parseInt(r[2], 16)}, ${parseInt(r[3], 16)}` : '56, 111, 179';
+  return r
+    ? `${Number.parseInt(r[1], 16)}, ${Number.parseInt(r[2], 16)}, ${Number.parseInt(r[3], 16)}`
+    : '56, 111, 179';
 }
 
 function actionSx(color, rgb, primary = false) {
@@ -49,24 +60,29 @@ function Cell({ value, placeholder, onChange, color }) {
     />
   );
 }
-Cell.propTypes = { value: PropTypes.string.isRequired, placeholder: PropTypes.string, onChange: PropTypes.func.isRequired, color: PropTypes.string.isRequired };
+Cell.propTypes = {
+  value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 const COLUMNS = {
   de: [
-    { key: 'jobs', label: 'Customer Jobs', sub: 'Was will der Kunde erledigen?', ph: 'Aufgaben, Ziele, Bedürfnisse…' },
-    { key: 'pains', label: 'Pains', sub: 'Was hindert den Kunden?', ph: 'Frustrationen, Risiken, Hindernisse…' },
-    { key: 'gains', label: 'Gains', sub: 'Was wünscht sich der Kunde?', ph: 'Erwartete Vorteile, Wünsche…' },
+    { key: 'jobs',  label: 'Customer Jobs', sub: 'Was will der Kunde erledigen?',   ph: 'Aufgaben, Ziele, Bedürfnisse…' },
+    { key: 'pains', label: 'Pains',          sub: 'Was hindert den Kunden?',         ph: 'Frustrationen, Risiken, Hindernisse…' },
+    { key: 'gains', label: 'Gains',          sub: 'Was wünscht sich der Kunde?',     ph: 'Erwartete Vorteile, Wünsche…' },
   ],
   en: [
-    { key: 'jobs', label: 'Customer Jobs', sub: 'What does the customer want to accomplish?', ph: 'Tasks, goals, needs…' },
-    { key: 'pains', label: 'Pains', sub: 'What prevents the customer?', ph: 'Frustrations, risks, obstacles…' },
-    { key: 'gains', label: 'Gains', sub: 'What does the customer desire?', ph: 'Expected benefits, wishes…' },
+    { key: 'jobs',  label: 'Customer Jobs', sub: 'What does the customer want to accomplish?', ph: 'Tasks, goals, needs…' },
+    { key: 'pains', label: 'Pains',          sub: 'What prevents the customer?',               ph: 'Frustrations, risks, obstacles…' },
+    { key: 'gains', label: 'Gains',          sub: 'What does the customer desire?',             ph: 'Expected benefits, wishes…' },
   ],
 };
 
 const LABELS = {
   de: { reset: 'Zurücksetzen', csv: 'CSV', pdf: 'PDF', filename: 'value-proposition-canvas' },
-  en: { reset: 'Reset', csv: 'CSV', pdf: 'PDF', filename: 'value-proposition-canvas' },
+  en: { reset: 'Reset',        csv: 'CSV', pdf: 'PDF', filename: 'value-proposition-canvas' },
 };
 
 const makeInitialState = () => ({ jobs: '', pains: '', gains: '' });
@@ -80,15 +96,23 @@ export default function ValuePropositionCanvas({ color = DEFAULT_COLOR, lang = '
 
   const reset = () => setState(makeInitialState());
 
+  const filledCount = cols.filter(c => state[c.key].trim() !== '').length;
+
   const downloadCsv = () => {
     const header = cols.map(c => c.label);
     const values = cols.map(c => state[c.key]);
-    const csv = [header, values].map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+    const csv = [header, values]
+      .map(r => r.map(c => `"${String(c).replaceAll('"', '""')}"`).join(','))
+      .join('\r\n');
     const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `${L.filename}.csv`;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    a.href = url;
+    a.download = `${L.filename}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   };
 
   const downloadPdf = async () => {
@@ -101,25 +125,80 @@ export default function ValuePropositionCanvas({ color = DEFAULT_COLOR, lang = '
     }).from(tableRef.current).save();
   };
 
-  const cellBorder = '1px solid var(--ifm-table-border-color, var(--ifm-color-emphasis-300))';
-
   return (
-    <div>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
+    <div style={{
+      borderRadius: '8px',
+      border: '1px solid var(--ifm-color-emphasis-200)',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+      overflow: 'hidden',
+    }}>
+      {/* Toolbar */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.5rem',
+        flexWrap: 'wrap',
+        padding: '0.6rem 0.75rem',
+        borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+        background: 'var(--ifm-card-background-color)',
+      }}>
+        <span style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-secondary)', marginRight: 'auto' }}>
+          {filledCount} / 3
+        </span>
         <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadCsv} sx={actionSx(color, rgb, true)}>{L.csv}</Button>
         <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadPdf} sx={actionSx(color, rgb, true)}>{L.pdf}</Button>
         <Button variant="outlined" size="small" startIcon={<RestartAltOutlinedIcon />} onClick={reset} sx={actionSx(color, rgb, false)}>{L.reset}</Button>
       </div>
-      <div ref={tableRef} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
-        {cols.map(col => (
-          <div key={col.key} style={{ border: cellBorder, borderRadius: 6, overflow: 'hidden' }}>
-            <div style={{ padding: '0.6rem 0.75rem', background: `rgba(${rgb}, 0.08)`, borderBottom: `2px solid ${color}` }}>
-              <div style={{ fontWeight: 700, fontSize: '0.875rem', color }}>{col.label}</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-secondary)', marginTop: 2 }}>{col.sub}</div>
+
+      {/* Canvas grid */}
+      <div ref={tableRef} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', padding: '1rem' }}>
+        {cols.map(col => {
+          const meta = COL_META[col.key];
+          const colColor = meta.color;
+          const colRgb = hexToRgb(colColor);
+          const ColIcon = meta.Icon;
+          const hasContent = state[col.key].trim() !== '';
+
+          return (
+            <div key={col.key} style={{
+              border: '1px solid var(--ifm-color-emphasis-200)',
+              borderTop: `3px solid ${colColor}`,
+              borderRadius: '6px',
+              overflow: 'hidden',
+            }}>
+              {/* Column header */}
+              <div style={{
+                padding: '0.6rem 0.75rem',
+                background: `rgba(${colRgb}, 0.08)`,
+                borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '0.5rem',
+              }}>
+                <ColIcon style={{ fontSize: '1.1rem', color: colColor, marginTop: '1px', flexShrink: 0 }} />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.875rem', color: colColor }}>{col.label}</span>
+                    {hasContent && (
+                      <span style={{
+                        width: '7px', height: '7px', borderRadius: '50%',
+                        background: colColor, flexShrink: 0, display: 'inline-block',
+                      }} />
+                    )}
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--ifm-font-color-secondary)', marginTop: 2 }}>{col.sub}</div>
+                </div>
+              </div>
+
+              <Cell
+                value={state[col.key]}
+                placeholder={col.ph}
+                onChange={val => setState(s => ({ ...s, [col.key]: val }))}
+                color={colColor}
+              />
             </div>
-            <Cell value={state[col.key]} placeholder={col.ph} onChange={val => setState(s => ({ ...s, [col.key]: val }))} color={color} />
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

@@ -9,12 +9,23 @@ import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import RestartAltOutlinedIcon from '@mui/icons-material/RestartAltOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 
 const DEFAULT_COLOR = '#6B7280';
 
+// Per-column RACI accent colors
+const RACI_COLORS = {
+  r: '#4A7FA8',
+  a: '#B85450',
+  c: '#C07830',
+  inf: '#6B8E50',
+};
+
 function hexToRgb(hex) {
   const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r ? `${parseInt(r[1], 16)}, ${parseInt(r[2], 16)}, ${parseInt(r[3], 16)}` : '107, 114, 128';
+  return r
+    ? `${Number.parseInt(r[1], 16)}, ${Number.parseInt(r[2], 16)}, ${Number.parseInt(r[3], 16)}`
+    : '107, 114, 128';
 }
 
 function uid() { return Math.random().toString(36).slice(2, 9); }
@@ -54,22 +65,48 @@ function Cell({ value, placeholder, onChange, color }) {
     />
   );
 }
-Cell.propTypes = { value: PropTypes.string.isRequired, placeholder: PropTypes.string, onChange: PropTypes.func.isRequired, color: PropTypes.string.isRequired };
+Cell.propTypes = {
+  value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+};
+
+// Small colored badge showing the RACI letter
+function RaciBadge({ letter, color }) {
+  return (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+      width: '1.35rem', height: '1.35rem', borderRadius: '4px',
+      backgroundColor: color, color: '#fff',
+      fontSize: '0.7rem', fontWeight: 700, letterSpacing: 0,
+      marginRight: '0.4rem', flexShrink: 0,
+    }}>
+      {letter}
+    </span>
+  );
+}
+RaciBadge.propTypes = {
+  letter: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
 
 const LABELS = {
   de: {
-    col1: 'Maßnahmen-ID', col2: 'Responsible (R)', col3: 'Accountable (A)', col4: 'Consulted (C)', col5: 'Informed (I)',
+    col1: 'Maßnahmen-ID', col2: 'Responsible', col3: 'Accountable', col4: 'Consulted', col5: 'Informed',
     ph: { mid: 'M1', r: 'Wer führt aus?', a: 'Wer verantwortet?', c: 'Wer wird konsultiert?', inf: 'Wer wird informiert?' },
-    legend: 'R = führt aus · A = verantwortet · C = konsultiert · I = informiert',
+    legendR: 'führt aus', legendA: 'verantwortet', legendC: 'konsultiert', legendI: 'informiert',
     addRow: 'Zeile hinzufügen', removeRow: 'Zeile entfernen',
     reset: 'Zurücksetzen', csv: 'CSV', pdf: 'PDF', filename: 'raci-tabelle',
+    rowLabel: 'Einträge',
   },
   en: {
-    col1: 'Action ID', col2: 'Responsible (R)', col3: 'Accountable (A)', col4: 'Consulted (C)', col5: 'Informed (I)',
+    col1: 'Action ID', col2: 'Responsible', col3: 'Accountable', col4: 'Consulted', col5: 'Informed',
     ph: { mid: 'M1', r: 'Who executes?', a: 'Who owns it?', c: 'Who is consulted?', inf: 'Who is informed?' },
-    legend: 'R = executes · A = owns · C = consulted · I = informed',
+    legendR: 'executes', legendA: 'owns', legendC: 'consulted', legendI: 'informed',
     addRow: 'Add Row', removeRow: 'Remove row',
     reset: 'Reset', csv: 'CSV', pdf: 'PDF', filename: 'raci-table',
+    rowLabel: 'rows',
   },
 };
 
@@ -92,15 +129,21 @@ export default function RaciTabelle({ color = DEFAULT_COLOR, lang = 'de' }) {
   const setField = (id, field, val) => setState(s => ({ rows: s.rows.map(r => r.id === id ? { ...r, [field]: val } : r) }));
 
   const downloadCsv = () => {
-    const header = [L.col1, L.col2, L.col3, L.col4, L.col5];
+    const header = [L.col1, `${L.col2} (R)`, `${L.col3} (A)`, `${L.col4} (C)`, `${L.col5} (I)`];
     const data = rows.map(r => [r.mid, r.r, r.a, r.c, r.inf]);
-    const legend = [L.legend, '', '', '', ''];
-    const csv = [header, ...data, legend].map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+    const legend = [`R=${L.legendR} A=${L.legendA} C=${L.legendC} I=${L.legendI}`, '', '', '', ''];
+    const csv = [header, ...data, legend]
+      .map(r => r.map(c => `"${String(c).replaceAll('"', '""')}"`).join(','))
+      .join('\r\n');
     const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `${L.filename}.csv`;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    a.href = url;
+    a.download = `${L.filename}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   };
 
   const downloadPdf = async () => {
@@ -114,59 +157,213 @@ export default function RaciTabelle({ color = DEFAULT_COLOR, lang = 'de' }) {
   };
 
   const cellBorder = '1px solid var(--ifm-table-border-color, var(--ifm-color-emphasis-300))';
-  const thBase = { border: cellBorder, borderBottom: `2px solid ${color}`, background: 'var(--ifm-table-head-background, transparent)', color: 'var(--ifm-table-head-color, var(--ifm-font-color-base))', fontWeight: 'var(--ifm-table-head-font-weight, 700)', fontSize: '0.875rem', padding: '0.5rem 0.75rem', verticalAlign: 'middle' };
-  const tdBase = { border: cellBorder, padding: 0, verticalAlign: 'top', background: 'var(--ifm-table-background, transparent)' };
+
+  // Base th style — each RACI column overrides borderBottom with its own color
+  const thBase = {
+    border: cellBorder,
+    background: 'var(--ifm-table-head-background, transparent)',
+    color: 'var(--ifm-table-head-color, var(--ifm-font-color-base))',
+    fontWeight: 'var(--ifm-table-head-font-weight, 700)',
+    fontSize: '0.875rem',
+    padding: '0.5rem 0.75rem',
+    verticalAlign: 'middle',
+  };
+
+  const tdBase = {
+    border: cellBorder, padding: 0, verticalAlign: 'top',
+    background: 'var(--ifm-table-background, transparent)',
+  };
+
+  // Per-column header styles with their accent border
+  function raciTh(accentColor) {
+    return { ...thBase, borderBottom: `2px solid ${accentColor}` };
+  }
+
+  // Per-column data cell with 3% tint
+  function raciTd(accentColor, stripe) {
+    const tintRgb = hexToRgb(accentColor);
+    const base = stripe
+      ? `rgba(${tintRgb}, 0.05)` // stripe rows get slightly more tint
+      : `rgba(${tintRgb}, 0.03)`;
+    return { ...tdBase, background: base };
+  }
 
   return (
-    <div>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
-        <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadCsv} sx={actionSx(color, rgb, true)}>{L.csv}</Button>
-        <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadPdf} sx={actionSx(color, rgb, true)}>{L.pdf}</Button>
-        <Button variant="outlined" size="small" startIcon={<RestartAltOutlinedIcon />} onClick={reset} sx={actionSx(color, rgb, false)}>{L.reset}</Button>
+    <div style={{
+      borderRadius: '8px',
+      border: '1px solid var(--ifm-color-emphasis-200)',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+      overflow: 'hidden',
+    }}>
+      {/* Toolbar */}
+      <div style={{
+        display: 'flex', gap: '0.5rem', flexWrap: 'wrap',
+        alignItems: 'center', justifyContent: 'space-between',
+        padding: '0.6rem 0.75rem',
+        borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+        background: 'var(--ifm-card-background-color)',
+      }}>
+        <span style={{ fontSize: '0.8rem', color: 'var(--ifm-font-color-secondary)', fontWeight: 500 }}>
+          {rows.length} {L.rowLabel}
+        </span>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadCsv} sx={actionSx(color, rgb, true)}>{L.csv}</Button>
+          <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadPdf} sx={actionSx(color, rgb, true)}>{L.pdf}</Button>
+          <Button variant="outlined" size="small" startIcon={<RestartAltOutlinedIcon />} onClick={reset} sx={actionSx(color, rgb, false)}>{L.reset}</Button>
+        </div>
       </div>
+
+      {/* Table */}
       <div ref={tableRef} style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'auto', minWidth: 480 }}>
           <thead>
             <tr>
-              <th style={{ ...thBase, width: 36, padding: 0 }} />
-              <th style={{ ...thBase, width: '15%' }}>{L.col1}</th>
-              <th style={thBase}>{L.col2}</th>
-              <th style={thBase}>{L.col3}</th>
-              <th style={thBase}>{L.col4}</th>
-              <th style={thBase}>{L.col5}</th>
+              {/* Number / delete col */}
+              <th style={{ ...thBase, borderBottom: `2px solid ${color}`, width: 44, padding: 0 }} />
+              {/* ID col */}
+              <th style={{ ...thBase, borderBottom: `2px solid ${color}`, width: '15%' }}>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+                  <AssignmentOutlinedIcon sx={{ fontSize: '1rem', opacity: 0.7 }} />
+                  {L.col1}
+                </span>
+              </th>
+              {/* R col */}
+              <th style={raciTh(RACI_COLORS.r)}>
+                <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  <RaciBadge letter="R" color={RACI_COLORS.r} />
+                  {L.col2}
+                </span>
+              </th>
+              {/* A col */}
+              <th style={raciTh(RACI_COLORS.a)}>
+                <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  <RaciBadge letter="A" color={RACI_COLORS.a} />
+                  {L.col3}
+                </span>
+              </th>
+              {/* C col */}
+              <th style={raciTh(RACI_COLORS.c)}>
+                <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  <RaciBadge letter="C" color={RACI_COLORS.c} />
+                  {L.col4}
+                </span>
+              </th>
+              {/* I col */}
+              <th style={raciTh(RACI_COLORS.inf)}>
+                <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  <RaciBadge letter="I" color={RACI_COLORS.inf} />
+                  {L.col5}
+                </span>
+              </th>
             </tr>
           </thead>
           <tbody>
-            {rows.map((row, i) => (
-              <tr key={row.id} style={{ background: i % 2 === 0 ? 'var(--ifm-table-background, transparent)' : 'var(--ifm-table-stripe-background, rgba(0,0,0,0.03))' }}>
-                <td style={{ ...tdBase, width: 36, textAlign: 'center', verticalAlign: 'middle', padding: '0 2px' }}>
-                  <IconButton size="small" onClick={() => removeRow(row.id)} title={L.removeRow} sx={{ color: 'var(--ifm-color-emphasis-400)', padding: '4px', '&:hover': { color: '#dc2626', backgroundColor: 'rgba(220,38,38,0.08)' } }}>
-                    <CloseOutlinedIcon sx={{ fontSize: 16 }} />
-                  </IconButton>
-                </td>
-                <td style={tdBase}><Cell value={row.mid} placeholder={L.ph.mid} onChange={val => setField(row.id, 'mid', val)} color={color} /></td>
-                <td style={tdBase}><Cell value={row.r} placeholder={L.ph.r} onChange={val => setField(row.id, 'r', val)} color={color} /></td>
-                <td style={tdBase}><Cell value={row.a} placeholder={L.ph.a} onChange={val => setField(row.id, 'a', val)} color={color} /></td>
-                <td style={tdBase}><Cell value={row.c} placeholder={L.ph.c} onChange={val => setField(row.id, 'c', val)} color={color} /></td>
-                <td style={tdBase}><Cell value={row.inf} placeholder={L.ph.inf} onChange={val => setField(row.id, 'inf', val)} color={color} /></td>
-              </tr>
-            ))}
+            {rows.map((row, i) => {
+              const stripe = i % 2 !== 0;
+              const rowBg = stripe
+                ? 'var(--ifm-table-stripe-background, rgba(0,0,0,0.03))'
+                : 'var(--ifm-table-background, transparent)';
+              return (
+                <tr key={row.id}>
+                  {/* Number badge + delete */}
+                  <td style={{
+                    ...tdBase,
+                    width: 44, textAlign: 'center', verticalAlign: 'middle',
+                    padding: '0 2px', background: rowBg,
+                  }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+                      <span style={{
+                        fontSize: '0.65rem', fontWeight: 700, lineHeight: 1,
+                        color: 'var(--ifm-color-emphasis-500)',
+                      }}>
+                        {i + 1}
+                      </span>
+                      <IconButton
+                        size="small"
+                        onClick={() => removeRow(row.id)}
+                        title={L.removeRow}
+                        sx={{
+                          color: 'var(--ifm-color-emphasis-400)', padding: '2px',
+                          '&:hover': { color: '#dc2626', backgroundColor: 'rgba(220,38,38,0.08)' },
+                        }}
+                      >
+                        <CloseOutlinedIcon sx={{ fontSize: 14 }} />
+                      </IconButton>
+                    </div>
+                  </td>
+                  {/* ID cell — plain stripe background */}
+                  <td style={{ ...tdBase, background: rowBg }}>
+                    <Cell value={row.mid} placeholder={L.ph.mid} onChange={val => setField(row.id, 'mid', val)} color={color} />
+                  </td>
+                  {/* R cell */}
+                  <td style={raciTd(RACI_COLORS.r, stripe)}>
+                    <Cell value={row.r} placeholder={L.ph.r} onChange={val => setField(row.id, 'r', val)} color={RACI_COLORS.r} />
+                  </td>
+                  {/* A cell */}
+                  <td style={raciTd(RACI_COLORS.a, stripe)}>
+                    <Cell value={row.a} placeholder={L.ph.a} onChange={val => setField(row.id, 'a', val)} color={RACI_COLORS.a} />
+                  </td>
+                  {/* C cell */}
+                  <td style={raciTd(RACI_COLORS.c, stripe)}>
+                    <Cell value={row.c} placeholder={L.ph.c} onChange={val => setField(row.id, 'c', val)} color={RACI_COLORS.c} />
+                  </td>
+                  {/* I cell */}
+                  <td style={raciTd(RACI_COLORS.inf, stripe)}>
+                    <Cell value={row.inf} placeholder={L.ph.inf} onChange={val => setField(row.id, 'inf', val)} color={RACI_COLORS.inf} />
+                  </td>
+                </tr>
+              );
+            })}
+            {/* Add-row as last tbody row, dashed */}
             <tr>
-              <td style={{ ...tdBase, padding: '0 2px', textAlign: 'center', verticalAlign: 'middle' }} />
-              <td colSpan={5} style={{ border: cellBorder, padding: '0.4rem 0.75rem', fontSize: '0.78rem', color: 'var(--ifm-font-color-secondary)', fontStyle: 'italic', background: 'var(--ifm-color-emphasis-100, rgba(0,0,0,0.04))' }}>
-                {L.legend}
+              <td
+                colSpan={6}
+                onClick={addRow}
+                style={{
+                  border: cellBorder,
+                  borderTop: `1px dashed rgba(${rgb}, 0.4)`,
+                  padding: '0.45rem 0.75rem',
+                  cursor: 'pointer',
+                  background: 'transparent',
+                  transition: 'background 0.15s',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = `rgba(${rgb}, 0.04)`; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+              >
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
+                  fontSize: '0.82rem', color: 'var(--ifm-font-color-secondary)',
+                  userSelect: 'none',
+                }}>
+                  <AddOutlinedIcon sx={{ fontSize: '1rem' }} />
+                  {L.addRow}
+                </span>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <Button
-        variant="outlined" size="small" startIcon={<AddOutlinedIcon />}
-        onClick={addRow} fullWidth
-        sx={{ marginTop: '0.5rem', textTransform: 'none', fontSize: '0.82rem', borderStyle: 'dashed', borderColor: `rgba(${rgb}, 0.35)`, color: 'var(--ifm-font-color-secondary)', backgroundColor: 'transparent', borderRadius: '6px', justifyContent: 'center', '&:hover': { borderStyle: 'dashed', borderColor: color, color, backgroundColor: `rgba(${rgb}, 0.05)` } }}
-      >
-        {L.addRow}
-      </Button>
+
+      {/* Legend footer */}
+      <div style={{
+        display: 'flex', flexWrap: 'wrap', gap: '0.75rem',
+        padding: '0.55rem 0.75rem',
+        borderTop: '1px solid var(--ifm-color-emphasis-200)',
+        background: 'var(--ifm-color-emphasis-100, rgba(0,0,0,0.03))',
+        alignItems: 'center',
+      }}>
+        {[
+          { letter: 'R', color: RACI_COLORS.r, label: L.legendR },
+          { letter: 'A', color: RACI_COLORS.a, label: L.legendA },
+          { letter: 'C', color: RACI_COLORS.c, label: L.legendC },
+          { letter: 'I', color: RACI_COLORS.inf, label: L.legendI },
+        ].map(({ letter, color: c, label }) => (
+          <span key={letter} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.78rem', color: 'var(--ifm-font-color-secondary)' }}>
+            <RaciBadge letter={letter} color={c} />
+            {label}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }

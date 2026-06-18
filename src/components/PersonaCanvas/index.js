@@ -6,12 +6,27 @@ import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import RestartAltOutlinedIcon from '@mui/icons-material/RestartAltOutlined';
+import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
+import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+import WorkOutlinedIcon from '@mui/icons-material/WorkOutlined';
+import TodayOutlinedIcon from '@mui/icons-material/TodayOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
+import BlockOutlinedIcon from '@mui/icons-material/BlockOutlined';
+import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 
 const DEFAULT_COLOR = '#386FB3';
+const ENV_COLOR = '#7B5EA7';
 
 function hexToRgb(hex) {
   const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r ? `${parseInt(r[1], 16)}, ${parseInt(r[2], 16)}, ${parseInt(r[3], 16)}` : '56, 111, 179';
+  return r
+    ? `${Number.parseInt(r[1], 16)}, ${Number.parseInt(r[2], 16)}, ${Number.parseInt(r[3], 16)}`
+    : '56, 111, 179';
 }
 
 function actionSx(color, rgb, primary = false) {
@@ -49,7 +64,30 @@ function Cell({ value, placeholder, onChange, color }) {
     />
   );
 }
-Cell.propTypes = { value: PropTypes.string.isRequired, placeholder: PropTypes.string, onChange: PropTypes.func.isRequired, color: PropTypes.string.isRequired };
+Cell.propTypes = {
+  value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+};
+
+const CORE_ICONS = {
+  name: <BadgeOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  desc: <PersonOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  problems: <ErrorOutlineOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  demo: <LocationOnOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  goals: <EmojiEventsOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+};
+
+const ENV_ICONS = {
+  jobs: <WorkOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  daily: <TodayOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  emotionsBuy: <ShoppingCartOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  emotionsUse: <AutoAwesomeOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  barriers: <BlockOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  triggers: <BoltOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+  motivation: <FavoriteOutlinedIcon sx={{ fontSize: '0.9rem' }} />,
+};
 
 const CORE_FIELDS = {
   de: [
@@ -104,20 +142,30 @@ export default function PersonaCanvas({ color = DEFAULT_COLOR, lang = 'de' }) {
   const coreFields = CORE_FIELDS[lang] ?? CORE_FIELDS.de;
   const envFields = ENV_FIELDS[lang] ?? ENV_FIELDS.de;
   const rgb = hexToRgb(color);
+  const envRgb = hexToRgb(ENV_COLOR);
   const [state, setState] = useState(makeInitialState);
   const tableRef = useRef(null);
 
   const reset = () => setState(makeInitialState());
 
   const allFields = [...coreFields, ...envFields];
+  const filledCount = allFields.filter(f => state[f.key].trim() !== '').length;
+  const totalCount = allFields.length;
+  const progressPct = totalCount > 0 ? Math.round((filledCount / totalCount) * 100) : 0;
 
   const downloadCsv = () => {
-    const csv = allFields.map(f => `"${f.label}","${String(state[f.key]).replace(/"/g, '""')}"`).join('\r\n');
+    const csv = allFields
+      .map(f => `"${f.label}","${String(state[f.key]).replaceAll('"', '""')}"`)
+      .join('\r\n');
     const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `${L.filename}.csv`;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    a.href = url;
+    a.download = `${L.filename}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   };
 
   const downloadPdf = async () => {
@@ -130,38 +178,162 @@ export default function PersonaCanvas({ color = DEFAULT_COLOR, lang = 'de' }) {
     }).from(tableRef.current).save();
   };
 
-  const cellBorder = '1px solid var(--ifm-table-border-color, var(--ifm-color-emphasis-300))';
-
-  const fieldCard = (f) => (
-    <div key={f.key} style={{ border: cellBorder, borderRadius: 4, overflow: 'hidden', marginBottom: '0.5rem' }}>
-      <div style={{ padding: '0.25rem 0.6rem', fontSize: '0.72rem', fontWeight: 700, color, background: `rgba(${rgb}, 0.07)`, borderBottom: cellBorder, letterSpacing: '0.03em', textTransform: 'uppercase' }}>
-        {f.label}
+  const fieldCard = (f, sectionColor, sectionRgb, iconMap) => {
+    const icon = iconMap[f.key];
+    return (
+      <div
+        key={f.key}
+        style={{
+          borderRadius: '5px',
+          border: '1px solid var(--ifm-color-emphasis-200)',
+          borderLeft: `3px solid ${sectionColor}`,
+          overflow: 'hidden',
+          marginBottom: '0.5rem',
+          background: 'var(--ifm-card-background-color)',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.35rem',
+            padding: '0.25rem 0.6rem',
+            fontSize: '0.72rem',
+            fontWeight: 700,
+            color: sectionColor,
+            background: `rgba(${sectionRgb}, 0.07)`,
+            borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+            letterSpacing: '0.03em',
+            textTransform: 'uppercase',
+          }}
+        >
+          {icon}
+          {f.label}
+        </div>
+        <Cell
+          value={state[f.key]}
+          placeholder={f.ph}
+          onChange={val => setState(s => ({ ...s, [f.key]: val }))}
+          color={sectionColor}
+        />
       </div>
-      <Cell value={state[f.key]} placeholder={f.ph} onChange={val => setState(s => ({ ...s, [f.key]: val }))} color={color} />
-    </div>
-  );
+    );
+  };
 
-  const sectionHeader = (title) => (
-    <div style={{ fontSize: '0.7rem', fontWeight: 700, color, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '0.25rem 0', marginBottom: '0.5rem', borderBottom: `2px solid ${color}` }}>
+  const sectionHeader = (title, sectionColor, sectionRgb) => (
+    <div
+      style={{
+        display: 'inline-block',
+        fontSize: '0.68rem',
+        fontWeight: 700,
+        color: '#fff',
+        letterSpacing: '0.1em',
+        textTransform: 'uppercase',
+        background: sectionColor,
+        borderRadius: '20px',
+        padding: '0.2rem 0.75rem',
+        marginBottom: '0.65rem',
+        boxShadow: `0 1px 4px rgba(${sectionRgb}, 0.3)`,
+      }}
+    >
       {title}
     </div>
   );
 
   return (
-    <div>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'flex-end', marginBottom: '0.75rem' }}>
-        <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadCsv} sx={actionSx(color, rgb, true)}>{L.csv}</Button>
-        <Button variant="outlined" size="small" startIcon={<FileDownloadOutlinedIcon />} onClick={downloadPdf} sx={actionSx(color, rgb, true)}>{L.pdf}</Button>
-        <Button variant="outlined" size="small" startIcon={<RestartAltOutlinedIcon />} onClick={reset} sx={actionSx(color, rgb, false)}>{L.reset}</Button>
+    <div
+      style={{
+        borderRadius: '8px',
+        border: '1px solid var(--ifm-color-emphasis-200)',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Toolbar */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          flexWrap: 'wrap',
+          padding: '0.6rem 1rem',
+          borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+          background: 'var(--ifm-card-background-color)',
+        }}
+      >
+        <Button
+          variant="outlined"
+          size="small"
+          startIcon={<FileDownloadOutlinedIcon />}
+          onClick={downloadCsv}
+          sx={actionSx(color, rgb, true)}
+        >
+          {L.csv}
+        </Button>
+        <Button
+          variant="outlined"
+          size="small"
+          startIcon={<FileDownloadOutlinedIcon />}
+          onClick={downloadPdf}
+          sx={actionSx(color, rgb, true)}
+        >
+          {L.pdf}
+        </Button>
+        <Button
+          variant="outlined"
+          size="small"
+          startIcon={<RestartAltOutlinedIcon />}
+          onClick={reset}
+          sx={actionSx(color, rgb, false)}
+        >
+          {L.reset}
+        </Button>
+
+        {/* Progress bar */}
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'flex-end', minWidth: 120 }}>
+          <div
+            style={{
+              flex: 1,
+              maxWidth: 160,
+              height: '6px',
+              borderRadius: '3px',
+              background: 'var(--ifm-color-emphasis-200)',
+              overflow: 'hidden',
+            }}
+          >
+            <div
+              style={{
+                height: '100%',
+                width: `${progressPct}%`,
+                background: color,
+                borderRadius: '3px',
+                transition: 'width 0.3s ease',
+              }}
+            />
+          </div>
+          <span style={{ fontSize: '0.72rem', color: 'var(--ifm-font-color-secondary)', whiteSpace: 'nowrap' }}>
+            {filledCount}/{totalCount}
+          </span>
+        </div>
       </div>
-      <div ref={tableRef} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+
+      {/* Canvas grid */}
+      <div
+        ref={tableRef}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '1.5rem',
+          padding: '1rem',
+        }}
+      >
         <div>
-          {sectionHeader(L.core)}
-          {coreFields.map(fieldCard)}
+          {sectionHeader(L.core, color, rgb)}
+          {coreFields.map(f => fieldCard(f, color, rgb, CORE_ICONS))}
         </div>
         <div>
-          {sectionHeader(L.env)}
-          {envFields.map(fieldCard)}
+          {sectionHeader(L.env, ENV_COLOR, envRgb)}
+          {envFields.map(f => fieldCard(f, ENV_COLOR, envRgb, ENV_ICONS))}
         </div>
       </div>
     </div>
