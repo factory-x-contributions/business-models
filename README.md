@@ -35,6 +35,9 @@
 > [!IMPORTANT]
 > **This repository is archived.** It will receive no further development or maintenance. Interested parties are invited to fork the repository and continue the work independently.
 
+> [!IMPORTANT]
+> **This repository is archived.** It will receive no further development or maintenance. Interested parties are invited to fork the repository and continue the work independently.
+
 ## 📋 Overview
 
 This repository is part of the [Factory-X](https://www.bmwk.de/Redaktion/DE/Artikel/Industrie/factory-x.html) lighthouse project funded by the German Federal Ministry for Economic Affairs and Climate Action (BMWK). It contains the **House Building Logic (HBL)** – a structured methodology for developing data-driven business models in industrial contexts.
