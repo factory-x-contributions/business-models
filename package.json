@@ -56,7 +56,14 @@
     "postcss": ">=8.5.10",
     "uuid": ">=14.0.0",
     "fast-uri": ">=3.1.2",
-    "webpack-dev-server": ">=5.2.4",
-    "ws": ">=8.21.0"
+    "webpack-dev-server": ">=5.2.5",
+    "ws": ">=8.21.0",
+    "@babel/core": ">=7.29.1",
+    "http-proxy-middleware": ">=2.0.10",
+    "joi": ">=17.13.4",
+    "js-yaml": ">=4.2.0",
+    "gray-matter": {
+      "js-yaml": "3.15.0"
+    }
   }
 }
